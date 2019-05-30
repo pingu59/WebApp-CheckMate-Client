@@ -60,3 +60,15 @@ jobs:
       buildForSimulator: true
       packageApp: true
 
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+      artifactName: downloadIOS
+
+
+  - task: DownloadBuildArtifacts@0
+    inputs:
+      buildType: 'current'
+      downloadType: 'single'
+      artifactName: 'downloadIOS'
+      downloadPath: '$(System.ArtifactsDirectory)'
