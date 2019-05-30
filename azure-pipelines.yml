@@ -57,7 +57,7 @@ jobs:
     inputs:
       solutionFile: '**/*.sln'
       configuration: 'Release'
-      buildForSimulator: false
+      buildForSimulator: true
       packageApp: true
       
   - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/
