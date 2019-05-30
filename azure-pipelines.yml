@@ -54,7 +54,7 @@ jobs:
 
   - task: XamariniOS@2
     inputs:
-      solutionFile: '**/*iOS.csproj'
+      solutionFile: '**/*.sln'
       configuration: 'AppStore'
       packageApp: true
       signingIdentity: 'iPhone Developer: Chris Sidi (7RZ3N927YF)'
