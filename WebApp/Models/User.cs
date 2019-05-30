@@ -1,4 +1,5 @@
 ﻿using System;
+using Newtonsoft.Json;
 using SQLite;
 using Xamarin.Forms;
 namespace WebApp.Models
@@ -6,33 +7,38 @@ namespace WebApp.Models
     public class User
     {
         [PrimaryKey, AutoIncrement]
-        public int Id { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public int userid { get; set; }
+        public string username { get; set; }
+        public string password { get; set; }
+        //private static User failureUser = new User(-1);
 
         public User() { }
         public User(int id)
         {
-            this.Id = id;
+            this.userid = id;
         }
-        public User(string Username, string Password)
+
+        [JsonConstructor]
+        public User(int userid, string username, string password)
         {
-            this.Username = Username;
-            this.Password = Password;
+            this.userid = userid;
+            this.username = username;
+            this.password = password;
         }
+
 
         public View getCardView()
         {
             Label thisLabel = new Label
             {
-                Text = Id.ToString()
+                Text = userid.ToString()
             };
             return thisLabel;
         }
 
         public override string ToString()
         {
-            return this.Id + " " + this.Username + "(" + this.Password + ")";
+            return this.userid + " " + this.username + "(" + this.password + ")";
         }
 
         public override bool Equals(object obj)
@@ -42,14 +48,20 @@ namespace WebApp.Models
             if (user == null) return false;
             else
             {
-                return this.Username.Equals(user.Username) &&
-                       this.Password.Equals(user.Password);
+                return this.username.Equals(user.username) &&
+                       this.password.Equals(user.password);
             }
+        }
+
+        public static User getFailure()
+        {
+            //TODO
+            return new User(-1,null,null);
         }
 
         public override int GetHashCode()
         {
-            return this.Id;
+            return this.userid;
         }
     }
 }

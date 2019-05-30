@@ -25,7 +25,7 @@ namespace WebApp.Views
     
             //need to change the way of changing password when password is private.
             //add a function in User to check Password and change password.
-            if (Entry_Old_Pwd.Text != me.Password)
+            if (Entry_Old_Pwd.Text != me.password)
             {
                 await DisplayAlert(null, "old password not correct", "OK");
                 return;
@@ -37,7 +37,7 @@ namespace WebApp.Views
                 return;
             }
 
-            me.Password = Entry_New_Pwd1.Text;
+            me.password = Entry_New_Pwd1.Text;
             db.Update(me);
             await DisplayAlert(null, "Your password has changed successfully!", "OK");
             await Navigation.PopAsync();

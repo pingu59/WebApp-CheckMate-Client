@@ -40,8 +40,8 @@ namespace WebApp.Views
             this.Title = CurrentPage.Title;
             BindingContext = this;
 
-            _username.Text = me.Username;
-            _user_detail.Text = "ID : " + me.Id + '\n'; //user.Id.toString();
+            _username.Text = me.username;
+            _user_detail.Text = "ID : " + me.userid + '\n'; //user.Id.toString();
             _user_detail.Text += "details e.g. age"; //user.Age;
 
 

@@ -16,11 +16,9 @@ namespace WebApp.Views
             InitializeComponent();
         }
 
-        protected async override void OnAppearing()
+        protected override void OnAppearing()
         {
             base.OnAppearing();
-
-            UsersListView.ItemsSource = await App.UserManager.GetTasksAsync();
         }
 
         private async void UsersListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)

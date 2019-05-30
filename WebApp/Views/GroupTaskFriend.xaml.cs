@@ -22,8 +22,8 @@ namespace WebApp.Views
             for(int i = 1; i < 10; i++)
             {
                 User newuser = new User(i);
-                newuser.Username = "user" + i.ToString();
-                newuser.Password = "pwd";
+                newuser.username = "user" + i.ToString();
+                newuser.password = "pwd";
                 friendList.Add(newuser);
             }
             AddedFriendList = new List<User>();
@@ -45,7 +45,7 @@ namespace WebApp.Views
                 {
                     //change this when user card view changed
                     Label l = (Label)v;
-                    if(!l.Text.Equals (friend.Id.ToString()))
+                    if(!l.Text.Equals (friend.userid.ToString()))
                     {
                         temp.Add(l);
                     }

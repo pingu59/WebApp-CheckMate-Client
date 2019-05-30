@@ -6,9 +6,9 @@
     <ContentPage.Content>
     </ContentPage.Content>
     <StackLayout>
-        <Label Margin="10" x:Name = "Label_Username" Text="Username" />
-        <Entry x:Name = "Entry_Username" Placeholder="Username" />
-        <Label Margin="10" x:Name = "Label_Password" Text="Password" />
+        <Label Margin="10" Text="User ID" />
+        <Entry x:Name = "Entry_UserID" Placeholder="User ID" />
+        <Label Margin="10" Text="Password" />
         <Entry x:Name = "Entry_Password" Placeholder="Password" />
         <Button x:Name = "Button_Signin" 
                 Text="Sign in" 
