@@ -60,3 +60,16 @@ jobs:
       buildForSimulator: true
       packageApp: false
 
+  - task: VisualStudioTestPlatformInstaller@1
+    inputs:
+      packageFeedSelector: 'nugetOrg'
+      versionSelector: 'latestPreRelease'
+  
+  - task: VSTest@2
+    inputs:
+      testSelector: 'testAssemblies'
+      testAssemblyVer2: '**\*test*.dll
+        !**\*TestAdapter.dll
+        !**\obj\**'
+      searchFolder: '$(System.DefaultWorkingDirectory)'
+      vsTestVersion: 'toolsInstaller'
