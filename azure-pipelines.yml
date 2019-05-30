@@ -45,7 +45,6 @@ jobs:
   # https://go.microsoft.com/fwlink/?linkid=871629
   - script: sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1 
     displayName: 'Select Xamarin SDK version'
-    enabled: false
 
   - task: NuGetToolInstaller@0
 
@@ -55,29 +54,31 @@ jobs:
 
   - task: XamariniOS@2
     inputs:
-      solutionFile: '**/*.sln'
-      configuration: 'Release'
-      buildForSimulator: true
+      solutionFile: '**/*iOS.csproj'
+      configuration: 'AppStore'
       packageApp: true
+      signingIdentity: 'iPhone Developer: Chris Sidi (7RZ3N927YF)'
+      signingProvisioningProfileID: 'iOS Team Provisioning Profile: com.hashtagchris.*'
+
       
-  - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/**/*.app
+  # - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/**/*.app
 
-  - task: CopyFiles@2
-    inputs:
-      sourceFolder: '$(Build.SourcesDirectory)'
-      contents: '**/$(BuildConfiguration)/**/?(*.exe|*.dll|*.pdb)'
-      TargetFolder: '$(Build.ArtifactStagingDirectory)'
+  # - task: CopyFiles@2
+  #   inputs:
+  #     sourceFolder: '$(Build.SourcesDirectory)'
+  #     contents: '**/$(BuildConfiguration)/**/?(*.exe|*.dll|*.pdb)'
+  #     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
-  - task: PublishBuildArtifacts@1
-    inputs:
-      pathtoPublish: '$(Build.ArtifactStagingDirectory)'
-      artifactName: drop
+  # - task: PublishBuildArtifacts@1
+  #   inputs:
+  #     pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+  #     artifactName: drop
 
-  - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/**/*.app
+  # - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/**/*.app
 
-  - task: DownloadBuildArtifacts@0
-    inputs:
-      buildType: 'current'
-      downloadType: 'single'
-      artifactName: 'drop'
-      downloadPath: '$(System.ArtifactsDirectory)'
+  # - task: DownloadBuildArtifacts@0
+  #   inputs:
+  #     buildType: 'current'
+  #     downloadType: 'single'
+  #     artifactName: 'drop'
+  #     downloadPath: '$(System.ArtifactsDirectory)'
