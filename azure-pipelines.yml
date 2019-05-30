@@ -45,6 +45,7 @@ jobs:
   # https://go.microsoft.com/fwlink/?linkid=871629
   - script: sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1 
     displayName: 'Select Xamarin SDK version'
+    enabled: false
 
   - task: NuGetToolInstaller@0
 
@@ -55,11 +56,9 @@ jobs:
   - task: XamariniOS@2
     inputs:
       solutionFile: '**/*.sln'
-      configuration: 'AppStore'
-      packageApp: true
-      signingIdentity: 'iPhone Developer: Chris Sidi (7RZ3N927YF)'
-      signingProvisioningProfileID: 'iOS Team Provisioning Profile: com.hashtagchris.*'
-
+      configuration: 'Release'
+      buildForSimulator: true
+      packageApp: false
       
   # - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/**/*.app
 
