@@ -60,25 +60,12 @@ jobs:
       buildForSimulator: true
       packageApp: false
 
-
-  - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/*
-
-  - task: CopyFiles@2
+  - task: PublishPipelineArtifact@0
     inputs:
-      sourceFolder: '$(Build.SourcesDirectory)'
-      contents: '**/$(BuildConfiguration)/**/?(*.exe|*.dll|*.pdb)'
-      TargetFolder: '(Build.ArtifactStagingDirectory)'
+      artifactName: 'downloaddd'
+      targetPath: 'src/MyWebApp/bin/Release/netcoreapp2.0/linux-x64/publish'
 
-  - task: PublishBuildArtifacts@1
+  - task: DownloadPipelineArtifact@0
     inputs:
-      pathtoPublish: '$(Build.ArtifactStagingDirectory)'
-      artifactName: tryDownload
-  
-  - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/*
-
-  - task: DownloadBuildArtifacts@0
-    inputs:
-      buildType: 'current'
-      downloadType: 'single'
-      artifactName: 'tryDownload'
-      downloadPath: '$(System.ArtifactsDirectory)'
+      artifactName: 'downloaddd'
+      targetPath: $(System.DefaultWorkingDirectory)
