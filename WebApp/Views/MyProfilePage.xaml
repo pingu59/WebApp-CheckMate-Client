@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WebApp.Views.MyProfilePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name = "Label_Title" Text="This is my profile page (TODO)" />
+            <Button x:Name="Button_LogOut" 
+                    Text="Log Out" 
+                    Clicked="OnLogOutButtonClicked"/>
+    </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

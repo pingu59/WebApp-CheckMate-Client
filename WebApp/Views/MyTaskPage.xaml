@@ -1,0 +1,84 @@
+<?xaml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            x:Class="WebApp.Views.MyTaskPage"
+            NavigationPage.HasBackButton="False"
+            CurrentPageChanged="OnPageChange">
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Name="Add" Order="Primary" Text="+" Priority="0" 
+                     Clicked="OnAdd" />
+    </TabbedPage.ToolbarItems>
+    <ContentPage Title="MyTaskPage">
+        <ScrollView>
+                <StackLayout x:Name="taskStack" Margin="20" />
+        </ScrollView>
+    </ContentPage>
+    <ContentPage Title="Friend">
+            <StackLayout>
+                <Grid  Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="300"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>    
+                    <Entry x:Name="SearchFriend" Grid.Row="0" Grid.Column="0"/>
+                    <Button Text="Search" Grid.Row="0" Grid.Column="1"/>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>  
+                    <ScrollView Grid.Row="0" Grid.Column="0" VerticalOptions="FillAndExpand" >
+                        <StackLayout x:Name="FriendList"/>
+                    </ScrollView>
+                    <ScrollView Grid.Row="0" Grid.Column="1" VerticalOptions="FillAndExpand">
+                        <StackLayout x:Name="CompletedTaskList"/>
+                    </ScrollView>
+                
+               </Grid>
+            </StackLayout>
+    </ContentPage>
+        <ContentPage x:Name="my_profile_page" Title="My Profile">
+        <StackLayout>
+            <Grid Margin="30" BackgroundColor="Silver" WidthRequest="200" HeightRequest="100">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="3*" />
+                
+            </Grid.RowDefinitions>
+                 <Label Grid.Column="0" Grid.Row="1" Text="Profile picture"/>
+                 
+                 <Label Grid.Column="1"  Grid.Row="0" x:Name="_username" 
+                        TextColor="Black" FontSize="22"/>
+                
+                 <Label Grid.Column="1" Grid.Row="1" x:Name="_user_detail" 
+                        TextColor="#955d5d" FontSize="18"/>
+                 
+                 <Button Grid.Column="2"  Grid.Row="1" Text=">" TextColor="Black" FontSize="30"
+                         Clicked="OnMoreDetailClicked"/>
+             </Grid>
+            
+            <Button x:Name="Button_Setting" 
+                    Text="Setting" 
+                    Clicked="OnSettingButtonClicked"/>
+            <Button x:Name="Button_About" 
+                    Text="About" 
+                    Clicked="OnAboutButtonClicked"/>
+            <Button x:Name="Button_LogOut" 
+                    Text="Log Out" 
+                    Clicked="OnLogOutButtonClicked"/>
+        </StackLayout>
+    </ContentPage>
+
+</TabbedPage>

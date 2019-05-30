@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="WebApp.Views.SettingPage" Title="Setting">
+    
+    
+   <!-- <ContentPage.ToolbarItems>-->
+        <!--<ToolbarItem Text="  Back"
+                     Clicked="OnBackToProfileClicked" />-->
+  <!--  </ContentPage.ToolbarItems>-->
+<!--   <ListView x:Name="listView"
+              Margin="30"
+              ItemSelected="OnListViewItemSelected">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="Age" I/>
+                
+                <TextCell Text="{Binding Text}"
+                          Detail="{Binding Date}" />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>-->
+    <StackLayout>
+        <Button Margin="5" Text="Profile Photo" BackgroundColor="#e3e5e8"
+                HeightRequest="30" WidthRequest="200" 
+                Clicked="OnChangeProfilePhotoClicked"/>
+        <Button Margin="5" Text="Gender" BackgroundColor="#e3e5e8"
+                HeightRequest="30" WidthRequest="200" 
+                Clicked="OnChangeGenderClicked"/>
+        <Button Margin="5" Text="Birthday" BackgroundColor="#e3e5e8"
+                HeightRequest="30" WidthRequest="200" 
+                Clicked="OnChangeBirthdayClicked"/>
+        <Button Margin="5" Text="Password" BackgroundColor="#e3e5e8"
+                HeightRequest="30" WidthRequest="200"
+                Clicked="OnChangePasswordClicked"/>
+    </StackLayout>
+</ContentPage>
