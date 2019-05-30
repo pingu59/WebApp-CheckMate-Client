@@ -1,9 +1,32 @@
 ﻿<Properties StartupConfiguration="{970D658E-F0D4-4E32-B3CC-555A5094A25F}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Views/LoginPage.xaml">
+    <Files>
+      <File FileName="WebApp/Views/GroupTaskAdd.xaml" />
+      <File FileName="WebApp/Views/GroupTaskFriend.xaml" />
+      <File FileName="WebApp/Views/SettingPage.xaml" />
+      <File FileName="WebApp/Models/CompletedTask.cs" Line="1" Column="1" />
+      <File FileName="WebApp/Models/Repetition.cs" Line="1" Column="1" />
+      <File FileName="WebApp/Views/CreateAccountPage.xaml" />
+      <File FileName="WebApp/Views/ChangePwdPage.xaml" />
+      <File FileName="WebApp/Views/MyTaskPage.xaml" />
+      <File FileName="WebApp/Views/UsersListPage.xaml" />
+      <File FileName="WebApp/Views/AddTask.xaml" />
+      <File FileName="WebApp/Views/LoginPage.xaml" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="WebApp" expanded="True" selected="True" />
+          <Node name="WebApp" expanded="True">
+            <Node name="WebApp" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="LoginPage.xaml" selected="True" />
+              </Node>
+            </Node>
+            <Node name="WebApp.Android" expanded="True" />
+            <Node name="WebApp.iOS" expanded="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>

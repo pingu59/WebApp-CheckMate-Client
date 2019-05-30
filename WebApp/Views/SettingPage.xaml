@@ -14,7 +14,6 @@
         <ListView.ItemTemplate>
             <DataTemplate>
                 <TextCell Text="Age" I/>
-                
                 <TextCell Text="{Binding Text}"
                           Detail="{Binding Date}" />
             </DataTemplate>

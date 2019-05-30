@@ -1344,20 +1344,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/Liu/.nuget/packages/": {}
+    "/Users/apple/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Liu/Xamarin/WebApp.iOS/WebApp.iOS.csproj",
+      "projectUniqueName": "/Users/apple/Xamarin/WebApp.iOS/WebApp.iOS.csproj",
       "projectName": "WebApp.iOS",
-      "projectPath": "/Users/Liu/Xamarin/WebApp.iOS/WebApp.iOS.csproj",
-      "packagesPath": "/Users/Liu/.nuget/packages/",
-      "outputPath": "/Users/Liu/Xamarin/WebApp.iOS/obj/",
+      "projectPath": "/Users/apple/Xamarin/WebApp.iOS/WebApp.iOS.csproj",
+      "packagesPath": "/Users/apple/.nuget/packages/",
+      "outputPath": "/Users/apple/Xamarin/WebApp.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/Liu/.config/NuGet/NuGet.Config"
+        "/Users/apple/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -1368,8 +1368,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/Liu/Xamarin/WebApp/WebApp.csproj": {
-              "projectPath": "/Users/Liu/Xamarin/WebApp/WebApp.csproj"
+            "/Users/apple/Xamarin/WebApp/WebApp.csproj": {
+              "projectPath": "/Users/apple/Xamarin/WebApp/WebApp.csproj"
             }
           }
         }
