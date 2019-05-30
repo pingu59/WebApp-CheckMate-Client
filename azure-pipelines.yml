@@ -57,14 +57,18 @@ jobs:
     inputs:
       solutionFile: '**/*.sln'
       configuration: 'Release'
-      buildForSimulator: true
+      buildForSimulator: false
       packageApp: true
+
+
+  - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/*.ipa
 
   - task: PublishBuildArtifacts@1
     inputs:
       pathtoPublish: '$(Build.ArtifactStagingDirectory)'
       artifactName: downloadIOS
 
+  - powershell: gci env:* | sort-object name | Format-Table -AutoSize | Out-File $env:BUILD_ARTIFACTSTAGINGDIRECTORY/*.ipa
 
   - task: DownloadBuildArtifacts@0
     inputs:
