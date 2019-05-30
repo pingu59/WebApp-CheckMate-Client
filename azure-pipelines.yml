@@ -60,7 +60,3 @@ jobs:
       buildForSimulator: true
       packageApp: false
 
-  - task: VisualStudioTestPlatformInstaller@1
-    inputs:
-      packageFeedSelector: 'nugetOrg'
-      versionSelector: 'latestPreRelease'
