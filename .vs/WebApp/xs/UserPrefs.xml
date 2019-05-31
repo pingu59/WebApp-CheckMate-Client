@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{FC97C75F-7E78-408D-BD0A-42ADF0A53DCD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Models/CompletedTask.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Data/Communications.cs">
     <Files>
       <File FileName="WebApp/Views/MyTaskPage.xaml" />
       <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="103" Column="10" />
@@ -10,32 +10,33 @@
       <File FileName="WebApp/Views/AddTask.xaml.cs" Line="36" Column="22" />
       <File FileName="WebApp/Models/GroupTask.cs" Line="10" Column="34" />
       <File FileName="WebApp/Models/CompletedTask.cs" Line="9" Column="1" />
+      <File FileName="WebApp/Views/FriendRequestsListPage.xaml.cs" Line="35" Column="1" />
+      <File FileName="WebApp/Views/FriendRequestsListPage.xaml" />
+      <File FileName="WebApp/Data/Communications.cs" Line="81" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WebApp" expanded="True">
             <Node name="WebApp" expanded="True">
-              <Node name="Data" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="CompletedTask.cs" selected="True" />
+              <Node name="Data" expanded="True">
+                <Node name="Communications.cs" selected="True" />
               </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="AddTask.xaml" expanded="True" />
-                <Node name="GroupTaskAdd.xaml" expanded="True" />
-                <Node name="GroupTaskFriend.xaml" expanded="True" />
-                <Node name="MyTaskPage.xaml" expanded="True" />
+                <Node name="FriendRequestsListPage.xaml" expanded="True" />
               </Node>
             </Node>
-            <Node name="WebApp.Android" expanded="True" />
-            <Node name="WebApp.iOS" expanded="True" />
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.WebApp.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
-  <MonoDevelop.Ide.ItemProperties.WebApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7A67C324-C104-47DD-A8D4-ED496A3ED77A" />
+  <MonoDevelop.Ide.ItemProperties.WebApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2BF3903B-111A-499A-A929-364C03B40169" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

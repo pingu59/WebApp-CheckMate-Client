@@ -53,7 +53,6 @@ namespace WebApp
 
         public static async Task<int> sendFriendRequestAsync(int senderID, int friendID)
         {
-            //TODO implement send friend request on server side
             string baseurl = Constants.BaseAddress + "friendreq?senderid={0}&friendid={1}";
             string actualurl = String.Format(baseurl, senderID, friendID);
             HttpClient _client = new HttpClient();
@@ -69,7 +68,6 @@ namespace WebApp
 
         public static async Task<List<int>> GetFriendsRequests(int userid)
         {
-            //TODO implement get friend request list on server side
             string baseurl = Constants.BaseAddress + "friendreqlist?id={0}";
             string actualurl = String.Format(baseurl, userid);
             Console.WriteLine("!!!!!!!!!!!!!!!!!!!");
@@ -86,6 +84,25 @@ namespace WebApp
             }
             return new List<int>();
         }
+
+        //TODO
+        public static async Task<int> deleteFriendRequest(int myID, int requestID)
+        {
+            string baseurl = Constants.BaseAddress + "deletefriendreq?myid={0}&requestid={1}";
+            string actualurl = String.Format(baseurl, myID, requestID);
+            Console.WriteLine(actualurl);
+            HttpClient _client = new HttpClient();
+            var uri = new Uri(actualurl);
+            var response = await _client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                return Constants.SUCCESS;
+            }
+            return Constants.SERVER_ERROR;
+        }
+
+
+
 
         private static int[] stringToIntArray(String str)
         {
