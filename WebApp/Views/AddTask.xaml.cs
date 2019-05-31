@@ -37,7 +37,7 @@ namespace WebApp.Views
                         Repetition repetition =
                             RepetitionConverter.ToRepetition(selectedItem.ToString());
                         int frequency = int.Parse(Frequency.Text);
-                        task = new BaseTask(taskName.Text, repetition, frequency);
+                        task = new BaseTask(taskName.Text, repetition, frequency, parent);
                         parent.SetNewTask(task);
                         await Navigation.PopAsync(true);
                     }

@@ -22,7 +22,7 @@ namespace WebApp.Views
             this.me = me;
             //All for testing purposes
             User user = new User(23);
-            CompletedTask com = new CompletedTask(1, "Eat breakfast");
+            CompletedTask com = new CompletedTask(1, "Eat breakfast", this);
             completed.Add(com);
             foreach (CompletedTask c in completed)
             {
@@ -38,6 +38,7 @@ namespace WebApp.Views
                 taskStack.Children.Add(task.GetView());
             }
             this.Title = CurrentPage.Title;
+
             BindingContext = this;
 
             _username.Text = me.username;
@@ -46,6 +47,7 @@ namespace WebApp.Views
 
 
         }
+
 
         public void OnPageChange(Object sender, EventArgs e)
         {
@@ -95,6 +97,15 @@ namespace WebApp.Views
             await Navigation.PushAsync(new LoginPage());
         }
 
+        public async void DisplayTaskInfo(BaseTask task)
+        {
+            await DisplayAlert(task.taskName + " Frame tapped", "Todo:\n 1.check friend progress\n 2.add my completed task", "ok");
+        }
+
+        public async void CheckFriendTask(CompletedTask task)
+        {
+            await DisplayAlert(task.Title + " Frame tapped","TODO:\n add check to friend's completed task" , "ok");
+        }
 
 
         public void SetNewTask(BaseTask task)

@@ -1,15 +1,24 @@
 ﻿using System;
 using Xamarin.Forms;
+using WebApp.Views;
 namespace WebApp
 {
     public class CompletedTask
     {
         public int Userid { get; set; }
         public String Title { get; set; }
-        public CompletedTask(int Userid, String Title)
+        private MyTaskPage page;
+        TapGestureRecognizer tapRecog;
+        public CompletedTask(int Userid, String Title, MyTaskPage page)
         {
             this.Userid = Userid;
             this.Title = Title;
+            this.page = page;
+            tapRecog = new TapGestureRecognizer();
+            tapRecog.Tapped += (sender, e) =>
+            {
+                page.CheckFriendTask(this);
+            };
         }
         internal virtual Grid getContentGrid()
         {
@@ -57,6 +66,7 @@ namespace WebApp
                 WidthRequest = 350,
                 Content = getContentGrid()
             };
+            taskCard.GestureRecognizers.Add(tapRecog);
             return taskCard;
         }
     }

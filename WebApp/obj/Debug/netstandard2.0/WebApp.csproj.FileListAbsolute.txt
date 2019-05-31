@@ -146,3 +146,5 @@
 /Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/WebApp.pdb
 /Users/mianbaodashi/Desktop/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/AddFriendPage.xaml.g.cs
 /Users/mianbaodashi/Desktop/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/FriendRequestsListPage.xaml.g.cs
+/Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/AddFriendPage.xaml.g.cs
+/Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/FriendRequestsListPage.xaml.g.cs

@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using WebApp.Views;
 namespace WebApp.Models
 {
     public class BaseTask
@@ -9,12 +10,21 @@ namespace WebApp.Models
         int progress;
         Repetition repetition;
         int frequency;
-        public BaseTask(String taskName, Repetition repetition, int frequency)
+        TapGestureRecognizer tapRecog;
+        MyTaskPage page;
+        public BaseTask(String taskName, Repetition repetition, int frequency, 
+            MyTaskPage page)
         {
             this.taskName = taskName;
             this.repetition = repetition;
             this.frequency = frequency;
+            this.page = page;
             progress = 0;
+            tapRecog = new TapGestureRecognizer();
+            tapRecog.Tapped += (sender, e) =>
+            {
+                page.DisplayTaskInfo(this);
+            };
         }
 
         private String getStatusString()
@@ -74,6 +84,7 @@ namespace WebApp.Models
                 WidthRequest = 350,
                 Content = getContentGrid()
             };
+            taskCard.GestureRecognizers.Add(tapRecog);
             return taskCard;
         }
     }

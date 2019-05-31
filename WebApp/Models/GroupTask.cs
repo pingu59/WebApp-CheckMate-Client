@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
+using WebApp.Views;
 namespace WebApp.Models
 {
     public class GroupTask : BaseTask
     {
         List<User> groupMember;
         public GroupTask(String taskName, Repetition repetition, int frequency,
-            List<User> groupMember) :
-            base(taskName, repetition, frequency)
+            List<User> groupMember, MyTaskPage page) :
+            base(taskName, repetition, frequency, page)
         {
             this.groupMember = groupMember;
             // read data about member into this

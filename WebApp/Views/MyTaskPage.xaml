@@ -10,7 +10,7 @@
     </TabbedPage.ToolbarItems>
     <ContentPage Title="MyTaskPage">
         <ScrollView>
-                <StackLayout x:Name="taskStack" Margin="20" />
+                <StackLayout x:Name="taskStack" Margin="20"/>
         </ScrollView>
     </ContentPage>
     <ContentPage Title="Friend">
