@@ -76,6 +76,7 @@ namespace WebApp.Views
             {
                 string userJson = responses[1];
                 User user = JsonConvert.DeserializeObject<User>(userJson);
+                App.id = user.userid;
                 await Navigation.PushAsync(new MyTaskPage(user));
             }
 

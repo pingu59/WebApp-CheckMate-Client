@@ -55,7 +55,7 @@ namespace WebApp.Views
         public async void OnAdd(Object sender, EventArgs e)
         {
             string action = await DisplayActionSheet("Add new", "Cancel", null,
-                                        "My Task", "Group Task", "New Friend");
+                                        "My Task", "Group Task", "New Friend", "Friend Requests");
             switch (action)
             {
                 case "My Task":
@@ -65,7 +65,10 @@ namespace WebApp.Views
                     await Navigation.PushAsync(new GroupTaskFriend(this, me));
                     break;
                 case "New Friend":
-                    await DisplayAlert("Alert", "Adding new friend", "OK");
+                    await Navigation.PushAsync(new AddFriendPage());
+                    break;
+                case "Friend Requests":
+                    await Navigation.PushAsync(new FriendRequestsListPage());
                     break;
                 default: break;
             }

@@ -10,6 +10,9 @@ namespace WebApp.Models
         public int userid { get; set; }
         public string username { get; set; }
         public string password { get; set; }
+        public int[] friendsID { get; set; }
+        public int[] friendRequests { get; set; }
+
         //private static User failureUser = new User(-1);
 
         public User() { }

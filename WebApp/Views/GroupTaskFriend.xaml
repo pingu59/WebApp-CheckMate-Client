@@ -22,7 +22,7 @@
                     <ListView.ItemTemplate>
                         <DataTemplate>
                         <ViewCell Tapped="OnViewCellTapped">
-                            <Label Text="{Binding Id}" Margin="10"/>
+                            <Label Text="{Binding userid}" Margin="10"/>
                         </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>

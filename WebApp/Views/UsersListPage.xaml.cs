@@ -19,6 +19,7 @@ namespace WebApp.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
+
         }
 
         private async void UsersListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
