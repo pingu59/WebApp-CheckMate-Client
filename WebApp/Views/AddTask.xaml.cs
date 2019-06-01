@@ -15,6 +15,8 @@ namespace WebApp.Views
         {
             InitializeComponent();
             this.parent = parent;
+            datepicker.MinimumDate = DateTime.Today;
+            BindingContext = this;
         }
 
         public async void OnConfirm(object sender, EventArgs e)

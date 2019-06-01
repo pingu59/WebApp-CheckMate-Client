@@ -2,24 +2,53 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WebApp.Views.AddTask"
              Title="New Task">
     <ContentPage.Content>
-        <StackLayout>
-          <Label Text="Task name"/>
-          <Entry x:Name="taskName"/>
-           <Label Text="Repetition"/>
-           <ListView VerticalOptions="Start" HeightRequest="120"
-                     x:Name="RepetitionList" RowHeight="30">
-            <ListView.ItemsSource >
-                <x:Array Type="{x:Type x:String}">
-                  <x:String>Daily</x:String>
-                  <x:String>Weekly</x:String>
-                  <x:String>Monthly</x:String>
-                  <x:String>None</x:String>
-                </x:Array>
-            </ListView.ItemsSource>
-            </ListView>
-            <Label Text="Frequency"/>
-            <Entry x:Name="Frequency" Keyboard="Numeric"/>
-          <Button Text="Confirm" Clicked="OnConfirm"/>
+        <StackLayout Padding="20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="I want to " Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="taskName" Grid.Row="0" Grid.Column="1"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="every" Grid.Column="0"/>
+                <ListView VerticalOptions="Start" HeightRequest="120"
+                         x:Name="RepetitionList" RowHeight="30"
+                         Grid.Column="1">
+                <ListView.ItemsSource >
+                    <x:Array Type="{x:Type x:String}">
+                      <x:String>Day</x:String>
+                      <x:String>Week</x:String>
+                      <x:String>Month</x:String>
+                      <x:String>None</x:String>
+                    </x:Array>
+                </ListView.ItemsSource>
+                </ListView>
+            </Grid>
+            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="80" />
+                </Grid.ColumnDefinitions>
+            <Label Text="times," Grid.Column="1"/>
+            <Entry x:Name="Frequency" Keyboard="Numeric" Grid.Column="0"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="until" Grid.Column="0"/>
+                <DatePicker x:Name="datepicker" HorizontalOptions="CenterAndExpand"
+                            Grid.Column="1"/>
+            </Grid>
+          <Button Text="Send my bet" Clicked="OnConfirm"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

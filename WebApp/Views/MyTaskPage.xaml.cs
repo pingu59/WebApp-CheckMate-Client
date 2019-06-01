@@ -69,7 +69,7 @@ namespace WebApp.Views
                 case "New Friend":
                     await Navigation.PushAsync(new AddFriendPage());
                     break;
-                case "Friend Requests":
+                case "Friend Requests": //put this to somewhere else
                     await Navigation.PushAsync(new FriendRequestsListPage());
                     break;
                 default: break;

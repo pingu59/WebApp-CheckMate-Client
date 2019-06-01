@@ -1,30 +1,25 @@
 ﻿<Properties StartupConfiguration="{FC97C75F-7E78-408D-BD0A-42ADF0A53DCD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Data/Communications.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Constants.cs">
     <Files>
-      <File FileName="WebApp/Views/MyTaskPage.xaml" />
-      <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="103" Column="10" />
-      <File FileName="WebApp/Models/BaseTask.cs" Line="23" Column="51" />
-      <File FileName="WebApp.iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="WebApp/Constants.cs" Line="10" Column="31" />
+      <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="71" Column="27" />
       <File FileName="WebApp/Views/AddTask.xaml" />
       <File FileName="WebApp/Views/AddTask.xaml.cs" Line="36" Column="22" />
-      <File FileName="WebApp/Models/GroupTask.cs" Line="10" Column="34" />
-      <File FileName="WebApp/Models/CompletedTask.cs" Line="9" Column="1" />
-      <File FileName="WebApp/Views/FriendRequestsListPage.xaml.cs" Line="35" Column="1" />
-      <File FileName="WebApp/Views/FriendRequestsListPage.xaml" />
-      <File FileName="WebApp/Data/Communications.cs" Line="81" Column="14" />
+      <File FileName="WebApp/Constants.cs" Line="11" Column="45" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WebApp" expanded="True">
             <Node name="WebApp" expanded="True">
-              <Node name="Data" expanded="True">
-                <Node name="Communications.cs" selected="True" />
-              </Node>
+              <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
-              <Node name="Views" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="AddTask.xaml" expanded="True" />
+                <Node name="MyTaskPage.xaml" expanded="True" />
+              </Node>
+              <Node name="Constants.cs" selected="True" />
             </Node>
+            <Node name="WebApp.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
