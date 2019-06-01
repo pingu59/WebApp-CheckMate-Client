@@ -10,11 +10,11 @@ namespace WebApp.Views
     {
         BaseTask task;
         MyTaskPage parent;
-        GroupTaskFriend last;
+        InvolveFriend last;
         public int ListHeight { get; set; }
         List<User> groupMember;
 
-        public GroupTaskAdd(MyTaskPage parent, List<User> groupMember, GroupTaskFriend last)
+        public GroupTaskAdd(MyTaskPage parent, List<User> groupMember, InvolveFriend last)
         {
             InitializeComponent();
             this.parent = parent;

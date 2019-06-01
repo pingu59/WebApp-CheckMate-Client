@@ -133,7 +133,6 @@
 /Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/ChangePwdPage.xaml.g.cs
 /Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/CreateAccountPage.xaml.g.cs
 /Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/GroupTaskAdd.xaml.g.cs
-/Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/GroupTaskFriend.xaml.g.cs
 /Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/LoginPage.xaml.g.cs
 /Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/MyTaskPage.xaml.g.cs
 /Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/SettingPage.xaml.g.cs
@@ -148,3 +147,4 @@
 /Users/mianbaodashi/Desktop/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/FriendRequestsListPage.xaml.g.cs
 /Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/AddFriendPage.xaml.g.cs
 /Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/FriendRequestsListPage.xaml.g.cs
+/Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/InvolveFriend.xaml.g.cs

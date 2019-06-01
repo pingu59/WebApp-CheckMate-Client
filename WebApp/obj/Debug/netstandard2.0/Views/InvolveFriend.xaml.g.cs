@@ -8,13 +8,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("WebApp.Views.GroupTaskFriend.xaml", "Views/GroupTaskFriend.xaml", typeof(global::WebApp.Views.GroupTaskFriend))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("WebApp.Views.InvolveFriend.xaml", "Views/InvolveFriend.xaml", typeof(global::WebApp.Views.InvolveFriend))]
 
 namespace WebApp.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/GroupTaskFriend.xaml")]
-    public partial class GroupTaskFriend : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/InvolveFriend.xaml")]
+    public partial class InvolveFriend : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Entry SearchFriend;
@@ -27,7 +27,7 @@ namespace WebApp.Views {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(GroupTaskFriend));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(InvolveFriend));
             SearchFriend = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "SearchFriend");
             AddedFriends = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "AddedFriends");
             AllFriends = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "AllFriends");

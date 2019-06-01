@@ -10,11 +10,15 @@ namespace WebApp.Views
     {
         BaseTask task;
         MyTaskPage parent;
+        InvolveFriend groupTaskFriend;
+        List<User> supervisors;
         public int ListHeight { get; set; }
-        public AddTask(MyTaskPage parent)
+        public AddTask(MyTaskPage parent, List<User> supervisors, InvolveFriend groupTaskFriend)
         {
             InitializeComponent();
             this.parent = parent;
+            this.groupTaskFriend = groupTaskFriend;
+            this.supervisors = supervisors;
             datepicker.MinimumDate = DateTime.Today;
             BindingContext = this;
         }
@@ -36,12 +40,20 @@ namespace WebApp.Views
                     }
                     else
                     {
-                        Repetition repetition =
+                        if(Penalty.Text == null)
+                        {
+                            await DisplayAlert("Alert", "Please write down your penalty", "OK");
+                        }
+                        else
+                        {
+                            Repetition repetition =
                             RepetitionConverter.ToRepetition(selectedItem.ToString());
-                        int frequency = int.Parse(Frequency.Text);
-                        task = new BaseTask(taskName.Text, repetition, frequency, parent);
-                        parent.SetNewTask(task);
-                        await Navigation.PopAsync(true);
+                            int frequency = int.Parse(Frequency.Text);
+                            task = new BaseTask(taskName.Text, repetition, frequency, parent, supervisors);
+                            parent.SetNewTask(task);
+                            await Navigation.PopAsync(true);
+                            groupTaskFriend.pop();
+                        }
                     }
                 }
             }
@@ -49,7 +61,6 @@ namespace WebApp.Views
             {
                 await DisplayAlert("Alert", "Task name must not be empty", "OK");
             }
-
         }
 
     }

@@ -61,10 +61,10 @@ namespace WebApp.Views
             switch (action)
             {
                 case "My Task":
-                    await Navigation.PushAsync(new AddTask(this));
+                    await Navigation.PushAsync(new InvolveFriend(this, me, false));
                     break;
                 case "Group Task":
-                    await Navigation.PushAsync(new GroupTaskFriend(this, me));
+                    await Navigation.PushAsync(new InvolveFriend(this, me, true));
                     break;
                 case "New Friend":
                     await Navigation.PushAsync(new AddFriendPage());

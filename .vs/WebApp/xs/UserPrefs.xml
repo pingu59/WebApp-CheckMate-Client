@@ -1,10 +1,16 @@
 ﻿<Properties StartupConfiguration="{FC97C75F-7E78-408D-BD0A-42ADF0A53DCD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Constants.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp.iOS/Main.cs">
     <Files>
-      <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="71" Column="27" />
+      <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="36" Column="45" />
       <File FileName="WebApp/Views/AddTask.xaml" />
-      <File FileName="WebApp/Views/AddTask.xaml.cs" Line="36" Column="22" />
+      <File FileName="WebApp/Views/AddTask.xaml.cs" Line="47" Column="29" />
       <File FileName="WebApp/Constants.cs" Line="11" Column="45" />
+      <File FileName="WebApp/Views/InvolveFriend.xaml.cs" Line="35" Column="61" />
+      <File FileName="WebApp/Views/InvolveFriend.xaml" />
+      <File FileName="WebApp/Views/GroupTaskAdd.xaml.cs" Line="21" Column="44" />
+      <File FileName="WebApp/Models/BaseTask.cs" Line="77" Column="14" />
+      <File FileName="WebApp/Models/GroupTask.cs" Line="15" Column="1" />
+      <File FileName="WebApp.iOS/Main.cs" Line="17" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,11 +21,14 @@
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="AddTask.xaml" expanded="True" />
+                <Node name="GroupTaskAdd.xaml" expanded="True" />
+                <Node name="InvolveFriend.xaml" expanded="True" />
                 <Node name="MyTaskPage.xaml" expanded="True" />
               </Node>
-              <Node name="Constants.cs" selected="True" />
             </Node>
-            <Node name="WebApp.iOS" expanded="True" />
+            <Node name="WebApp.iOS" expanded="True">
+              <Node name="Main.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

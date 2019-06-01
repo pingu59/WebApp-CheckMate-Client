@@ -45,9 +45,11 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Label Text="until" Grid.Column="0"/>
-                <DatePicker x:Name="datepicker" HorizontalOptions="CenterAndExpand"
+                <DatePicker x:Name="datepicker" HorizontalOptions="FillAndExpand"
                             Grid.Column="1"/>
             </Grid>
+            <Label Text="If I failed to do so, I will:"/> 
+            <Entry x:Name="Penalty" HorizontalOptions="FillAndExpand"/>
           <Button Text="Send my bet" Clicked="OnConfirm"/>
         </StackLayout>
     </ContentPage.Content>

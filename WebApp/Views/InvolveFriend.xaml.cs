@@ -6,18 +6,20 @@ using WebApp.Models;
 
 namespace WebApp.Views
 {
-    public partial class GroupTaskFriend : ContentPage
+    public partial class InvolveFriend : ContentPage
     {
         MyTaskPage parent;
         User me;
         List<User> friendList;
         List<User> AddedFriendList;
-        public GroupTaskFriend(MyTaskPage parent, User me)
+        Boolean isGroupTask;
+        public InvolveFriend(MyTaskPage parent, User me, Boolean isGroupTask)
         {
             InitializeComponent();
             this.parent = parent;
             this.me = me;
             friendList = new List<User>();
+            this.isGroupTask = isGroupTask;
             //for testing purpose:
             for(int i = 1; i < 10; i++)
             {
@@ -27,8 +29,11 @@ namespace WebApp.Views
                 friendList.Add(newuser);
             }
             AddedFriendList = new List<User>();
-            AddedFriendList.Add(me);
-            AddedFriends.Children.Add(me.getCardView());
+            if (isGroupTask)
+            {
+                AddedFriendList.Add(me);
+                AddedFriends.Children.Add(me.getCardView());
+            }
             AllFriends.ItemsSource = friendList;
             BindingContext = this;
         }
@@ -64,7 +69,14 @@ namespace WebApp.Views
         }
         public async void OnNext(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new GroupTaskAdd(parent, AddedFriendList, this));
+            if (isGroupTask)
+            {
+                await Navigation.PushAsync(new GroupTaskAdd(parent, AddedFriendList, this));
+            }
+            else
+            {
+                await Navigation.PushAsync(new AddTask(parent, AddedFriendList, this));
+            }
         }
 
         public async void pop()
