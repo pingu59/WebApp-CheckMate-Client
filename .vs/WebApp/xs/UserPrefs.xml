@@ -23,20 +23,15 @@
                 <Node name="Communications.cs" selected="True" />
               </Node>
               <Node name="Models" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="FriendRequestsListPage.xaml" expanded="True" />
-              </Node>
+              <Node name="Views" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.WebApp.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
-  <MonoDevelop.Ide.ItemProperties.WebApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2BF3903B-111A-499A-A929-364C03B40169" />
+  <MonoDevelop.Ide.ItemProperties.WebApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.58AAE563-0A92-451F-A805-5C464362CD6A" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
