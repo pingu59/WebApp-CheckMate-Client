@@ -22,7 +22,7 @@ namespace WebApp.Views
             try
             {
                 int friendID = int.Parse(Entry_Username.Text);
-                await Communications.sendFriendRequestAsync(App.id, friendID);
+                await Communications.SendFriendRequestAsync(App.id, friendID);
                 await DisplayAlert(null, "Your friend request has been sent!", "OK");
             }
             catch(FormatException)

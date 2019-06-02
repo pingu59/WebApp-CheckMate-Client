@@ -36,7 +36,7 @@ namespace WebApp.Views
             Console.WriteLine("!!!!!!!!!!!!");
             Console.WriteLine(e.Item);
             int requestID = (int)e.Item;
-            await Communications.deleteFriendRequest(App.id, requestID);
+            await Communications.DeleteFriendRequest(App.id, requestID);
         }
     }
 }

@@ -51,7 +51,7 @@ namespace WebApp
             return Convert.ToString(Constants.SERVER_ERROR);
         }
 
-        public static async Task<int> sendFriendRequestAsync(int senderID, int friendID)
+        public static async Task<int> SendFriendRequestAsync(int senderID, int friendID)
         {
             string baseurl = Constants.BaseAddress + "friendreq?senderid={0}&friendid={1}";
             string actualurl = String.Format(baseurl, senderID, friendID);
@@ -79,14 +79,14 @@ namespace WebApp
             {
                 string friendRequestsStr = await response.Content.ReadAsStringAsync();
                 Console.WriteLine(friendRequestsStr);
-                int[] friendsRequests = stringToIntArray(friendRequestsStr);
+                int[] friendsRequests = StringToIntArray(friendRequestsStr);
                 return friendsRequests.ToList();
             }
             return new List<int>();
         }
 
         //TODO
-        public static async Task<int> deleteFriendRequest(int myID, int requestID)
+        public static async Task<int> DeleteFriendRequest(int myID, int requestID)
         {
             string baseurl = Constants.BaseAddress + "deletefriendreq?myid={0}&requestid={1}";
             string actualurl = String.Format(baseurl, myID, requestID);
@@ -104,10 +104,19 @@ namespace WebApp
 
 
 
-        private static int[] stringToIntArray(String str)
+        private static int[] StringToIntArray(String str)
         {
+            if(str == null)
+            {
+                return new int[0];
+            }
             //remove "[,]"
-            String substring = str.Substring(1, str.Length-2);
+            String substring = str.Substring(1, str.Length - 2);
+            if("".Equals(substring))
+            {
+                return new int[0];
+            }
+ 
             int[] intArray = substring.Split(',').Select(n => Convert.ToInt32(n)).ToArray();
             Console.WriteLine("converting array......");
             Console.WriteLine(intArray);
