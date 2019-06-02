@@ -58,7 +58,7 @@ namespace WebApp.Models
             };
             foreach (User u in related)
             {
-                layout.Children.Add(u.getCardView());
+                layout.Children.Add(u.GetView());
             }
             grid.Children.Add(new Label
             {

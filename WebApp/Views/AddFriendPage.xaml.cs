@@ -11,9 +11,8 @@ namespace WebApp.Views
         {
             InitializeComponent();
         }
-        private async void OnConfirmButtonClicked(object sender, System.EventArgs e)
+        private async void OnConfirmButtonClicked(object sender, EventArgs e)
         {
-            //TODO should it be username or user id?? USER ID FOR NOW
             if (string.IsNullOrWhiteSpace(Entry_Username.Text))
             {
                 await DisplayAlert(null, "Please enter a User ID", "OK");
@@ -22,8 +21,15 @@ namespace WebApp.Views
             try
             {
                 int friendID = int.Parse(Entry_Username.Text);
-                await Communications.SendFriendRequestAsync(App.id, friendID);
-                await DisplayAlert(null, "Your friend request has been sent!", "OK");
+                int response  = await Communications.SendFriendRequest(Constants.me.userid, friendID);
+                if(response == Constants.SUCCESS)
+                {
+                    await DisplayAlert(null, "Your friend request has been sent!", "OK");
+                }
+                else
+                {
+                    await DisplayAlert(null, "No such user presensts.", "OK");
+                }
             }
             catch(FormatException)
             {

@@ -11,20 +11,16 @@ namespace WebApp.Views
 {
     public partial class LoginPage : ContentPage
     {
-        //string _dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "userDB.mb3");
-        //List<User> usersList;
         public LoginPage()
         {
             InitializeComponent();
-            //var db = new SQLiteConnection(_dbPath);
-            //usersList = db.Table<User>().ToList();
         }
 
-        private async void OnSigninButtonClicked(object sender, System.EventArgs e)
+        private async void OnSigninButtonClicked(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(Entry_UserID.Text))
             {
-                await DisplayAlert(null, "Please enter your user ID", "OK");
+                await DisplayAlert(null, Constants.EMPTY_USER_ID, "OK");
                 return;
             }
 
@@ -35,63 +31,53 @@ namespace WebApp.Views
             }
             catch (FormatException)
             {
-                await DisplayAlert(null, "Please enter User ID in the correct format", "OK");
+                await DisplayAlert(null, Constants.USER_ID_INCORRECT_FORMAT, "OK");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(Entry_Password.Text))
             {
-                await DisplayAlert(null, "Please enter your password", "OK");
+                await DisplayAlert(null, Constants.EMPTY_PASSWORD, "OK");
                 return;
             }
 
-
-            //userID = int.Parse(Entry_UserID.Text);
             string password = Entry_Password.Text;
             string loginResponse = await Communications.Login(userID, password);
 
             if(loginResponse == Convert.ToString(Constants.SERVER_ERROR))
             {
-
+                await DisplayAlert(null, Constants.SERVER_ERROR_MSG, "OK");
             }
-            Console.WriteLine("response..."); 
-            Console.WriteLine(loginResponse);
             List<string> responses = loginResponse.Split('!').ToList<string>();
-            Console.WriteLine("writing list");
-            Console.WriteLine(responses[0]);
             int responseCode = int.Parse(responses[0]);
             if(responseCode == Constants.ERROR)
             {
-                await DisplayAlert(null, "Error!", "OK");
+                await DisplayAlert(null, Constants.ERROR_MSG, "OK");
             }
             else if(responseCode == Constants.USER_NOT_EXIST)
             {
-                await DisplayAlert(null, "User does not exist", "OK");
+                await DisplayAlert(null, Constants.USER_NOT_EXIST_MSG, "OK");
             }
             else if(responseCode == Constants.USER_INCORRECT_PWD)
             {
-                await DisplayAlert(null, "Incorrect password", "OK");
+                await DisplayAlert(null, Constants.USER_INCORRECT_PWD_MSG, "OK");
             }
             else if(responseCode == Constants.SUCCESS)
             {
                 string userJson = responses[1];
                 User user = JsonConvert.DeserializeObject<User>(userJson);
-                App.id = user.userid;
-                await Navigation.PushAsync(new MyTaskPage(user));
+                Constants.me = user;
+                Constants.friends = Friends.GetFriendInfo(Constants.me.userid);
+                await Navigation.PushAsync(new MyTaskPage());
             }
 
         }
 
-
-        private async void OnRegisterButtonClicked(object sender, System.EventArgs e)
+        private async void OnRegisterButtonClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new CreateAccountPage());
         }
 
-        private async void OnGetUsersButtonClicked(object sender, System.EventArgs e)
-        {
-            await Navigation.PushAsync(new UsersListPage());
-        }
 
 
     }

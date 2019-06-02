@@ -27,7 +27,8 @@ namespace WebApp.Views
 
             if(newId > 0)
             {
-                await DisplayAlert("Register success!", "Your id number is " + newId, "ok");
+                await DisplayAlert("Register success!", "Your id number is " + newId +
+                    ". Please remember this as this will be used as your login" , "ok");
             }
             else
             {

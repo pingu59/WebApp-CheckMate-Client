@@ -21,10 +21,10 @@ namespace WebApp.Views
             friendList = new List<User>();
             this.isGroupTask = isGroupTask;
             //for testing purpose:
+            //user friends instead
             for(int i = 1; i < 10; i++)
             {
-                User newuser = new User(i);
-                newuser.username = "user" + i.ToString();
+                User newuser = new User(i, "user" + i.ToString());
                 newuser.password = "pwd";
                 friendList.Add(newuser);
             }
@@ -32,7 +32,7 @@ namespace WebApp.Views
             if (isGroupTask)
             {
                 AddedFriendList.Add(me);
-                AddedFriends.Children.Add(me.getCardView());
+                AddedFriends.Children.Add(me.GetView());
             }
             AllFriends.ItemsSource = friendList;
             BindingContext = this;
@@ -64,7 +64,7 @@ namespace WebApp.Views
             else
             {
                 AddedFriendList.Add(friend);
-                AddedFriends.Children.Add(friend.getCardView());
+                AddedFriends.Children.Add(friend.GetView());
             }
         }
         public async void OnNext(object sender, EventArgs e)

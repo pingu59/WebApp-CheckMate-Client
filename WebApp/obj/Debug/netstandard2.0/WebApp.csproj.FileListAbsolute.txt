@@ -135,7 +135,6 @@
 /Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/LoginPage.xaml.g.cs
 /Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/MyTaskPage.xaml.g.cs
 /Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/SettingPage.xaml.g.cs
-/Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/UsersListPage.xaml.g.cs
 /Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/WebApp.csproj.CoreCompileInputs.cache
 /Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/WebApp.AssemblyInfoInputs.cache
 /Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/WebApp.AssemblyInfo.cs

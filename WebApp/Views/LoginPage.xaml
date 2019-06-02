@@ -13,9 +13,6 @@
         <Button x:Name = "Button_Signin" 
                 Text="Sign in" 
                 Clicked="OnSigninButtonClicked"/>
-        <Button Text="GET USER LIST (FOR TEST USE ONLY)"
-                Clicked="OnGetUsersButtonClicked"
-                />
         <Button x:Name="Button_Register" 
                 Text="Not a user? Register here" 
                 Clicked="OnRegisterButtonClicked"/>

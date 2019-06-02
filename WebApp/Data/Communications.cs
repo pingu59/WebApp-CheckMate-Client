@@ -51,7 +51,7 @@ namespace WebApp
             return Convert.ToString(Constants.SERVER_ERROR);
         }
 
-        public static async Task<int> SendFriendRequestAsync(int senderID, int friendID)
+        public static async Task<int> SendFriendRequest(int senderID, int friendID)
         {
             string baseurl = Constants.BaseAddress + "friendreq?senderid={0}&friendid={1}";
             string actualurl = String.Format(baseurl, senderID, friendID);
@@ -70,7 +70,6 @@ namespace WebApp
         {
             string baseurl = Constants.BaseAddress + "friendreqlist?id={0}";
             string actualurl = String.Format(baseurl, userid);
-            Console.WriteLine("!!!!!!!!!!!!!!!!!!!");
             Console.WriteLine(actualurl);
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);

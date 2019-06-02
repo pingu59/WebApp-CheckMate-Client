@@ -10,15 +10,12 @@ namespace WebApp.Models
         public int userid { get; set; }
         public string username { get; set; }
         public string password { get; set; }
-        public int[] friendsID { get; set; }
-        public int[] friendRequests { get; set; }
+        internal Image ProfilePicture;
 
-        //private static User failureUser = new User(-1);
-
-        public User() { }
-        public User(int id)
+        public User(int id, string username)
         {
             this.userid = id;
+            this.username = username;
         }
 
         [JsonConstructor]
@@ -29,8 +26,17 @@ namespace WebApp.Models
             this.password = password;
         }
 
+        public Image GetProfilePicture()
+        {
+            return ProfilePicture;
+        }
 
-        public View getCardView()
+        public void SetProfilePicture(Image picture)
+        {
+            ProfilePicture = picture;
+        }
+
+        public View GetView()
         {
             Label thisLabel = new Label
             {
@@ -51,14 +57,13 @@ namespace WebApp.Models
             if (user == null) return false;
             else
             {
-                return this.username.Equals(user.username) &&
-                       this.password.Equals(user.password);
+                return this.userid.Equals(user.userid);
+                       
             }
         }
 
         public static User getFailure()
         {
-            //TODO
             return new User(-1,null,null);
         }
 

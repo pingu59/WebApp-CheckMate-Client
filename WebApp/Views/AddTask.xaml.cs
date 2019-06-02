@@ -10,14 +10,14 @@ namespace WebApp.Views
     {
         BaseTask task;
         MyTaskPage parent;
-        InvolveFriend groupTaskFriend;
+        InvolveFriend involvedFriends;
         List<User> supervisors;
         public int ListHeight { get; set; }
-        public AddTask(MyTaskPage parent, List<User> supervisors, InvolveFriend groupTaskFriend)
+        public AddTask(MyTaskPage parent, List<User> supervisors, InvolveFriend involvedFriends)
         {
             InitializeComponent();
             this.parent = parent;
-            this.groupTaskFriend = groupTaskFriend;
+            this.involvedFriends = involvedFriends;
             this.supervisors = supervisors;
             datepicker.MinimumDate = DateTime.Today;
             BindingContext = this;
@@ -52,7 +52,7 @@ namespace WebApp.Views
                             task = new BaseTask(taskName.Text, repetition, frequency, parent, supervisors);
                             parent.SetNewTask(task);
                             await Navigation.PopAsync(true);
-                            groupTaskFriend.pop();
+                            involvedFriends.pop();
                         }
                     }
                 }

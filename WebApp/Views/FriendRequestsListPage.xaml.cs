@@ -17,7 +17,7 @@ namespace WebApp.Views
         protected async override void OnAppearing()
         {
             base.OnAppearing();
-            FriendRequestsView.ItemsSource = await Communications.GetFriendsRequests(App.id);
+            FriendRequestsView.ItemsSource = await Communications.GetFriendsRequests(Constants.me.userid);
 
         }
 
@@ -27,16 +27,15 @@ namespace WebApp.Views
             if (approveRequest)
             {
                 await DisplayAlert(null, "You added this person successfully!", "OK");
+                //
             }
             else
             {
                 await DisplayAlert(null, "You denied the friend request.", "OK");
+                //TODO: update local&server friends& database
             }
-            //TODO delete the friend request from database
-            Console.WriteLine("!!!!!!!!!!!!");
-            Console.WriteLine(e.Item);
             int requestID = (int)e.Item;
-            await Communications.DeleteFriendRequest(App.id, requestID);
+            await Communications.DeleteFriendRequest(Constants.me.userid, requestID);
         }
     }
 }

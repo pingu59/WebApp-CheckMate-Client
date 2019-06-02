@@ -34,9 +34,16 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>  
-                    <ScrollView Grid.Row="0" Grid.Column="0" VerticalOptions="FillAndExpand" >
-                        <StackLayout x:Name="FriendList"/>
-                    </ScrollView>
+                       <Grid Grid.Row="0" Grid.Column="0" VerticalOptions="FillAndExpand">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="30"/>
+                            </Grid.RowDefinitions>
+                                <ScrollView>
+                                <StackLayout x:Name="FriendList" Grid.Row = "0"/>
+                                </ScrollView>
+                                <Button Text="Received" Clicked="ToReceivedRequest" Grid.Row ="1"/>
+                       </Grid>
                     <ScrollView Grid.Row="0" Grid.Column="1" VerticalOptions="FillAndExpand">
                         <StackLayout x:Name="CompletedTaskList"/>
                     </ScrollView>

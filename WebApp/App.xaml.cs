@@ -2,12 +2,12 @@
 using WebApp.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using WebApp.Models;
 
 namespace WebApp
 {
     public partial class App : Application
     {
-        public static int id = -1;
         public App()
         {
             InitializeComponent();
