@@ -1,4 +1,6 @@
 ﻿
+using System.Collections.Generic;
+using WebApp.Data;
 using WebApp.Views;
 using Xamarin.Forms;
 
@@ -6,6 +8,19 @@ namespace WebApp
 {
     public partial class App : Application
     {
+        static List<UserDatabase> database;
+
+        public static List<UserDatabase> Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new List<UserDatabase>();
+                }
+                return database;
+            }
+        }
         public App()
         {
             InitializeComponent();

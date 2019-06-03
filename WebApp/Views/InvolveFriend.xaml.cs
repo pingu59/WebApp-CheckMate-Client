@@ -21,7 +21,7 @@ namespace WebApp.Views
                 AddedFriends.Children.Add(Constants.me.GetView());
             }
 
-            AllFriends.ItemsSource = Constants.friends.GetAllViews();
+            AllFriends.ItemsSource = Constants.Friend.GetAllViews();
             BindingContext = this;
         }
         

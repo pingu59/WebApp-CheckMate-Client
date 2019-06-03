@@ -11,6 +11,9 @@ namespace WebApp
         //public static string BaseAddress = "http://146.169.45.111:8080/";
         //public static string BaseAddress = "http://localhost:8080/";
 
+        //public static string PathPrefix = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+        public static string PathPrefix = "/Users/mianbaodashi/Desktop/";
+        
         public static int SERVER_ERROR = -1;
         public static int ERROR = 0;
         public static int SUCCESS = 1;
@@ -27,7 +30,7 @@ namespace WebApp
         public static string SERVER_ERROR_MSG = "Server error!";
 
         public static User me = User.getFailure();
-        public static Friends friends;
+        public static Friend Friend;
         public static MyTaskPage mainPage;
     }
 }

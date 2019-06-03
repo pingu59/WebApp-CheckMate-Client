@@ -1,17 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using Newtonsoft.Json;
 using SQLite;
+using WebApp.Data;
 using Xamarin.Forms;
 
 namespace WebApp.Models
 {
     public class User
     {
-        [PrimaryKey, AutoIncrement] public int userid { get; set; }
+        [PrimaryKey, AutoIncrement] 
+        public int userid { get; set; }
         public string username { get; set; }
         public string password { get; set; }
         internal Image ProfilePicture;
 
+        public User() {}
         public User(int id, string username)
         {
             this.userid = id;
@@ -45,6 +50,40 @@ namespace WebApp.Models
             return thisLabel;
         }
 
+        public static User GetUserInfo(User user)
+        {
+            int DatabaseIndex = CheckUserInLocalDB(user.userid);
+
+            //save userinfo into local database
+            if(DatabaseIndex == -1)
+            {
+                int maxIndex = App.Database.Count+1;
+                string dbFile = string.Format("userDB{0}.db3", maxIndex);
+                string dbPath = Path.Combine(Constants.PathPrefix, dbFile);
+                App.Database.Add(new UserDatabase(dbPath));
+                UserDatabase db = App.Database[maxIndex-1];
+                db.SaveUserAsync(user);
+
+            }
+            return user;
+        }
+        private static int CheckUserInLocalDB(int UserID)
+        {
+            int DatabaseIndex = -1;
+            foreach (UserDatabase UserDB in App.Database)
+            {
+                DatabaseIndex++;
+                List<User> UserProfile = UserDB.GetUserAsync().Result;
+                foreach (User user in UserProfile)
+                {
+                    if (user.userid == UserID)
+                    {
+                        return DatabaseIndex;
+                    }
+                }
+            }
+            return -1;
+        }
         public override string ToString()
         {
             return this.userid + " " + this.username + "(" + this.password + ")";

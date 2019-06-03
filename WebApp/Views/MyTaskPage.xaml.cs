@@ -29,7 +29,7 @@ namespace WebApp.Views
             //    FriendList.Children.Add(u.GetView());
             //}
             //temporary
-            foreach (FriendEntity f in Constants.friends.FriendsID)
+            foreach (FriendEntity f in Constants.Friend.Friends)
             {
                 FriendList.Children.Add(new Label
                 {

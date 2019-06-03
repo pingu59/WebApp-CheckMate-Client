@@ -32,7 +32,7 @@ namespace WebApp.Views
                 await DisplayAlert(null, "You added this person successfully!", "OK");
                 String username = await Communications.acceptFriend(requestID);
                 //use and parse this string afterwards
-                Constants.friends.FriendsID.Add(new FriendEntity(requestID, username));
+                Constants.Friend.Friends.Add(new FriendEntity(requestID, username));
                 Constants.mainPage.addNewFriendView(requestID);
             }
             else

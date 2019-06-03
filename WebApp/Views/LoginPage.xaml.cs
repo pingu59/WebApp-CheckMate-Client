@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using Newtonsoft.Json;
 using SQLite;
 using WebApp.Models;
@@ -18,10 +19,57 @@ namespace WebApp.Views
 
         private async void OnSigninButtonClicked(object sender, EventArgs e)
         {
+            int userID = await CheckLoginInput();
+            if (userID == -1) { return; }
+            string password = Entry_Password.Text;
+            
+            //login in via web server
+            string loginResponse = await Communications.Login(userID, password);
+            if (loginResponse == Convert.ToString(Constants.SERVER_ERROR))
+            {
+                await DisplayAlert(null, Constants.SERVER_ERROR_MSG, "OK");
+                return;
+            }
+
+            List<string> responses = loginResponse.Split('!').ToList<string>();
+            int responseCode = int.Parse(responses[0]);
+
+            if (responseCode != Constants.SUCCESS)
+            {    //login unsuccessful
+                await DisplayErrorMsg(responseCode);
+            }
+            else
+            {    //login successfully
+                string userJson = responses[1];
+                User user = JsonConvert.DeserializeObject<User>(userJson);
+                Constants.me = User.GetUserInfo(user);
+                System.Threading.Tasks.Task.Run(() =>
+                {
+                    PeriodicCheck();
+                }).ConfigureAwait(false);
+                Constants.Friend = new Friend();
+                if (true)
+                {
+                    //create local db
+                    Constants.Friend.Friends = await Communications.GetAllFriend();
+                    //store in local db
+                }
+                else
+                {
+                    Constants.Friend = Friend.GetFriendInfo(Constants.me.userid);
+                }
+                MyTaskPage mainpage = new MyTaskPage();
+                Constants.mainPage = mainpage;
+                await Navigation.PushAsync(mainpage);
+            }
+        }
+        //login helper method
+        private async Task<int> CheckLoginInput()
+        {
             if (string.IsNullOrWhiteSpace(Entry_UserID.Text))
             {
                 await DisplayAlert(null, Constants.EMPTY_USER_ID, "OK");
-                return;
+                return -1;
             }
 
             int userID = -1;
@@ -32,25 +80,18 @@ namespace WebApp.Views
             catch (FormatException)
             {
                 await DisplayAlert(null, Constants.USER_ID_INCORRECT_FORMAT, "OK");
-                return;
+                return -1;
             }
 
             if (string.IsNullOrWhiteSpace(Entry_Password.Text))
             {
                 await DisplayAlert(null, Constants.EMPTY_PASSWORD, "OK");
-                return;
+                return -1;
             }
-
-            string password = Entry_Password.Text;
-            string loginResponse = await Communications.Login(userID, password);
-
-            if (loginResponse == Convert.ToString(Constants.SERVER_ERROR))
-            {
-                await DisplayAlert(null, Constants.SERVER_ERROR_MSG, "OK");
-            }
-
-            List<string> responses = loginResponse.Split('!').ToList<string>();
-            int responseCode = int.Parse(responses[0]);
+            return userID;
+        }
+        private async Task DisplayErrorMsg(int responseCode)
+        {
             if (responseCode == Constants.ERROR)
             {
                 await DisplayAlert(null, Constants.ERROR_MSG, "OK");
@@ -62,31 +103,6 @@ namespace WebApp.Views
             else if (responseCode == Constants.USER_INCORRECT_PWD)
             {
                 await DisplayAlert(null, Constants.USER_INCORRECT_PWD_MSG, "OK");
-            }
-            else if (responseCode == Constants.SUCCESS)
-            {
-                string userJson = responses[1];
-                User user = JsonConvert.DeserializeObject<User>(userJson);
-                Constants.me = user;
-                Constants.friends = Friends.GetFriendInfo(Constants.me.userid);
-                System.Threading.Tasks.Task.Run(() =>
-                {
-                    PeriodicCheck();
-                }).ConfigureAwait(false);
-                Constants.friends = new Friends();
-                if (true)
-                {
-                    //create local db
-                    Constants.friends.FriendsID = await Communications.GetAllFriend();
-                    //store in local db
-                }
-                else
-                {
-                    //load from local database
-                }
-                MyTaskPage mainpage = new MyTaskPage();
-                Constants.mainPage = mainpage;
-                await Navigation.PushAsync(mainpage);
             }
         }
         
