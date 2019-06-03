@@ -44,41 +44,71 @@ namespace WebApp.Views
             string password = Entry_Password.Text;
             string loginResponse = await Communications.Login(userID, password);
 
-            if(loginResponse == Convert.ToString(Constants.SERVER_ERROR))
+            if (loginResponse == Convert.ToString(Constants.SERVER_ERROR))
             {
                 await DisplayAlert(null, Constants.SERVER_ERROR_MSG, "OK");
             }
+
             List<string> responses = loginResponse.Split('!').ToList<string>();
             int responseCode = int.Parse(responses[0]);
-            if(responseCode == Constants.ERROR)
+            if (responseCode == Constants.ERROR)
             {
                 await DisplayAlert(null, Constants.ERROR_MSG, "OK");
             }
-            else if(responseCode == Constants.USER_NOT_EXIST)
+            else if (responseCode == Constants.USER_NOT_EXIST)
             {
                 await DisplayAlert(null, Constants.USER_NOT_EXIST_MSG, "OK");
             }
-            else if(responseCode == Constants.USER_INCORRECT_PWD)
+            else if (responseCode == Constants.USER_INCORRECT_PWD)
             {
                 await DisplayAlert(null, Constants.USER_INCORRECT_PWD_MSG, "OK");
             }
-            else if(responseCode == Constants.SUCCESS)
+            else if (responseCode == Constants.SUCCESS)
             {
                 string userJson = responses[1];
                 User user = JsonConvert.DeserializeObject<User>(userJson);
                 Constants.me = user;
                 Constants.friends = Friends.GetFriendInfo(Constants.me.userid);
-                await Navigation.PushAsync(new MyTaskPage());
+                System.Threading.Tasks.Task.Run(() =>
+                {
+                    PeriodicCheck();
+                }).ConfigureAwait(false);
+                Constants.friends = new Friends();
+                if (true)
+                {
+                    //create local db
+                    Constants.friends.FriendsID = await Communications.GetAllFriend();
+                    //store in local db
+                }
+                else
+                {
+                    //load from local database
+                }
+                MyTaskPage mainpage = new MyTaskPage();
+                Constants.mainPage = mainpage;
+                await Navigation.PushAsync(mainpage);
             }
+        }
+        
+        private static void PeriodicCheck()
+        {
+            Device.StartTimer(TimeSpan.FromSeconds(30), () =>
+            {
+                CheckInbox();
+                return true; // True = Repeat again, False = Stop the timer
+            });
+        }
 
+        private async static void CheckInbox()
+        {
+            List<int> friendChanged = await Communications.FriendInbox();
+            Console.WriteLine("CheckingInbox..");
+            Console.WriteLine(friendChanged.ToArray());
         }
 
         private async void OnRegisterButtonClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new CreateAccountPage());
         }
-
-
-
     }
 }

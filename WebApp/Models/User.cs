@@ -2,12 +2,12 @@
 using Newtonsoft.Json;
 using SQLite;
 using Xamarin.Forms;
+
 namespace WebApp.Models
 {
     public class User
     {
-        [PrimaryKey, AutoIncrement]
-        public int userid { get; set; }
+        [PrimaryKey, AutoIncrement] public int userid { get; set; }
         public string username { get; set; }
         public string password { get; set; }
         internal Image ProfilePicture;
@@ -58,13 +58,12 @@ namespace WebApp.Models
             else
             {
                 return this.userid.Equals(user.userid);
-                       
             }
         }
 
         public static User getFailure()
         {
-            return new User(-1,null,null);
+            return new User(-1, null, null);
         }
 
         public override int GetHashCode()

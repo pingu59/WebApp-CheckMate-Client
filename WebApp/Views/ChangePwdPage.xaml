@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WebApp.Views.ChangePwdPage"
              Title="Change Password">
     <ContentPage.Content>
         <StackLayout>
             <Label Margin="10" Text="Please Enter Your Old Password" />
-            <Entry x:Name = "Entry_Old_Pwd" Placeholder="Old Password" />
+            <Entry x:Name="Entry_Old_Pwd" Placeholder="Old Password" />
             <Label Margin="10" Text="Please Enter Your new Password" />
-            <Entry x:Name = "Entry_New_Pwd1" Placeholder="New Password" />
+            <Entry x:Name="Entry_New_Pwd1" Placeholder="New Password" />
             <Label Margin="10" Text="Please Comfirm Your New Password" />
-            <Entry x:Name = "Entry_New_Pwd2" Placeholder="Comfirm New Password" />
-            <Button x:Name = "Button_Change_Pwd" 
-                    Text="Change Password" 
-                    Clicked="OnChangePwdClicked"/>
+            <Entry x:Name="Entry_New_Pwd2" Placeholder="Comfirm New Password" />
+            <Button x:Name="Button_Change_Pwd"
+                    Text="Change Password"
+                    Clicked="OnChangePwdClicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

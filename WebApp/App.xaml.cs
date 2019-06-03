@@ -1,8 +1,6 @@
-﻿using System;
+﻿
 using WebApp.Views;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using WebApp.Models;
 
 namespace WebApp
 {
@@ -13,10 +11,11 @@ namespace WebApp
             InitializeComponent();
             MainPage = new NavigationPage(new LoginPage());
         }
+        
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            // On start runs when your application launches from a closed state, 
         }
 
         protected override void OnSleep()

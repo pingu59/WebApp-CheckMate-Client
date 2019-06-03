@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace WebApp.Models
 {
     public static class RepetitionConverter
@@ -33,9 +34,12 @@ namespace WebApp.Models
             }
         }
     }
+
     public enum Repetition
     {
-        None, Daily, Weekly, Monthly
+        None,
+        Daily,
+        Weekly,
+        Monthly
     }
 }
-

@@ -1,81 +1,73 @@
 ﻿using System;
 using System.Collections.Generic;
-
 using Xamarin.Forms;
 using WebApp.Models;
 
 namespace WebApp.Views
 {
-    public partial class InvolveFriend : ContentPage
+    public partial class InvolveFriend 
     {
-        MyTaskPage parent;
-        User me;
-        List<User> friendList;
-        List<User> AddedFriendList;
+        List<int> AddedFriendList;
         Boolean isGroupTask;
-        public InvolveFriend(MyTaskPage parent, User me, Boolean isGroupTask)
+
+        public InvolveFriend(Boolean isGroupTask)
         {
             InitializeComponent();
-            this.parent = parent;
-            this.me = me;
-            friendList = new List<User>();
             this.isGroupTask = isGroupTask;
-            //for testing purpose:
-            //user friends instead
-            for(int i = 1; i < 10; i++)
-            {
-                User newuser = new User(i, "user" + i.ToString());
-                newuser.password = "pwd";
-                friendList.Add(newuser);
-            }
-            AddedFriendList = new List<User>();
+            AddedFriendList = new List<int>();
             if (isGroupTask)
             {
-                AddedFriendList.Add(me);
-                AddedFriends.Children.Add(me.GetView());
+                AddedFriendList.Add(Constants.me.userid);
+                AddedFriends.Children.Add(Constants.me.GetView());
             }
-            AllFriends.ItemsSource = friendList;
+
+            AllFriends.ItemsSource = Constants.friends.GetAllViews();
             BindingContext = this;
         }
+        
+        // THIS CANNOT WORK UNTIL MERGED
 
         public void OnViewCellTapped(object sender, EventArgs e)
         {
-            ViewCell s = (ViewCell)sender;
-            User friend = (User) s.BindingContext;
-            if (AddedFriendList.Contains(friend))
+            ViewCell s = (ViewCell) sender;
+            Label friend = (Label) s.BindingContext;
+            int friendid = int.Parse(friend.Text);
+            if (AddedFriendList.Contains(friendid))
             {
-                AddedFriendList.Remove(friend);
+                AddedFriendList.Remove(friendid);
                 List<View> temp = new List<View>();
-                foreach(View v in AddedFriends.Children)
+                foreach (View v in AddedFriends.Children)
                 {
                     //change this when user card view changed
-                    Label l = (Label)v;
-                    if(!l.Text.Equals (friend.userid.ToString()))
+                    Label l = (Label) v;
+                    if (!l.Text.Equals(friend.Text))
                     {
                         temp.Add(l);
                     }
                 }
+
                 AddedFriends.Children.Clear();
-                foreach(View v in temp)
+                foreach (View v in temp)
                 {
                     AddedFriends.Children.Add(v);
                 }
             }
             else
             {
-                AddedFriendList.Add(friend);
-                AddedFriends.Children.Add(friend.GetView());
+                AddedFriendList.Add(friendid);
+                AddedFriends.Children.Add(friend);
             }
         }
+
         public async void OnNext(object sender, EventArgs e)
         {
             if (isGroupTask)
             {
-                await Navigation.PushAsync(new GroupTaskAdd(parent, AddedFriendList, this));
+                await Navigation.PushAsync(new GroupTaskAdd(AddedFriendList, this));
             }
             else
             {
-                await Navigation.PushAsync(new AddTask(parent, AddedFriendList, this));
+                await Navigation.PushAsync(new AddTask(AddedFriendList, this));
             }
         }
 
@@ -83,6 +75,5 @@ namespace WebApp.Views
         {
             await Navigation.PopAsync();
         }
-
     }
 }

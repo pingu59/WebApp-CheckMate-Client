@@ -1,35 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WebApp.Views.InvolveFriend"
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WebApp.Views.InvolveFriend"
              Title="Select your friend">
     <ContentPage.Content>
         <StackLayout Padding="20">
-            <Grid  Margin="10">
+            <Grid Margin="10">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="280"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="280" />
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="30"/>
-                </Grid.RowDefinitions>    
-                <Entry x:Name="SearchFriend" Grid.Row="0" Grid.Column="0"/>
-                <Button Text="Search" Grid.Row="0" Grid.Column="1"/>
+                    <RowDefinition Height="30" />
+                </Grid.RowDefinitions>
+                <Entry x:Name="SearchFriend" Grid.Row="0" Grid.Column="0" />
+                <Button Text="Search" Grid.Row="0" Grid.Column="1" />
             </Grid>
             <ScrollView Orientation="Horizontal" HeightRequest="40" BackgroundColor="Silver">
-                <StackLayout Orientation="Horizontal" x:Name="AddedFriends"/>
+                <StackLayout Orientation="Horizontal" x:Name="AddedFriends" />
             </ScrollView>
             <ScrollView>
                 <ListView x:Name="AllFriends">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                        <ViewCell Tapped="OnViewCellTapped">
-                            <Label Text="{Binding userid}" Margin="10"/>
-                        </ViewCell>
+                            <ViewCell Tapped="OnViewCellTapped">
+                                <Label Text="{Binding userid}" Margin="10" />
+                            </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
             </ScrollView>
             <Button Text="Next" HorizontalOptions="End" VerticalOptions="EndAndExpand"
-                    Clicked="OnNext"/>
+                    Clicked="OnNext" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

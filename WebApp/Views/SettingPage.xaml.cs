@@ -38,7 +38,6 @@ namespace WebApp.Views
         //}
 
 
-
         //async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
         //{
         //    if (e.SelectedItem != null)
@@ -69,9 +68,5 @@ namespace WebApp.Views
         {
             await Navigation.PopAsync();
         }
-
-
     }
-
-
 }

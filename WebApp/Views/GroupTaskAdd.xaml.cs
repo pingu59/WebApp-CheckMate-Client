@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-
 using Xamarin.Forms;
 using WebApp.Models;
 
@@ -9,15 +8,12 @@ namespace WebApp.Views
     public partial class GroupTaskAdd : ContentPage
     {
         BaseTask task;
-        MyTaskPage parent;
         InvolveFriend last;
-        public int ListHeight { get; set; }
-        List<User> groupMember;
+        List<int> groupMember;
 
-        public GroupTaskAdd(MyTaskPage parent, List<User> groupMember, InvolveFriend last)
+        public GroupTaskAdd(List<int> groupMember, InvolveFriend last)
         {
             InitializeComponent();
-            this.parent = parent;
             this.groupMember = groupMember;
             this.last = last;
         }
@@ -42,8 +38,8 @@ namespace WebApp.Views
                         Repetition repetition =
                             RepetitionConverter.ToRepetition(selectedItem.ToString());
                         int frequency = int.Parse(Frequency.Text);
-                        task = new GroupTask(taskName.Text, repetition, frequency, groupMember, parent);
-                        parent.SetNewTask(task);
+                        task = new GroupTask(taskName.Text, repetition, frequency, groupMember);
+                        Constants.mainPage.SetNewTask(task);
                         await Navigation.PopAsync();
                         last.pop();
                     }
@@ -53,8 +49,6 @@ namespace WebApp.Views
             {
                 await DisplayAlert("Alert", "Task name must not be empty", "OK");
             }
-
         }
-
     }
 }

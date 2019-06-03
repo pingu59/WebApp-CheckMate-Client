@@ -1,50 +1,50 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <ProduceAssemblyReference>true</ProduceAssemblyReference>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <ProduceAssemblyReference>true</ProduceAssemblyReference>
+    </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DebugType>pdbonly</DebugType>
-    <DebugSymbols>true</DebugSymbols>
-  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <DebugType>pdbonly</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.0.1" />
-    <PackageReference Include="sqlite-net-pcl" Version="1.5.231" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Remove="MyTabbedPage.xaml" />
-    <EmbeddedResource Remove="Views\MyPage.xaml" />
-    <EmbeddedResource Remove="Views\MyProfilePage.xaml" />
-    <EmbeddedResource Remove="MainPage.xaml" />
-    <EmbeddedResource Remove="Views\AddTask %28副本%29.xaml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="MyTabbedPage.xaml.cs" />
-    <Compile Remove="GroupTask.cs" />
-    <Compile Remove="Logic\EmptyCSharpFile.cs" />
-    <Compile Remove="Logic\EmptyCSharpFile.cs" />
-    <Compile Remove="Models\EmptyCSharpFile.cs" />
-    <Compile Remove="Views\MyPage.xaml.cs" />
-    <Compile Remove="Views\MyProfilePage.xaml.cs" />
-    <Compile Remove="MainPage.xaml.cs" />
-    <Compile Remove="Models\UserView.xaml.cs" />
-    <Compile Remove="Views\AddTask %28副本%29.xaml.cs" />
-    <Compile Remove="Views\AddTask %28副本%29.xaml.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Views\" />
-    <Folder Include="Data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\GroupTaskAdd.xaml.cs">
-      <DependentUpon>GroupTaskAdd.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
+        <PackageReference Include="Xamarin.Essentials" Version="1.0.1" />
+        <PackageReference Include="sqlite-net-pcl" Version="1.5.231" />
+        <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    </ItemGroup>
+    <ItemGroup>
+        <EmbeddedResource Remove="MyTabbedPage.xaml" />
+        <EmbeddedResource Remove="Views\MyPage.xaml" />
+        <EmbeddedResource Remove="Views\MyProfilePage.xaml" />
+        <EmbeddedResource Remove="MainPage.xaml" />
+        <EmbeddedResource Remove="Views\AddTask %28副本%29.xaml" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Remove="MyTabbedPage.xaml.cs" />
+        <Compile Remove="GroupTask.cs" />
+        <Compile Remove="Logic\EmptyCSharpFile.cs" />
+        <Compile Remove="Logic\EmptyCSharpFile.cs" />
+        <Compile Remove="Models\EmptyCSharpFile.cs" />
+        <Compile Remove="Views\MyPage.xaml.cs" />
+        <Compile Remove="Views\MyProfilePage.xaml.cs" />
+        <Compile Remove="MainPage.xaml.cs" />
+        <Compile Remove="Models\UserView.xaml.cs" />
+        <Compile Remove="Views\AddTask %28副本%29.xaml.cs" />
+        <Compile Remove="Views\AddTask %28副本%29.xaml.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="Models\" />
+        <Folder Include="Views\" />
+        <Folder Include="Data\" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\GroupTaskAdd.xaml.cs">
+            <DependentUpon>GroupTaskAdd.xaml</DependentUpon>
+            <SubType>Code</SubType>
+        </Compile>
+    </ItemGroup>
 </Project>

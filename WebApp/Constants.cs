@@ -1,6 +1,8 @@
 ﻿using System;
 using Xamarin.Forms;
 using WebApp.Models;
+using WebApp.Views;
+
 namespace WebApp
 {
     public class Constants
@@ -15,7 +17,6 @@ namespace WebApp
         public static int USER_NOT_EXIST = 2;
         public static int USER_INCORRECT_PWD = 3;
 
-
         // Display Messages
         public static string USER_ID_INCORRECT_FORMAT = "Please enter User ID in the correct format";
         public static string EMPTY_PASSWORD = "Please enter your password";
@@ -27,7 +28,6 @@ namespace WebApp
 
         public static User me = User.getFailure();
         public static Friends friends;
-
-
+        public static MyTaskPage mainPage;
     }
 }

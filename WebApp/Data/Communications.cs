@@ -3,10 +3,8 @@ using System.Net.Http;
 using System.Linq;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using WebApp.Models;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System.Collections;
+using WebApp.Models;
 
 namespace WebApp
 {
@@ -29,11 +27,10 @@ namespace WebApp
                 Console.WriteLine(newUserId);
                 return newUserId;
             }
+
             Console.WriteLine("response unsuccessful.");
             return -1;
         }
-
-
 
         public static async Task<string> Login(int userid, string password)
         {
@@ -44,10 +41,10 @@ namespace WebApp
             var response = await _client.GetAsync(uri);
             if (response.IsSuccessStatusCode)
             {
-
                 String content = await response.Content.ReadAsStringAsync();
                 return content;
             }
+
             return Convert.ToString(Constants.SERVER_ERROR);
         }
 
@@ -63,6 +60,7 @@ namespace WebApp
                 await response.Content.ReadAsStringAsync();
                 return Constants.SUCCESS;
             }
+
             return Constants.SERVER_ERROR;
         }
 
@@ -81,6 +79,7 @@ namespace WebApp
                 int[] friendsRequests = StringToIntArray(friendRequestsStr);
                 return friendsRequests.ToList();
             }
+
             return new List<int>();
         }
 
@@ -97,29 +96,81 @@ namespace WebApp
             {
                 return Constants.SUCCESS;
             }
+
             return Constants.SERVER_ERROR;
         }
 
-
+        public static async Task<String> acceptFriend(int requestid)
+        {
+            string baseurl = Constants.BaseAddress + "addfriend?myid={0}&requestid={1}";
+            string actualurl = String.Format(baseurl, Constants.me.userid, requestid);
+            Console.WriteLine(actualurl);
+            HttpClient _client = new HttpClient();
+            var uri = new Uri(actualurl);
+            var response = await _client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                return await response.Content.ReadAsStringAsync();
+            }
+            return "failure";
+        }
 
 
         private static int[] StringToIntArray(String str)
         {
-            if(str == null)
+            if (str == null)
             {
                 return new int[0];
             }
+
             //remove "[,]"
             String substring = str.Substring(1, str.Length - 2);
-            if("".Equals(substring))
+            if ("".Equals(substring))
             {
                 return new int[0];
             }
- 
+
             int[] intArray = substring.Split(',').Select(n => Convert.ToInt32(n)).ToArray();
             Console.WriteLine("converting array......");
             Console.WriteLine(intArray);
             return intArray;
+        }
+
+        public static async Task<List<FriendEntity>> GetAllFriend()
+        {
+            string baseurl = Constants.BaseAddress + "getfriends?myid={0}";
+            string actualurl = String.Format(baseurl, Constants.me.userid);
+            Console.WriteLine(actualurl);
+            HttpClient _client = new HttpClient();
+            var uri = new Uri(actualurl);
+            var response = await _client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                string friendRequestsStr = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(friendRequestsStr);
+                return JsonConvert.DeserializeObject<List<FriendEntity>>(friendRequestsStr);
+            }
+
+            return new List<FriendEntity>();
+        }
+
+        public static async Task<List<int>> FriendInbox()
+        {
+            string baseurl = Constants.BaseAddress + "getinbox?myid={0}";
+            string actualurl = String.Format(baseurl, Constants.me.userid);
+            Console.WriteLine(actualurl);
+            HttpClient _client = new HttpClient();
+            var uri = new Uri(actualurl);
+            var response = await _client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                string friendRequestsStr = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(friendRequestsStr);
+                int[] friendsRequests = StringToIntArray(friendRequestsStr);
+                return friendsRequests.ToList();
+            }
+
+            return new List<int>();
         }
     }
 }

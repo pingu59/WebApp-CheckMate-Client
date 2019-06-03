@@ -10,11 +10,10 @@ using Xamarin.Forms.Xaml;
 namespace WebApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MyTaskPage : TabbedPage
+    public partial class MyTaskPage
     {
-        List<BaseTask> tasks = new List<BaseTask>();
-        List<User> friends = new List<User>();
-        List<CompletedTask> completed = new List<CompletedTask>();
+        IList<BaseTask> tasks = new List<BaseTask>();
+
         public MyTaskPage()
         {
             InitializeComponent();
@@ -25,22 +24,37 @@ namespace WebApp.Views
             //{
             //    CompletedTaskList.Children.Add(c.GetView());
             //}
-            //friends.Add(user);
-            //foreach (User u in friends)
+            //foreach (User u in Constants.friends.FriendsID())
             //{
             //    FriendList.Children.Add(u.GetView());
             //}
+            //temporary
+            foreach (FriendEntity f in Constants.friends.FriendsID)
+            {
+                FriendList.Children.Add(new Label
+                {
+                    Text = f.FriendID.ToString()
+                });
+            }
             //foreach (BaseTask task in tasks)
             //{
             //    taskStack.Children.Add(task.GetView());
             //}
-            this.Title = CurrentPage.Title;
+            Title = CurrentPage.Title;
 
             BindingContext = this;
 
             _username.Text = Constants.me.username;
             _user_detail.Text = "ID : " + Constants.me.userid + '\n'; //user.Id.toString();
             _user_detail.Text += "details e.g. age"; //user.Age;
+        }
+
+        public void addNewFriendView(int newfriend)
+        {
+            FriendList.Children.Add(new Label
+            {
+                Text = newfriend.ToString()
+            });
         }
 
 
@@ -52,14 +66,14 @@ namespace WebApp.Views
         public async void OnAdd(Object sender, EventArgs e)
         {
             string action = await DisplayActionSheet("Add new", "Cancel", null,
-                                        "My Task", "Group Task", "New Friend", "Friend Requests");
+                "My Task", "Group Task", "New Friend", "Friend Requests");
             switch (action)
             {
                 case "My Task":
-                    await Navigation.PushAsync(new InvolveFriend(this, Constants.me, false));
+                    await Navigation.PushAsync(new InvolveFriend(false));
                     break;
                 case "Group Task":
-                    await Navigation.PushAsync(new InvolveFriend(this, Constants.me, true));
+                    await Navigation.PushAsync(new InvolveFriend(true));
                     break;
                 case "New Friend":
                     await Navigation.PushAsync(new AddFriendPage());
@@ -80,7 +94,7 @@ namespace WebApp.Views
 
         public async void OnSettingButtonClicked(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new SettingPage(Constants.me));//need to pass a user to setting page
+            await Navigation.PushAsync(new SettingPage(Constants.me)); //need to pass a user to setting page
         }
 
 
@@ -96,12 +110,13 @@ namespace WebApp.Views
 
         public async void DisplayTaskInfo(BaseTask task)
         {
-            await DisplayAlert(task.taskName + " Frame tapped", "Todo:\n 1.check friend progress\n 2.add my completed task", "ok");
+            await DisplayAlert(task.taskName + " Frame tapped",
+                "Todo:\n 1.check friend progress\n 2.add my completed task", "ok");
         }
 
         public async void CheckFriendTask(CompletedTask task)
         {
-            await DisplayAlert(task.Title + " Frame tapped","TODO:\n add check to friend's completed task" , "ok");
+            await DisplayAlert(task.Title + " Frame tapped", "TODO:\n add check to friend's completed task", "ok");
         }
 
 

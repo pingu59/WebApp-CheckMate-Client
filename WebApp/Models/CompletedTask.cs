@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using WebApp.Views;
+
 namespace WebApp
 {
     public class CompletedTask
@@ -9,32 +10,31 @@ namespace WebApp
         public String Title { get; set; }
         private MyTaskPage page;
         TapGestureRecognizer tapRecog;
+
         public CompletedTask(int Userid, String Title, MyTaskPage page)
         {
             this.Userid = Userid;
             this.Title = Title;
             this.page = page;
             tapRecog = new TapGestureRecognizer();
-            tapRecog.Tapped += (sender, e) =>
-            {
-                page.CheckFriendTask(this);
-            };
+            tapRecog.Tapped += (sender, e) => { page.CheckFriendTask(this); };
         }
+
         internal virtual Grid getContentGrid()
         {
             Grid grid = new Grid
             {
                 VerticalOptions = LayoutOptions.CenterAndExpand,
                 ColumnDefinitions =
-                    {
-                        new ColumnDefinition{ Width = 130 },
-                        new ColumnDefinition{ Width  = 220 }
-                    },
+                {
+                    new ColumnDefinition {Width = 130},
+                    new ColumnDefinition {Width = 220}
+                },
                 RowDefinitions =
-                    {
-                        new RowDefinition{Height = 20 },
-                        new RowDefinition{Height = 40}
-                    }
+                {
+                    new RowDefinition {Height = 20},
+                    new RowDefinition {Height = 40}
+                }
             };
             grid.Children.Add(new Label
             {
@@ -70,5 +70,4 @@ namespace WebApp
             return taskCard;
         }
     }
-
 }

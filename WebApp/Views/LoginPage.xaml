@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WebApp.Views.LoginPage"
              NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
+        <StackLayout>
+            <Label Margin="10" Text="User ID" />
+            <Entry x:Name="Entry_UserID" Placeholder="User ID" />
+            <Label Margin="10" Text="Password" />
+            <Entry x:Name="Entry_Password" Placeholder="Password" />
+            <Button x:Name="Button_Signin"
+                    Text="Sign in"
+                    Clicked="OnSigninButtonClicked" />
+            <Button x:Name="Button_Register"
+                    Text="Not a user? Register here"
+                    Clicked="OnRegisterButtonClicked" />
+        </StackLayout>
     </ContentPage.Content>
-    <StackLayout>
-        <Label Margin="10" Text="User ID" />
-        <Entry x:Name = "Entry_UserID" Placeholder="User ID" />
-        <Label Margin="10" Text="Password" />
-        <Entry x:Name = "Entry_Password" Placeholder="Password" />
-        <Button x:Name = "Button_Signin" 
-                Text="Sign in" 
-                Clicked="OnSigninButtonClicked"/>
-        <Button x:Name="Button_Register" 
-                Text="Not a user? Register here" 
-                Clicked="OnRegisterButtonClicked"/>
-    </StackLayout>
 </ContentPage>

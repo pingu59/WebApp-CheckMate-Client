@@ -12,23 +12,18 @@ namespace WebApp.Models
         int progress;
         Repetition repetition;
         int frequency;
-        internal List<User> related;
+        internal List<int> related;
         TapGestureRecognizer tapRecog;
-        MyTaskPage page;
-        public BaseTask(String taskName, Repetition repetition, int frequency, 
-            MyTaskPage page, List<User> related)
+
+        public BaseTask(String taskName, Repetition repetition, int frequency, List<int> related)
         {
             this.taskName = taskName;
             this.repetition = repetition;
             this.frequency = frequency;
-            this.page = page;
             progress = 0;
             this.related = related;
             tapRecog = new TapGestureRecognizer();
-            tapRecog.Tapped += (sender, e) =>
-            {
-                page.DisplayTaskInfo(this);
-            };
+            tapRecog.Tapped += (sender, e) => { Constants.mainPage.DisplayTaskInfo(this); };
         }
 
         private String getStatusString()
@@ -46,20 +41,21 @@ namespace WebApp.Models
             {
                 VerticalOptions = LayoutOptions.CenterAndExpand,
                 ColumnDefinitions =
-                    {
-                        new ColumnDefinition{ Width = 220 },
-                        new ColumnDefinition{ Width  = 130 }
-                    },
+                {
+                    new ColumnDefinition {Width = 220},
+                    new ColumnDefinition {Width = 130}
+                },
                 RowDefinitions =
-                    {
-                        new RowDefinition{Height = 40 },
-                        new RowDefinition{Height = 20}
-                    }
+                {
+                    new RowDefinition {Height = 40},
+                    new RowDefinition {Height = 20}
+                }
             };
-            foreach (User u in related)
+            foreach (int i in related)
             {
-                layout.Children.Add(u.GetView());
+                //call getview -- not implemented yet
             }
+
             grid.Children.Add(new Label
             {
                 Text = taskName,
