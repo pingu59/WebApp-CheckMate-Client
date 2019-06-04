@@ -10,7 +10,7 @@ namespace WebApp.Models
 {
     public class User
     {
-        [PrimaryKey, AutoIncrement] 
+        [PrimaryKey] 
         public int userid { get; set; }
         public string username { get; set; }
         public string password { get; set; }

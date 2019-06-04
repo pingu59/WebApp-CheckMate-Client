@@ -28,16 +28,18 @@ namespace WebApp.Models
             Constants.Friend.Friends = friendList;
         }
 
+        internal View GetViewof(int friendid)
+        {
+            FriendEntity thisfriend = Friends.Find((obj) => obj.FriendID == friendid);
+            return thisfriend.GetView();
+        }
 
         public List<View> GetAllViews()
         {
             List<View> ret = new List<View>();
             foreach(FriendEntity f in Friends)
             {
-                ret.Add(new Label
-                {
-                    Text = f.FriendID.ToString()
-                });
+                ret.Add(f.GetView());
             }
             return ret;
         }

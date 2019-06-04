@@ -8,8 +8,8 @@ namespace WebApp.Models
     public class GroupTask : BaseTask
     {
         public GroupTask(String taskName, Repetition repetition, int frequency,
-            List<int> groupMember) :
-            base(taskName, repetition, frequency, groupMember)
+            DateTime deadline, List<int> groupMember) :
+            base(taskName, repetition, frequency, deadline,groupMember)
         {
             // read data about member into this
         }

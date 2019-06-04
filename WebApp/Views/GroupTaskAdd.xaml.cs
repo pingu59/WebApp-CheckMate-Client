@@ -38,7 +38,8 @@ namespace WebApp.Views
                         Repetition repetition =
                             RepetitionConverter.ToRepetition(selectedItem.ToString());
                         int frequency = int.Parse(Frequency.Text);
-                        task = new GroupTask(taskName.Text, repetition, frequency, groupMember);
+                        //temporary!!! change here.
+                        task = new GroupTask(taskName.Text, repetition, frequency, DateTime.MaxValue,groupMember);
                         Constants.mainPage.SetNewTask(task);
                         await Navigation.PopAsync();
                         last.pop();

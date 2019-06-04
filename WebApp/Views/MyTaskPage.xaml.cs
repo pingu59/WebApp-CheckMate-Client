@@ -66,7 +66,7 @@ namespace WebApp.Views
         public async void OnAdd(Object sender, EventArgs e)
         {
             string action = await DisplayActionSheet("Add new", "Cancel", null,
-                "My Task", "Group Task", "New Friend", "Friend Requests");
+                "My Task", "Group Task", "New Friend");
             switch (action)
             {
                 case "My Task":
@@ -84,7 +84,7 @@ namespace WebApp.Views
 
         public async void ToReceivedRequest(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new FriendRequestsListPage());
+            await Navigation.PushAsync(Constants.requestPage);
         }
 
         public async void OnMoreDetailClicked(object sender, System.EventArgs e)
@@ -105,7 +105,8 @@ namespace WebApp.Views
 
         public async void OnLogOutButtonClicked(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new LoginPage());
+            //CHANGED HERE!!!
+            await Navigation.PopToRootAsync();
         }
 
         public async void DisplayTaskInfo(BaseTask task)

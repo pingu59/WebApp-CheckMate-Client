@@ -32,5 +32,7 @@ namespace WebApp
         public static User me = User.getFailure();
         public static Friend Friend;
         public static MyTaskPage mainPage;
+        public static FriendEntity meEntity;
+        public static FriendRequestsListPage requestPage;
     }
 }

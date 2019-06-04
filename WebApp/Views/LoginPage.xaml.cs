@@ -45,8 +45,13 @@ namespace WebApp.Views
                 User user = JsonConvert.DeserializeObject<User>(userJson);
                 Constants.me = user;
                 Constants.Friend = new Friend();
-                int databaseIndex = CheckUserInLocalDB(user.userid);
+                //Constants.Friend.Friends = await Communications.GetAllFriend();
+
+
+
+
                 //TODO
+                int databaseIndex = CheckUserInLocalDB(user.userid);
                 if ( databaseIndex == -1)
                 {   //if not in local database, load to local db
                     User.SaveToLocal();
@@ -57,7 +62,7 @@ namespace WebApp.Views
                 {   // load from local db
                     Friend.LoadFromLocal(databaseIndex);
                 }
-
+                ///////
 
                 System.Threading.Tasks.Task.Run(() =>
                 {
@@ -67,6 +72,9 @@ namespace WebApp.Views
 
                 MyTaskPage mainpage = new MyTaskPage();
                 Constants.mainPage = mainpage;
+                //ADDITION HERE!!!!!!!!!!
+                Constants.requestPage = new FriendRequestsListPage();
+                Constants.meEntity = new FriendEntity(user.userid, user.username);
                 await Navigation.PushAsync(mainpage);
             }
         }

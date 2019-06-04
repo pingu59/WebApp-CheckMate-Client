@@ -24,7 +24,9 @@
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell Tapped="OnViewCellTapped">
-                                <Label Text="{Binding userid}" Margin="10" />
+                                <Grid>
+                                    <Label Text="{Binding FriendName}" Margin="10" />
+                                </Grid>
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>

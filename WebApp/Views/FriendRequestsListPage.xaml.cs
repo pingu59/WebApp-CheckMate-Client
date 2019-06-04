@@ -9,18 +9,26 @@ namespace WebApp.Views
 {
     public partial class FriendRequestsListPage : ContentPage
     {
+        private List<int> newFriends;
+        private List<BaseTask> newTasks;
         public FriendRequestsListPage()
         {
             InitializeComponent();
+            LoadContents();
+            Console.WriteLine("New friends are:");
+            Console.WriteLine(newFriends);
         }
 
-
-        protected async override void OnAppearing()
+        private async void LoadContents()
         {
-            base.OnAppearing();
-            FriendRequestsView.ItemsSource = await Communications.GetFriendsRequests(Constants.me.userid);
+           newFriends = await Communications.GetFriendsRequests(Constants.me.userid);
+            //load tasks 
         }
 
+        protected override void OnAppearing()
+        {
+            FriendRequestsView.ItemsSource = newFriends;
+        }
 
         //changed here
         async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
@@ -30,9 +38,9 @@ namespace WebApp.Views
             if (approveRequest)
             {
                 await DisplayAlert(null, "You added this person successfully!", "OK");
-                String username = await Communications.acceptFriend(requestID);
+                FriendEntity newFriend = await Communications.acceptFriend(requestID);
                 //use and parse this string afterwards
-                Constants.Friend.Friends.Add(new FriendEntity(requestID, username));
+                Constants.Friend.Friends.Add(newFriend);
                 Constants.mainPage.addNewFriendView(requestID);
             }
             else
@@ -40,7 +48,12 @@ namespace WebApp.Views
                 await DisplayAlert(null, "You denied the friend request.", "OK");
                 //TODO: update local&server friends& database
             }
-            FriendRequestsView.ItemsSource = await Communications.GetFriendsRequests(Constants.me.userid);
+            newFriends.Remove(requestID);
+
+            // REFRESH LISTVIEW DATA
+            FriendRequestsView.ItemsSource = null;
+            FriendRequestsView.ItemsSource = newFriends;
+
             Communications.DeleteFriendRequest(Constants.me.userid, requestID);
             //No need request for this one 
         }

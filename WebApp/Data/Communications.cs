@@ -100,7 +100,7 @@ namespace WebApp
             return Constants.SERVER_ERROR;
         }
 
-        public static async Task<String> acceptFriend(int requestid)
+        public static async Task<FriendEntity> acceptFriend(int requestid)
         {
             string baseurl = Constants.BaseAddress + "addfriend?myid={0}&requestid={1}";
             string actualurl = String.Format(baseurl, Constants.me.userid, requestid);
@@ -110,9 +110,11 @@ namespace WebApp
             var response = await _client.GetAsync(uri);
             if (response.IsSuccessStatusCode)
             {
-                return await response.Content.ReadAsStringAsync();
+                String responseString = await response.Content.ReadAsStringAsync();
+                return FriendEntity.Deserialize(responseString);
             }
-            return "failure";
+            //refactor
+            return null;
         }
 
 
@@ -147,10 +149,8 @@ namespace WebApp
             if (response.IsSuccessStatusCode)
             {
                 string friendRequestsStr = await response.Content.ReadAsStringAsync();
-                Console.WriteLine(friendRequestsStr);
-                return JsonConvert.DeserializeObject<List<FriendEntity>>(friendRequestsStr);
+                return FriendEntity.DeserializeList(friendRequestsStr);
             }
-
             return new List<FriendEntity>();
         }
 
@@ -172,5 +172,10 @@ namespace WebApp
 
             return new List<int>();
         }
+
+        //public static async Task<int> addIndividual(BaseTask task)
+        //{
+
+        //}
     }
 }

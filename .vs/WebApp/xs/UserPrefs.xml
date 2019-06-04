@@ -1,34 +1,12 @@
 ﻿<Properties StartupConfiguration="{FC97C75F-7E78-408D-BD0A-42ADF0A53DCD}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Views/LoginPage.xaml.cs">
     <Files>
-      <File FileName="WebApp/Views/LoginPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="WebApp/App.xaml.cs" Line="1" Column="1" />
-      <File FileName="WebApp/Views/AboutPage.xaml" />
-      <File FileName="WebApp/Views/MyTaskPage.xaml" />
-      <File FileName="WebApp/Data/UserDatabase.cs" Line="27" Column="10" />
-      <File FileName="WebApp/Models/FriendEntity.cs" Line="1" Column="1" />
-      <File FileName="WebApp/Data/Communications.cs" Line="1" Column="1" />
-      <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="WebApp/Models/Friend.cs" Line="28" Column="49" />
-      <File FileName="WebApp/Constants.cs" Line="1" Column="1" />
-      <File FileName="WebApp/Views/FriendRequestsListPage.xaml" />
-      <File FileName="WebApp/Models/User.cs" Line="1" Column="1" />
-      <File FileName="WebApp/Models/GroupTask.cs" Line="1" Column="1" />
-      <File FileName="WebApp/Models/Repetition.cs" Line="1" Column="1" />
-      <File FileName="WebApp/Views/LoginPage.xaml" />
-      <File FileName="WebApp.iOS/Main.cs" Line="1" Column="1" />
-      <File FileName="WebApp/Models/BaseTask.cs" Line="1" Column="1" />
-      <File FileName="WebApp/AssemblyInfo.cs" Line="1" Column="1" />
-      <File FileName="WebApp/Views/SettingPage.xaml" />
-      <File FileName="WebApp/Views/SettingPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="WebApp/Views/FriendRequestsListPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="WebApp/Views/AddFriendPage.xaml" />
-      <File FileName="WebApp/Views/AddTask.xaml" />
+      <File FileName="WebApp/Views/InvolveFriend.xaml.cs" Line="17" Column="1" />
       <File FileName="WebApp/Views/InvolveFriend.xaml" />
-      <File FileName="WebApp/App.xaml" />
-      <File FileName="WebApp/Views/CreateAccountPage.xaml" />
-      <File FileName="WebApp/Models/CompletedTask.cs" Line="1" Column="1" />
-      <File FileName="WebApp/Views/GroupTaskAdd.xaml" />
+      <File FileName="WebApp.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="WebApp/Models/FriendEntity.cs" Line="14" Column="9" />
+      <File FileName="WebApp/Constants.cs" Line="35" Column="45" />
+      <File FileName="WebApp/Views/LoginPage.xaml.cs" Line="77" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -38,9 +16,16 @@
               <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
+                <Node name="AddFriendPage.xaml" expanded="True" />
+                <Node name="AddTask.xaml" expanded="True" />
+                <Node name="FriendRequestsListPage.xaml" expanded="True" />
+                <Node name="GroupTaskAdd.xaml" expanded="True" />
+                <Node name="InvolveFriend.xaml" expanded="True" />
                 <Node name="LoginPage.xaml" expanded="True">
                   <Node name="LoginPage.xaml.cs" selected="True" />
                 </Node>
+                <Node name="MyTaskPage.xaml" expanded="True" />
+                <Node name="SettingPage.xaml" expanded="True" />
               </Node>
             </Node>
             <Node name="WebApp.iOS" expanded="True" />
@@ -49,7 +34,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.WebApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2BF3903B-111A-499A-A929-364C03B40169" />
+  <MonoDevelop.Ide.ItemProperties.WebApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.58AAE563-0A92-451F-A805-5C464362CD6A" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

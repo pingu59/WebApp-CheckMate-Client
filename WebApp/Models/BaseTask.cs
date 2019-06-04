@@ -13,14 +13,16 @@ namespace WebApp.Models
         Repetition repetition;
         int frequency;
         internal List<int> related;
+        DateTime deadline { get; set; }
         TapGestureRecognizer tapRecog;
 
-        public BaseTask(String taskName, Repetition repetition, int frequency, List<int> related)
+        public BaseTask(String taskName, Repetition repetition, int frequency, DateTime deadline,List<int> related)
         {
             this.taskName = taskName;
             this.repetition = repetition;
             this.frequency = frequency;
             progress = 0;
+            this.deadline = deadline;
             this.related = related;
             tapRecog = new TapGestureRecognizer();
             tapRecog.Tapped += (sender, e) => { Constants.mainPage.DisplayTaskInfo(this); };
@@ -53,7 +55,7 @@ namespace WebApp.Models
             };
             foreach (int i in related)
             {
-                //call getview -- not implemented yet
+                layout.Children.Add(Constants.Friend.GetViewof(i));
             }
 
             grid.Children.Add(new Label

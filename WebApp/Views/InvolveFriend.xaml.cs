@@ -7,67 +7,56 @@ namespace WebApp.Views
 {
     public partial class InvolveFriend 
     {
-        List<int> AddedFriendList;
         Boolean isGroupTask;
+        List<FriendEntity> addedEntities = new List<FriendEntity>();
 
         public InvolveFriend(Boolean isGroupTask)
         {
             InitializeComponent();
             this.isGroupTask = isGroupTask;
-            AddedFriendList = new List<int>();
+
             if (isGroupTask)
             {
-                AddedFriendList.Add(Constants.me.userid);
-                AddedFriends.Children.Add(Constants.me.GetView());
+                addedEntities.Add(Constants.meEntity);
             }
-
-            AllFriends.ItemsSource = Constants.Friend.GetAllViews();
             BindingContext = this;
         }
-        
-        // THIS CANNOT WORK UNTIL MERGED
+
+        protected override void OnAppearing()
+        {
+            AllFriends.ItemsSource = Constants.Friend.Friends;
+        }
 
         public void OnViewCellTapped(object sender, EventArgs e)
         {
             ViewCell s = (ViewCell) sender;
-            Label friend = (Label) s.BindingContext;
-            int friendid = int.Parse(friend.Text);
-            if (AddedFriendList.Contains(friendid))
+            FriendEntity fe = (FriendEntity)s.BindingContext;
+            if (addedEntities.Contains(fe))
             {
-                AddedFriendList.Remove(friendid);
-                List<View> temp = new List<View>();
-                foreach (View v in AddedFriends.Children)
-                {
-                    //change this when user card view changed
-                    Label l = (Label) v;
-                    if (!l.Text.Equals(friend.Text))
-                    {
-                        temp.Add(l);
-                    }
-                }
-
-                AddedFriends.Children.Clear();
-                foreach (View v in temp)
-                {
-                    AddedFriends.Children.Add(v);
-                }
+                AddedFriends.Children.Remove(fe.GetView());
+                addedEntities.Remove(fe);
             }
             else
             {
-                AddedFriendList.Add(friendid);
-                AddedFriends.Children.Add(friend);
+                AddedFriends.Children.Add(fe.GetView());
+                addedEntities.Add(fe);
             }
         }
 
         public async void OnNext(object sender, EventArgs e)
         {
+            List<int> addedIDs = new List<int>();
+            foreach (FriendEntity fe in addedEntities)
+            {
+                addedIDs.Add(fe.FriendID);
+            }
             if (isGroupTask)
             {
-                await Navigation.PushAsync(new GroupTaskAdd(AddedFriendList, this));
+                await Navigation.PushAsync(new GroupTaskAdd(addedIDs, this));
             }
             else
             {
-                await Navigation.PushAsync(new AddTask(AddedFriendList, this));
+                await Navigation.PushAsync(new AddTask(addedIDs, this));
             }
         }
 
