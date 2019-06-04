@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 using SQLite;
 using WebApp.Models;
@@ -12,9 +13,18 @@ namespace WebApp.Data
 
         public UserDatabase(string dbPath)
         {
-            database = new SQLiteAsyncConnection(dbPath);
-            database.CreateTableAsync<User>().Wait();
-            database.CreateTableAsync<FriendEntity>().Wait();
+
+            if (!File.Exists(dbPath))
+            {
+                database = new SQLiteAsyncConnection(dbPath);
+                database.CreateTableAsync<User>().Wait();
+                database.CreateTableAsync<FriendEntity>().Wait();
+            }
+            else
+            {
+                database = new SQLiteAsyncConnection(dbPath);
+            }
+
         }
 
 
@@ -48,14 +58,14 @@ namespace WebApp.Data
             return database.Table<FriendEntity>().ToListAsync();
         }
 
+        public Task<User> GetUserAsync()
+        {
+            return database.Table<User>().FirstAsync();
+        }
+
         public Task<int> DeleteFriendAsync(FriendEntity friend)
         {
             return database.DeleteAsync(friend);
-        }
-
-        public Task<List<User>> GetUserAsync()
-        {
-            return database.Table<User>().ToListAsync();
         }
 
     }

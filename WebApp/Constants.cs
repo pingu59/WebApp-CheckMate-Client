@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using WebApp.Models;
 using WebApp.Views;
+using System.Collections.Generic;
 
 namespace WebApp
 {
@@ -13,7 +14,8 @@ namespace WebApp
 
         public static string PathPrefix = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
         //public static string PathPrefix = "/Users/mianbaodashi/Desktop/localDB/";
-        
+        public static string userDBFile = "UsersList.db3";
+
         public static int SERVER_ERROR = -1;
         public static int ERROR = 0;
         public static int SUCCESS = 1;
@@ -29,10 +31,15 @@ namespace WebApp
         public static string ERROR_MSG = "Error!";
         public static string SERVER_ERROR_MSG = "Server error!";
 
+        public static int DEFAULT_USER_NOT_EXIST = -1;
+        public static int NEW_USER_LOGIN = -1;
+
         public static User me = User.getFailure();
         public static Friend Friend;
         public static MyTaskPage mainPage;
         public static FriendEntity meEntity;
         public static FriendRequestsListPage requestPage;
+        public static List<BaseTask> FriendTask;
+        public static List<BaseTask> MyTask;
     }
 }

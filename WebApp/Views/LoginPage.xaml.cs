@@ -40,29 +40,45 @@ namespace WebApp.Views
                 await DisplayErrorMsg(responseCode);
             }
             else
-            {    //login successfully
+            {
                 string userJson = responses[1];
                 User user = JsonConvert.DeserializeObject<User>(userJson);
                 Constants.me = user;
                 Constants.Friend = new Friend();
                 //Constants.Friend.Friends = await Communications.GetAllFriend();
 
-
-
-
-                //TODO
-                int databaseIndex = CheckUserInLocalDB(user.userid);
-                if ( databaseIndex == -1)
-                {   //if not in local database, load to local db
+                int userDBIndex = getUserDBIndex();
+                if (userDBIndex == Constants.NEW_USER_LOGIN)
+                {
+                    //retrieve from web server, create new database, update userList db
                     User.SaveToLocal();
                     Constants.Friend.Friends = await Communications.GetAllFriend();
                     Friend.SaveToLocal();
+
                 }
                 else
-                {   // load from local db
-                    Friend.LoadFromLocal(databaseIndex);
+                {   //load from local db
+                    string dbFile = string.Format("userDB{0}.db3", userDBIndex);
+                    String userPath = Path.Combine(Constants.PathPrefix, dbFile);
+                    App.Database = new UserDatabase(userPath);
+                    await App.UserDB.UpdateAsync(new UserDBModel(1, Constants.me.userid));
+                    Friend.LoadFromLocal();
                 }
-                ///////
+
+
+                ////TODO
+                //int databaseIndex = CheckUserInLocalDB(user.userid);
+                //if ( databaseIndex == -1)
+                //{   //if not in local database, load to local db
+                //    User.SaveToLocal();
+                //    Constants.Friend.Friends = await Communications.GetAllFriend();
+                //    Friend.SaveToLocal();
+                //}
+                //else
+                //{   // load from local db
+                //    Friend.LoadFromLocal(databaseIndex);
+                //}
+                /////////
 
                 System.Threading.Tasks.Task.Run(() =>
                 {
@@ -73,11 +89,26 @@ namespace WebApp.Views
                 MyTaskPage mainpage = new MyTaskPage();
                 Constants.mainPage = mainpage;
                 //ADDITION HERE!!!!!!!!!!
+                //load from local/online here!!!
+                Constants.FriendTask = new List<BaseTask>();
+                Constants.MyTask = new List<BaseTask>();
                 Constants.requestPage = new FriendRequestsListPage();
                 Constants.meEntity = new FriendEntity(user.userid, user.username);
                 await Navigation.PushAsync(mainpage);
             }
         }
+
+        private int getUserDBIndex()
+        {
+            string queryString = "SELECT * From UserDBModel WHERE userid = ?";
+            var queryResult = App.UserDB.QueryAsync<UserDBModel>(queryString, Constants.me.userid).Result;
+            if (queryResult.Count == 0)
+            {
+                return Constants.NEW_USER_LOGIN;
+            }
+            return queryResult[0].DBIndex;
+        }
+
         //login helper method
         private async Task<int> CheckLoginInput()
         {
@@ -121,29 +152,12 @@ namespace WebApp.Views
             }
         }
 
-        private static int CheckUserInLocalDB(int UserID)
-        {
-            int DatabaseIndex = -1;
-            foreach (UserDatabase UserDB in App.Database)
-            {
-                DatabaseIndex++;
-                List<User> UserProfile = UserDB.GetUserAsync().Result;
-                foreach (User user in UserProfile)
-                {
-                    if (user.userid == UserID)
-                    {
-                        return DatabaseIndex;
-                    }
-                }
-            }
-            return -1;
-        }
-
         private static void PeriodicCheck()
         {
             Device.StartTimer(TimeSpan.FromSeconds(30), () =>
             {
                 CheckInbox();
+                CheckNewInvitation();
                 return true; // True = Repeat again, False = Stop the timer
             });
         }
@@ -151,8 +165,50 @@ namespace WebApp.Views
         private async static void CheckInbox()
         {
             List<int> friendChanged = await Communications.FriendInbox();
-            Console.WriteLine("CheckingInbox..");
-            Console.WriteLine(friendChanged.ToArray());
+            foreach(int i in friendChanged)
+            {
+                //update database!!!
+                if(i >= 0)
+                {
+                    Constants.Friend.Friends.Add(await Communications.GetFriend(i));
+                    //add friend
+                }
+                else
+                {
+                    foreach (FriendEntity fe in Constants.Friend.Friends)
+                    {
+                        if(fe.FriendID == i)
+                        {
+                            Constants.Friend.Friends.Remove(fe);
+                        }
+                    }
+                    //delete friend
+                }
+            }
+        }
+
+        private async static void CheckNewInvitation()
+        {
+            int myid = Constants.me.userid;
+            List<BaseTask> newinvitations = await Communications.GetIndividualTask(myid);
+            Communications.ClearInividualTask(myid);
+            foreach(BaseTask bt in newinvitations)
+            {
+                Constants.FriendTask.Add(bt);
+                String baseString = "Your friend {0} has invited you to supervise his/her task:\n" +
+                    "{1}\n Please check your friends page to see it.";
+                String friendName = null;
+                foreach(FriendEntity fe in Constants.Friend.Friends)
+                {
+                    if(fe.FriendID == bt.ownerid)
+                    {
+                        friendName = fe.FriendName;
+                        break;
+                    }
+                }
+                String inviteString = String.Format(baseString, friendName, bt.taskName);
+                Constants.mainPage.DisplayInvitation(inviteString);
+            }
         }
 
         private async void OnRegisterButtonClicked(object sender, EventArgs e)

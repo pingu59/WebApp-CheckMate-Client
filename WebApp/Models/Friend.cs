@@ -13,19 +13,20 @@ namespace WebApp.Models
 
         public static void SaveToLocal()
         {
-            int maxIndex = App.Database.Count-1;
-            //string dbFile = string.Format("userDB{0}.db3", maxIndex);
-            //string dbPath = Path.Combine(Constants.PathPrefix, dbFile);
-            UserDatabase db = App.Database[maxIndex];
+            //save userinfo into local database
+            int count = App.UserDB.Table<UserDBModel>().CountAsync().Result;
+            string dbFile = string.Format("userDB{0}.db3", count);
+            string dbPath = Path.Combine(Constants.PathPrefix, dbFile);
+            UserDatabase db = new UserDatabase(dbPath);
             db.SaveFriendsAsync(Constants.Friend.Friends);
+            App.Database = db;
         }
 
-        public static void LoadFromLocal(int databaseIndex)
+        public static void LoadFromLocal()
         {
             // load from local database
-            UserDatabase db = App.Database[databaseIndex];
-            List<FriendEntity> friendList = db.GetFriendsAsync().Result;
-            Constants.Friend.Friends = friendList;
+            Constants.Friend = new Friend();
+            Constants.Friend.Friends = App.Database.GetFriendsAsync().Result;
         }
 
         internal View GetViewof(int friendid)

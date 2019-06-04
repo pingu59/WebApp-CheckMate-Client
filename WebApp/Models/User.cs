@@ -50,37 +50,29 @@ namespace WebApp.Models
             return thisLabel;
         }
 
-        public static void SaveToLocal()
-        {
-            //save userinfo into local database
-            int maxIndex = App.Database.Count;
-            string dbFile = string.Format("userDB{0}.db3", maxIndex);
-            string dbPath = Path.Combine(Constants.PathPrefix, dbFile);
-            App.Database.Add(new UserDatabase(dbPath));
-            UserDatabase db = App.Database[maxIndex];
-            db.SaveUserAsync(Constants.me);
-
-        }
-        private static int CheckUserInLocalDB(int UserID)
-        {
-            int DatabaseIndex = -1;
-            foreach (UserDatabase UserDB in App.Database)
-            {
-                DatabaseIndex++;
-                List<User> UserProfile = UserDB.GetUserAsync().Result;
-                foreach (User user in UserProfile)
-                {
-                    if (user.userid == UserID)
-                    {
-                        return DatabaseIndex;
-                    }
-                }
-            }
-            return -1;
-        }
         public override string ToString()
         {
             return this.userid + " " + this.username + "(" + this.password + ")";
+        }
+
+        public static void SaveToLocal()
+        {
+            //save userinfo into local database
+            int count = App.UserDB.Table<UserDBModel>().CountAsync().Result;
+            string dbFile = string.Format("userDB{0}.db3", count + 1);
+            string dbPath = Path.Combine(Constants.PathPrefix, dbFile);
+            UserDatabase db = new UserDatabase(dbPath);
+            db.SaveUserAsync(Constants.me);
+            //update userList db
+            App.Database = db;
+            App.UserDB.InsertAsync(new UserDBModel(Constants.me.userid));
+            App.UserDB.UpdateAsync(new UserDBModel(1, Constants.me.userid));
+        }
+
+        public static void LoadFromLocal()
+        {
+            // load from local database
+            Constants.me = App.Database.GetUserAsync().Result;
         }
 
         public override bool Equals(object obj)

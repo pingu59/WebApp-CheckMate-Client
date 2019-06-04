@@ -443,3 +443,7 @@
 /Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/coremlc/_PartialAppManifest.items
 /Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/coremlc/_BundleResourceWithLogicalName.items
 /Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone11.8-12.2/optimized/
+/Users/apple/Xamarin/WebApp.iOS/bin/iPhoneSimulator/Debug/Rg.Plugins.Popup.IOS.dll
+/Users/apple/Xamarin/WebApp.iOS/bin/iPhoneSimulator/Debug/Rg.Plugins.Popup.IOS.pdb
+/Users/apple/Xamarin/WebApp.iOS/bin/iPhoneSimulator/Debug/Rg.Plugins.Popup.dll
+/Users/apple/Xamarin/WebApp.iOS/bin/iPhoneSimulator/Debug/Rg.Plugins.Popup.pdb

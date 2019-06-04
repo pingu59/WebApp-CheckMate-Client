@@ -117,6 +117,23 @@ namespace WebApp
             return null;
         }
 
+        public static async Task<FriendEntity> GetFriend(int requestid)
+        {
+            string baseurl = Constants.BaseAddress + "getUserINfo?userid={0}";
+            string actualurl = String.Format(baseurl, requestid);
+            Console.WriteLine(actualurl);
+            HttpClient _client = new HttpClient();
+            var uri = new Uri(actualurl);
+            var response = await _client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                String responseString = await response.Content.ReadAsStringAsync();
+                return FriendEntity.Deserialize(responseString);
+            }
+            //refactor
+            return null;
+        }
+
 
         private static int[] StringToIntArray(String str)
         {
@@ -173,9 +190,51 @@ namespace WebApp
             return new List<int>();
         }
 
-        //public static async Task<int> addIndividual(BaseTask task)
-        //{
+        public static async Task<int> addIndividual(BaseTask task)
+        {
+            string baseurl = Constants.BaseAddress + "createIndvTask?myid={0}&taskname={1}&" +
+                "repetition={2}&frequency={3}&supervisors={4}&deadline={5}";
+            string actualurl = String.Format(baseurl, Constants.me.userid);
 
-        //}
+            Console.WriteLine(actualurl);
+            HttpClient _client = new HttpClient();
+            var uri = new Uri(actualurl);
+            var response = await _client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                return int.Parse(await response.Content.ReadAsStringAsync());
+            }
+            return Constants.SERVER_ERROR;
+        }
+       
+        public static async Task<List<BaseTask>> GetIndividualTask(int i)
+        {
+            string baseurl = Constants.BaseAddress + "getNewIndvInvite?userid={0}";
+            string actualurl = String.Format(baseurl, i);
+
+            Console.WriteLine(actualurl);
+            HttpClient _client = new HttpClient();
+            var uri = new Uri(actualurl);
+            var response = await _client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                String jsonString = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<BaseTask>>(jsonString);
+            }
+            //reformat this
+            return null;
+
+        }
+
+        public static async void ClearInividualTask(int i)
+        {
+            string baseurl = Constants.BaseAddress + "clearindvInvitation?userid={0}";
+            string actualurl = String.Format(baseurl, i);
+
+            Console.WriteLine(actualurl);
+            HttpClient _client = new HttpClient();
+            var uri = new Uri(actualurl);
+            var response = await _client.GetAsync(uri);
+        }
     }
 }

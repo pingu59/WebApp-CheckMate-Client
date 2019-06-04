@@ -10,14 +10,17 @@ namespace WebApp.Models
     {
         public String taskName;
         int progress;
+        internal int taskID { get; set; }
         Repetition repetition;
         int frequency;
         internal List<int> related;
         DateTime deadline { get; set; }
         TapGestureRecognizer tapRecog;
-
+        internal int ownerid;
+        private Frame view;
         public BaseTask(String taskName, Repetition repetition, int frequency, DateTime deadline,List<int> related)
         {
+            ownerid = Constants.me.userid;
             this.taskName = taskName;
             this.repetition = repetition;
             this.frequency = frequency;
@@ -28,7 +31,27 @@ namespace WebApp.Models
             tapRecog.Tapped += (sender, e) => { Constants.mainPage.DisplayTaskInfo(this); };
         }
 
-        private String getStatusString()
+        //refactor??
+        public BaseTask(int taskID, int ownerID, String taskName,Repetition repetition, int frequency, DateTime deadline, List<int> related)
+        {
+            this.ownerid = ownerID;
+            this.taskID = taskID;
+            this.taskName = taskName;
+            this.repetition = repetition;
+            this.frequency = frequency;
+            progress = 0;
+            this.deadline = deadline;
+            this.related = related;
+            tapRecog = new TapGestureRecognizer();
+            tapRecog.Tapped += (sender, e) => { Constants.mainPage.DisplayTaskInfo(this); };
+        }
+
+        internal String getDeadlineString()
+        {
+            return deadline.ToShortDateString();
+        }
+
+        internal String getStatusString()
         {
             return progress.ToString() + "/" + frequency.ToString();
         }
@@ -64,13 +87,22 @@ namespace WebApp.Models
                 FontSize = 20, // need to change here to some auto fit
                 TextColor = Color.White
             }, 0, 0);
-            grid.Children.Add(new Label
+            StackLayout layout2 = new StackLayout { };
+            layout2.Children.Add(new Label
             {
                 Text = getStatusString(),
                 FontSize = 10,
                 TextColor = Color.FromHex("675533"),
                 HorizontalOptions = LayoutOptions.Start
-            }, 1, 0);
+            });
+            layout2.Children.Add(new Label
+            {
+                Text = deadline.ToShortDateString(),
+                FontSize = 10,
+                TextColor = Color.White,
+                HorizontalOptions = LayoutOptions.Start
+            });
+            grid.Children.Add(layout2, 1, 0);
             grid.Children.Add(new Label
             {
                 Text = RepetitionConverter.RepToString(repetition),
@@ -82,19 +114,23 @@ namespace WebApp.Models
 
         internal virtual Frame GetView()
         {
-            Frame taskCard = new Frame
+            if(view == null)
             {
-                CornerRadius = 10,
-                BackgroundColor = Color.FromHex("97B245"),
-                Padding = 20,
-                HeightRequest = 60,
-                Margin = 20,
-                HorizontalOptions = LayoutOptions.Center,
-                WidthRequest = 350,
-                Content = getContentGrid()
-            };
-            taskCard.GestureRecognizers.Add(tapRecog);
-            return taskCard;
+                Frame taskCard = new Frame
+                {
+                    CornerRadius = 10,
+                    BackgroundColor = Color.FromHex("97B245"),
+                    Padding = 20,
+                    HeightRequest = 60,
+                    Margin = 20,
+                    HorizontalOptions = LayoutOptions.Center,
+                    WidthRequest = 350,
+                    Content = getContentGrid()
+                };
+                taskCard.GestureRecognizers.Add(tapRecog);
+                view = taskCard;
+            }
+            return view;
         }
     }
 }

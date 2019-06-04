@@ -47,8 +47,9 @@ namespace WebApp.Views
                                 RepetitionConverter.ToRepetition(selectedItem.ToString());
                             int frequency = int.Parse(Frequency.Text);
                             task = new BaseTask(taskName.Text, repetition, frequency, datepicker.Date ,supervisors);
+                            int taskid = await Communications.addIndividual(task);
+                            task.taskID = taskid;
                             Constants.mainPage.SetNewTask(task);
-                            //Communications.addIndividual(task);
                             await Navigation.PopAsync(true);
                             involvedFriends.pop();
                         }

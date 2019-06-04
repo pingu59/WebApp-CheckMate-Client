@@ -12,8 +12,6 @@ namespace WebApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MyTaskPage
     {
-        IList<BaseTask> tasks = new List<BaseTask>();
-
         public MyTaskPage()
         {
             InitializeComponent();
@@ -31,10 +29,7 @@ namespace WebApp.Views
             //temporary
             foreach (FriendEntity f in Constants.Friend.Friends)
             {
-                FriendList.Children.Add(new Label
-                {
-                    Text = f.FriendID.ToString()
-                });
+                FriendList.Children.Add(f.GetView());
             }
             //foreach (BaseTask task in tasks)
             //{
@@ -106,13 +101,14 @@ namespace WebApp.Views
         public async void OnLogOutButtonClicked(object sender, System.EventArgs e)
         {
             //CHANGED HERE!!!
+            await App.UserDB.UpdateAsync(new UserDBModel(1, -1));
             await Navigation.PopToRootAsync();
         }
 
         public async void DisplayTaskInfo(BaseTask task)
         {
-            await DisplayAlert(task.taskName + " Frame tapped",
-                "Todo:\n 1.check friend progress\n 2.add my completed task", "ok");
+            await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PushAsync(
+                new IndividualTaskPopUp(task));
         }
 
         public async void CheckFriendTask(CompletedTask task)
@@ -120,10 +116,14 @@ namespace WebApp.Views
             await DisplayAlert(task.Title + " Frame tapped", "TODO:\n add check to friend's completed task", "ok");
         }
 
+        internal async void DisplayInvitation(String str)
+        {
+            await DisplayAlert("New invitation!", str, "ok");
+        }
 
         public void SetNewTask(BaseTask task)
         {
-            tasks.Add(task);
+            Constants.MyTask.Add(task);
             taskStack.Children.Add(task.GetView());
         }
     }
