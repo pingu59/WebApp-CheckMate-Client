@@ -199,3 +199,6 @@
 /Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/stamp/_CopyMdbFiles.stamp
 /Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/stamp/_CopyPdbFiles.stamp
 /Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
+/Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/android/assets/machine.config
+/Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/stamp/_CompileToDalvik.stamp
+/Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp

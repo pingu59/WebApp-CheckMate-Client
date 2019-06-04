@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using SQLite;
+using WebApp.Data;
 using WebApp.Models;
 using Xamarin.Forms;
 
@@ -42,22 +43,28 @@ namespace WebApp.Views
             {    //login successfully
                 string userJson = responses[1];
                 User user = JsonConvert.DeserializeObject<User>(userJson);
-                Constants.me = User.GetUserInfo(user);
+                Constants.me = user;
+                Constants.Friend = new Friend();
+                int databaseIndex = CheckUserInLocalDB(user.userid);
+                //TODO
+                if ( databaseIndex == -1)
+                {   //if not in local database, load to local db
+                    User.SaveToLocal();
+                    Constants.Friend.Friends = await Communications.GetAllFriend();
+                    Friend.SaveToLocal();
+                }
+                else
+                {   // load from local db
+                    Friend.LoadFromLocal(databaseIndex);
+                }
+
+
                 System.Threading.Tasks.Task.Run(() =>
                 {
                     PeriodicCheck();
                 }).ConfigureAwait(false);
-                Constants.Friend = new Friend();
-                if (true)
-                {
-                    //create local db
-                    Constants.Friend.Friends = await Communications.GetAllFriend();
-                    //store in local db
-                }
-                else
-                {
-                    Constants.Friend = Friend.GetFriendInfo(Constants.me.userid);
-                }
+
+
                 MyTaskPage mainpage = new MyTaskPage();
                 Constants.mainPage = mainpage;
                 await Navigation.PushAsync(mainpage);
@@ -105,7 +112,25 @@ namespace WebApp.Views
                 await DisplayAlert(null, Constants.USER_INCORRECT_PWD_MSG, "OK");
             }
         }
-        
+
+        private static int CheckUserInLocalDB(int UserID)
+        {
+            int DatabaseIndex = -1;
+            foreach (UserDatabase UserDB in App.Database)
+            {
+                DatabaseIndex++;
+                List<User> UserProfile = UserDB.GetUserAsync().Result;
+                foreach (User user in UserProfile)
+                {
+                    if (user.userid == UserID)
+                    {
+                        return DatabaseIndex;
+                    }
+                }
+            }
+            return -1;
+        }
+
         private static void PeriodicCheck()
         {
             Device.StartTimer(TimeSpan.FromSeconds(30), () =>

@@ -11,48 +11,23 @@ namespace WebApp.Models
         public List<FriendEntity> Friends { get; set; }
         public List<int> FriendRequests { get; set; }
 
-        public static Friend GetFriendInfo(int UserID)
+        public static void SaveToLocal()
         {
-            Friend friend = new Friend();
-            int DatabaseIndex = CheckUserInLocalDB(UserID);
-            if (DatabaseIndex > -1)
-            {   // load from local database
-                UserDatabase db = App.Database[DatabaseIndex];
-                List<FriendEntity> friendList = db.GetFriendsAsync().Result;
-                friend.Friends = friendList;
-
-            }
-            else
-            {   // retrieve data from web server and cache
-                friend.Friends = Communications.GetAllFriend().Result;
-                int maxIndex = App.Database.Count;
-                string dbFile = string.Format("userDB{0}.db3", maxIndex);
-                string dbPath = Path.Combine(Constants.PathPrefix, dbFile);
-                App.Database.Add(new UserDatabase(dbPath));
-                UserDatabase db = App.Database[maxIndex];
-                db.SaveFriendsAsync(friend.Friends);
-            }
-            return friend;
-
+            int maxIndex = App.Database.Count-1;
+            //string dbFile = string.Format("userDB{0}.db3", maxIndex);
+            //string dbPath = Path.Combine(Constants.PathPrefix, dbFile);
+            UserDatabase db = App.Database[maxIndex];
+            db.SaveFriendsAsync(Constants.Friend.Friends);
         }
-        
-        private static int CheckUserInLocalDB(int UserID)
+
+        public static void LoadFromLocal(int databaseIndex)
         {
-            int DatabaseIndex = -1;
-            foreach (UserDatabase UserDB in App.Database)
-            {
-                DatabaseIndex++;
-                List<User> UserProfile = UserDB.GetUserAsync().Result;
-                foreach (User user in UserProfile)
-                {
-                    if (user.userid == UserID)
-                    {
-                        return DatabaseIndex;
-                    }
-                }
-            }
-            return -1;
+            // load from local database
+            UserDatabase db = App.Database[databaseIndex];
+            List<FriendEntity> friendList = db.GetFriendsAsync().Result;
+            Constants.Friend.Friends = friendList;
         }
+
 
         public List<View> GetAllViews()
         {

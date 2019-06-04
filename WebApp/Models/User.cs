@@ -50,22 +50,16 @@ namespace WebApp.Models
             return thisLabel;
         }
 
-        public static User GetUserInfo(User user)
+        public static void SaveToLocal()
         {
-            int DatabaseIndex = CheckUserInLocalDB(user.userid);
-
             //save userinfo into local database
-            if(DatabaseIndex == -1)
-            {
-                int maxIndex = App.Database.Count+1;
-                string dbFile = string.Format("userDB{0}.db3", maxIndex);
-                string dbPath = Path.Combine(Constants.PathPrefix, dbFile);
-                App.Database.Add(new UserDatabase(dbPath));
-                UserDatabase db = App.Database[maxIndex-1];
-                db.SaveUserAsync(user);
+            int maxIndex = App.Database.Count;
+            string dbFile = string.Format("userDB{0}.db3", maxIndex);
+            string dbPath = Path.Combine(Constants.PathPrefix, dbFile);
+            App.Database.Add(new UserDatabase(dbPath));
+            UserDatabase db = App.Database[maxIndex];
+            db.SaveUserAsync(Constants.me);
 
-            }
-            return user;
         }
         private static int CheckUserInLocalDB(int UserID)
         {
