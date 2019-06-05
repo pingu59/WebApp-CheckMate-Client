@@ -78,6 +78,8 @@
           <e p="MyTaskPage.xaml.cs" t="Include" />
           <e p="SettingPage.xaml" t="Include" />
           <e p="SettingPage.xaml.cs" t="Include" />
+          <e p="TaskCheckerPopUp.xaml" t="Include" />
+          <e p="TaskCheckerPopUp.xaml.cs" t="Include" />
         </e>
         <e p="WebApp.csproj" t="IncludeRecursive" />
       </e>

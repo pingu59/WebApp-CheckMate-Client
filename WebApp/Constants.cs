@@ -34,6 +34,7 @@ namespace WebApp
         public static int DEFAULT_USER_NOT_EXIST = -1;
         public static int NEW_USER_LOGIN = -1;
 
+
         public static User me = User.getFailure();
         public static Friend Friend;
         public static MyTaskPage mainPage;

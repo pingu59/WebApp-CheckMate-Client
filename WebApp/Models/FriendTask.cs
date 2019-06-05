@@ -5,20 +5,23 @@ namespace WebApp.Models
 {
     public class FriendTask
     {
-        private int taskid;
+        internal int taskid;
         internal string taskname;
         internal bool completed;
         internal string ownername;
         private Frame view;
         TapGestureRecognizer tapRecog;
-        public FriendTask(int taskid, string taskname, string ownername)
+        private BaseTask task;
+        public FriendTask(BaseTask task)
         {
-            this.taskid = taskid;
-            this.taskname = taskname.Substring(1, taskname.Length - 2);
-            this.ownername = ownername;
+            this.task = task;
+            this.taskid = task.taskID;
+            //substring
+            this.taskname = task.taskName;
+            this.ownername = Constants.Friend.getNameOf(task.ownerid);
             completed = false;
             tapRecog = new TapGestureRecognizer();
-            tapRecog.Tapped += (sender, e) => { Constants.mainPage.FriendTaskDetail(this); };
+            tapRecog.Tapped += (sender, e) => { Constants.mainPage.FriendTaskDetail(task); };
         }
 
         public Frame GetView()
@@ -40,32 +43,6 @@ namespace WebApp.Models
                 view = taskCard;
             }
             return view;
-        }
-
-        public void OnComplete()
-        {
-            completed = true;
-            if (view == null)
-            {
-                Frame taskCard = new Frame
-                {
-                    CornerRadius = 10,
-                    Padding = 20,
-                    BackgroundColor = Color.Lavender,
-                    HeightRequest = 60,
-                    Margin = 20,
-                    HorizontalOptions = LayoutOptions.Center,
-                    WidthRequest = 330,
-                    Content = getContentGrid()
-                };
-                taskCard.GestureRecognizers.Add(tapRecog);
-                view = taskCard;
-            }
-            else
-            {
-                view.BackgroundColor = Color.Lavender;
-                view.Content = getContentGrid();
-            }
         }
 
         internal virtual Grid getContentGrid()
@@ -100,9 +77,6 @@ namespace WebApp.Models
             }, 0, 1);
             return grid;
         }
-
-
-
 
     }
 }

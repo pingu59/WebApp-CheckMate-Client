@@ -38,7 +38,6 @@ namespace WebApp
         {
             InitializeComponent();
             string dbpth = Constants.PathPrefix;
-
             //if default user does not exist, go to login page
             int defaultUserIndex = GetDefaultUser();
             if (defaultUserIndex == Constants.DEFAULT_USER_NOT_EXIST)
@@ -56,72 +55,7 @@ namespace WebApp
                 MainPage = new NavigationPage(login);
                 login.PushToMyTask();
             }
-            System.Threading.Tasks.Task.Run(() =>
-            {
-                PeriodicCheck();
-            }).ConfigureAwait(false);
-
         }
-
-
-        private static void PeriodicCheck()
-        {
-            Device.StartTimer(TimeSpan.FromSeconds(30), () =>
-            {
-                if(Constants.me != null)
-                {
-                    //logged in already
-                    CheckInbox();
-                    CheckNewInvitation();
-                }
-                return true; // True = Repeat again, False = Stop the timer
-            });
-        }
-
-        private async static void CheckInbox()
-        {
-            List<int> friendChanged = await Communications.FriendInbox();
-            foreach (int i in friendChanged)
-            {
-                //update database!!!
-                if (i >= 0)
-                {
-                    Constants.Friend.Friends.Add(await Communications.GetFriend(i));
-                    //add friend
-                }
-                else
-                {
-                    foreach (FriendEntity fe in Constants.Friend.Friends)
-                    {
-                        if (fe.FriendID == i)
-                        {
-                            Constants.Friend.Friends.Remove(fe);
-                        }
-                    }
-                    //delete friend
-                }
-            }
-        }
-        
-        private async static void CheckNewInvitation()
-        {
-            int myid = Constants.me.userid;
-            List<BaseTask> newinvitations = await Communications.GetIndividualTask(myid);
-            //Communications.ClearInividualTask(myid);
-            foreach(BaseTask bt in newinvitations)
-            {
-                string taskowner = Constants.Friend.getNameOf(bt.ownerid);
-                FriendTask task = new FriendTask(bt.taskID, bt.taskName, taskowner);
-                Constants.FriendTasks.Add(task);
-                String baseString = "Your friend {0} has invited you to supervise his/her task:\n" +
-                    "{1}\n Please check your friends page to see it.";
-                Console.WriteLine(bt.frequency);
-                String inviteString = String.Format(baseString, taskowner, task.taskname);
-                Constants.mainPage.DisplayInvitation(inviteString);
-                Constants.mainPage.DisplayFriendTask(task);
-            }
-        }
-        
         protected override void OnStart()
         {
             // On start runs when your application launches from a closed state, 

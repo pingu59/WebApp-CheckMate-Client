@@ -24,6 +24,6 @@
         HorizontalOptions="Center" 
         Padding="20, 20, 20, 20">
         <Label x:Name="TaskName" FontSize="50" TextColor="Yellow" HorizontalOptions="Center"/>
-        <Button Text="☑️" FontSize="40" HorizontalOptions="Center"/>
+        <Button Text="☑️" FontSize="40" HorizontalOptions="Center" Clicked="OnCheck"/>
     </StackLayout>
 </pages:PopupPage>

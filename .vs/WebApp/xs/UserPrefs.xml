@@ -1,15 +1,11 @@
 ﻿<Properties StartupConfiguration="{FC97C75F-7E78-408D-BD0A-42ADF0A53DCD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/App.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Models/FriendTask.cs">
     <Files>
-      <File FileName="WebApp/Views/TaskCheckerPopUp.xaml.cs" Line="15" Column="51" />
-      <File FileName="WebApp/Views/TaskCheckerPopUp.xaml" />
-      <File FileName="WebApp/Models/FriendTask.cs" Line="17" Column="57" />
-      <File FileName="WebApp/Models/GroupTask.cs" Line="22" Column="10" />
-      <File FileName="WebApp/Models/Friend.cs" Line="1" Column="1" />
-      <File FileName="WebApp/Models/BaseTask.cs" Line="1" Column="1" />
-      <File FileName="WebApp/Data/Communications.cs" Line="221" Column="50" />
-      <File FileName="WebApp/Data/UserDatabase.cs" Line="1" Column="1" />
-      <File FileName="WebApp/App.xaml.cs" Line="110" Column="55" />
+      <File FileName="WebApp/Views/IndividualTaskPopUp.xaml.cs" Line="23" Column="38" />
+      <File FileName="WebApp.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="WebApp/Models/FriendTask.cs" Line="19" Column="24" />
+      <File FileName="WebApp/Data/Communications.cs" Line="283" Column="1" />
+      <File FileName="WebApp/Views/LoginPage.xaml.cs" Line="26" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,23 +13,15 @@
           <Node name="WebApp" expanded="True">
             <Node name="WebApp" expanded="True">
               <Node name="Data" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="FriendTask.cs" selected="True" />
+              </Node>
               <Node name="Views" expanded="True">
                 <Node name="AboutPage.xaml" expanded="True" />
-                <Node name="AddFriendPage.xaml" expanded="True" />
-                <Node name="AddTask.xaml" expanded="True" />
-                <Node name="ChangePwdPage.xaml" expanded="True" />
-                <Node name="CreateAccountPage.xaml" expanded="True" />
-                <Node name="FriendRequestsListPage.xaml" expanded="True" />
-                <Node name="GroupTaskAdd.xaml" expanded="True" />
                 <Node name="IndividualTaskPopUp.xaml" expanded="True" />
-                <Node name="InvolveFriend.xaml" expanded="True" />
                 <Node name="LoginPage.xaml" expanded="True" />
                 <Node name="MyTaskPage.xaml" expanded="True" />
                 <Node name="TaskCheckerPopUp.xaml" expanded="True" />
-              </Node>
-              <Node name="App.xaml" expanded="True">
-                <Node name="App.xaml.cs" selected="True" />
               </Node>
             </Node>
             <Node name="WebApp.Android" expanded="True" />

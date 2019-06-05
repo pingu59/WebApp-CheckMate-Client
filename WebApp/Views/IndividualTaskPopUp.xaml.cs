@@ -8,18 +8,31 @@ namespace WebApp.Views
 {
     public partial class IndividualTaskPopUp : Rg.Plugins.Popup.Pages.PopupPage
     {
-        public IndividualTaskPopUp(BaseTask task)
+        BaseTask task;
+        bool isMyTask;
+        public IndividualTaskPopUp(BaseTask task, bool isMyTask)
         {
             InitializeComponent();
             TaskName.Text = task.taskName;
             Progress.Text = task.getStatusString();
             Deadline.Text = task.getDeadlineString();
             TaskId.Text = task.taskID.ToString();
+            this.task = task;
             foreach(int sup in task.related)
             {
                 AddedFriends.Children.Add(Constants.Friend.GetViewof(sup));
             }
+            this.isMyTask = isMyTask;
+            if (!isMyTask)
+            {
+                sendingButton.IsVisible = false;
+            }
             BindingContext = this;
+        }
+
+        private async void OnClicked(object sender, EventArgs e)
+        {
+            int updateNo = await Communications.sendNewUpdate(task.taskID);
         }
 
         protected override void OnAppearing()

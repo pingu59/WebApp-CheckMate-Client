@@ -22,14 +22,34 @@ namespace WebApp.Views
         {
             Constants.FriendTasks = new List<FriendTask>();
             //Don't change the sequence here pls
-            MyTaskPage mainpage = new MyTaskPage();
-            Constants.mainPage = mainpage;
-            //ADDITION HERE!!!!!!!!!!
-            //load from local/online here!!!
             Constants.MyTask = new List<BaseTask>();
             Constants.requestPage = new FriendRequestsListPage();
             Constants.meEntity = new FriendEntity(Constants.me.userid, Constants.me.username);
+
+            await LoadMyTasksFromServer();
+            await LoadFriendTaskFromServer();
+            MyTaskPage mainpage = new MyTaskPage();
+            Constants.mainPage = mainpage;
             await Navigation.PushAsync(mainpage);
+        }
+        private async Task<bool> LoadMyTasksFromServer()
+        {
+            List<BaseTask> task = await Communications.GetAllMyTasks();
+            foreach (BaseTask t in task)
+            {
+                Constants.MyTask.Add(t);
+            }
+            return true;
+        }
+
+        private async Task<bool> LoadFriendTaskFromServer()
+        {
+            List<FriendTask> task = await Communications.GetAllFriendTasks();
+            foreach (FriendTask t in task)
+            {
+                Constants.FriendTasks.Add(t);
+            }
+            return true;
         }
 
         private async void OnSigninButtonClicked(object sender, EventArgs e)

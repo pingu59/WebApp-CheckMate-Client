@@ -8,11 +8,12 @@ namespace WebApp.Views
 {
     public partial class TaskCheckerPopUp : Rg.Plugins.Popup.Pages.PopupPage
     {
-        public TaskCheckerPopUp(FriendTask friendtask)
+        FriendUpdate friendUpdate;
+        public TaskCheckerPopUp(FriendUpdate friendUpdate)
         {
             InitializeComponent();
-            TaskName.Text = friendtask.taskname;
-            bool completed = friendtask.completed;
+            TaskName.Text = friendUpdate.task.taskname;
+            this.friendUpdate = friendUpdate;
             BindingContext = this;
         }
 
@@ -21,6 +22,10 @@ namespace WebApp.Views
             base.OnAppearing();
         }
 
+        private async void OnCheck(Object obj, EventArgs sender)
+        {
+            await Communications.sendNewCheck(friendUpdate.updateNo, friendUpdate.taskID);
+        }
         protected override void OnDisappearing()
         {
             base.OnDisappearing();

@@ -207,18 +207,18 @@ namespace WebApp
             }
             return Constants.SERVER_ERROR;
         }
-       
+
         private static string toSpringBootArray(List<int> list)
         {
             string b = "";
-            foreach(int i in list)
+            foreach (int i in list)
             {
                 b += "," + i.ToString();
             }
             return b.Substring(1);
         }
 
-        public static async Task<List<BaseTask>> GetIndividualTask(int i)
+        public static async Task<List<BaseTask>> GetNewIndividualTask(int i)
         {
             string baseurl = Constants.BaseAddress + "getNewIndvInvite?userId={0}";
             string actualurl = String.Format(baseurl, i);
@@ -233,19 +233,120 @@ namespace WebApp
                 return JsonConvert.DeserializeObject<List<BaseTask>>(jsonString);
             }
             //reformat this
-            Console.WriteLine("Not successful");
+            Console.WriteLine("Not successful1");
             return new List<BaseTask>();
         }
 
-        public static async void ClearInividualTask(int i)
+        public static async Task<bool> ClearInividualTask(int i)
         {
-            string baseurl = Constants.BaseAddress + "clearindvInvitation?userid={0}";
+            string baseurl = Constants.BaseAddress + "clearindvInvitation?userId={0}";
             string actualurl = String.Format(baseurl, i);
 
             Console.WriteLine(actualurl);
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);
             var response = await _client.GetAsync(uri);
+            return true;
         }
+
+        public static async Task<List<BaseTask>> GetAllMyTasks()
+        {
+            string baseurl = Constants.BaseAddress + "getMyIndividual?userId={0}";
+            string actualurl = String.Format(baseurl, Constants.me.userid);
+            HttpClient _client = new HttpClient();
+            var uri = new Uri(actualurl);
+            var response = await _client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                string tasksJson = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(tasksJson);
+                return JsonConvert.DeserializeObject<List<BaseTask>>(tasksJson);
+            }
+            Console.WriteLine("not successful??withuserid" + Constants.me.userid);
+            return new List<BaseTask>();
+        }
+
+        public static async Task<List<FriendTask>> GetAllFriendTasks()
+        {
+            string baseurl = Constants.BaseAddress + "getFriendIndividual?userId={0}";
+            string actualurl = String.Format(baseurl, Constants.me.userid);
+            HttpClient _client = new HttpClient();
+            var uri = new Uri(actualurl);
+            var response = await _client.GetAsync(uri);
+            List<FriendTask> friendTasks = new List<FriendTask>();
+            if (response.IsSuccessStatusCode)
+            {
+                string tasksJson = await response.Content.ReadAsStringAsync();
+                List<BaseTask> bases = JsonConvert.DeserializeObject<List<BaseTask>>(tasksJson);
+                foreach (BaseTask b in bases)
+                {
+                    friendTasks.Add(new FriendTask(b));
+                }
+            }
+            return friendTasks;
+        }
+
+        public static async Task<int>sendNewUpdate(int taskid){
+            string baseurl = Constants.BaseAddress + "addIndvProgressUpdate?taskId={0}";
+            string actualurl = String.Format(baseurl, taskid);
+            HttpClient _client = new HttpClient();
+            var uri = new Uri(actualurl);
+            var response = await _client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                string tasksJson = await response.Content.ReadAsStringAsync();
+                return int.Parse(tasksJson);
+            }
+            return Constants.SERVER_ERROR;
+        }
+
+        public static async Task<List<FriendUpdate>> checkNewFriendUpdate()
+        {
+            string baseurl = Constants.BaseAddress + "supvUpdate?supvId={0}";
+            string actualurl = String.Format(baseurl, Constants.me.userid);
+            HttpClient _client = new HttpClient();
+            var uri = new Uri(actualurl);
+            var response = await _client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                string tasksJson = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<FriendUpdate>>(tasksJson);
+            }
+            Console.Out.WriteLine("Check New Friend Update failed");
+            return new List<FriendUpdate>();
+        }
+
+        public static async Task<List<FriendCheck>> checkMyUpdatedIndividual()
+        {
+            string baseurl = Constants.BaseAddress + "indvOwnerUpdate?ownerId={0}";
+            string actualurl = String.Format(baseurl, Constants.me.userid);
+            HttpClient _client = new HttpClient();
+            var uri = new Uri(actualurl);
+            var response = await _client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                string tasksJson = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<FriendCheck>>(tasksJson);
+            }
+            Console.Out.WriteLine("Check my Update failed");
+            return new List<FriendCheck>();
+        }
+
+        public static async Task<int> sendNewCheck(int updateNo, int taskId)
+        {
+            string baseurl = Constants.BaseAddress + "supvCheck?supervisorId={0}&taskID={1}&updateNumber={2}";
+            string actualurl = String.Format(baseurl, Constants.me.userid, taskId, updateNo);
+            HttpClient _client = new HttpClient();
+            var uri = new Uri(actualurl);
+            var response = await _client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                string tasksJson = await response.Content.ReadAsStringAsync();
+                return int.Parse(tasksJson);
+            }
+            return Constants.SERVER_ERROR;
+        }
+        
+
     }
 }

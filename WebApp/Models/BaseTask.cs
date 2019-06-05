@@ -3,6 +3,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using WebApp.Views;
 using System.Collections.Generic;
+using Newtonsoft.Json;
+using System.Linq;
 
 namespace WebApp.Models
 {
@@ -33,18 +35,40 @@ namespace WebApp.Models
         }
 
         //refactor??
-        public BaseTask(int taskID, int ownerID, String taskName,Repetition repetition, int frequency, DateTime deadline, List<int> related)
+        [JsonConstructor]
+        public BaseTask(int taskID, int ownerID, string taskName,String repetition, int frequency, DateTime deadline, String related)
         {
             this.ownerid = ownerID;
             this.taskID = taskID;
-            this.taskName = taskName;
-            this.repetition = repetition;
+            this.taskName = taskName.Substring(0, taskName.Count() -2);
+            this.repetition = RepetitionConverter.ToRepetition(repetition.Substring(1, related.Count() - 2));
             this.frequency = frequency;
             progress = 0;
             this.deadline = deadline;
-            this.related = related;
+            this.related = parseToList(related.Substring(1, related.Count() - 2));
             tapRecog = new TapGestureRecognizer();
             tapRecog.Tapped += (sender, e) => { Constants.mainPage.DisplayTaskInfo(this); };
+        }
+
+        private List<int> parseToList(string source)
+        {
+            List<int> related = new List<int>();
+            string b = "";
+            while(source.Count() > 0)
+            {
+                char i = source.First();
+                source = source.Substring(1);
+                if(i == ',')
+                {
+                    related.Add(int.Parse(b));
+                    b = "";
+                }
+                else
+                {
+                    b += i;
+                }
+            }
+            return related;
         }
 
         internal String getDeadlineString()
