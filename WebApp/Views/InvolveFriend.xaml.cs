@@ -45,18 +45,25 @@ namespace WebApp.Views
 
         public async void OnNext(object sender, EventArgs e)
         {
-            List<int> addedIDs = new List<int>();
-            foreach (FriendEntity fe in addedEntities)
+            if(addedEntities.Count == 0)
             {
-                addedIDs.Add(fe.FriendID);
-            }
-            if (isGroupTask)
-            {
-                await Navigation.PushAsync(new GroupTaskAdd(addedIDs, this));
+                await DisplayAlert("Alert", "Please choose at least one friend!", "ok");
             }
             else
             {
-                await Navigation.PushAsync(new AddTask(addedIDs, this));
+                List<int> addedIDs = new List<int>();
+                foreach (FriendEntity fe in addedEntities)
+                {
+                    addedIDs.Add(fe.FriendID);
+                }
+                if (isGroupTask)
+                {
+                    await Navigation.PushAsync(new GroupTaskAdd(addedIDs, this));
+                }
+                else
+                {
+                    await Navigation.PushAsync(new AddTask(addedIDs, this));
+                }
             }
         }
 

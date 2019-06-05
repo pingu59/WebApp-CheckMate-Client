@@ -11,13 +11,14 @@ namespace WebApp.Models
         public String taskName;
         int progress;
         internal int taskID { get; set; }
-        Repetition repetition;
-        int frequency;
+        internal Repetition repetition;
+        internal int frequency;
         internal List<int> related;
         DateTime deadline { get; set; }
         TapGestureRecognizer tapRecog;
         internal int ownerid;
         private Frame view;
+        public BaseTask() { }
         public BaseTask(String taskName, Repetition repetition, int frequency, DateTime deadline,List<int> related)
         {
             ownerid = Constants.me.userid;

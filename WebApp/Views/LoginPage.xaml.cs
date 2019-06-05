@@ -18,6 +18,19 @@ namespace WebApp.Views
             InitializeComponent();
         }
 
+        public async void PushToMyTask()
+        {
+            MyTaskPage mainpage = new MyTaskPage();
+            Constants.mainPage = mainpage;
+            //ADDITION HERE!!!!!!!!!!
+            //load from local/online here!!!
+            Constants.FriendTask = new List<BaseTask>();
+            Constants.MyTask = new List<BaseTask>();
+            Constants.requestPage = new FriendRequestsListPage();
+            Constants.meEntity = new FriendEntity(Constants.me.userid, Constants.me.username);
+            await Navigation.PushAsync(mainpage);
+        }
+
         private async void OnSigninButtonClicked(object sender, EventArgs e)
         {
             int userID = await CheckLoginInput();
@@ -79,22 +92,7 @@ namespace WebApp.Views
                 //    Friend.LoadFromLocal(databaseIndex);
                 //}
                 /////////
-
-                System.Threading.Tasks.Task.Run(() =>
-                {
-                    PeriodicCheck();
-                }).ConfigureAwait(false);
-
-
-                MyTaskPage mainpage = new MyTaskPage();
-                Constants.mainPage = mainpage;
-                //ADDITION HERE!!!!!!!!!!
-                //load from local/online here!!!
-                Constants.FriendTask = new List<BaseTask>();
-                Constants.MyTask = new List<BaseTask>();
-                Constants.requestPage = new FriendRequestsListPage();
-                Constants.meEntity = new FriendEntity(user.userid, user.username);
-                await Navigation.PushAsync(mainpage);
+                PushToMyTask();
             }
         }
 
@@ -152,64 +150,6 @@ namespace WebApp.Views
             }
         }
 
-        private static void PeriodicCheck()
-        {
-            Device.StartTimer(TimeSpan.FromSeconds(30), () =>
-            {
-                CheckInbox();
-                CheckNewInvitation();
-                return true; // True = Repeat again, False = Stop the timer
-            });
-        }
-
-        private async static void CheckInbox()
-        {
-            List<int> friendChanged = await Communications.FriendInbox();
-            foreach(int i in friendChanged)
-            {
-                //update database!!!
-                if(i >= 0)
-                {
-                    Constants.Friend.Friends.Add(await Communications.GetFriend(i));
-                    //add friend
-                }
-                else
-                {
-                    foreach (FriendEntity fe in Constants.Friend.Friends)
-                    {
-                        if(fe.FriendID == i)
-                        {
-                            Constants.Friend.Friends.Remove(fe);
-                        }
-                    }
-                    //delete friend
-                }
-            }
-        }
-
-        private async static void CheckNewInvitation()
-        {
-            int myid = Constants.me.userid;
-            List<BaseTask> newinvitations = await Communications.GetIndividualTask(myid);
-            Communications.ClearInividualTask(myid);
-            foreach(BaseTask bt in newinvitations)
-            {
-                Constants.FriendTask.Add(bt);
-                String baseString = "Your friend {0} has invited you to supervise his/her task:\n" +
-                    "{1}\n Please check your friends page to see it.";
-                String friendName = null;
-                foreach(FriendEntity fe in Constants.Friend.Friends)
-                {
-                    if(fe.FriendID == bt.ownerid)
-                    {
-                        friendName = fe.FriendName;
-                        break;
-                    }
-                }
-                String inviteString = String.Format(baseString, friendName, bt.taskName);
-                Constants.mainPage.DisplayInvitation(inviteString);
-            }
-        }
 
         private async void OnRegisterButtonClicked(object sender, EventArgs e)
         {

@@ -194,8 +194,9 @@ namespace WebApp
         {
             string baseurl = Constants.BaseAddress + "createIndvTask?myid={0}&taskname={1}&" +
                 "repetition={2}&frequency={3}&supervisors={4}&deadline={5}";
-            string actualurl = String.Format(baseurl, Constants.me.userid);
-
+            string actualurl = String.Format(baseurl, Constants.me.userid, task.taskName,
+                task.repetition.ToString(), task.frequency, toSpringBootArray(task.related),
+                task.getDeadlineString());
             Console.WriteLine(actualurl);
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);
@@ -207,9 +208,19 @@ namespace WebApp
             return Constants.SERVER_ERROR;
         }
        
+        private static string toSpringBootArray(List<int> list)
+        {
+            string b = "";
+            foreach(int i in list)
+            {
+                b += "," + i.ToString();
+            }
+            return b.Substring(1);
+        }
+
         public static async Task<List<BaseTask>> GetIndividualTask(int i)
         {
-            string baseurl = Constants.BaseAddress + "getNewIndvInvite?userid={0}";
+            string baseurl = Constants.BaseAddress + "getNewIndvInvite?userId={0}";
             string actualurl = String.Format(baseurl, i);
 
             Console.WriteLine(actualurl);
@@ -222,8 +233,8 @@ namespace WebApp
                 return JsonConvert.DeserializeObject<List<BaseTask>>(jsonString);
             }
             //reformat this
-            return null;
-
+            Console.WriteLine("Not successful");
+            return new List<BaseTask>();
         }
 
         public static async void ClearInividualTask(int i)

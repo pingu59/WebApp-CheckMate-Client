@@ -27,6 +27,7 @@ namespace WebApp.Views
             //    FriendList.Children.Add(u.GetView());
             //}
             //temporary
+
             foreach (FriendEntity f in Constants.Friend.Friends)
             {
                 FriendList.Children.Add(f.GetView());
@@ -102,7 +103,13 @@ namespace WebApp.Views
         {
             //CHANGED HERE!!!
             await App.UserDB.UpdateAsync(new UserDBModel(1, -1));
+            ClearConstants();
             await Navigation.PopToRootAsync();
+        }
+
+        private void ClearConstants()
+        {
+            Constants.me = null;
         }
 
         public async void DisplayTaskInfo(BaseTask task)
