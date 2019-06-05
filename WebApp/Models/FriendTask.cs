@@ -14,7 +14,7 @@ namespace WebApp.Models
         public FriendTask(int taskid, string taskname, string ownername)
         {
             this.taskid = taskid;
-            this.taskname = taskname;
+            this.taskname = taskname.Substring(1, taskname.Length - 2);
             this.ownername = ownername;
             completed = false;
             tapRecog = new TapGestureRecognizer();

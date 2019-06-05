@@ -115,7 +115,8 @@ namespace WebApp
                 Constants.FriendTasks.Add(task);
                 String baseString = "Your friend {0} has invited you to supervise his/her task:\n" +
                     "{1}\n Please check your friends page to see it.";
-                String inviteString = String.Format(baseString, taskowner, bt.taskName);
+                Console.WriteLine(bt.frequency);
+                String inviteString = String.Format(baseString, taskowner, task.taskname);
                 Constants.mainPage.DisplayInvitation(inviteString);
                 Constants.mainPage.DisplayFriendTask(task);
             }
