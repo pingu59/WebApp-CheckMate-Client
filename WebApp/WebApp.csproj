@@ -36,6 +36,7 @@
         <Compile Remove="Models\UserView.xaml.cs" />
         <Compile Remove="Views\AddTask %28副本%29.xaml.cs" />
         <Compile Remove="Views\AddTask %28副本%29.xaml.cs" />
+        <Compile Remove="Views\TaskCheckerPopIp.xaml.cs" />
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Models\" />

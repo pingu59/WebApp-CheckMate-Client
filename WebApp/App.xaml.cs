@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Threading.Tasks;
 using SQLite;
 using WebApp.Data;
 using WebApp.Models;
@@ -101,7 +102,7 @@ namespace WebApp
                 }
             }
         }
-
+        
         private async static void CheckNewInvitation()
         {
             int myid = Constants.me.userid;
@@ -109,22 +110,17 @@ namespace WebApp
             //Communications.ClearInividualTask(myid);
             foreach(BaseTask bt in newinvitations)
             {
-                Constants.FriendTask.Add(bt);
+                string taskowner = Constants.Friend.getNameOf(bt.ownerid);
+                FriendTask task = new FriendTask(bt.taskID, bt.taskName, taskowner);
+                Constants.FriendTasks.Add(task);
                 String baseString = "Your friend {0} has invited you to supervise his/her task:\n" +
                     "{1}\n Please check your friends page to see it.";
-                String friendName = null;
-                foreach(FriendEntity fe in Constants.Friend.Friends)
-                {
-                    if(fe.FriendID == bt.ownerid)
-                    {
-                        friendName = fe.FriendName;
-                        break;
-                    }
-                }
-                String inviteString = String.Format(baseString, friendName, bt.taskName);
+                String inviteString = String.Format(baseString, taskowner, bt.taskName);
                 Constants.mainPage.DisplayInvitation(inviteString);
+                Constants.mainPage.DisplayFriendTask(task);
             }
         }
+        
         protected override void OnStart()
         {
             // On start runs when your application launches from a closed state, 

@@ -20,11 +20,12 @@ namespace WebApp.Views
 
         public async void PushToMyTask()
         {
+            Constants.FriendTasks = new List<FriendTask>();
+            //Don't change the sequence here pls
             MyTaskPage mainpage = new MyTaskPage();
             Constants.mainPage = mainpage;
             //ADDITION HERE!!!!!!!!!!
             //load from local/online here!!!
-            Constants.FriendTask = new List<BaseTask>();
             Constants.MyTask = new List<BaseTask>();
             Constants.requestPage = new FriendRequestsListPage();
             Constants.meEntity = new FriendEntity(Constants.me.userid, Constants.me.username);
@@ -77,21 +78,6 @@ namespace WebApp.Views
                     await App.UserDB.UpdateAsync(new UserDBModel(1, Constants.me.userid));
                     Friend.LoadFromLocal();
                 }
-
-
-                ////TODO
-                //int databaseIndex = CheckUserInLocalDB(user.userid);
-                //if ( databaseIndex == -1)
-                //{   //if not in local database, load to local db
-                //    User.SaveToLocal();
-                //    Constants.Friend.Friends = await Communications.GetAllFriend();
-                //    Friend.SaveToLocal();
-                //}
-                //else
-                //{   // load from local db
-                //    Friend.LoadFromLocal(databaseIndex);
-                //}
-                /////////
                 PushToMyTask();
             }
         }

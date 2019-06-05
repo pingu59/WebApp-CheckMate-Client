@@ -39,7 +39,7 @@ namespace WebApp
         public static MyTaskPage mainPage;
         public static FriendEntity meEntity;
         public static FriendRequestsListPage requestPage;
-        public static List<BaseTask> FriendTask;
+        public static List<FriendTask> FriendTasks;
         public static List<BaseTask> MyTask;
     }
 }

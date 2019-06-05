@@ -59,10 +59,6 @@ namespace WebApp.Models
 
         internal virtual Grid getContentGrid()
         {
-            StackLayout layout = new StackLayout
-            {
-                Orientation = StackOrientation.Horizontal
-            };
             Grid grid = new Grid
             {
                 VerticalOptions = LayoutOptions.CenterAndExpand,
@@ -77,11 +73,6 @@ namespace WebApp.Models
                     new RowDefinition {Height = 20}
                 }
             };
-            foreach (int i in related)
-            {
-                layout.Children.Add(Constants.Friend.GetViewof(i));
-            }
-
             grid.Children.Add(new Label
             {
                 Text = taskName,
@@ -109,7 +100,6 @@ namespace WebApp.Models
                 Text = RepetitionConverter.RepToString(repetition),
                 FontSize = 10,
             }, 1, 1);
-            grid.Children.Add(layout, 0, 1);
             return grid;
         }
 

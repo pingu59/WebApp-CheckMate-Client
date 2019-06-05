@@ -29,6 +29,19 @@ namespace WebApp.Models
             Constants.Friend.Friends = App.Database.GetFriendsAsync().Result;
         }
 
+        public string getNameOf(int i)
+        {
+            foreach (FriendEntity fe in Friends)
+            {
+                if (fe.FriendID == i)
+                {
+                    return fe.FriendName;
+                } 
+            }
+            //never here.
+            return null;
+        }
+
         internal View GetViewof(int friendid)
         {
             FriendEntity thisfriend = Friends.Find((obj) => obj.FriendID == friendid);

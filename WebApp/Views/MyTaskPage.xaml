@@ -42,7 +42,7 @@
                     </ScrollView>
                 </StackLayout>
                 <ScrollView Grid.Row="0" Grid.Column="1" VerticalOptions="FillAndExpand">
-                    <StackLayout x:Name="CompletedTaskList" />
+                    <StackLayout x:Name="FriendTasks" />
                 </ScrollView>
 
             </Grid>

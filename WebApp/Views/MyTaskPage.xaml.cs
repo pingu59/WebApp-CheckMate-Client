@@ -15,27 +15,15 @@ namespace WebApp.Views
         public MyTaskPage()
         {
             InitializeComponent();
-            //All for testing purposes
-            //CompletedTask com = new CompletedTask(1, "Eat breakfast", this);
-            //completed.Add(com);
-            //foreach (CompletedTask c in completed)
-            //{
-            //    CompletedTaskList.Children.Add(c.GetView());
-            //}
-            //foreach (User u in Constants.friends.FriendsID())
-            //{
-            //    FriendList.Children.Add(u.GetView());
-            //}
-            //temporary
-
             foreach (FriendEntity f in Constants.Friend.Friends)
             {
                 FriendList.Children.Add(f.GetView());
             }
-            //foreach (BaseTask task in tasks)
-            //{
-            //    taskStack.Children.Add(task.GetView());
-            //}
+
+            foreach (FriendTask f in Constants.FriendTasks)
+            {
+                FriendTasks.Children.Add(f.GetView());
+            }
             Title = CurrentPage.Title;
 
             BindingContext = this;
@@ -44,6 +32,19 @@ namespace WebApp.Views
             _user_detail.Text = "ID : " + Constants.me.userid + '\n'; //user.Id.toString();
             _user_detail.Text += "details e.g. age"; //user.Age;
         }
+
+        internal void DisplayFriendTask(FriendTask friendTask)
+        {
+            //add to database
+            FriendTasks.Children.Add(friendTask.GetView());
+        }
+
+        internal async void FriendTaskDetail(FriendTask friendTask)
+        {
+            await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PushAsync(
+                new TaskCheckerPopUp(friendTask));
+        }
+
 
         public void addNewFriendView(int newfriend)
         {
@@ -101,7 +102,6 @@ namespace WebApp.Views
 
         public async void OnLogOutButtonClicked(object sender, System.EventArgs e)
         {
-            //CHANGED HERE!!!
             await App.UserDB.UpdateAsync(new UserDBModel(1, -1));
             ClearConstants();
             await Navigation.PopToRootAsync();
@@ -118,10 +118,6 @@ namespace WebApp.Views
                 new IndividualTaskPopUp(task));
         }
 
-        public async void CheckFriendTask(CompletedTask task)
-        {
-            await DisplayAlert(task.Title + " Frame tapped", "TODO:\n add check to friend's completed task", "ok");
-        }
 
         internal async void DisplayInvitation(String str)
         {
