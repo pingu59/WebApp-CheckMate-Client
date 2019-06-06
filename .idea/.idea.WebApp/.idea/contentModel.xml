@@ -39,8 +39,10 @@
         <e p="Models" t="Include">
           <e p="BaseTask.cs" t="Include" />
           <e p="Friend.cs" t="Include" />
+          <e p="FriendCheck.cs" t="Include" />
           <e p="FriendEntity.cs" t="Include" />
           <e p="FriendTask.cs" t="Include" />
+          <e p="FriendUpdate.cs" t="Include" />
           <e p="GroupTask.cs" t="Include" />
           <e p="Repetition.cs" t="Include" />
           <e p="User.cs" t="Include" />

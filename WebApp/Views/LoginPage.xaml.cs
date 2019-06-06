@@ -20,12 +20,9 @@ namespace WebApp.Views
 
         public async void PushToMyTask()
         {
-            Constants.FriendTasks = new List<FriendTask>();
             //Don't change the sequence here pls
-            Constants.MyTask = new List<BaseTask>();
             Constants.requestPage = new FriendRequestsListPage();
             Constants.meEntity = new FriendEntity(Constants.me.userid, Constants.me.username);
-            Constants.Friend.Friends = new List<FriendEntity>();
 
             Console.WriteLine("About to load info from server...");
             await LoadMyTasksFromServer();
@@ -38,31 +35,22 @@ namespace WebApp.Views
         }
         private async Task<bool> LoadMyTasksFromServer()
         {
-            List<BaseTask> task = await Communications.GetAllMyTasks();
-            foreach (BaseTask t in task)
-            {
-                Constants.MyTask.Add(t);
-            }
+            List<BaseTask> bt = await Communications.GetAllMyTasks();
+            Constants.MyTask = bt;
             return true;
         }
 
         private async Task<bool> LoadMyFriendsFromServer()
         {
-            List<FriendEntity> friends = await Communications.GetAllFriend();
-            foreach (FriendEntity fe in friends)
-            {
-                Constants.Friend.Friends.Add(fe);
-            }
+            List<FriendEntity> entities = await Communications.GetAllFriendEntity();
+            Constants.Friend.Friends = entities;
             return true;
         }
 
         private async Task<bool> LoadFriendTaskFromServer()
         {
-            List<FriendTask> task = await Communications.GetAllFriendTasks();
-            foreach (FriendTask t in task)
-            {
-                Constants.FriendTasks.Add(t);
-            }
+            List<FriendTask> ft = await Communications.GetAllFriendTasks();
+            Constants.FriendTasks = ft;
             return true;
         }
 
@@ -100,7 +88,7 @@ namespace WebApp.Views
                 {
                     //retrieve from web server, create new database, update userList db
                     User.SaveToLocal();
-                    Constants.Friend.Friends = await Communications.GetAllFriend();
+                    Constants.Friend.Friends = await Communications.GetAllFriendEntity();
                     Friend.SaveToLocal();
 
                 }

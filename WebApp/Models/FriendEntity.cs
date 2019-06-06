@@ -14,10 +14,10 @@ namespace WebApp.Models
         private View view;
         public FriendEntity(){}
         [JsonConstructor]
-        public FriendEntity(int userId, String username)
+        public FriendEntity(int FriendId, string FriendName)
         {
-            this.FriendID = userId;
-            this.FriendName = username;
+            this.FriendID = FriendId;
+            this.FriendName = FriendName.Substring(1, FriendName.Length - 2);
         }
 
         //make singleton
@@ -38,29 +38,5 @@ namespace WebApp.Models
             return FriendName + ", ID = " + FriendID;
         }
 
-        public static FriendEntity Deserialize(String jsonString)
-        {
-            Console.WriteLine(jsonString);
-            FriendEntity entity = JsonConvert.DeserializeObject<FriendEntity>(jsonString);
-            Console.WriteLine(entity);
-            return Normalize(entity);
-        }
-
-        public static List<FriendEntity> DeserializeList(String jsonString)
-        {
-            List<FriendEntity> entities = JsonConvert.DeserializeObject<List<FriendEntity>>(jsonString);
-            List<FriendEntity> toRet = new List<FriendEntity>();
-            foreach(FriendEntity fe in entities)
-            {
-                toRet.Add(Normalize(fe));
-            }
-            return toRet;
-        }
-
-        public static FriendEntity Normalize(FriendEntity entity)
-        {
-            entity.FriendName = entity.FriendName.Substring(1, entity.FriendName.Length - 2);
-            return entity;
-        }
     }
 }

@@ -24,10 +24,11 @@ namespace WebApp.Views
 
         private async void OnCheck(Object obj, EventArgs sender)
         {
-            await Communications.sendNewCheck(friendUpdate.updateNo, friendUpdate.taskID);
+            Console.WriteLine("Checked: updateNo" + friendUpdate.updateNo);
+            await Communications.sendNewFriendIndividualCheck(friendUpdate.updateNo, friendUpdate.taskID);
             Constants.mainPage.RemoveUpdate();
             await DisplayAlert("","Your check has been sent  to your friend","ok");
-            await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PopAsync();
+           // await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PopAsync();
         }
         protected override void OnDisappearing()
         {

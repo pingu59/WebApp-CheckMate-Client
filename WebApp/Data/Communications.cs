@@ -112,13 +112,13 @@ namespace WebApp
             {
                 String responseString = await response.Content.ReadAsStringAsync();
                 Console.WriteLine("Response string is" +responseString);
-                return FriendEntity.Deserialize(responseString);
+                return JsonConvert.DeserializeObject<FriendEntity>(responseString);
             }
             //refactor
             return null;
         }
 
-        public static async Task<FriendEntity> GetFriend(int requestid)
+        public static async Task<FriendEntity> GetFriendEntity(int requestid)
         {
             string baseurl = Constants.BaseAddress + "getUserINfo?userid={0}";
             string actualurl = String.Format(baseurl, requestid);
@@ -129,7 +129,7 @@ namespace WebApp
             if (response.IsSuccessStatusCode)
             {
                 String responseString = await response.Content.ReadAsStringAsync();
-                return FriendEntity.Deserialize(responseString);
+                return JsonConvert.DeserializeObject<FriendEntity>(responseString);
             }
             //refactor
             return null;
@@ -156,7 +156,7 @@ namespace WebApp
             return intArray;
         }
 
-        public static async Task<List<FriendEntity>> GetAllFriend()
+        public static async Task<List<FriendEntity>> GetAllFriendEntity()
         {
             string baseurl = Constants.BaseAddress + "getfriends?myid={0}";
             string actualurl = String.Format(baseurl, Constants.me.userid);
@@ -169,7 +169,7 @@ namespace WebApp
             {
                 string friendRequestsStr = await response.Content.ReadAsStringAsync();
                 Console.WriteLine(friendRequestsStr);
-                return FriendEntity.DeserializeList(friendRequestsStr);
+                return JsonConvert.DeserializeObject<List<FriendEntity>>(friendRequestsStr);
             }
             return new List<FriendEntity>();
         }
@@ -193,7 +193,7 @@ namespace WebApp
             return new List<int>();
         }
 
-        public static async Task<int> addIndividual(BaseTask task)
+        public static async Task<int> addIndividualTask(BaseTask task)
         {
             string baseurl = Constants.BaseAddress + "createIndvTask?myid={0}&taskname={1}&" +
                 "repetition={2}&frequency={3}&supervisors={4}&deadline={5}";
@@ -221,7 +221,7 @@ namespace WebApp
             return b.Substring(1);
         }
 
-        public static async Task<List<BaseTask>> GetNewIndividualTask(int i)
+        public static async Task<List<BaseTask>> GetNewIndividualInvite(int i)
         {
             string baseurl = Constants.BaseAddress + "getNewIndvInvite?userId={0}";
             string actualurl = String.Format(baseurl, i);
@@ -289,7 +289,7 @@ namespace WebApp
             return friendTasks;
         }
 
-        public static async Task<int>sendNewUpdate(int taskid){
+        public static async Task<int>sendMyNewIndividualUpdate(int taskid){
             string baseurl = Constants.BaseAddress + "addIndvProgressUpdate?taskId={0}";
             string actualurl = String.Format(baseurl, taskid);
             HttpClient _client = new HttpClient();
@@ -303,7 +303,7 @@ namespace WebApp
             return Constants.SERVER_ERROR;
         }
 
-        public static async Task<List<FriendUpdate>> checkNewFriendUpdate()
+        public static async Task<List<FriendUpdate>> checkNewFriendIndividualUpdate()
         {
             string baseurl = Constants.BaseAddress + "supvUpdate?supervisorId={0}";
             string actualurl = String.Format(baseurl, Constants.me.userid);
@@ -338,10 +338,11 @@ namespace WebApp
             return new List<FriendCheck>();
         }
 
-        public static async Task<int> sendNewCheck(int updateNo, int taskId)
+        public static async Task<int> sendNewFriendIndividualCheck(int updateNo, int taskId)
         {
             string baseurl = Constants.BaseAddress + "supvCheck?supervisorId={0}&taskId={1}&updateNumber={2}";
             string actualurl = String.Format(baseurl, Constants.me.userid, taskId, updateNo);
+            Console.WriteLine(actualurl);
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);
             var response = await _client.GetAsync(uri);

@@ -34,10 +34,8 @@ namespace WebApp.Views
             _username.Text = Constants.me.username;
             _user_detail.Text = "ID : " + Constants.me.userid + '\n'; //user.Id.toString();
             _user_detail.Text += "details e.g. age"; //user.Age;
-            Constants.backgroudProcess = System.Threading.Tasks.Task.Run(() =>
-            {
-                PeriodicCheck();
-            }).ConfigureAwait(false);
+            Constants.backgroudProcess =Task.Run(() => { PeriodicCheck(); });
+            Constants.backgroudProcess.ConfigureAwait(false);
         }
 
         internal void DisplayFriendTask(FriendTask friendTask)
@@ -115,6 +113,7 @@ namespace WebApp.Views
 
         public async void OnLogOutButtonClicked(object sender, System.EventArgs e)
         {
+            await Constants.backgroudProcess.ConfigureAwait(true);
             await App.UserDB.UpdateAsync(new UserDBModel(1, -1));
             ClearConstants();
             await Navigation.PopToRootAsync();
@@ -164,9 +163,10 @@ namespace WebApp.Views
 
         private async void CheckFriendUpdate()
         {
-            List<FriendUpdate> updates = await Communications.checkNewFriendUpdate();
-            FriendTasks.Children.Clear();
+            //BUG HERE
+            List<FriendUpdate> updates = await Communications.checkNewFriendIndividualUpdate();
             List<int> updatingTaskIds = new List<int>();
+            FriendTasks.Children.Clear();
             foreach (FriendUpdate fu in updates)
             {
                 FriendTasks.Children.Add(fu.GetView());
@@ -200,7 +200,7 @@ namespace WebApp.Views
                 //update database!!!
                 if (i >= 0)
                 {
-                    FriendEntity fe = await Communications.GetFriend(i);
+                    FriendEntity fe = await Communications.GetFriendEntity(i);
                     Constants.Friend.Friends.Add(fe);
                     FriendList.Children.Add(fe.GetView());
                 }
@@ -222,7 +222,7 @@ namespace WebApp.Views
         private async static void CheckNewInvitation()
         {
             int myid = Constants.me.userid;
-            List<BaseTask> newinvitations = await Communications.GetNewIndividualTask(myid);
+            List<BaseTask> newinvitations = await Communications.GetNewIndividualInvite(myid);
             await Communications.ClearInividualTask(myid);
             foreach (BaseTask bt in newinvitations)
             {

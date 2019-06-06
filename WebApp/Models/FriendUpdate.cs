@@ -12,10 +12,10 @@ namespace WebApp.Models
         private Frame view;
         TapGestureRecognizer tapRecog;
         [JsonConstructor]
-        public FriendUpdate(int taskID,int updateNo)
+        public FriendUpdate(int taskID,int updateNumber)
         {
             this.taskID = taskID;
-            this.updateNo = updateNo;
+            this.updateNo = updateNumber;
             this.task = Constants.FriendTasks.Find((obj) => obj.taskid == taskID);
             tapRecog = new TapGestureRecognizer();
             tapRecog.Tapped += (sender, e) => { Constants.mainPage.FriendTaskChecker(this); };

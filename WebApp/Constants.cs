@@ -43,6 +43,6 @@ namespace WebApp
         public static FriendRequestsListPage requestPage;
         public static List<FriendTask> FriendTasks;
         public static List<BaseTask> MyTask;
-        public static System.Runtime.CompilerServices.ConfiguredTaskAwaitable backgroudProcess;
+        public static Task backgroudProcess;
     }
 }

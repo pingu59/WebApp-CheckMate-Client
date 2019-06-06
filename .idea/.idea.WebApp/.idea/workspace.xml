@@ -2,37 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb1275fe-9f5c-4a22-a80a-b9d20b4b7e01" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApp/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/WebApp/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/WebApp/xs/UserPrefs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/WebApp/xs/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/WebApp/xs/sqlite3/storage.ide" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/WebApp/xs/sqlite3/storage.ide-shm" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/WebApp/xs/sqlite3/storage.ide-wal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp.Android/obj/Debug/WebApp.Android.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.Android/obj/Debug/WebApp.Android.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp.iOS/bin/iPhoneSimulator/Debug/WebApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/bin/iPhoneSimulator/Debug/WebApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp.iOS/bin/iPhoneSimulator/Debug/WebApp.iOS.app/Assets.car" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/bin/iPhoneSimulator/Debug/WebApp.iOS.app/Assets.car" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp.iOS/bin/iPhoneSimulator/Debug/WebApp.iOS.app/WebApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/bin/iPhoneSimulator/Debug/WebApp.iOS.app/WebApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp.iOS/bin/iPhoneSimulator/Debug/WebApp.iOS.app/WebApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/bin/iPhoneSimulator/Debug/WebApp.iOS.app/WebApp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp.iOS/bin/iPhoneSimulator/Debug/WebApp.iOS.exe" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/bin/iPhoneSimulator/Debug/WebApp.iOS.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp.iOS/bin/iPhoneSimulator/Debug/WebApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/bin/iPhoneSimulator/Debug/WebApp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/WebApp.iOS.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/WebApp.iOS.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp.iOS/bin/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/WebApp.iOS.app/WebApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/bin/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/WebApp.iOS.app/WebApp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp.iOS/bin/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/WebApp.iOS.app/WebApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/bin/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/WebApp.iOS.app/WebApp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/WebApp.iOS.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/WebApp.iOS.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/WebApp.iOS.exe" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/WebApp.iOS.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/actool/bundle/Assets.car" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/actool/bundle/Assets.car" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/actool/_BundleResourceWithLogicalName.items" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/actool/_PartialAppManifest.items" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/coremlc/_BundleResourceWithLogicalName.items" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/coremlc/_PartialAppManifest.items" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/ibtool/_BundleResourceWithLogicalName.items" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/WebApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/WebApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/WebApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/WebApp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/2-PreBuild/WebApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/2-PreBuild/WebApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/2-PreBuild/WebApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/2-PreBuild/WebApp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/3-Build/WebApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/3-Build/WebApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/3-Build/WebApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/3-Build/WebApp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/App.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/WebApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/WebApp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/WebApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/WebApp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/2-PreBuild/WebApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/2-PreBuild/WebApp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/2-PreBuild/WebApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/2-PreBuild/WebApp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/3-Build/WebApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/3-Build/WebApp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/3-Build/WebApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/3-Build/WebApp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Constants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Constants.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/Data/Communications.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Data/Communications.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Models/BaseTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/BaseTask.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/Models/FriendTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/FriendTask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Models/FriendEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Models/FriendEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Views/AddTask.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/AddTask.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Views/IndividualTaskPopUp.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/IndividualTaskPopUp.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Views/LoginPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/LoginPage.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/Views/MyTaskPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/MyTaskPage.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/Views/TaskCheckerPopUp.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/Views/TaskCheckerPopUp.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/bin/Debug/netstandard2.0/WebApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/bin/Debug/netstandard2.0/WebApp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/bin/Debug/netstandard2.0/WebApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/bin/Debug/netstandard2.0/WebApp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/obj/Debug/netstandard2.0/WebApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/obj/Debug/netstandard2.0/WebApp.dll" afterDir="false" />
@@ -47,143 +44,110 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebApp/App.xaml.cs">
+        <entry file="file://$PROJECT_DIR$/WebApp/Views/MyTaskPage.xaml.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="74" column="41" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
+            <state relative-caret-position="768">
+              <caret line="155" column="41" lean-forward="true" selection-start-line="155" selection-start-column="41" selection-end-line="155" selection-end-column="41" />
               <folding>
-                <marker date="1559747019933" expanded="false" signature="7:190" ph="..." />
-                <marker date="1559747019933" expanded="true" signature="208:5607" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="253:5605" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="458:1090" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="484:1080" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="637:739" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="760:1065" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="1112:2162" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="1393:1485" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="1502:2016" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="2079:2127" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="2208:2589" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="2293:2577" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="2335:2487" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="2637:3397" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="2766:3387" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="2845:2999" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="3020:3373" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="3112:3319" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="3180:3297" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="3461:4401" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="3714:4391" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="4452:4554" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="4597:4660" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="4704:4768" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="4851:5599" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="4924:5464" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="5085:5182" ph="{...}" />
-                <marker date="1559747019933" expanded="true" signature="5503:5588" ph="{...}" />
+                <marker date="1559833339374" expanded="false" signature="6:183" ph="..." />
+                <marker date="1559833339374" expanded="true" signature="207:8209" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="299:8207" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="333:1237" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="431:512" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="577:659" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="719:802" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="1301:1411" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="1485:1638" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="1705:1866" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="1920:2060" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="1989:2048" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="2123:2187" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="2248:2891" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="2422:2881" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="2964:3047" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="3129:3190" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="3275:3404" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="3488:3565" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="3649:3879" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="3918:3971" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="4029:4183" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="4221:4274" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="4333:4415" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="4462:4574" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="4612:5038" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="4697:5026" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="4739:4936" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="5086:5745" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="5363:5495" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="5555:5735" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="5626:5721" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="5796:6221" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="5940:6211" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="6262:7133" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="6391:7123" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="6470:6698" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="6719:7109" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="6811:7055" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="6879:7033" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="7189:8201" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="7449:8191" ph="{...}" />
+                <marker date="1559833339374" expanded="true" signature="8041:8177" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebApp/Models/BaseTask.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-              <folding>
-                <marker date="1559745530354" expanded="false" signature="6:114" ph="..." />
-                <marker date="1559745530354" expanded="true" signature="139:4285" ph="{...}" />
-                <marker date="1559745530354" expanded="true" signature="167:4283" ph="{...}" />
-                <marker date="1559745530354" expanded="true" signature="704:1157" ph="{...}" />
-                <marker date="1559745530354" expanded="true" signature="1320:1774" ph="{...}" />
-                <marker date="1559745530354" expanded="true" signature="1819:1888" ph="{...}" />
-                <marker date="1559745530354" expanded="true" signature="1931:2020" ph="{...}" />
-                <marker date="1559745530354" expanded="true" signature="2068:3603" ph="{...}" />
-                <marker date="1559745530354" expanded="true" signature="2124:2562" ph="{...}" />
-                <marker date="1559745530354" expanded="true" signature="2243:2373" ph="{...}" />
-                <marker date="1559745530354" expanded="true" signature="2424:2548" ph="{...}" />
-                <marker date="1559745530354" expanded="true" signature="2616:2775" ph="{...}" />
-                <marker date="1559745530354" expanded="true" signature="2894:3091" ph="{...}" />
-                <marker date="1559745530354" expanded="true" signature="3149:3345" ph="{...}" />
-                <marker date="1559745530354" expanded="true" signature="3446:3560" ph="{...}" />
-                <marker date="1559745530354" expanded="true" signature="3645:4277" ph="{...}" />
-                <marker date="1559745530354" expanded="true" signature="3684:4242" ph="{...}" />
-                <marker date="1559745530354" expanded="true" signature="3758:4135" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/WebApp/Views/TaskCheckerPopUp.xaml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebApp/Models/User.cs">
+        <entry file="file://$PROJECT_DIR$/WebApp/Views/SettingPage.xaml.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+            <state relative-caret-position="126">
+              <caret line="18" selection-start-line="18" selection-end-line="49" selection-end-column="11" />
               <folding>
-                <marker date="1559673359009" expanded="false" signature="6:141" ph="..." />
-                <marker date="1559673359009" expanded="true" signature="166:2629" ph="{...}" />
-                <marker date="1559673359009" expanded="true" signature="190:2627" ph="{...}" />
-                <marker date="1559673359009" expanded="true" signature="458:546" ph="{...}" />
-                <marker date="1559673359009" expanded="true" signature="639:769" ph="{...}" />
-                <marker date="1559673359009" expanded="true" signature="811:866" ph="{...}" />
-                <marker date="1559673359009" expanded="true" signature="920:978" ph="{...}" />
-                <marker date="1559673359009" expanded="true" signature="1009:1169" ph="{...}" />
-                <marker date="1559673359009" expanded="true" signature="1072:1128" ph="{...}" />
-                <marker date="1559673359009" expanded="true" signature="1212:1314" ph="{...}" />
-                <marker date="1559673359009" expanded="true" signature="1356:1959" ph="{...}" />
-                <marker date="1559673359009" expanded="true" signature="2003:2126" ph="{...}" />
-                <marker date="1559673359009" expanded="true" signature="2175:2420" ph="{...}" />
-                <marker date="1559673359009" expanded="true" signature="2326:2410" ph="{...}" />
-                <marker date="1559673359009" expanded="true" signature="2461:2526" ph="{...}" />
-                <marker date="1559673359009" expanded="true" signature="2569:2621" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebApp/App.xaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <marker date="1559492257724" expanded="true" signature="40:260" ph="&lt;&lt;Application.Resources&gt;&#10;    &lt;/Application.Resources&gt;.../&gt;" />
-                <marker date="1559492257724" expanded="true" signature="193:245" ph="&lt;.../&gt;" />
+                <marker date="1559492257704" expanded="false" signature="6:89" ph="..." />
+                <marker date="1559492257704" expanded="true" signature="113:1978" ph="{...}" />
+                <marker date="1559492257704" expanded="true" signature="166:1976" ph="{...}" />
+                <marker date="1559492257704" expanded="true" signature="253:334" ph="{...}" />
+                <marker date="1559492257704" expanded="true" signature="344:1000" ph="/* protected override void OnAppearing() ... */" />
+                <marker date="1559492257704" expanded="true" signature="1011:1358" ph="/* async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e) ... */" />
+                <marker date="1559492257704" expanded="true" signature="1448:1509" ph="{...}" />
+                <marker date="1559492257704" expanded="true" signature="1595:1678" ph="{...}" />
+                <marker date="1559492257704" expanded="true" signature="1764:1825" ph="{...}" />
+                <marker date="1559492257704" expanded="true" signature="1909:1970" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WebApp/Views/MyTaskPage.xaml.cs">
+        <entry file="file://$PROJECT_DIR$/WebApp/Views/TaskCheckerPopUp.xaml.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+            <state relative-caret-position="330">
+              <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
               <folding>
-                <marker date="1559746470199" expanded="false" signature="6:183" ph="..." />
-                <marker date="1559746470199" expanded="true" signature="207:4222" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="299:4220" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="333:1134" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="468:549" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="614:696" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="756:839" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="1186:1275" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="1339:1449" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="1518:1669" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="1723:1863" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="1792:1851" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="1926:1990" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="2051:2694" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="2225:2684" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="2767:2850" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="2932:2993" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="3078:3207" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="3291:3368" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="3452:3615" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="3654:3707" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="3765:3913" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="3973:4055" ph="{...}" />
-                <marker date="1559746470199" expanded="true" signature="4102:4214" ph="{...}" />
+                <marker date="1559833119909" expanded="false" signature="6:119" ph="..." />
+                <marker date="1559833119909" expanded="true" signature="143:3141" ph="{...}" />
+                <marker date="1559833119909" expanded="true" signature="222:3139" ph="{...}" />
+                <marker date="1559833119909" expanded="true" signature="322:514" ph="{...}" />
+                <marker date="1559833119909" expanded="true" signature="561:613" ph="{...}" />
+                <marker date="1559833119909" expanded="true" signature="679:1021" ph="{...}" />
+                <marker date="1559833119909" expanded="true" signature="1070:1125" ph="{...}" />
+                <marker date="1559833119909" expanded="true" signature="1135:1248" ph="/* ###### Methods for supporting animations in your popup page ###### ... */" />
+                <marker date="1559833119909" expanded="true" signature="1308:1374" ph="{...}" />
+                <marker date="1559833119909" expanded="true" signature="1481:1545" ph="{...}" />
+                <marker date="1559833119909" expanded="true" signature="1661:1730" ph="{...}" />
+                <marker date="1559833119909" expanded="true" signature="1843:1910" ph="{...}" />
+                <marker date="1559833119909" expanded="true" signature="1976:2054" ph="{...}" />
+                <marker date="1559833119909" expanded="true" signature="2118:2194" ph="{...}" />
+                <marker date="1559833119909" expanded="true" signature="2263:2344" ph="{...}" />
+                <marker date="1559833119909" expanded="true" signature="2411:2490" ph="{...}" />
+                <marker date="1559833119909" expanded="true" signature="2500:2626" ph="/* ###### Overrided methods which can prevent closing a popup page ###### ... */" />
+                <marker date="1559833119909" expanded="true" signature="2680:2847" ph="{...}" />
+                <marker date="1559833119909" expanded="true" signature="2948:3133" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -195,33 +159,33 @@
             <state relative-caret-position="660">
               <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
               <folding>
-                <marker date="1559739927806" expanded="true" signature="41:3656" ph="&lt;&lt;TabbedPage.ToolbarItems&gt;&#10;        &lt;ToolbarItem Name=&quot;Add&quot; Order=&quot;Primary&quot; Text=&quot;+&quot; Priority=&quot;0&quot;&#10;                     Clicked=&quot;OnAdd&quot; /&gt;&#10;    &lt;/TabbedPage.ToolbarItems&gt; &lt;ContentPage Title=&quot;MyTaskPage&quot;&gt;&#10;        &lt;ScrollView&gt;&#10;            &lt;StackLayout x:Name=&quot;taskStack&quot; Margin=&quot;20&quot; /&gt;&#10;        &lt;/ScrollView&gt;&#10;    &lt;/ContentPage&gt; &lt;ContentPage Title=&quot;Friend&quot;&gt;&#10;        &lt;StackLayout&gt;&#10;            &lt;Grid Margin=&quot;10&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;300&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;30&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Entry x:Name=&quot;SearchFriend&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; /&gt;&#10;                &lt;Button Text=&quot;Search&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; /&gt;&#10;            &lt;/Grid&gt;&#10;            &lt;Grid&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;70&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;StackLayout Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Button Text=&quot;Inbox&quot; Clicked=&quot;ToReceivedRequest&quot;/&gt;&#10;                    &lt;ScrollView&gt;&#10;                        &lt;StackLayout x:Name=&quot;FriendList&quot;/&gt;&#10;                    &lt;/ScrollView&gt;&#10;                &lt;/StackLayout&gt;&#10;                &lt;ScrollView Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;StackLayout x:Name=&quot;FriendTasks&quot; /&gt;&#10;                &lt;/ScrollView&gt;&#10;&#10;            &lt;/Grid&gt;&#10;        &lt;/StackLayout&gt;&#10;    &lt;/ContentPage&gt; &lt;ContentPage x:Name=&quot;my_profile_page&quot; Title=&quot;My Profile&quot;&gt;&#10;        &lt;StackLayout&gt;&#10;            &lt;Grid Margin=&quot;30&quot; BackgroundColor=&quot;Silver&quot; WidthRequest=&quot;200&quot; HeightRequest=&quot;100&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;3*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                    &lt;RowDefinition Height=&quot;3*&quot; /&gt;&#10;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Label Grid.Column=&quot;0&quot; Grid.Row=&quot;1&quot; Text=&quot;Profile picture&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;0&quot; x:Name=&quot;_username&quot;&#10;                       TextColor=&quot;Black&quot; FontSize=&quot;22&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;1&quot; x:Name=&quot;_user_detail&quot;&#10;                       TextColor=&quot;##955d5d&quot; FontSize=&quot;18&quot; /&gt;&#10;&#10;                &lt;Button Grid.Column=&quot;2&quot; Grid.Row=&quot;1&quot; Text=&quot;&gt;&quot; TextColor=&quot;Black&quot; FontSize=&quot;30&quot;&#10;                        Clicked=&quot;OnMoreDetailClicked&quot; /&gt;&#10;            &lt;/Grid&gt;&#10;&#10;            &lt;Button x:Name=&quot;Button_Setting&quot;&#10;                    Text=&quot;Setting&quot;&#10;                    Clicked=&quot;OnSettingButtonClicked&quot; /&gt;&#10;            &lt;Button x:Name=&quot;Button_About&quot;&#10;                    Text=&quot;About&quot;&#10;                    Clicked=&quot;OnAboutButtonClicked&quot; /&gt;&#10;            &lt;Button x:Name=&quot;Button_LogOut&quot;&#10;                    Text=&quot;Log Out&quot;&#10;                    Clicked=&quot;OnLogOutButtonClicked&quot; /&gt;&#10;        &lt;/StackLayout&gt;&#10;    &lt;/ContentPage&gt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="312:478" ph="&lt;&lt;ToolbarItem Name=&quot;Add&quot; Order=&quot;Primary&quot; Text=&quot;+&quot; Priority=&quot;0&quot;&#10;                     Clicked=&quot;OnAdd&quot; /&gt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="346:447" ph="&lt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="483:636" ph="&lt;&lt;ScrollView&gt;&#10;            &lt;StackLayout x:Name=&quot;taskStack&quot; Margin=&quot;20&quot; /&gt;&#10;        &lt;/ScrollView&gt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="524:617" ph="&lt;&lt;StackLayout x:Name=&quot;taskStack&quot; Margin=&quot;20&quot; /&gt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="641:2093" ph="&lt;&lt;StackLayout&gt;&#10;            &lt;Grid Margin=&quot;10&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;300&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;30&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Entry x:Name=&quot;SearchFriend&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; /&gt;&#10;                &lt;Button Text=&quot;Search&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; /&gt;&#10;            &lt;/Grid&gt;&#10;            &lt;Grid&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;70&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;StackLayout Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Button Text=&quot;Inbox&quot; Clicked=&quot;ToReceivedRequest&quot;/&gt;&#10;                    &lt;ScrollView&gt;&#10;                        &lt;StackLayout x:Name=&quot;FriendList&quot;/&gt;&#10;                    &lt;/ScrollView&gt;&#10;                &lt;/StackLayout&gt;&#10;                &lt;ScrollView Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;StackLayout x:Name=&quot;FriendTasks&quot; /&gt;&#10;                &lt;/ScrollView&gt;&#10;&#10;            &lt;/Grid&gt;&#10;        &lt;/StackLayout&gt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="678:2074" ph="&lt;&lt;Grid Margin=&quot;10&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;300&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;30&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Entry x:Name=&quot;SearchFriend&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; /&gt;&#10;                &lt;Button Text=&quot;Search&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; /&gt;&#10;            &lt;/Grid&gt; &lt;Grid&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;70&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;StackLayout Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Button Text=&quot;Inbox&quot; Clicked=&quot;ToReceivedRequest&quot;/&gt;&#10;                    &lt;ScrollView&gt;&#10;                        &lt;StackLayout x:Name=&quot;FriendList&quot;/&gt;&#10;                    &lt;/ScrollView&gt;&#10;                &lt;/StackLayout&gt;&#10;                &lt;ScrollView Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;StackLayout x:Name=&quot;FriendTasks&quot; /&gt;&#10;                &lt;/ScrollView&gt;&#10;&#10;            &lt;/Grid&gt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="704:1203" ph="&lt;&lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;300&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt; &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;30&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt; &lt;Entry x:Name=&quot;SearchFriend&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; /&gt; &lt;Button Text=&quot;Search&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; /&gt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="739:909" ph="&lt;&lt;ColumnDefinition Width=&quot;300&quot; /&gt; &lt;ColumnDefinition Width=&quot;*&quot; /&gt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="926:1036" ph="&lt;&lt;RowDefinition Height=&quot;30&quot; /&gt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="1216:2051" ph="&lt;&lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;70&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt; &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt; &lt;StackLayout Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Button Text=&quot;Inbox&quot; Clicked=&quot;ToReceivedRequest&quot;/&gt;&#10;                    &lt;ScrollView&gt;&#10;                        &lt;StackLayout x:Name=&quot;FriendList&quot;/&gt;&#10;                    &lt;/ScrollView&gt;&#10;                &lt;/StackLayout&gt; &lt;ScrollView Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;StackLayout x:Name=&quot;FriendTasks&quot; /&gt;&#10;                &lt;/ScrollView&gt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="1239:1408" ph="&lt;&lt;ColumnDefinition Width=&quot;70&quot; /&gt; &lt;ColumnDefinition Width=&quot;*&quot; /&gt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="1425:1534" ph="&lt;&lt;RowDefinition Height=&quot;*&quot; /&gt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="1551:1853" ph="&lt;&lt;Button Text=&quot;Inbox&quot; Clicked=&quot;ToReceivedRequest&quot;/&gt; &lt;ScrollView&gt;&#10;                        &lt;StackLayout x:Name=&quot;FriendList&quot;/&gt;&#10;                    &lt;/ScrollView&gt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="1717:1822" ph="&lt;&lt;StackLayout x:Name=&quot;FriendList&quot;/&gt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="1870:2030" ph="&lt;&lt;StackLayout x:Name=&quot;FriendTasks&quot; /&gt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="2098:3641" ph="&lt;&lt;StackLayout&gt;&#10;            &lt;Grid Margin=&quot;30&quot; BackgroundColor=&quot;Silver&quot; WidthRequest=&quot;200&quot; HeightRequest=&quot;100&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;3*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                    &lt;RowDefinition Height=&quot;3*&quot; /&gt;&#10;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Label Grid.Column=&quot;0&quot; Grid.Row=&quot;1&quot; Text=&quot;Profile picture&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;0&quot; x:Name=&quot;_username&quot;&#10;                       TextColor=&quot;Black&quot; FontSize=&quot;22&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;1&quot; x:Name=&quot;_user_detail&quot;&#10;                       TextColor=&quot;##955d5d&quot; FontSize=&quot;18&quot; /&gt;&#10;&#10;                &lt;Button Grid.Column=&quot;2&quot; Grid.Row=&quot;1&quot; Text=&quot;&gt;&quot; TextColor=&quot;Black&quot; FontSize=&quot;30&quot;&#10;                        Clicked=&quot;OnMoreDetailClicked&quot; /&gt;&#10;            &lt;/Grid&gt;&#10;&#10;            &lt;Button x:Name=&quot;Button_Setting&quot;&#10;                    Text=&quot;Setting&quot;&#10;                    Clicked=&quot;OnSettingButtonClicked&quot; /&gt;&#10;            &lt;Button x:Name=&quot;Button_About&quot;&#10;                    Text=&quot;About&quot;&#10;                    Clicked=&quot;OnAboutButtonClicked&quot; /&gt;&#10;            &lt;Button x:Name=&quot;Button_LogOut&quot;&#10;                    Text=&quot;Log Out&quot;&#10;                    Clicked=&quot;OnLogOutButtonClicked&quot; /&gt;&#10;        &lt;/StackLayout&gt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="2164:3622" ph="&lt;&lt;Grid Margin=&quot;30&quot; BackgroundColor=&quot;Silver&quot; WidthRequest=&quot;200&quot; HeightRequest=&quot;100&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;3*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                    &lt;RowDefinition Height=&quot;3*&quot; /&gt;&#10;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Label Grid.Column=&quot;0&quot; Grid.Row=&quot;1&quot; Text=&quot;Profile picture&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;0&quot; x:Name=&quot;_username&quot;&#10;                       TextColor=&quot;Black&quot; FontSize=&quot;22&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;1&quot; x:Name=&quot;_user_detail&quot;&#10;                       TextColor=&quot;##955d5d&quot; FontSize=&quot;18&quot; /&gt;&#10;&#10;                &lt;Button Grid.Column=&quot;2&quot; Grid.Row=&quot;1&quot; Text=&quot;&gt;&quot; TextColor=&quot;Black&quot; FontSize=&quot;30&quot;&#10;                        Clicked=&quot;OnMoreDetailClicked&quot; /&gt;&#10;            &lt;/Grid&gt; &lt;Button x:Name=&quot;Button_Setting&quot;&#10;                    Text=&quot;Setting&quot;&#10;                    Clicked=&quot;OnSettingButtonClicked&quot; /&gt; &lt;Button x:Name=&quot;Button_About&quot;&#10;                    Text=&quot;About&quot;&#10;                    Clicked=&quot;OnAboutButtonClicked&quot; /&gt; &lt;Button x:Name=&quot;Button_LogOut&quot;&#10;                    Text=&quot;Log Out&quot;&#10;                    Clicked=&quot;OnLogOutButtonClicked&quot; /&gt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="2190:3201" ph="&lt;&lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;3*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt; &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                    &lt;RowDefinition Height=&quot;3*&quot; /&gt;&#10;&#10;                &lt;/Grid.RowDefinitions&gt; &lt;Label Grid.Column=&quot;0&quot; Grid.Row=&quot;1&quot; Text=&quot;Profile picture&quot; /&gt; &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;0&quot; x:Name=&quot;_username&quot;&#10;                       TextColor=&quot;Black&quot; FontSize=&quot;22&quot; /&gt; &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;1&quot; x:Name=&quot;_user_detail&quot;&#10;                       TextColor=&quot;##955d5d&quot; FontSize=&quot;18&quot; /&gt; &lt;Button Grid.Column=&quot;2&quot; Grid.Row=&quot;1&quot; Text=&quot;&gt;&quot; TextColor=&quot;Black&quot; FontSize=&quot;30&quot;&#10;                        Clicked=&quot;OnMoreDetailClicked&quot; /&gt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="2289:2509" ph="&lt;&lt;ColumnDefinition Width=&quot;*&quot; /&gt; &lt;ColumnDefinition Width=&quot;3*&quot; /&gt; &lt;ColumnDefinition Width=&quot;*&quot; /&gt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="2526:2686" ph="&lt;&lt;RowDefinition Height=&quot;*&quot; /&gt; &lt;RowDefinition Height=&quot;3*&quot; /&gt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="2782:2894" ph="&lt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="2912:3029" ph="&lt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="3047:3181" ph="&lt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="3215:3337" ph="&lt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="3350:3466" ph="&lt;.../&gt;" />
-                <marker date="1559739927806" expanded="true" signature="3479:3599" ph="&lt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="41:3667" ph="&lt;&lt;TabbedPage.ToolbarItems&gt;&#10;        &lt;ToolbarItem Name=&quot;Add&quot; Order=&quot;Primary&quot; Text=&quot;+&quot; Priority=&quot;0&quot;&#10;                     Clicked=&quot;OnAdd&quot; /&gt;&#10;    &lt;/TabbedPage.ToolbarItems&gt; &lt;ContentPage Title=&quot;MyTaskPage&quot;&gt;&#10;        &lt;ScrollView&gt;&#10;            &lt;StackLayout x:Name=&quot;taskStack&quot; Margin=&quot;20&quot; /&gt;&#10;        &lt;/ScrollView&gt;&#10;    &lt;/ContentPage&gt; &lt;ContentPage Title=&quot;Friend&quot;&gt;&#10;        &lt;StackLayout&gt;&#10;            &lt;Grid Margin=&quot;10&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;300&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;30&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Entry x:Name=&quot;SearchFriend&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; /&gt;&#10;                &lt;Button Text=&quot;Search&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; /&gt;&#10;            &lt;/Grid&gt;&#10;            &lt;Grid&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;70&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;StackLayout Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Button Text=&quot;Inbox&quot; Clicked=&quot;ToReceivedRequest&quot;/&gt;&#10;                    &lt;ScrollView&gt;&#10;                        &lt;StackLayout x:Name=&quot;FriendList&quot; Margin=&quot;5&quot;/&gt;&#10;                    &lt;/ScrollView&gt;&#10;                &lt;/StackLayout&gt;&#10;                &lt;ScrollView Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;StackLayout x:Name=&quot;FriendTasks&quot; /&gt;&#10;                &lt;/ScrollView&gt;&#10;&#10;            &lt;/Grid&gt;&#10;        &lt;/StackLayout&gt;&#10;    &lt;/ContentPage&gt; &lt;ContentPage x:Name=&quot;my_profile_page&quot; Title=&quot;My Profile&quot;&gt;&#10;        &lt;StackLayout&gt;&#10;            &lt;Grid Margin=&quot;30&quot; BackgroundColor=&quot;Silver&quot; WidthRequest=&quot;200&quot; HeightRequest=&quot;100&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;3*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                    &lt;RowDefinition Height=&quot;3*&quot; /&gt;&#10;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Label Grid.Column=&quot;0&quot; Grid.Row=&quot;1&quot; Text=&quot;Profile picture&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;0&quot; x:Name=&quot;_username&quot;&#10;                       TextColor=&quot;Black&quot; FontSize=&quot;22&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;1&quot; x:Name=&quot;_user_detail&quot;&#10;                       TextColor=&quot;##955d5d&quot; FontSize=&quot;18&quot; /&gt;&#10;&#10;                &lt;Button Grid.Column=&quot;2&quot; Grid.Row=&quot;1&quot; Text=&quot;&gt;&quot; TextColor=&quot;Black&quot; FontSize=&quot;30&quot;&#10;                        Clicked=&quot;OnMoreDetailClicked&quot; /&gt;&#10;            &lt;/Grid&gt;&#10;&#10;            &lt;Button x:Name=&quot;Button_Setting&quot;&#10;                    Text=&quot;Setting&quot;&#10;                    Clicked=&quot;OnSettingButtonClicked&quot; /&gt;&#10;            &lt;Button x:Name=&quot;Button_About&quot;&#10;                    Text=&quot;About&quot;&#10;                    Clicked=&quot;OnAboutButtonClicked&quot; /&gt;&#10;            &lt;Button x:Name=&quot;Button_LogOut&quot;&#10;                    Text=&quot;Log Out&quot;&#10;                    Clicked=&quot;OnLogOutButtonClicked&quot; /&gt;&#10;        &lt;/StackLayout&gt;&#10;    &lt;/ContentPage&gt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="312:478" ph="&lt;&lt;ToolbarItem Name=&quot;Add&quot; Order=&quot;Primary&quot; Text=&quot;+&quot; Priority=&quot;0&quot;&#10;                     Clicked=&quot;OnAdd&quot; /&gt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="346:447" ph="&lt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="483:636" ph="&lt;&lt;ScrollView&gt;&#10;            &lt;StackLayout x:Name=&quot;taskStack&quot; Margin=&quot;20&quot; /&gt;&#10;        &lt;/ScrollView&gt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="524:617" ph="&lt;&lt;StackLayout x:Name=&quot;taskStack&quot; Margin=&quot;20&quot; /&gt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="641:2104" ph="&lt;&lt;StackLayout&gt;&#10;            &lt;Grid Margin=&quot;10&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;300&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;30&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Entry x:Name=&quot;SearchFriend&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; /&gt;&#10;                &lt;Button Text=&quot;Search&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; /&gt;&#10;            &lt;/Grid&gt;&#10;            &lt;Grid&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;70&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;StackLayout Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Button Text=&quot;Inbox&quot; Clicked=&quot;ToReceivedRequest&quot;/&gt;&#10;                    &lt;ScrollView&gt;&#10;                        &lt;StackLayout x:Name=&quot;FriendList&quot; Margin=&quot;5&quot;/&gt;&#10;                    &lt;/ScrollView&gt;&#10;                &lt;/StackLayout&gt;&#10;                &lt;ScrollView Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;StackLayout x:Name=&quot;FriendTasks&quot; /&gt;&#10;                &lt;/ScrollView&gt;&#10;&#10;            &lt;/Grid&gt;&#10;        &lt;/StackLayout&gt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="678:2085" ph="&lt;&lt;Grid Margin=&quot;10&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;300&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;30&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Entry x:Name=&quot;SearchFriend&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; /&gt;&#10;                &lt;Button Text=&quot;Search&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; /&gt;&#10;            &lt;/Grid&gt; &lt;Grid&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;70&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;StackLayout Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Button Text=&quot;Inbox&quot; Clicked=&quot;ToReceivedRequest&quot;/&gt;&#10;                    &lt;ScrollView&gt;&#10;                        &lt;StackLayout x:Name=&quot;FriendList&quot; Margin=&quot;5&quot;/&gt;&#10;                    &lt;/ScrollView&gt;&#10;                &lt;/StackLayout&gt;&#10;                &lt;ScrollView Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;StackLayout x:Name=&quot;FriendTasks&quot; /&gt;&#10;                &lt;/ScrollView&gt;&#10;&#10;            &lt;/Grid&gt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="704:1203" ph="&lt;&lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;300&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt; &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;30&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt; &lt;Entry x:Name=&quot;SearchFriend&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; /&gt; &lt;Button Text=&quot;Search&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; /&gt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="739:909" ph="&lt;&lt;ColumnDefinition Width=&quot;300&quot; /&gt; &lt;ColumnDefinition Width=&quot;*&quot; /&gt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="926:1036" ph="&lt;&lt;RowDefinition Height=&quot;30&quot; /&gt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="1216:2062" ph="&lt;&lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;70&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt; &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt; &lt;StackLayout Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Button Text=&quot;Inbox&quot; Clicked=&quot;ToReceivedRequest&quot;/&gt;&#10;                    &lt;ScrollView&gt;&#10;                        &lt;StackLayout x:Name=&quot;FriendList&quot; Margin=&quot;5&quot;/&gt;&#10;                    &lt;/ScrollView&gt;&#10;                &lt;/StackLayout&gt; &lt;ScrollView Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;StackLayout x:Name=&quot;FriendTasks&quot; /&gt;&#10;                &lt;/ScrollView&gt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="1239:1408" ph="&lt;&lt;ColumnDefinition Width=&quot;70&quot; /&gt; &lt;ColumnDefinition Width=&quot;*&quot; /&gt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="1425:1534" ph="&lt;&lt;RowDefinition Height=&quot;*&quot; /&gt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="1551:1864" ph="&lt;&lt;Button Text=&quot;Inbox&quot; Clicked=&quot;ToReceivedRequest&quot;/&gt; &lt;ScrollView&gt;&#10;                        &lt;StackLayout x:Name=&quot;FriendList&quot; Margin=&quot;5&quot;/&gt;&#10;                    &lt;/ScrollView&gt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="1717:1833" ph="&lt;&lt;StackLayout x:Name=&quot;FriendList&quot; Margin=&quot;5&quot;/&gt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="1881:2041" ph="&lt;&lt;StackLayout x:Name=&quot;FriendTasks&quot; /&gt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="2109:3652" ph="&lt;&lt;StackLayout&gt;&#10;            &lt;Grid Margin=&quot;30&quot; BackgroundColor=&quot;Silver&quot; WidthRequest=&quot;200&quot; HeightRequest=&quot;100&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;3*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                    &lt;RowDefinition Height=&quot;3*&quot; /&gt;&#10;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Label Grid.Column=&quot;0&quot; Grid.Row=&quot;1&quot; Text=&quot;Profile picture&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;0&quot; x:Name=&quot;_username&quot;&#10;                       TextColor=&quot;Black&quot; FontSize=&quot;22&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;1&quot; x:Name=&quot;_user_detail&quot;&#10;                       TextColor=&quot;##955d5d&quot; FontSize=&quot;18&quot; /&gt;&#10;&#10;                &lt;Button Grid.Column=&quot;2&quot; Grid.Row=&quot;1&quot; Text=&quot;&gt;&quot; TextColor=&quot;Black&quot; FontSize=&quot;30&quot;&#10;                        Clicked=&quot;OnMoreDetailClicked&quot; /&gt;&#10;            &lt;/Grid&gt;&#10;&#10;            &lt;Button x:Name=&quot;Button_Setting&quot;&#10;                    Text=&quot;Setting&quot;&#10;                    Clicked=&quot;OnSettingButtonClicked&quot; /&gt;&#10;            &lt;Button x:Name=&quot;Button_About&quot;&#10;                    Text=&quot;About&quot;&#10;                    Clicked=&quot;OnAboutButtonClicked&quot; /&gt;&#10;            &lt;Button x:Name=&quot;Button_LogOut&quot;&#10;                    Text=&quot;Log Out&quot;&#10;                    Clicked=&quot;OnLogOutButtonClicked&quot; /&gt;&#10;        &lt;/StackLayout&gt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="2175:3633" ph="&lt;&lt;Grid Margin=&quot;30&quot; BackgroundColor=&quot;Silver&quot; WidthRequest=&quot;200&quot; HeightRequest=&quot;100&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;3*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                    &lt;RowDefinition Height=&quot;3*&quot; /&gt;&#10;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Label Grid.Column=&quot;0&quot; Grid.Row=&quot;1&quot; Text=&quot;Profile picture&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;0&quot; x:Name=&quot;_username&quot;&#10;                       TextColor=&quot;Black&quot; FontSize=&quot;22&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;1&quot; x:Name=&quot;_user_detail&quot;&#10;                       TextColor=&quot;##955d5d&quot; FontSize=&quot;18&quot; /&gt;&#10;&#10;                &lt;Button Grid.Column=&quot;2&quot; Grid.Row=&quot;1&quot; Text=&quot;&gt;&quot; TextColor=&quot;Black&quot; FontSize=&quot;30&quot;&#10;                        Clicked=&quot;OnMoreDetailClicked&quot; /&gt;&#10;            &lt;/Grid&gt; &lt;Button x:Name=&quot;Button_Setting&quot;&#10;                    Text=&quot;Setting&quot;&#10;                    Clicked=&quot;OnSettingButtonClicked&quot; /&gt; &lt;Button x:Name=&quot;Button_About&quot;&#10;                    Text=&quot;About&quot;&#10;                    Clicked=&quot;OnAboutButtonClicked&quot; /&gt; &lt;Button x:Name=&quot;Button_LogOut&quot;&#10;                    Text=&quot;Log Out&quot;&#10;                    Clicked=&quot;OnLogOutButtonClicked&quot; /&gt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="2201:3212" ph="&lt;&lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;3*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt; &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                    &lt;RowDefinition Height=&quot;3*&quot; /&gt;&#10;&#10;                &lt;/Grid.RowDefinitions&gt; &lt;Label Grid.Column=&quot;0&quot; Grid.Row=&quot;1&quot; Text=&quot;Profile picture&quot; /&gt; &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;0&quot; x:Name=&quot;_username&quot;&#10;                       TextColor=&quot;Black&quot; FontSize=&quot;22&quot; /&gt; &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;1&quot; x:Name=&quot;_user_detail&quot;&#10;                       TextColor=&quot;##955d5d&quot; FontSize=&quot;18&quot; /&gt; &lt;Button Grid.Column=&quot;2&quot; Grid.Row=&quot;1&quot; Text=&quot;&gt;&quot; TextColor=&quot;Black&quot; FontSize=&quot;30&quot;&#10;                        Clicked=&quot;OnMoreDetailClicked&quot; /&gt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="2300:2520" ph="&lt;&lt;ColumnDefinition Width=&quot;*&quot; /&gt; &lt;ColumnDefinition Width=&quot;3*&quot; /&gt; &lt;ColumnDefinition Width=&quot;*&quot; /&gt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="2537:2697" ph="&lt;&lt;RowDefinition Height=&quot;*&quot; /&gt; &lt;RowDefinition Height=&quot;3*&quot; /&gt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="2793:2905" ph="&lt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="2923:3040" ph="&lt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="3058:3192" ph="&lt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="3226:3348" ph="&lt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="3361:3477" ph="&lt;.../&gt;" />
+                <marker date="1559825590344" expanded="true" signature="3490:3610" ph="&lt;.../&gt;" />
               </folding>
             </state>
           </provider>
@@ -230,7 +194,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebApp/Models/Friend.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
+            <state relative-caret-position="450">
               <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
               <folding>
                 <marker date="1559739682666" expanded="false" signature="6:104" ph="..." />
@@ -252,26 +216,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebApp/Models/FriendTask.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="-352">
               <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
               <folding>
-                <marker date="1559746485396" expanded="false" signature="6:34" ph="..." />
-                <marker date="1559746485396" expanded="true" signature="59:3248" ph="{...}" />
-                <marker date="1559746485396" expanded="true" signature="89:3246" ph="{...}" />
-                <marker date="1559746485396" expanded="true" signature="396:776" ph="{...}" />
-                <marker date="1559746485396" expanded="true" signature="808:1427" ph="{...}" />
-                <marker date="1559746485396" expanded="true" signature="847:1392" ph="{...}" />
-                <marker date="1559746485396" expanded="true" signature="921:1285" ph="{...}" />
-                <marker date="1559746485396" expanded="true" signature="1461:2239" ph="{...}" />
-                <marker date="1559746485396" expanded="true" signature="1531:2080" ph="{...}" />
-                <marker date="1559746485396" expanded="true" signature="1605:1973" ph="{...}" />
-                <marker date="1559746485396" expanded="true" signature="2097:2229" ph="{...}" />
-                <marker date="1559746485396" expanded="true" signature="2287:3236" ph="{...}" />
-                <marker date="1559746485396" expanded="true" signature="2343:2781" ph="{...}" />
-                <marker date="1559746485396" expanded="true" signature="2462:2592" ph="{...}" />
-                <marker date="1559746485396" expanded="true" signature="2643:2767" ph="{...}" />
-                <marker date="1559746485396" expanded="true" signature="2835:2955" ph="{...}" />
-                <marker date="1559746485396" expanded="true" signature="3017:3193" ph="{...}" />
+                <marker date="1559762070857" expanded="false" signature="6:34" ph="..." />
+                <marker date="1559762070857" expanded="true" signature="59:2425" ph="{...}" />
+                <marker date="1559762070857" expanded="true" signature="89:2423" ph="{...}" />
+                <marker date="1559762070857" expanded="true" signature="365:768" ph="{...}" />
+                <marker date="1559762070857" expanded="true" signature="800:1419" ph="{...}" />
+                <marker date="1559762070857" expanded="true" signature="839:1384" ph="{...}" />
+                <marker date="1559762070857" expanded="true" signature="913:1277" ph="{...}" />
+                <marker date="1559762070857" expanded="true" signature="1467:2416" ph="{...}" />
+                <marker date="1559762070857" expanded="true" signature="1523:1961" ph="{...}" />
+                <marker date="1559762070857" expanded="true" signature="1642:1772" ph="{...}" />
+                <marker date="1559762070857" expanded="true" signature="1823:1947" ph="{...}" />
+                <marker date="1559762070857" expanded="true" signature="2015:2135" ph="{...}" />
+                <marker date="1559762070857" expanded="true" signature="2197:2373" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -296,42 +256,72 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebApp/Data/Communications.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="261" column="13" selection-start-line="261" selection-start-column="13" selection-end-line="261" selection-end-column="13" />
+            <state relative-caret-position="3192">
+              <caret line="174" column="9" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
               <folding>
-                <marker date="1559746959886" expanded="false" signature="6:163" ph="..." />
-                <marker date="1559746959886" expanded="true" signature="181:10375" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="222:10373" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="309:1054" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="682:963" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="1131:1704" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="1495:1632" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="1789:2345" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="2161:2291" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="2421:3150" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="2808:3103" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="3249:3787" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="3663:3733" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="3863:4521" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="4286:4463" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="4594:5221" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="4986:5163" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="5281:5808" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="5320:5383" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="5514:5577" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="5877:6518" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="6276:6463" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="6577:7316" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="6974:7269" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="7384:8188" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="8029:8135" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="8260:8446" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="8332:8401" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="8524:9232" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="8914:9104" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="9292:9649" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="9715:10367" ph="{...}" />
-                <marker date="1559746959886" expanded="true" signature="10079:10267" ph="{...}" />
+                <marker date="1559833290749" expanded="false" signature="6:163" ph="..." />
+                <marker date="1559833290749" expanded="true" signature="181:14751" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="222:14749" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="309:1054" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="682:963" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="1131:1704" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="1495:1632" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="1789:2345" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="2161:2291" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="2421:3150" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="2808:3103" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="3249:3787" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="3663:3733" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="3863:4613" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="4286:4555" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="4692:5338" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="5084:5280" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="5398:5925" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="5437:5500" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="5631:5694" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="6000:6773" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="6456:6718" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="6832:7571" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="7229:7524" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="7643:8447" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="8288:8394" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="8512:8699" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="8585:8654" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="8779:9488" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="9169:9359" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="9554:9982" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="10048:10780" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="10412:10646" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="10852:11671" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="11287:11629" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="11523:11615" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="11747:12300" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="12095:12247" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="12387:13141" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="12752:13017" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="13221:14024" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="13651:13909" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="14118:14733" ph="{...}" />
+                <marker date="1559833290749" expanded="true" signature="14528:14680" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebApp/Models/FriendEntity.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+              <folding>
+                <marker date="1559833215509" expanded="false" signature="6:105" ph="..." />
+                <marker date="1559833215509" expanded="true" signature="130:943" ph="{...}" />
+                <marker date="1559833215509" expanded="true" signature="162:941" ph="{...}" />
+                <marker date="1559833215509" expanded="true" signature="420:550" ph="{...}" />
+                <marker date="1559833215509" expanded="true" signature="606:817" ph="{...}" />
+                <marker date="1559833215509" expanded="true" signature="646:782" ph="{...}" />
+                <marker date="1559833215509" expanded="true" signature="710:767" ph="{...}" />
+                <marker date="1559833215509" expanded="true" signature="860:934" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -345,6 +335,8 @@
       <find>TASKSTACK</find>
       <find>TASK</find>
       <find>comp</find>
+      <find>deserialize</find>
+      <find>periodic</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -354,7 +346,9 @@
     <setting file="file://$PROJECT_DIR$/WebApp/Data/Communications.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApp/Views/AddFriendPage.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApp/Views/LoginPage.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApp/Views/TaskCheckerPopUp.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApp/Views/AddFriendPage.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApp/Views/TaskCheckerPopUp.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApp/Views/GroupTaskAdd.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApp/Views/FriendRequestsListPage.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApp/Views/CreateAccountPage.xaml" root0="FORCE_HIGHLIGHTING" />
@@ -394,17 +388,17 @@
         <option value="$PROJECT_DIR$/WebApp/Views/AddTask.xaml.cs" />
         <option value="$PROJECT_DIR$/WebApp/Views/FriendRequestsListPage.xaml.cs" />
         <option value="$PROJECT_DIR$/WebApp/Data/UserDatabase.cs" />
-        <option value="$PROJECT_DIR$/WebApp/Models/FriendEntity.cs" />
         <option value="$PROJECT_DIR$/WebApp/Models/Friends.cs" />
         <option value="$PROJECT_DIR$/WebApp/Models/User.cs" />
-        <option value="$PROJECT_DIR$/WebApp/Constants.cs" />
         <option value="$PROJECT_DIR$/WebApp/Models/Friend.cs" />
         <option value="$PROJECT_DIR$/WebApp/Views/LoginPage.xaml.cs" />
         <option value="$PROJECT_DIR$/WebApp/Views/MyTaskPage.xaml" />
         <option value="$PROJECT_DIR$/WebApp/Models/BaseTask.cs" />
         <option value="$PROJECT_DIR$/WebApp/Models/FriendTask.cs" />
         <option value="$PROJECT_DIR$/WebApp/App.xaml.cs" />
+        <option value="$PROJECT_DIR$/WebApp/Constants.cs" />
         <option value="$PROJECT_DIR$/WebApp/Views/MyTaskPage.xaml.cs" />
+        <option value="$PROJECT_DIR$/WebApp/Models/FriendEntity.cs" />
         <option value="$PROJECT_DIR$/WebApp/Data/Communications.cs" />
       </list>
     </option>
@@ -412,7 +406,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="118" />
     <option name="y" value="23" />
-    <option name="width" value="1153" />
+    <option name="width" value="1219" />
     <option name="height" value="823" />
   </component>
   <component name="ProjectView">
@@ -420,6 +414,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -461,20 +457,21 @@
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
               <item name="WebApp" type="24d0babc:SolutionExplorerModelNode" />
               <item name="WebApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="App.xaml" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="SettingPage.xaml" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
               <item name="WebApp" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="WebApp.iOS" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="WebApp" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Views" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="TaskCheckerPopUp.xaml" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -525,11 +522,13 @@
       <workItem from="1559581958247" duration="1477000" />
       <workItem from="1559739166230" duration="947000" />
       <workItem from="1559745224034" duration="1884000" />
+      <workItem from="1559832133610" duration="567000" />
+      <workItem from="1559832912014" duration="541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9818000" />
+    <option name="totallyTimeSpent" value="10926000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -541,10 +540,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="118" y="23" width="1153" height="823" extended-state="0" />
+    <frame x="118" y="23" width="1219" height="823" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19531953" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19116397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -718,25 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/Views/SettingPage.xaml.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <marker date="1559492257704" expanded="false" signature="6:89" ph="..." />
-            <marker date="1559492257704" expanded="true" signature="113:1978" ph="{...}" />
-            <marker date="1559492257704" expanded="true" signature="166:1976" ph="{...}" />
-            <marker date="1559492257704" expanded="true" signature="253:334" ph="{...}" />
-            <marker date="1559492257704" expanded="true" signature="344:1000" ph="/* protected override void OnAppearing() ... */" />
-            <marker date="1559492257704" expanded="true" signature="1011:1358" ph="/* async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e) ... */" />
-            <marker date="1559492257704" expanded="true" signature="1448:1509" ph="{...}" />
-            <marker date="1559492257704" expanded="true" signature="1595:1678" ph="{...}" />
-            <marker date="1559492257704" expanded="true" signature="1764:1825" ph="{...}" />
-            <marker date="1559492257704" expanded="true" signature="1909:1970" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/Views/FriendRequestsListPage.xaml.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
@@ -767,26 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/Models/FriendEntity.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding>
-            <marker date="1559656109293" expanded="false" signature="6:105" ph="..." />
-            <marker date="1559656109293" expanded="true" signature="130:1609" ph="{...}" />
-            <marker date="1559656109293" expanded="true" signature="162:1607" ph="{...}" />
-            <marker date="1559656109293" expanded="true" signature="398:498" ph="{...}" />
-            <marker date="1559656109293" expanded="true" signature="554:765" ph="{...}" />
-            <marker date="1559656109293" expanded="true" signature="594:730" ph="{...}" />
-            <marker date="1559656109293" expanded="true" signature="658:715" ph="{...}" />
-            <marker date="1559656109293" expanded="true" signature="832:981" ph="{...}" />
-            <marker date="1559656109293" expanded="true" signature="1058:1393" ph="{...}" />
-            <marker date="1559656109293" expanded="true" signature="1287:1357" ph="{...}" />
-            <marker date="1559656109293" expanded="true" signature="1460:1601" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/Models/Repetition.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -795,19 +755,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/Models/CompletedTask.cs" />
-    <entry file="file://$PROJECT_DIR$/WebApp/Constants.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
-          <folding>
-            <marker date="1559739472668" expanded="false" signature="6:109" ph="..." />
-            <marker date="1559739472668" expanded="true" signature="127:1860" ph="{...}" />
-            <marker date="1559739472668" expanded="true" signature="156:1858" ph="{...}" />
-            <marker date="1559739472668" expanded="true" signature="254:392" ph="/* public static string BaseAddress = &quot;http://146.169.45.111:8080/&quot;; ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/Views/LoginPage.xaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -886,23 +833,150 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/App.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+          <folding>
+            <marker date="1559820286785" expanded="false" signature="7:190" ph="..." />
+            <marker date="1559820286785" expanded="true" signature="208:3275" ph="{...}" />
+            <marker date="1559820286785" expanded="true" signature="253:3273" ph="{...}" />
+            <marker date="1559820286785" expanded="true" signature="458:1090" ph="{...}" />
+            <marker date="1559820286785" expanded="true" signature="484:1080" ph="{...}" />
+            <marker date="1559820286785" expanded="true" signature="637:739" ph="{...}" />
+            <marker date="1559820286785" expanded="true" signature="760:1065" ph="{...}" />
+            <marker date="1559820286785" expanded="true" signature="1112:2078" ph="{...}" />
+            <marker date="1559820286785" expanded="true" signature="1445:1537" ph="{...}" />
+            <marker date="1559820286785" expanded="true" signature="1554:2068" ph="{...}" />
+            <marker date="1559820286785" expanded="true" signature="2120:2222" ph="{...}" />
+            <marker date="1559820286785" expanded="true" signature="2265:2328" ph="{...}" />
+            <marker date="1559820286785" expanded="true" signature="2372:2436" ph="{...}" />
+            <marker date="1559820286785" expanded="true" signature="2519:3267" ph="{...}" />
+            <marker date="1559820286785" expanded="true" signature="2592:3132" ph="{...}" />
+            <marker date="1559820286785" expanded="true" signature="2753:2850" ph="{...}" />
+            <marker date="1559820286785" expanded="true" signature="3171:3256" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/Models/BaseTask.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <marker date="1559824835019" expanded="false" signature="6:156" ph="..." />
+            <marker date="1559824835019" expanded="true" signature="181:5118" ph="{...}" />
+            <marker date="1559824835019" expanded="true" signature="209:5116" ph="{...}" />
+            <marker date="1559824835019" expanded="true" signature="702:1129" ph="{...}" />
+            <marker date="1559824835019" expanded="true" signature="1311:1914" ph="{...}" />
+            <marker date="1559824835019" expanded="true" signature="1968:2607" ph="{...}" />
+            <marker date="1559824835019" expanded="true" signature="2092:2485" ph="{...}" />
+            <marker date="1559824835019" expanded="true" signature="2222:2386" ph="{...}" />
+            <marker date="1559824835019" expanded="true" signature="2407:2471" ph="{...}" />
+            <marker date="1559824835019" expanded="true" signature="2652:2721" ph="{...}" />
+            <marker date="1559824835019" expanded="true" signature="2764:2853" ph="{...}" />
+            <marker date="1559824835019" expanded="true" signature="2901:4436" ph="{...}" />
+            <marker date="1559824835019" expanded="true" signature="2957:3395" ph="{...}" />
+            <marker date="1559824835019" expanded="true" signature="3076:3206" ph="{...}" />
+            <marker date="1559824835019" expanded="true" signature="3257:3381" ph="{...}" />
+            <marker date="1559824835019" expanded="true" signature="3449:3608" ph="{...}" />
+            <marker date="1559824835019" expanded="true" signature="3727:3924" ph="{...}" />
+            <marker date="1559824835019" expanded="true" signature="3982:4178" ph="{...}" />
+            <marker date="1559824835019" expanded="true" signature="4279:4393" ph="{...}" />
+            <marker date="1559824835019" expanded="true" signature="4478:5110" ph="{...}" />
+            <marker date="1559824835019" expanded="true" signature="4517:5075" ph="{...}" />
+            <marker date="1559824835019" expanded="true" signature="4591:4968" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/Models/User.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+          <folding>
+            <marker date="1559825504412" expanded="false" signature="6:141" ph="..." />
+            <marker date="1559825504412" expanded="true" signature="190:2629" ph="{...}" />
+            <marker date="1559825504412" expanded="true" signature="458:546" ph="{...}" />
+            <marker date="1559825504412" expanded="true" signature="639:769" ph="{...}" />
+            <marker date="1559825504412" expanded="true" signature="811:866" ph="{...}" />
+            <marker date="1559825504412" expanded="true" signature="920:978" ph="{...}" />
+            <marker date="1559825504412" expanded="true" signature="1009:1171" ph="{...}" />
+            <marker date="1559825504412" expanded="true" signature="1072:1130" ph="{...}" />
+            <marker date="1559825504412" expanded="true" signature="1214:1316" ph="{...}" />
+            <marker date="1559825504412" expanded="true" signature="1358:1961" ph="{...}" />
+            <marker date="1559825504412" expanded="true" signature="2005:2128" ph="{...}" />
+            <marker date="1559825504412" expanded="true" signature="2177:2422" ph="{...}" />
+            <marker date="1559825504412" expanded="true" signature="2328:2412" ph="{...}" />
+            <marker date="1559825504412" expanded="true" signature="2463:2528" ph="{...}" />
+            <marker date="1559825504412" expanded="true" signature="2571:2623" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/App.xaml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1559492257724" expanded="true" signature="40:260" ph="&lt;&lt;Application.Resources&gt;&#10;    &lt;/Application.Resources&gt;.../&gt;" />
             <marker date="1559492257724" expanded="true" signature="193:245" ph="&lt;.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/Constants.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <marker date="1559832391803" expanded="false" signature="6:139" ph="..." />
+            <marker date="1559832391803" expanded="true" signature="157:1936" ph="{...}" />
+            <marker date="1559832391803" expanded="true" signature="186:1934" ph="{...}" />
+            <marker date="1559832391803" expanded="true" signature="284:422" ph="/* public static string BaseAddress = &quot;http://146.169.45.111:8080/&quot;; ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/Views/MyTaskPage.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
+          <folding>
+            <marker date="1559825590344" expanded="true" signature="312:478" ph="&lt;&lt;ToolbarItem Name=&quot;Add&quot; Order=&quot;Primary&quot; Text=&quot;+&quot; Priority=&quot;0&quot;&#10;                     Clicked=&quot;OnAdd&quot; /&gt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="346:447" ph="&lt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="483:636" ph="&lt;&lt;ScrollView&gt;&#10;            &lt;StackLayout x:Name=&quot;taskStack&quot; Margin=&quot;20&quot; /&gt;&#10;        &lt;/ScrollView&gt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="524:617" ph="&lt;&lt;StackLayout x:Name=&quot;taskStack&quot; Margin=&quot;20&quot; /&gt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="641:2104" ph="&lt;&lt;StackLayout&gt;&#10;            &lt;Grid Margin=&quot;10&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;300&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;30&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Entry x:Name=&quot;SearchFriend&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; /&gt;&#10;                &lt;Button Text=&quot;Search&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; /&gt;&#10;            &lt;/Grid&gt;&#10;            &lt;Grid&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;70&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;StackLayout Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Button Text=&quot;Inbox&quot; Clicked=&quot;ToReceivedRequest&quot;/&gt;&#10;                    &lt;ScrollView&gt;&#10;                        &lt;StackLayout x:Name=&quot;FriendList&quot; Margin=&quot;5&quot;/&gt;&#10;                    &lt;/ScrollView&gt;&#10;                &lt;/StackLayout&gt;&#10;                &lt;ScrollView Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;StackLayout x:Name=&quot;FriendTasks&quot; /&gt;&#10;                &lt;/ScrollView&gt;&#10;&#10;            &lt;/Grid&gt;&#10;        &lt;/StackLayout&gt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="678:2085" ph="&lt;&lt;Grid Margin=&quot;10&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;300&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;30&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Entry x:Name=&quot;SearchFriend&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; /&gt;&#10;                &lt;Button Text=&quot;Search&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; /&gt;&#10;            &lt;/Grid&gt; &lt;Grid&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;70&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;StackLayout Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Button Text=&quot;Inbox&quot; Clicked=&quot;ToReceivedRequest&quot;/&gt;&#10;                    &lt;ScrollView&gt;&#10;                        &lt;StackLayout x:Name=&quot;FriendList&quot; Margin=&quot;5&quot;/&gt;&#10;                    &lt;/ScrollView&gt;&#10;                &lt;/StackLayout&gt;&#10;                &lt;ScrollView Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;StackLayout x:Name=&quot;FriendTasks&quot; /&gt;&#10;                &lt;/ScrollView&gt;&#10;&#10;            &lt;/Grid&gt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="704:1203" ph="&lt;&lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;300&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt; &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;30&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt; &lt;Entry x:Name=&quot;SearchFriend&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; /&gt; &lt;Button Text=&quot;Search&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; /&gt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="739:909" ph="&lt;&lt;ColumnDefinition Width=&quot;300&quot; /&gt; &lt;ColumnDefinition Width=&quot;*&quot; /&gt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="926:1036" ph="&lt;&lt;RowDefinition Height=&quot;30&quot; /&gt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="1216:2062" ph="&lt;&lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;70&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt; &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt; &lt;StackLayout Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Button Text=&quot;Inbox&quot; Clicked=&quot;ToReceivedRequest&quot;/&gt;&#10;                    &lt;ScrollView&gt;&#10;                        &lt;StackLayout x:Name=&quot;FriendList&quot; Margin=&quot;5&quot;/&gt;&#10;                    &lt;/ScrollView&gt;&#10;                &lt;/StackLayout&gt; &lt;ScrollView Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;StackLayout x:Name=&quot;FriendTasks&quot; /&gt;&#10;                &lt;/ScrollView&gt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="1239:1408" ph="&lt;&lt;ColumnDefinition Width=&quot;70&quot; /&gt; &lt;ColumnDefinition Width=&quot;*&quot; /&gt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="1425:1534" ph="&lt;&lt;RowDefinition Height=&quot;*&quot; /&gt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="1551:1864" ph="&lt;&lt;Button Text=&quot;Inbox&quot; Clicked=&quot;ToReceivedRequest&quot;/&gt; &lt;ScrollView&gt;&#10;                        &lt;StackLayout x:Name=&quot;FriendList&quot; Margin=&quot;5&quot;/&gt;&#10;                    &lt;/ScrollView&gt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="1717:1833" ph="&lt;&lt;StackLayout x:Name=&quot;FriendList&quot; Margin=&quot;5&quot;/&gt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="1881:2041" ph="&lt;&lt;StackLayout x:Name=&quot;FriendTasks&quot; /&gt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="2109:3652" ph="&lt;&lt;StackLayout&gt;&#10;            &lt;Grid Margin=&quot;30&quot; BackgroundColor=&quot;Silver&quot; WidthRequest=&quot;200&quot; HeightRequest=&quot;100&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;3*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                    &lt;RowDefinition Height=&quot;3*&quot; /&gt;&#10;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Label Grid.Column=&quot;0&quot; Grid.Row=&quot;1&quot; Text=&quot;Profile picture&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;0&quot; x:Name=&quot;_username&quot;&#10;                       TextColor=&quot;Black&quot; FontSize=&quot;22&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;1&quot; x:Name=&quot;_user_detail&quot;&#10;                       TextColor=&quot;##955d5d&quot; FontSize=&quot;18&quot; /&gt;&#10;&#10;                &lt;Button Grid.Column=&quot;2&quot; Grid.Row=&quot;1&quot; Text=&quot;&gt;&quot; TextColor=&quot;Black&quot; FontSize=&quot;30&quot;&#10;                        Clicked=&quot;OnMoreDetailClicked&quot; /&gt;&#10;            &lt;/Grid&gt;&#10;&#10;            &lt;Button x:Name=&quot;Button_Setting&quot;&#10;                    Text=&quot;Setting&quot;&#10;                    Clicked=&quot;OnSettingButtonClicked&quot; /&gt;&#10;            &lt;Button x:Name=&quot;Button_About&quot;&#10;                    Text=&quot;About&quot;&#10;                    Clicked=&quot;OnAboutButtonClicked&quot; /&gt;&#10;            &lt;Button x:Name=&quot;Button_LogOut&quot;&#10;                    Text=&quot;Log Out&quot;&#10;                    Clicked=&quot;OnLogOutButtonClicked&quot; /&gt;&#10;        &lt;/StackLayout&gt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="2175:3633" ph="&lt;&lt;Grid Margin=&quot;30&quot; BackgroundColor=&quot;Silver&quot; WidthRequest=&quot;200&quot; HeightRequest=&quot;100&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;3*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                    &lt;RowDefinition Height=&quot;3*&quot; /&gt;&#10;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Label Grid.Column=&quot;0&quot; Grid.Row=&quot;1&quot; Text=&quot;Profile picture&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;0&quot; x:Name=&quot;_username&quot;&#10;                       TextColor=&quot;Black&quot; FontSize=&quot;22&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;1&quot; x:Name=&quot;_user_detail&quot;&#10;                       TextColor=&quot;##955d5d&quot; FontSize=&quot;18&quot; /&gt;&#10;&#10;                &lt;Button Grid.Column=&quot;2&quot; Grid.Row=&quot;1&quot; Text=&quot;&gt;&quot; TextColor=&quot;Black&quot; FontSize=&quot;30&quot;&#10;                        Clicked=&quot;OnMoreDetailClicked&quot; /&gt;&#10;            &lt;/Grid&gt; &lt;Button x:Name=&quot;Button_Setting&quot;&#10;                    Text=&quot;Setting&quot;&#10;                    Clicked=&quot;OnSettingButtonClicked&quot; /&gt; &lt;Button x:Name=&quot;Button_About&quot;&#10;                    Text=&quot;About&quot;&#10;                    Clicked=&quot;OnAboutButtonClicked&quot; /&gt; &lt;Button x:Name=&quot;Button_LogOut&quot;&#10;                    Text=&quot;Log Out&quot;&#10;                    Clicked=&quot;OnLogOutButtonClicked&quot; /&gt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="2201:3212" ph="&lt;&lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;3*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt; &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                    &lt;RowDefinition Height=&quot;3*&quot; /&gt;&#10;&#10;                &lt;/Grid.RowDefinitions&gt; &lt;Label Grid.Column=&quot;0&quot; Grid.Row=&quot;1&quot; Text=&quot;Profile picture&quot; /&gt; &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;0&quot; x:Name=&quot;_username&quot;&#10;                       TextColor=&quot;Black&quot; FontSize=&quot;22&quot; /&gt; &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;1&quot; x:Name=&quot;_user_detail&quot;&#10;                       TextColor=&quot;##955d5d&quot; FontSize=&quot;18&quot; /&gt; &lt;Button Grid.Column=&quot;2&quot; Grid.Row=&quot;1&quot; Text=&quot;&gt;&quot; TextColor=&quot;Black&quot; FontSize=&quot;30&quot;&#10;                        Clicked=&quot;OnMoreDetailClicked&quot; /&gt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="2300:2520" ph="&lt;&lt;ColumnDefinition Width=&quot;*&quot; /&gt; &lt;ColumnDefinition Width=&quot;3*&quot; /&gt; &lt;ColumnDefinition Width=&quot;*&quot; /&gt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="2537:2697" ph="&lt;&lt;RowDefinition Height=&quot;*&quot; /&gt; &lt;RowDefinition Height=&quot;3*&quot; /&gt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="2793:2905" ph="&lt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="2923:3040" ph="&lt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="3058:3192" ph="&lt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="3226:3348" ph="&lt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="3361:3477" ph="&lt;.../&gt;" />
+            <marker date="1559825590344" expanded="true" signature="3490:3610" ph="&lt;.../&gt;" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/Models/Friend.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
+        <state relative-caret-position="450">
           <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
           <folding>
             <marker date="1559739682666" expanded="false" signature="6:104" ph="..." />
-            <marker date="1559739682666" expanded="true" signature="129:1723" ph="{...}" />
             <marker date="1559739682666" expanded="true" signature="155:1721" ph="{...}" />
             <marker date="1559739682666" expanded="true" signature="313:743" ph="{...}" />
             <marker date="1559739682666" expanded="true" signature="787:970" ph="{...}" />
@@ -916,65 +990,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/Models/BaseTask.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <marker date="1559745530354" expanded="false" signature="6:114" ph="..." />
-            <marker date="1559745530354" expanded="true" signature="139:4285" ph="{...}" />
-            <marker date="1559745530354" expanded="true" signature="167:4283" ph="{...}" />
-            <marker date="1559745530354" expanded="true" signature="704:1157" ph="{...}" />
-            <marker date="1559745530354" expanded="true" signature="1320:1774" ph="{...}" />
-            <marker date="1559745530354" expanded="true" signature="1819:1888" ph="{...}" />
-            <marker date="1559745530354" expanded="true" signature="1931:2020" ph="{...}" />
-            <marker date="1559745530354" expanded="true" signature="2068:3603" ph="{...}" />
-            <marker date="1559745530354" expanded="true" signature="2124:2562" ph="{...}" />
-            <marker date="1559745530354" expanded="true" signature="2243:2373" ph="{...}" />
-            <marker date="1559745530354" expanded="true" signature="2424:2548" ph="{...}" />
-            <marker date="1559745530354" expanded="true" signature="2616:2775" ph="{...}" />
-            <marker date="1559745530354" expanded="true" signature="2894:3091" ph="{...}" />
-            <marker date="1559745530354" expanded="true" signature="3149:3345" ph="{...}" />
-            <marker date="1559745530354" expanded="true" signature="3446:3560" ph="{...}" />
-            <marker date="1559745530354" expanded="true" signature="3645:4277" ph="{...}" />
-            <marker date="1559745530354" expanded="true" signature="3684:4242" ph="{...}" />
-            <marker date="1559745530354" expanded="true" signature="3758:4135" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/Models/User.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
-          <folding>
-            <marker date="1559673359009" expanded="false" signature="6:141" ph="..." />
-            <marker date="1559673359009" expanded="true" signature="166:2629" ph="{...}" />
-            <marker date="1559673359009" expanded="true" signature="190:2627" ph="{...}" />
-            <marker date="1559673359009" expanded="true" signature="458:546" ph="{...}" />
-            <marker date="1559673359009" expanded="true" signature="639:769" ph="{...}" />
-            <marker date="1559673359009" expanded="true" signature="811:866" ph="{...}" />
-            <marker date="1559673359009" expanded="true" signature="920:978" ph="{...}" />
-            <marker date="1559673359009" expanded="true" signature="1009:1169" ph="{...}" />
-            <marker date="1559673359009" expanded="true" signature="1072:1128" ph="{...}" />
-            <marker date="1559673359009" expanded="true" signature="1212:1314" ph="{...}" />
-            <marker date="1559673359009" expanded="true" signature="1356:1959" ph="{...}" />
-            <marker date="1559673359009" expanded="true" signature="2003:2126" ph="{...}" />
-            <marker date="1559673359009" expanded="true" signature="2175:2420" ph="{...}" />
-            <marker date="1559673359009" expanded="true" signature="2326:2410" ph="{...}" />
-            <marker date="1559673359009" expanded="true" signature="2461:2526" ph="{...}" />
-            <marker date="1559673359009" expanded="true" signature="2569:2621" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/Models/GroupTask.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding>
             <marker date="1559651955316" expanded="false" signature="6:88" ph="..." />
-            <marker date="1559651955316" expanded="true" signature="113:635" ph="{...}" />
             <marker date="1559651955316" expanded="true" signature="153:633" ph="{...}" />
             <marker date="1559651955316" expanded="true" signature="367:435" ph="{...}" />
             <marker date="1559651955316" expanded="true" signature="478:627" ph="{...}" />
@@ -982,177 +1003,196 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/Models/FriendTask.cs">
+    <entry file="file://$PROJECT_DIR$/WebApp/Models/FriendEntity.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
           <folding>
-            <marker date="1559746485396" expanded="false" signature="6:34" ph="..." />
-            <marker date="1559746485396" expanded="true" signature="59:3248" ph="{...}" />
-            <marker date="1559746485396" expanded="true" signature="89:3246" ph="{...}" />
-            <marker date="1559746485396" expanded="true" signature="396:776" ph="{...}" />
-            <marker date="1559746485396" expanded="true" signature="808:1427" ph="{...}" />
-            <marker date="1559746485396" expanded="true" signature="847:1392" ph="{...}" />
-            <marker date="1559746485396" expanded="true" signature="921:1285" ph="{...}" />
-            <marker date="1559746485396" expanded="true" signature="1461:2239" ph="{...}" />
-            <marker date="1559746485396" expanded="true" signature="1531:2080" ph="{...}" />
-            <marker date="1559746485396" expanded="true" signature="1605:1973" ph="{...}" />
-            <marker date="1559746485396" expanded="true" signature="2097:2229" ph="{...}" />
-            <marker date="1559746485396" expanded="true" signature="2287:3236" ph="{...}" />
-            <marker date="1559746485396" expanded="true" signature="2343:2781" ph="{...}" />
-            <marker date="1559746485396" expanded="true" signature="2462:2592" ph="{...}" />
-            <marker date="1559746485396" expanded="true" signature="2643:2767" ph="{...}" />
-            <marker date="1559746485396" expanded="true" signature="2835:2955" ph="{...}" />
-            <marker date="1559746485396" expanded="true" signature="3017:3193" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/App.xaml.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="74" column="41" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
-          <folding>
-            <marker date="1559747019933" expanded="false" signature="7:190" ph="..." />
-            <marker date="1559747019933" expanded="true" signature="208:5607" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="253:5605" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="458:1090" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="484:1080" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="637:739" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="760:1065" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="1112:2162" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="1393:1485" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="1502:2016" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="2079:2127" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="2208:2589" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="2293:2577" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="2335:2487" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="2637:3397" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="2766:3387" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="2845:2999" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="3020:3373" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="3112:3319" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="3180:3297" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="3461:4401" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="3714:4391" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="4452:4554" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="4597:4660" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="4704:4768" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="4851:5599" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="4924:5464" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="5085:5182" ph="{...}" />
-            <marker date="1559747019933" expanded="true" signature="5503:5588" ph="{...}" />
+            <marker date="1559833215509" expanded="false" signature="6:105" ph="..." />
+            <marker date="1559833215509" expanded="true" signature="130:943" ph="{...}" />
+            <marker date="1559833215509" expanded="true" signature="162:941" ph="{...}" />
+            <marker date="1559833215509" expanded="true" signature="420:550" ph="{...}" />
+            <marker date="1559833215509" expanded="true" signature="606:817" ph="{...}" />
+            <marker date="1559833215509" expanded="true" signature="646:782" ph="{...}" />
+            <marker date="1559833215509" expanded="true" signature="710:767" ph="{...}" />
+            <marker date="1559833215509" expanded="true" signature="860:934" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/Data/Communications.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="261" column="13" selection-start-line="261" selection-start-column="13" selection-end-line="261" selection-end-column="13" />
+        <state relative-caret-position="3192">
+          <caret line="174" column="9" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
           <folding>
-            <marker date="1559746959886" expanded="false" signature="6:163" ph="..." />
-            <marker date="1559746959886" expanded="true" signature="181:10375" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="222:10373" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="309:1054" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="682:963" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="1131:1704" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="1495:1632" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="1789:2345" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="2161:2291" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="2421:3150" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="2808:3103" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="3249:3787" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="3663:3733" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="3863:4521" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="4286:4463" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="4594:5221" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="4986:5163" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="5281:5808" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="5320:5383" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="5514:5577" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="5877:6518" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="6276:6463" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="6577:7316" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="6974:7269" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="7384:8188" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="8029:8135" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="8260:8446" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="8332:8401" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="8524:9232" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="8914:9104" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="9292:9649" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="9715:10367" ph="{...}" />
-            <marker date="1559746959886" expanded="true" signature="10079:10267" ph="{...}" />
+            <marker date="1559833290749" expanded="false" signature="6:163" ph="..." />
+            <marker date="1559833290749" expanded="true" signature="181:14751" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="222:14749" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="309:1054" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="682:963" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="1131:1704" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="1495:1632" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="1789:2345" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="2161:2291" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="2421:3150" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="2808:3103" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="3249:3787" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="3663:3733" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="3863:4613" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="4286:4555" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="4692:5338" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="5084:5280" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="5398:5925" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="5437:5500" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="5631:5694" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="6000:6773" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="6456:6718" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="6832:7571" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="7229:7524" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="7643:8447" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="8288:8394" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="8512:8699" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="8585:8654" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="8779:9488" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="9169:9359" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="9554:9982" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="10048:10780" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="10412:10646" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="10852:11671" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="11287:11629" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="11523:11615" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="11747:12300" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="12095:12247" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="12387:13141" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="12752:13017" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="13221:14024" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="13651:13909" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="14118:14733" ph="{...}" />
+            <marker date="1559833290749" expanded="true" signature="14528:14680" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/Views/MyTaskPage.xaml">
+    <entry file="file://$PROJECT_DIR$/WebApp/Models/FriendTask.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
+        <state relative-caret-position="-352">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
           <folding>
-            <marker date="1559739927806" expanded="true" signature="41:3656" ph="&lt;&lt;TabbedPage.ToolbarItems&gt;&#10;        &lt;ToolbarItem Name=&quot;Add&quot; Order=&quot;Primary&quot; Text=&quot;+&quot; Priority=&quot;0&quot;&#10;                     Clicked=&quot;OnAdd&quot; /&gt;&#10;    &lt;/TabbedPage.ToolbarItems&gt; &lt;ContentPage Title=&quot;MyTaskPage&quot;&gt;&#10;        &lt;ScrollView&gt;&#10;            &lt;StackLayout x:Name=&quot;taskStack&quot; Margin=&quot;20&quot; /&gt;&#10;        &lt;/ScrollView&gt;&#10;    &lt;/ContentPage&gt; &lt;ContentPage Title=&quot;Friend&quot;&gt;&#10;        &lt;StackLayout&gt;&#10;            &lt;Grid Margin=&quot;10&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;300&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;30&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Entry x:Name=&quot;SearchFriend&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; /&gt;&#10;                &lt;Button Text=&quot;Search&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; /&gt;&#10;            &lt;/Grid&gt;&#10;            &lt;Grid&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;70&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;StackLayout Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Button Text=&quot;Inbox&quot; Clicked=&quot;ToReceivedRequest&quot;/&gt;&#10;                    &lt;ScrollView&gt;&#10;                        &lt;StackLayout x:Name=&quot;FriendList&quot;/&gt;&#10;                    &lt;/ScrollView&gt;&#10;                &lt;/StackLayout&gt;&#10;                &lt;ScrollView Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;StackLayout x:Name=&quot;FriendTasks&quot; /&gt;&#10;                &lt;/ScrollView&gt;&#10;&#10;            &lt;/Grid&gt;&#10;        &lt;/StackLayout&gt;&#10;    &lt;/ContentPage&gt; &lt;ContentPage x:Name=&quot;my_profile_page&quot; Title=&quot;My Profile&quot;&gt;&#10;        &lt;StackLayout&gt;&#10;            &lt;Grid Margin=&quot;30&quot; BackgroundColor=&quot;Silver&quot; WidthRequest=&quot;200&quot; HeightRequest=&quot;100&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;3*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                    &lt;RowDefinition Height=&quot;3*&quot; /&gt;&#10;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Label Grid.Column=&quot;0&quot; Grid.Row=&quot;1&quot; Text=&quot;Profile picture&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;0&quot; x:Name=&quot;_username&quot;&#10;                       TextColor=&quot;Black&quot; FontSize=&quot;22&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;1&quot; x:Name=&quot;_user_detail&quot;&#10;                       TextColor=&quot;##955d5d&quot; FontSize=&quot;18&quot; /&gt;&#10;&#10;                &lt;Button Grid.Column=&quot;2&quot; Grid.Row=&quot;1&quot; Text=&quot;&gt;&quot; TextColor=&quot;Black&quot; FontSize=&quot;30&quot;&#10;                        Clicked=&quot;OnMoreDetailClicked&quot; /&gt;&#10;            &lt;/Grid&gt;&#10;&#10;            &lt;Button x:Name=&quot;Button_Setting&quot;&#10;                    Text=&quot;Setting&quot;&#10;                    Clicked=&quot;OnSettingButtonClicked&quot; /&gt;&#10;            &lt;Button x:Name=&quot;Button_About&quot;&#10;                    Text=&quot;About&quot;&#10;                    Clicked=&quot;OnAboutButtonClicked&quot; /&gt;&#10;            &lt;Button x:Name=&quot;Button_LogOut&quot;&#10;                    Text=&quot;Log Out&quot;&#10;                    Clicked=&quot;OnLogOutButtonClicked&quot; /&gt;&#10;        &lt;/StackLayout&gt;&#10;    &lt;/ContentPage&gt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="312:478" ph="&lt;&lt;ToolbarItem Name=&quot;Add&quot; Order=&quot;Primary&quot; Text=&quot;+&quot; Priority=&quot;0&quot;&#10;                     Clicked=&quot;OnAdd&quot; /&gt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="346:447" ph="&lt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="483:636" ph="&lt;&lt;ScrollView&gt;&#10;            &lt;StackLayout x:Name=&quot;taskStack&quot; Margin=&quot;20&quot; /&gt;&#10;        &lt;/ScrollView&gt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="524:617" ph="&lt;&lt;StackLayout x:Name=&quot;taskStack&quot; Margin=&quot;20&quot; /&gt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="641:2093" ph="&lt;&lt;StackLayout&gt;&#10;            &lt;Grid Margin=&quot;10&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;300&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;30&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Entry x:Name=&quot;SearchFriend&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; /&gt;&#10;                &lt;Button Text=&quot;Search&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; /&gt;&#10;            &lt;/Grid&gt;&#10;            &lt;Grid&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;70&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;StackLayout Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Button Text=&quot;Inbox&quot; Clicked=&quot;ToReceivedRequest&quot;/&gt;&#10;                    &lt;ScrollView&gt;&#10;                        &lt;StackLayout x:Name=&quot;FriendList&quot;/&gt;&#10;                    &lt;/ScrollView&gt;&#10;                &lt;/StackLayout&gt;&#10;                &lt;ScrollView Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;StackLayout x:Name=&quot;FriendTasks&quot; /&gt;&#10;                &lt;/ScrollView&gt;&#10;&#10;            &lt;/Grid&gt;&#10;        &lt;/StackLayout&gt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="678:2074" ph="&lt;&lt;Grid Margin=&quot;10&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;300&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;30&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Entry x:Name=&quot;SearchFriend&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; /&gt;&#10;                &lt;Button Text=&quot;Search&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; /&gt;&#10;            &lt;/Grid&gt; &lt;Grid&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;70&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;StackLayout Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Button Text=&quot;Inbox&quot; Clicked=&quot;ToReceivedRequest&quot;/&gt;&#10;                    &lt;ScrollView&gt;&#10;                        &lt;StackLayout x:Name=&quot;FriendList&quot;/&gt;&#10;                    &lt;/ScrollView&gt;&#10;                &lt;/StackLayout&gt;&#10;                &lt;ScrollView Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;StackLayout x:Name=&quot;FriendTasks&quot; /&gt;&#10;                &lt;/ScrollView&gt;&#10;&#10;            &lt;/Grid&gt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="704:1203" ph="&lt;&lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;300&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt; &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;30&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt; &lt;Entry x:Name=&quot;SearchFriend&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; /&gt; &lt;Button Text=&quot;Search&quot; Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; /&gt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="739:909" ph="&lt;&lt;ColumnDefinition Width=&quot;300&quot; /&gt; &lt;ColumnDefinition Width=&quot;*&quot; /&gt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="926:1036" ph="&lt;&lt;RowDefinition Height=&quot;30&quot; /&gt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="1216:2051" ph="&lt;&lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;70&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt; &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                &lt;/Grid.RowDefinitions&gt; &lt;StackLayout Grid.Row=&quot;0&quot; Grid.Column=&quot;0&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;Button Text=&quot;Inbox&quot; Clicked=&quot;ToReceivedRequest&quot;/&gt;&#10;                    &lt;ScrollView&gt;&#10;                        &lt;StackLayout x:Name=&quot;FriendList&quot;/&gt;&#10;                    &lt;/ScrollView&gt;&#10;                &lt;/StackLayout&gt; &lt;ScrollView Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot; VerticalOptions=&quot;FillAndExpand&quot;&gt;&#10;                    &lt;StackLayout x:Name=&quot;FriendTasks&quot; /&gt;&#10;                &lt;/ScrollView&gt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="1239:1408" ph="&lt;&lt;ColumnDefinition Width=&quot;70&quot; /&gt; &lt;ColumnDefinition Width=&quot;*&quot; /&gt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="1425:1534" ph="&lt;&lt;RowDefinition Height=&quot;*&quot; /&gt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="1551:1853" ph="&lt;&lt;Button Text=&quot;Inbox&quot; Clicked=&quot;ToReceivedRequest&quot;/&gt; &lt;ScrollView&gt;&#10;                        &lt;StackLayout x:Name=&quot;FriendList&quot;/&gt;&#10;                    &lt;/ScrollView&gt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="1717:1822" ph="&lt;&lt;StackLayout x:Name=&quot;FriendList&quot;/&gt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="1870:2030" ph="&lt;&lt;StackLayout x:Name=&quot;FriendTasks&quot; /&gt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="2098:3641" ph="&lt;&lt;StackLayout&gt;&#10;            &lt;Grid Margin=&quot;30&quot; BackgroundColor=&quot;Silver&quot; WidthRequest=&quot;200&quot; HeightRequest=&quot;100&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;3*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                    &lt;RowDefinition Height=&quot;3*&quot; /&gt;&#10;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Label Grid.Column=&quot;0&quot; Grid.Row=&quot;1&quot; Text=&quot;Profile picture&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;0&quot; x:Name=&quot;_username&quot;&#10;                       TextColor=&quot;Black&quot; FontSize=&quot;22&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;1&quot; x:Name=&quot;_user_detail&quot;&#10;                       TextColor=&quot;##955d5d&quot; FontSize=&quot;18&quot; /&gt;&#10;&#10;                &lt;Button Grid.Column=&quot;2&quot; Grid.Row=&quot;1&quot; Text=&quot;&gt;&quot; TextColor=&quot;Black&quot; FontSize=&quot;30&quot;&#10;                        Clicked=&quot;OnMoreDetailClicked&quot; /&gt;&#10;            &lt;/Grid&gt;&#10;&#10;            &lt;Button x:Name=&quot;Button_Setting&quot;&#10;                    Text=&quot;Setting&quot;&#10;                    Clicked=&quot;OnSettingButtonClicked&quot; /&gt;&#10;            &lt;Button x:Name=&quot;Button_About&quot;&#10;                    Text=&quot;About&quot;&#10;                    Clicked=&quot;OnAboutButtonClicked&quot; /&gt;&#10;            &lt;Button x:Name=&quot;Button_LogOut&quot;&#10;                    Text=&quot;Log Out&quot;&#10;                    Clicked=&quot;OnLogOutButtonClicked&quot; /&gt;&#10;        &lt;/StackLayout&gt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="2164:3622" ph="&lt;&lt;Grid Margin=&quot;30&quot; BackgroundColor=&quot;Silver&quot; WidthRequest=&quot;200&quot; HeightRequest=&quot;100&quot;&gt;&#10;                &lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;3*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt;&#10;                &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                    &lt;RowDefinition Height=&quot;3*&quot; /&gt;&#10;&#10;                &lt;/Grid.RowDefinitions&gt;&#10;                &lt;Label Grid.Column=&quot;0&quot; Grid.Row=&quot;1&quot; Text=&quot;Profile picture&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;0&quot; x:Name=&quot;_username&quot;&#10;                       TextColor=&quot;Black&quot; FontSize=&quot;22&quot; /&gt;&#10;&#10;                &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;1&quot; x:Name=&quot;_user_detail&quot;&#10;                       TextColor=&quot;##955d5d&quot; FontSize=&quot;18&quot; /&gt;&#10;&#10;                &lt;Button Grid.Column=&quot;2&quot; Grid.Row=&quot;1&quot; Text=&quot;&gt;&quot; TextColor=&quot;Black&quot; FontSize=&quot;30&quot;&#10;                        Clicked=&quot;OnMoreDetailClicked&quot; /&gt;&#10;            &lt;/Grid&gt; &lt;Button x:Name=&quot;Button_Setting&quot;&#10;                    Text=&quot;Setting&quot;&#10;                    Clicked=&quot;OnSettingButtonClicked&quot; /&gt; &lt;Button x:Name=&quot;Button_About&quot;&#10;                    Text=&quot;About&quot;&#10;                    Clicked=&quot;OnAboutButtonClicked&quot; /&gt; &lt;Button x:Name=&quot;Button_LogOut&quot;&#10;                    Text=&quot;Log Out&quot;&#10;                    Clicked=&quot;OnLogOutButtonClicked&quot; /&gt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="2190:3201" ph="&lt;&lt;Grid.ColumnDefinitions&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;3*&quot; /&gt;&#10;                    &lt;ColumnDefinition Width=&quot;*&quot; /&gt;&#10;                &lt;/Grid.ColumnDefinitions&gt; &lt;Grid.RowDefinitions&gt;&#10;                    &lt;RowDefinition Height=&quot;*&quot; /&gt;&#10;                    &lt;RowDefinition Height=&quot;3*&quot; /&gt;&#10;&#10;                &lt;/Grid.RowDefinitions&gt; &lt;Label Grid.Column=&quot;0&quot; Grid.Row=&quot;1&quot; Text=&quot;Profile picture&quot; /&gt; &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;0&quot; x:Name=&quot;_username&quot;&#10;                       TextColor=&quot;Black&quot; FontSize=&quot;22&quot; /&gt; &lt;Label Grid.Column=&quot;1&quot; Grid.Row=&quot;1&quot; x:Name=&quot;_user_detail&quot;&#10;                       TextColor=&quot;##955d5d&quot; FontSize=&quot;18&quot; /&gt; &lt;Button Grid.Column=&quot;2&quot; Grid.Row=&quot;1&quot; Text=&quot;&gt;&quot; TextColor=&quot;Black&quot; FontSize=&quot;30&quot;&#10;                        Clicked=&quot;OnMoreDetailClicked&quot; /&gt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="2289:2509" ph="&lt;&lt;ColumnDefinition Width=&quot;*&quot; /&gt; &lt;ColumnDefinition Width=&quot;3*&quot; /&gt; &lt;ColumnDefinition Width=&quot;*&quot; /&gt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="2526:2686" ph="&lt;&lt;RowDefinition Height=&quot;*&quot; /&gt; &lt;RowDefinition Height=&quot;3*&quot; /&gt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="2782:2894" ph="&lt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="2912:3029" ph="&lt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="3047:3181" ph="&lt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="3215:3337" ph="&lt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="3350:3466" ph="&lt;.../&gt;" />
-            <marker date="1559739927806" expanded="true" signature="3479:3599" ph="&lt;.../&gt;" />
+            <marker date="1559762070857" expanded="false" signature="6:34" ph="..." />
+            <marker date="1559762070857" expanded="true" signature="59:2425" ph="{...}" />
+            <marker date="1559762070857" expanded="true" signature="89:2423" ph="{...}" />
+            <marker date="1559762070857" expanded="true" signature="365:768" ph="{...}" />
+            <marker date="1559762070857" expanded="true" signature="800:1419" ph="{...}" />
+            <marker date="1559762070857" expanded="true" signature="839:1384" ph="{...}" />
+            <marker date="1559762070857" expanded="true" signature="913:1277" ph="{...}" />
+            <marker date="1559762070857" expanded="true" signature="1467:2416" ph="{...}" />
+            <marker date="1559762070857" expanded="true" signature="1523:1961" ph="{...}" />
+            <marker date="1559762070857" expanded="true" signature="1642:1772" ph="{...}" />
+            <marker date="1559762070857" expanded="true" signature="1823:1947" ph="{...}" />
+            <marker date="1559762070857" expanded="true" signature="2015:2135" ph="{...}" />
+            <marker date="1559762070857" expanded="true" signature="2197:2373" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/Views/MyTaskPage.xaml.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+        <state relative-caret-position="768">
+          <caret line="155" column="41" lean-forward="true" selection-start-line="155" selection-start-column="41" selection-end-line="155" selection-end-column="41" />
           <folding>
-            <marker date="1559746470199" expanded="false" signature="6:183" ph="..." />
-            <marker date="1559746470199" expanded="true" signature="207:4222" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="299:4220" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="333:1134" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="468:549" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="614:696" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="756:839" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="1186:1275" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="1339:1449" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="1518:1669" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="1723:1863" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="1792:1851" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="1926:1990" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="2051:2694" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="2225:2684" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="2767:2850" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="2932:2993" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="3078:3207" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="3291:3368" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="3452:3615" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="3654:3707" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="3765:3913" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="3973:4055" ph="{...}" />
-            <marker date="1559746470199" expanded="true" signature="4102:4214" ph="{...}" />
+            <marker date="1559833339374" expanded="false" signature="6:183" ph="..." />
+            <marker date="1559833339374" expanded="true" signature="207:8209" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="299:8207" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="333:1237" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="431:512" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="577:659" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="719:802" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="1301:1411" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="1485:1638" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="1705:1866" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="1920:2060" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="1989:2048" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="2123:2187" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="2248:2891" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="2422:2881" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="2964:3047" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="3129:3190" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="3275:3404" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="3488:3565" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="3649:3879" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="3918:3971" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="4029:4183" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="4221:4274" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="4333:4415" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="4462:4574" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="4612:5038" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="4697:5026" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="4739:4936" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="5086:5745" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="5363:5495" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="5555:5735" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="5626:5721" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="5796:6221" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="5940:6211" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="6262:7133" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="6391:7123" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="6470:6698" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="6719:7109" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="6811:7055" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="6879:7033" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="7189:8201" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="7449:8191" ph="{...}" />
+            <marker date="1559833339374" expanded="true" signature="8041:8177" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/Views/TaskCheckerPopUp.xaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/Views/SettingPage.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="18" selection-start-line="18" selection-end-line="49" selection-end-column="11" />
+          <folding>
+            <marker date="1559492257704" expanded="false" signature="6:89" ph="..." />
+            <marker date="1559492257704" expanded="true" signature="113:1978" ph="{...}" />
+            <marker date="1559492257704" expanded="true" signature="166:1976" ph="{...}" />
+            <marker date="1559492257704" expanded="true" signature="253:334" ph="{...}" />
+            <marker date="1559492257704" expanded="true" signature="344:1000" ph="/* protected override void OnAppearing() ... */" />
+            <marker date="1559492257704" expanded="true" signature="1011:1358" ph="/* async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e) ... */" />
+            <marker date="1559492257704" expanded="true" signature="1448:1509" ph="{...}" />
+            <marker date="1559492257704" expanded="true" signature="1595:1678" ph="{...}" />
+            <marker date="1559492257704" expanded="true" signature="1764:1825" ph="{...}" />
+            <marker date="1559492257704" expanded="true" signature="1909:1970" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/Views/TaskCheckerPopUp.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+          <folding>
+            <marker date="1559833119909" expanded="false" signature="6:119" ph="..." />
+            <marker date="1559833119909" expanded="true" signature="143:3141" ph="{...}" />
+            <marker date="1559833119909" expanded="true" signature="222:3139" ph="{...}" />
+            <marker date="1559833119909" expanded="true" signature="322:514" ph="{...}" />
+            <marker date="1559833119909" expanded="true" signature="561:613" ph="{...}" />
+            <marker date="1559833119909" expanded="true" signature="679:1021" ph="{...}" />
+            <marker date="1559833119909" expanded="true" signature="1070:1125" ph="{...}" />
+            <marker date="1559833119909" expanded="true" signature="1135:1248" ph="/* ###### Methods for supporting animations in your popup page ###### ... */" />
+            <marker date="1559833119909" expanded="true" signature="1308:1374" ph="{...}" />
+            <marker date="1559833119909" expanded="true" signature="1481:1545" ph="{...}" />
+            <marker date="1559833119909" expanded="true" signature="1661:1730" ph="{...}" />
+            <marker date="1559833119909" expanded="true" signature="1843:1910" ph="{...}" />
+            <marker date="1559833119909" expanded="true" signature="1976:2054" ph="{...}" />
+            <marker date="1559833119909" expanded="true" signature="2118:2194" ph="{...}" />
+            <marker date="1559833119909" expanded="true" signature="2263:2344" ph="{...}" />
+            <marker date="1559833119909" expanded="true" signature="2411:2490" ph="{...}" />
+            <marker date="1559833119909" expanded="true" signature="2500:2626" ph="/* ###### Overrided methods which can prevent closing a popup page ###### ... */" />
+            <marker date="1559833119909" expanded="true" signature="2680:2847" ph="{...}" />
+            <marker date="1559833119909" expanded="true" signature="2948:3133" ph="{...}" />
           </folding>
         </state>
       </provider>

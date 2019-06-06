@@ -44,7 +44,7 @@ namespace WebApp.Views
 
         private async void OnClicked(object sender, EventArgs e)
         {
-            int updateNo = await Communications.sendNewUpdate(task.taskID);
+            int updateNo = await Communications.sendMyNewIndividualUpdate(task.taskID);
             await DisplayAlert("","Your progress has been sent to your friends. Update number: "
                  + updateNo,"ok");
         }
