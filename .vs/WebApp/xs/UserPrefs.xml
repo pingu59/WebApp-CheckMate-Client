@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{FC97C75F-7E78-408D-BD0A-42ADF0A53DCD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Views/MyTaskPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../.nuget/packages/xam.plugin.media/4.0.1.5/readme.txt">
     <Files>
       <File FileName="WebApp/Data/Communications.cs" Line="363" Column="56" />
       <File FileName="WebApp/Views/TaskCheckerPopUp.xaml.cs" Line="12" Column="16" />
@@ -19,13 +19,17 @@
       <File FileName="WebApp/Views/IndividualTaskPopUp.xaml" />
       <File FileName="WebApp.iOS/Info.plist" />
       <File FileName="WebApp.Android/Properties/AssemblyInfo.cs" Line="35" Column="30" />
-      <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="42" Column="10" />
+      <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="28" Column="40" />
+      <File FileName="../../.nuget/packages/xam.plugin.media/4.0.1.5/readme.txt" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WebApp" expanded="True">
-            <Node name="WebApp" expanded="True">
+            <Node name="WebApp" expanded="True" selected="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
               <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
@@ -40,9 +44,7 @@
                 <Node name="InvolveFriend.xaml" expanded="True" />
                 <Node name="LoginPage.xaml" expanded="True" />
                 <Node name="MyHistory.xaml" expanded="True" />
-                <Node name="MyTaskPage.xaml" expanded="True">
-                  <Node name="MyTaskPage.xaml.cs" selected="True" />
-                </Node>
+                <Node name="MyTaskPage.xaml" expanded="True" />
                 <Node name="SettingPage.xaml" expanded="True" />
                 <Node name="TaskCheckerPopUp.xaml" expanded="True" />
               </Node>
@@ -57,7 +59,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.WebApp.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7A67C324-C104-47DD-A8D4-ED496A3ED77A" />
+  <MonoDevelop.Ide.ItemProperties.WebApp.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2BF3903B-111A-499A-A929-364C03B40169" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

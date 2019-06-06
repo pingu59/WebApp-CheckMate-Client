@@ -199,9 +199,6 @@
 /Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/stamp/_CopyMdbFiles.stamp
 /Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/stamp/_CopyPdbFiles.stamp
 /Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
-/Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/android/assets/machine.config
-/Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/stamp/_CompileToDalvik.stamp
-/Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/apple/Xamarin/WebApp.Android/bin/Debug/WebApp.Android.dll
 /Users/apple/Xamarin/WebApp.Android/bin/Debug/WebApp.Android.pdb
 /Users/apple/Xamarin/WebApp.Android/bin/Debug/com.companyname.webapp.apk
@@ -416,3 +413,13 @@
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/machine.config
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/stamp/_CompileToDalvik.stamp
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
+/Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/bin/Debug/Rg.Plugins.Popup.pdb
+/Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/bin/Debug/Rg.Plugins.Popup.Droid.dll.mdb
+/Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/linksrc/Rg.Plugins.Popup.dll
+/Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/linksrc/Rg.Plugins.Popup.Droid.dll
+/Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/linksrc/Rg.Plugins.Popup.pdb
+/Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/linksrc/Rg.Plugins.Popup.Droid.dll.mdb
+/Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/android/assets/Rg.Plugins.Popup.dll
+/Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/android/assets/Rg.Plugins.Popup.Droid.dll
+/Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/android/assets/Rg.Plugins.Popup.Droid.dll.mdb
+/Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/android/assets/Rg.Plugins.Popup.pdb
