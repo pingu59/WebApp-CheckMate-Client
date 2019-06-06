@@ -42,9 +42,27 @@ namespace WebApp.Views
             BindingContext = this;
         }
 
-        private async void OnClicked(object sender, EventArgs e)
+        private async void OnClicked(object sender, EventArgs args)
         {
             int updateNo = await Communications.sendMyNewIndividualUpdate(task.taskID);
+            //await CrossMedia.Current.Initialize();
+            //if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
+            //{
+            //    DisplayAlert("No Camera", ":( No camera available.", "OK");
+            //    return;
+            //}
+
+            //var file = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
+            //{
+            //    Directory = "Photos",
+            //    Name = "thisphoto.jpg"
+            //});
+
+            //PhotoImage.Source = ImageSource.FromStream(() =>
+            //{
+            //    var stream = file.GetStream();
+            //    return stream;
+            //});
             await DisplayAlert("","Your progress has been sent to your friends. Update number: "
                  + updateNo,"ok");
         }

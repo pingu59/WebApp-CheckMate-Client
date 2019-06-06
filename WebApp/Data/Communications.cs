@@ -353,7 +353,22 @@ namespace WebApp
             }
             return Constants.SERVER_ERROR;
         }
-        
+         public static async Task<List<History>> getMyHistory()
+        {
+            string baseurl = Constants.BaseAddress + "getHistory?userId={0}";
+            string actualurl = String.Format(baseurl, Constants.me.userid);
+            Console.WriteLine(actualurl);
+            HttpClient _client = new HttpClient();
+            var uri = new Uri(actualurl);
+            var response = await _client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                string tasksJson = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<History>>(tasksJson);
+            }
+            Console.WriteLine("Get history failed!!");
+            return new List<History>();
+        }
 
     }
 }

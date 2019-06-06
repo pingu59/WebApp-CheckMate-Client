@@ -42,5 +42,6 @@
         </ScrollView>
         <Button x:Name="sendingButton" Text="TAKE PICTURE" FontSize="40" 
                 HorizontalOptions="Center" Clicked="OnClicked"/>
+        <Image x:Name="PhotoImage"/>
     </StackLayout>
 </pages:PopupPage>

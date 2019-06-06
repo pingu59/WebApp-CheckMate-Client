@@ -38,6 +38,15 @@ namespace WebApp.Views
             Constants.backgroudProcess.ConfigureAwait(false);
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            CheckInbox();
+            CheckNewInvitation();
+            CheckFriendUpdate();
+            CheckMyCheckedUpdate();
+        }
+
         internal void DisplayFriendTask(FriendTask friendTask)
         {
             //add to database
@@ -97,7 +106,7 @@ namespace WebApp.Views
 
         public async void OnMoreDetailClicked(object sender, System.EventArgs e)
         {
-            await Navigation.PopAsync();
+            await Navigation.PushAsync(new MyHistory());
         }
 
         public async void OnSettingButtonClicked(object sender, System.EventArgs e)

@@ -1,13 +1,25 @@
 ﻿<Properties StartupConfiguration="{FC97C75F-7E78-408D-BD0A-42ADF0A53DCD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Models/FriendCheck.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Views/MyTaskPage.xaml.cs">
     <Files>
-      <File FileName="WebApp/Data/Communications.cs" Line="345" Column="42" />
+      <File FileName="WebApp/Data/Communications.cs" Line="363" Column="56" />
       <File FileName="WebApp/Views/TaskCheckerPopUp.xaml.cs" Line="12" Column="16" />
       <File FileName="WebApp/Models/FriendUpdate.cs" Line="12" Column="28" />
       <File FileName="WebApp/Views/LoginPage.xaml.cs" Line="118" Column="23" />
-      <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="212" Column="26" />
       <File FileName="WebApp/Models/BaseTask.cs" Line="73" Column="45" />
       <File FileName="WebApp/Models/FriendCheck.cs" Line="15" Column="67" />
+      <File FileName="WebApp/Models/History.cs" Line="16" Column="30" />
+      <File FileName="WebApp/Views/MyTaskPage.xaml" />
+      <File FileName="WebApp/Views/EmptyClass.cs" Line="1" Column="1" />
+      <File FileName="WebApp/Views/MyHistory.xaml" />
+      <File FileName="WebApp/Views/MyHistory.xaml.cs" Line="14" Column="41" />
+      <File FileName="WebApp/Views/CreateAccountPage.xaml" />
+      <File FileName="WebApp/Views/ChangePwdPage.xaml" />
+      <File FileName="WebApp/Views/AddFriendPage.xaml" />
+      <File FileName="WebApp/Views/IndividualTaskPopUp.xaml.cs" Line="18" Column="46" />
+      <File FileName="WebApp/Views/IndividualTaskPopUp.xaml" />
+      <File FileName="WebApp.iOS/Info.plist" />
+      <File FileName="WebApp.Android/Properties/AssemblyInfo.cs" Line="35" Column="30" />
+      <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="42" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,9 +27,7 @@
           <Node name="WebApp" expanded="True">
             <Node name="WebApp" expanded="True">
               <Node name="Data" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="FriendCheck.cs" selected="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="AboutPage.xaml" expanded="True" />
                 <Node name="AddFriendPage.xaml" expanded="True" />
@@ -29,14 +39,19 @@
                 <Node name="IndividualTaskPopUp.xaml" expanded="True" />
                 <Node name="InvolveFriend.xaml" expanded="True" />
                 <Node name="LoginPage.xaml" expanded="True" />
-                <Node name="MyTaskPage.xaml" expanded="True" />
+                <Node name="MyHistory.xaml" expanded="True" />
+                <Node name="MyTaskPage.xaml" expanded="True">
+                  <Node name="MyTaskPage.xaml.cs" selected="True" />
+                </Node>
                 <Node name="SettingPage.xaml" expanded="True" />
                 <Node name="TaskCheckerPopUp.xaml" expanded="True" />
               </Node>
               <Node name="App.xaml" expanded="True" />
             </Node>
-            <Node name="WebApp.Android" expanded="True" />
-            <Node name="WebApp.iOS" expanded="True" />
+            <Node name="WebApp.Android" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
