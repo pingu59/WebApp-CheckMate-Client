@@ -44,6 +44,7 @@
           <e p="FriendTask.cs" t="Include" />
           <e p="FriendUpdate.cs" t="Include" />
           <e p="GroupTask.cs" t="Include" />
+          <e p="History.cs" t="Include" />
           <e p="Repetition.cs" t="Include" />
           <e p="User.cs" t="Include" />
         </e>
@@ -76,6 +77,8 @@
           <e p="InvolveFriend.xaml.cs" t="Include" />
           <e p="LoginPage.xaml" t="Include" />
           <e p="LoginPage.xaml.cs" t="Include" />
+          <e p="MyHistory.xaml" t="Include" />
+          <e p="MyHistory.xaml.cs" t="Include" />
           <e p="MyTaskPage.xaml" t="Include" />
           <e p="MyTaskPage.xaml.cs" t="Include" />
           <e p="SettingPage.xaml" t="Include" />

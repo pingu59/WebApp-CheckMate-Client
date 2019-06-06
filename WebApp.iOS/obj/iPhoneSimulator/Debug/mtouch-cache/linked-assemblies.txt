@@ -41,4 +41,6 @@ RemoveDynamicRegistrar:false
 /Users/apple/Xamarin/WebApp.iOS/bin/iPhoneSimulator/Debug/WebApp.iOS.app:/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/SQLitePCLRaw.batteries_v2.dll
 /Users/apple/Xamarin/WebApp.iOS/bin/iPhoneSimulator/Debug/WebApp.iOS.app:/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/SQLitePCLRaw.provider.sqlite3.dll
 /Users/apple/Xamarin/WebApp.iOS/bin/iPhoneSimulator/Debug/WebApp.iOS.app:/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.Globalization.dll
+/Users/apple/Xamarin/WebApp.iOS/bin/iPhoneSimulator/Debug/WebApp.iOS.app:/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/Plugin.Media.dll
+/Users/apple/Xamarin/WebApp.iOS/bin/iPhoneSimulator/Debug/WebApp.iOS.app:/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/Plugin.Permissions.dll
 /Users/apple/Xamarin/WebApp.iOS/bin/iPhoneSimulator/Debug/WebApp.iOS.app:/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/Newtonsoft.Json.dll

@@ -364,6 +364,7 @@ namespace WebApp
             if (response.IsSuccessStatusCode)
             {
                 string tasksJson = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(tasksJson);
                 return JsonConvert.DeserializeObject<List<History>>(tasksJson);
             }
             Console.WriteLine("Get history failed!!");

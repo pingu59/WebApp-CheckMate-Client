@@ -11,12 +11,15 @@ namespace WebApp.Views
         {
             InitializeComponent();
             GetHistory();
-            history.ItemsSource = histories;
         }
 
         private async void GetHistory()
         {
             histories = await Communications.getMyHistory();
+            BindingContext = this;
+            history.ItemsSource = null;
+            history.ItemsSource = histories;
+            Console.WriteLine(history);
         }
     }
 }

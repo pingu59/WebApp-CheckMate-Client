@@ -1,5 +1,8 @@
 FormsViewGroup
 Newtonsoft.Json
+Plugin.CurrentActivity
+Plugin.Media
+Plugin.Permissions
 Rg.Plugins.Popup
 Rg.Plugins.Popup.Droid
 SQLite-net
@@ -35,5 +38,3 @@ Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
-netstandard
-System.Reflection.Extensions

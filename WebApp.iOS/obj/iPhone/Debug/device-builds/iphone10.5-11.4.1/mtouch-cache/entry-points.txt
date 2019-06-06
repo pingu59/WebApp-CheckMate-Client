@@ -1,0 +1,31 @@
+Function=xamarin_timezone_get_data
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_GetFolderPath
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_log
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_find_protocol_wrapper_type
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_release_block_on_main_thread
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=UIApplicationMain
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_start_wwan
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/System.dll
+Function=CreateZStream
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/System.dll
+Function=CloseZStream
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/System.dll
+Function=Flush
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/System.dll
+Function=ReadZStream
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/System.dll
+Function=WriteZStream
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/System.dll
+Function=mono_pmip
