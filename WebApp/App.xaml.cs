@@ -37,6 +37,7 @@ namespace WebApp
         public App()
         {
             InitializeComponent();
+            Console.WriteLine(Constants.PathPrefix);
             string dbpth = Constants.PathPrefix;
             //if default user does not exist, go to login page
             int defaultUserIndex = GetDefaultUser();

@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using WebApp.Models;
 using WebApp.Views;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace WebApp
 {
@@ -42,5 +43,6 @@ namespace WebApp
         public static FriendRequestsListPage requestPage;
         public static List<FriendTask> FriendTasks;
         public static List<BaseTask> MyTask;
+        public static System.Runtime.CompilerServices.ConfiguredTaskAwaitable backgroudProcess;
     }
 }

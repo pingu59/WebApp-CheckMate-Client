@@ -45,7 +45,7 @@ namespace WebApp.Models
         {
             Label thisLabel = new Label
             {
-                Text = userid.ToString()
+                Text = username.ToString()
             };
             return thisLabel;
         }

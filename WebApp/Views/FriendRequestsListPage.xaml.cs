@@ -10,7 +10,6 @@ namespace WebApp.Views
     public partial class FriendRequestsListPage : ContentPage
     {
         private List<int> newFriends;
-        private List<BaseTask> newTasks;
         public FriendRequestsListPage()
         {
             InitializeComponent();

@@ -34,7 +34,7 @@ namespace WebApp.Views
             _username.Text = Constants.me.username;
             _user_detail.Text = "ID : " + Constants.me.userid + '\n'; //user.Id.toString();
             _user_detail.Text += "details e.g. age"; //user.Age;
-            System.Threading.Tasks.Task.Run(() =>
+            Constants.backgroudProcess = System.Threading.Tasks.Task.Run(() =>
             {
                 PeriodicCheck();
             }).ConfigureAwait(false);
@@ -131,6 +131,10 @@ namespace WebApp.Views
                 new IndividualTaskPopUp(task, true));
         }
 
+        internal void RemoveUpdate()
+        {
+            CheckFriendUpdate();
+        }
 
         internal async void DisplayInvitation(String str)
         {
@@ -145,12 +149,15 @@ namespace WebApp.Views
 
         private void PeriodicCheck()
         {
-            Device.StartTimer(TimeSpan.FromSeconds(30), () =>
+            Device.StartTimer(TimeSpan.FromSeconds(15), () =>
             {
-                CheckInbox();
-                CheckNewInvitation();
-                CheckFriendUpdate();
-                CheckMyCheckedUpdate();
+                if(Constants.me != null)
+                {
+                    CheckInbox();
+                    CheckNewInvitation();
+                    CheckFriendUpdate();
+                    CheckMyCheckedUpdate();
+                }
                 return true; // True = Repeat again, False = Stop the timer
             });
         }
@@ -185,7 +192,7 @@ namespace WebApp.Views
             }
         }
 
-        private async static void CheckInbox()
+        private async void CheckInbox()
         {
             List<int> friendChanged = await Communications.FriendInbox();
             foreach (int i in friendChanged)
@@ -193,8 +200,9 @@ namespace WebApp.Views
                 //update database!!!
                 if (i >= 0)
                 {
-                    Constants.Friend.Friends.Add(await Communications.GetFriend(i));
-                    //add friend
+                    FriendEntity fe = await Communications.GetFriend(i);
+                    Constants.Friend.Friends.Add(fe);
+                    FriendList.Children.Add(fe.GetView());
                 }
                 else
                 {
@@ -203,6 +211,7 @@ namespace WebApp.Views
                         if (fe.FriendID == i)
                         {
                             Constants.Friend.Friends.Remove(fe);
+                            //undone
                         }
                     }
                     //delete friend
@@ -219,13 +228,15 @@ namespace WebApp.Views
             {
                 string taskowner = Constants.Friend.getNameOf(bt.ownerid);
                 FriendTask task = new FriendTask(bt);
-                Constants.FriendTasks.Add(task);
-                String baseString = "Your friend {0} has invited you to supervise his/her task:\n" +
-                    "{1}\n Please check your friends page to see it.";
-                Console.WriteLine(bt.frequency);
-                String inviteString = String.Format(baseString, taskowner, task.taskname);
+                string baseString = "Your friend {0} has invited you to supervise his/her task:\n" +
+    "{1}\n Please check your friends page to see it.";
+                string inviteString = string.Format(baseString, taskowner, task.taskname);
                 Constants.mainPage.DisplayInvitation(inviteString);
-                Constants.mainPage.DisplayFriendTask(task);
+                Console.WriteLine(bt.frequency);
+                if (!Constants.FriendTasks.Exists((obj) => obj.taskid == bt.taskID)){
+                    Constants.FriendTasks.Add(task);
+                    Constants.mainPage.DisplayFriendTask(task);
+                }
             }
         }
     }

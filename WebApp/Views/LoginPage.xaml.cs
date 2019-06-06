@@ -25,9 +25,13 @@ namespace WebApp.Views
             Constants.MyTask = new List<BaseTask>();
             Constants.requestPage = new FriendRequestsListPage();
             Constants.meEntity = new FriendEntity(Constants.me.userid, Constants.me.username);
+            Constants.Friend.Friends = new List<FriendEntity>();
 
+            Console.WriteLine("About to load info from server...");
             await LoadMyTasksFromServer();
             await LoadFriendTaskFromServer();
+            await LoadMyFriendsFromServer();
+            Console.WriteLine("Done!");
             MyTaskPage mainpage = new MyTaskPage();
             Constants.mainPage = mainpage;
             await Navigation.PushAsync(mainpage);
@@ -38,6 +42,16 @@ namespace WebApp.Views
             foreach (BaseTask t in task)
             {
                 Constants.MyTask.Add(t);
+            }
+            return true;
+        }
+
+        private async Task<bool> LoadMyFriendsFromServer()
+        {
+            List<FriendEntity> friends = await Communications.GetAllFriend();
+            foreach (FriendEntity fe in friends)
+            {
+                Constants.Friend.Friends.Add(fe);
             }
             return true;
         }

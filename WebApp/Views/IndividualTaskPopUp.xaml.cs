@@ -20,12 +20,24 @@ namespace WebApp.Views
             this.task = task;
             foreach(int sup in task.related)
             {
-                AddedFriends.Children.Add(Constants.Friend.GetViewof(sup));
+                Console.Out.WriteLine("Related " + sup);
+                if(sup == Constants.me.userid)
+                {
+                    AddedFriends.Children.Add(Constants.me.GetView());
+                }
+                else
+                {
+                    if(Constants.Friend.Friends.Exists((obj) => obj.FriendID == sup))
+                    {
+                        AddedFriends.Children.Add(Constants.Friend.GetViewof(sup));
+                    }
+                }
             }
             this.isMyTask = isMyTask;
             if (!isMyTask)
             {
                 sendingButton.IsVisible = false;
+
             }
             BindingContext = this;
         }
@@ -33,6 +45,8 @@ namespace WebApp.Views
         private async void OnClicked(object sender, EventArgs e)
         {
             int updateNo = await Communications.sendNewUpdate(task.taskID);
+            await DisplayAlert("","Your progress has been sent to your friends. Update number: "
+                 + updateNo,"ok");
         }
 
         protected override void OnAppearing()

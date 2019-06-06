@@ -13,10 +13,11 @@ namespace WebApp.Models
         public string FriendName { get; set; }
         private View view;
         public FriendEntity(){}
-        public FriendEntity(int FriednID, String FriendName)
+        [JsonConstructor]
+        public FriendEntity(int userId, String username)
         {
-            this.FriendID = FriednID;
-            this.FriendName = FriendName;
+            this.FriendID = userId;
+            this.FriendName = username;
         }
 
         //make singleton
@@ -32,9 +33,16 @@ namespace WebApp.Models
             return view;
         }
 
+        public override string ToString()
+        {
+            return FriendName + ", ID = " + FriendID;
+        }
+
         public static FriendEntity Deserialize(String jsonString)
         {
+            Console.WriteLine(jsonString);
             FriendEntity entity = JsonConvert.DeserializeObject<FriendEntity>(jsonString);
+            Console.WriteLine(entity);
             return Normalize(entity);
         }
 

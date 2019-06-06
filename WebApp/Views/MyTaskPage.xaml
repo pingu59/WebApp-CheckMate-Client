@@ -38,7 +38,7 @@
                 <StackLayout Grid.Row="0" Grid.Column="0" VerticalOptions="FillAndExpand">
                     <Button Text="Inbox" Clicked="ToReceivedRequest"/>
                     <ScrollView>
-                        <StackLayout x:Name="FriendList"/>
+                        <StackLayout x:Name="FriendList" Margin="5"/>
                     </ScrollView>
                 </StackLayout>
                 <ScrollView Grid.Row="0" Grid.Column="1" VerticalOptions="FillAndExpand">

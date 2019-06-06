@@ -111,6 +111,7 @@ namespace WebApp
             if (response.IsSuccessStatusCode)
             {
                 String responseString = await response.Content.ReadAsStringAsync();
+                Console.WriteLine("Response string is" +responseString);
                 return FriendEntity.Deserialize(responseString);
             }
             //refactor
@@ -163,9 +164,11 @@ namespace WebApp
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);
             var response = await _client.GetAsync(uri);
+            Console.WriteLine("Getting all friends...");
             if (response.IsSuccessStatusCode)
             {
                 string friendRequestsStr = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(friendRequestsStr);
                 return FriendEntity.DeserializeList(friendRequestsStr);
             }
             return new List<FriendEntity>();
@@ -239,9 +242,9 @@ namespace WebApp
 
         public static async Task<bool> ClearInividualTask(int i)
         {
-            string baseurl = Constants.BaseAddress + "clearindvInvitation?userId={0}";
+            string baseurl = Constants.BaseAddress + "clearIndvInvitation?userId={0}";
             string actualurl = String.Format(baseurl, i);
-
+            Console.WriteLine("Clearing....");
             Console.WriteLine(actualurl);
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);
@@ -302,7 +305,7 @@ namespace WebApp
 
         public static async Task<List<FriendUpdate>> checkNewFriendUpdate()
         {
-            string baseurl = Constants.BaseAddress + "supvUpdate?supvId={0}";
+            string baseurl = Constants.BaseAddress + "supvUpdate?supervisorId={0}";
             string actualurl = String.Format(baseurl, Constants.me.userid);
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);
@@ -310,6 +313,7 @@ namespace WebApp
             if (response.IsSuccessStatusCode)
             {
                 string tasksJson = await response.Content.ReadAsStringAsync();
+                Console.WriteLine("New friend update is: " + tasksJson);
                 return JsonConvert.DeserializeObject<List<FriendUpdate>>(tasksJson);
             }
             Console.Out.WriteLine("Check New Friend Update failed");
@@ -318,6 +322,7 @@ namespace WebApp
 
         public static async Task<List<FriendCheck>> checkMyUpdatedIndividual()
         {
+            Console.WriteLine("Checking my updated individual");
             string baseurl = Constants.BaseAddress + "indvOwnerUpdate?ownerId={0}";
             string actualurl = String.Format(baseurl, Constants.me.userid);
             HttpClient _client = new HttpClient();
@@ -326,6 +331,7 @@ namespace WebApp
             if (response.IsSuccessStatusCode)
             {
                 string tasksJson = await response.Content.ReadAsStringAsync();
+                Console.Out.WriteLine("updated are " + tasksJson);
                 return JsonConvert.DeserializeObject<List<FriendCheck>>(tasksJson);
             }
             Console.Out.WriteLine("Check my Update failed");
@@ -334,7 +340,7 @@ namespace WebApp
 
         public static async Task<int> sendNewCheck(int updateNo, int taskId)
         {
-            string baseurl = Constants.BaseAddress + "supvCheck?supervisorId={0}&taskID={1}&updateNumber={2}";
+            string baseurl = Constants.BaseAddress + "supvCheck?supervisorId={0}&taskId={1}&updateNumber={2}";
             string actualurl = String.Format(baseurl, Constants.me.userid, taskId, updateNo);
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);

@@ -40,7 +40,7 @@ namespace WebApp.Models
         {
             this.ownerid = ownerID;
             this.taskID = taskID;
-            this.taskName = taskName.Substring(0, taskName.Count() -2);
+            this.taskName = taskName.Substring(1, taskName.Count() -2);
             this.repetition = RepetitionConverter.ToRepetition(repetition.Substring(1, related.Count() - 2));
             this.frequency = frequency;
             progress = 0;
@@ -61,6 +61,7 @@ namespace WebApp.Models
                 if(i == ',')
                 {
                     related.Add(int.Parse(b));
+                    Console.WriteLine("######" + b);
                     b = "";
                 }
                 else
@@ -68,6 +69,8 @@ namespace WebApp.Models
                     b += i;
                 }
             }
+            related.Add(int.Parse(b));
+            Console.WriteLine("######" + b);
             return related;
         }
 
