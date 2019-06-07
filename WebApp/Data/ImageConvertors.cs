@@ -6,7 +6,7 @@ namespace WebApp.Data
     {
         public static string Base64ToImage(string base64String, int updateNo)
         {
-            string address = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal)
+            string address = System.Environment.GetFolderPath(Environment.SpecialFolder.Personal)
                  + "/" + updateNo + ".jpg";
             if (!File.Exists(address))
             {

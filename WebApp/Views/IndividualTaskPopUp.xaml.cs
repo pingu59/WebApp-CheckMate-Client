@@ -12,6 +12,7 @@ namespace WebApp.Views
     {
         BaseTask task;
         bool isMyTask;
+        Rg.Plugins.Popup.Pages.PopupPage loadingPage;
         public IndividualTaskPopUp(BaseTask task, bool isMyTask)
         {
             InitializeComponent();
@@ -60,10 +61,15 @@ namespace WebApp.Views
                 CompressionQuality = 10
             });
 
+
             var stream = file.GetStream();
 
             string base64Image = ImageConvertors.ImageToBase64(stream);
+            loadingPage = new LoadingPage();
+            await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PushAsync(
+               loadingPage);
             int updateNo = await Communications.sendMyNewIndividualUpdate(task.taskID, base64Image);
+            await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PopAsync();
             await DisplayAlert("","Your progress has been sent to your friends. Update number: "
                  + updateNo,"ok");
         }

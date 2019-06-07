@@ -34,9 +34,12 @@ namespace WebApp.Views
         {
             int requestID = (int)e.Item;
             bool approveRequest = await DisplayAlert("Friend Request", "Add this person?", "Yes", "No");
+            await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PushAsync(
+               new LoadingPage());
             if (approveRequest)
             {
                 await DisplayAlert(null, "You added this person successfully!", "OK");
+                
                 FriendEntity newFriend = await Communications.acceptFriend(requestID);
                 //use and parse this string afterwards
                 Constants.Friend.Friends.Add(newFriend);
@@ -53,7 +56,8 @@ namespace WebApp.Views
             FriendRequestsView.ItemsSource = null;
             FriendRequestsView.ItemsSource = newFriends;
 
-            Communications.DeleteFriendRequest(Constants.me.userid, requestID);
+            await Communications.DeleteFriendRequest(Constants.me.userid, requestID);
+            await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PopAsync();
             //No need request for this one 
         }
     }

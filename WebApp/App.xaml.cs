@@ -54,12 +54,18 @@ namespace WebApp
                 Friend.LoadFromLocal();
                 LoginPage login = new LoginPage();
                 MainPage = new NavigationPage(login);
+
                 login.PushToMyTask();
             }
         }
         protected override void OnStart()
         {
             // On start runs when your application launches from a closed state, 
+        }
+
+        private async void loadDefault()
+        {
+
         }
 
         protected override void OnSleep()

@@ -120,7 +120,7 @@ namespace WebApp
 
         public static async Task<FriendEntity> GetFriendEntity(int requestid)
         {
-            string baseurl = Constants.BaseAddress + "getUserINfo?userid={0}";
+            string baseurl = Constants.BaseAddress + "getUserInfo?userid={0}";
             string actualurl = String.Format(baseurl, requestid);
             Console.WriteLine(actualurl);
             HttpClient _client = new HttpClient();

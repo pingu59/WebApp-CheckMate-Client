@@ -573,7 +573,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0
-	.byte 3,202,162,132,233,16,119,90,127,249,189,87,168,99,251,138
+	.byte 217,223,11,234,25,49,112,204,188,112,14,156,157,117,38,218
 	.globl _mono_aot_module_WebApp_iOS_info
 	.align 3
 _mono_aot_module_WebApp_iOS_info:
