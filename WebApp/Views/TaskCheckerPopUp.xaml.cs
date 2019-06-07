@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 using WebApp.Models;
 using Xamarin.Forms;
@@ -13,6 +14,8 @@ namespace WebApp.Views
         {
             InitializeComponent();
             TaskName.Text = friendUpdate.task.taskname;
+            Xamarin.Forms.ImageSource image = ImageSource.FromFile(friendUpdate.imageAddress);
+            PhotoImage.Source = image;
             this.friendUpdate = friendUpdate;
             BindingContext = this;
         }

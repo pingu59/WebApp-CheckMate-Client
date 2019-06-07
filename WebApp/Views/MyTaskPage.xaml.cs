@@ -64,7 +64,10 @@ namespace WebApp.Views
             await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PushAsync(
                 new IndividualTaskPopUp(friendTask, false));
         }
-
+        public async void displayinfo(string anything)
+        {
+            await DisplayAlert("info", anything, "ok");
+        }
 
         public void addNewFriendView(int newfriend)
         {

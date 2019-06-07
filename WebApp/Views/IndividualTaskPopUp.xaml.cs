@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Plugin.Media;
 using Xamarin.Forms;
 using WebApp.Models;
+using WebApp.Data;
 
 namespace WebApp.Views
 {
@@ -45,25 +46,24 @@ namespace WebApp.Views
 
         private async void OnClicked(object sender, EventArgs args)
         {
-            int updateNo = await Communications.sendMyNewIndividualUpdate(task.taskID);
             await CrossMedia.Current.Initialize();
             if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
             {
-                DisplayAlert("No Camera", ":( No camera available.", "OK");
+                await DisplayAlert("No Camera", ":( No camera available.", "OK");
                 return;
             }
 
             var file = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
             {
                 Directory = "Photos",
-                Name = "thisphoto.jpg"
+                Name = "thisphoto.jpg",
+                CompressionQuality = 10
             });
 
-            PhotoImage.Source = ImageSource.FromStream(() =>
-            {
-                var stream = file.GetStream();
-                return stream;
-            });
+            var stream = file.GetStream();
+
+            string base64Image = ImageConvertors.ImageToBase64(stream);
+            int updateNo = await Communications.sendMyNewIndividualUpdate(task.taskID, base64Image);
             await DisplayAlert("","Your progress has been sent to your friends. Update number: "
                  + updateNo,"ok");
         }

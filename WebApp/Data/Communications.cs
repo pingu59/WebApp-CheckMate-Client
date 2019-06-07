@@ -289,17 +289,19 @@ namespace WebApp
             return friendTasks;
         }
 
-        public static async Task<int>sendMyNewIndividualUpdate(int taskid){
+        public static async Task<int>sendMyNewIndividualUpdate(int taskid, string image) { 
             string baseurl = Constants.BaseAddress + "addIndvProgressUpdate?taskId={0}";
-            string actualurl = String.Format(baseurl, taskid);
+            string actualurl = String.Format(baseurl, taskid, image);
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);
-            var response = await _client.GetAsync(uri);
+            HttpContent httpContent = new StringContent(image);
+            var response = await _client.PostAsync(uri, httpContent);
             if (response.IsSuccessStatusCode)
             {
                 string tasksJson = await response.Content.ReadAsStringAsync();
                 return int.Parse(tasksJson);
             }
+            Constants.mainPage.displayinfo("send failed!!" + response);
             return Constants.SERVER_ERROR;
         }
 
@@ -313,7 +315,6 @@ namespace WebApp
             if (response.IsSuccessStatusCode)
             {
                 string tasksJson = await response.Content.ReadAsStringAsync();
-                Console.WriteLine("New friend update is: " + tasksJson);
                 return JsonConvert.DeserializeObject<List<FriendUpdate>>(tasksJson);
             }
             Console.Out.WriteLine("Check New Friend Update failed");

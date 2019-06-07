@@ -1,6 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 using Xamarin.Forms;
+using WebApp.Data;
 
 namespace WebApp.Models
 {
@@ -10,13 +11,17 @@ namespace WebApp.Models
         internal int updateNo;
         internal FriendTask task;
         private Frame view;
+        internal string imageAddress;
         TapGestureRecognizer tapRecog;
         [JsonConstructor]
-        public FriendUpdate(int taskID,int updateNumber)
+        public FriendUpdate(int taskID,int updateNumber, string image)
         {
             this.taskID = taskID;
             this.updateNo = updateNumber;
             this.task = Constants.FriendTasks.Find((obj) => obj.taskid == taskID);
+            string acturalImage = image.Substring(1, image.Length - 2);
+            Console.WriteLine(acturalImage);
+            imageAddress = ImageConvertors.Base64ToImage(acturalImage, updateNumber);
             tapRecog = new TapGestureRecognizer();
             tapRecog.Tapped += (sender, e) => { Constants.mainPage.FriendTaskChecker(this); };
         }

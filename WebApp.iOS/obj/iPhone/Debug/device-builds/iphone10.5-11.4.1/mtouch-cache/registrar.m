@@ -17239,67 +17239,67 @@ exception_handling:;
 	-(NSUInteger) streamStatus
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_93 (self, _cmd, &managed_method, 0x5918);
+		return native_to_managed_trampoline_93 (self, _cmd, &managed_method, 0x5A18);
 	}
 
 	-(void) open
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_9 (self, _cmd, &managed_method, 0x5A18);
+		native_to_managed_trampoline_9 (self, _cmd, &managed_method, 0x5B18);
 	}
 
 	-(void) close
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_9 (self, _cmd, &managed_method, 0x5B18);
+		native_to_managed_trampoline_9 (self, _cmd, &managed_method, 0x5C18);
 	}
 
 	-(NSInteger) read:(void *)p0 maxLength:(NSUInteger)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_164 (self, _cmd, &managed_method, p0, p1, 0x5C18);
+		return native_to_managed_trampoline_164 (self, _cmd, &managed_method, p0, p1, 0x5D18);
 	}
 
 	-(BOOL) hasBytesAvailable
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_95 (self, _cmd, &managed_method, 0x5D18);
+		return native_to_managed_trampoline_95 (self, _cmd, &managed_method, 0x5E18);
 	}
 
 	-(BOOL) getBuffer:(void **)p0 length:(NSUInteger*)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_165 (self, _cmd, &managed_method, p0, p1, 0x5E18);
+		return native_to_managed_trampoline_165 (self, _cmd, &managed_method, p0, p1, 0x5F18);
 	}
 
 	-(NSObject *) propertyForKey:(NSString *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_166 (self, _cmd, &managed_method, p0, 0x5F18);
+		return native_to_managed_trampoline_166 (self, _cmd, &managed_method, p0, 0x6018);
 	}
 
 	-(BOOL) setProperty:(NSObject *)p0 forKey:(NSString *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_167 (self, _cmd, &managed_method, p0, p1, 0x6018);
+		return native_to_managed_trampoline_167 (self, _cmd, &managed_method, p0, p1, 0x6118);
 	}
 
 	-(BOOL) _setCFClientFlags:(NSUInteger)p0 callback:(void *)p1 context:(void *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_168 (self, _cmd, &managed_method, p0, p1, p2, 0x6118);
+		return native_to_managed_trampoline_168 (self, _cmd, &managed_method, p0, p1, p2, 0x6218);
 	}
 
 	-(void) scheduleInRunLoop:(NSRunLoop *)p0 forMode:(NSString *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_169 (self, _cmd, &managed_method, p0, p1, 0x6218);
+		native_to_managed_trampoline_169 (self, _cmd, &managed_method, p0, p1, 0x6318);
 	}
 
 	-(void) removeFromRunLoop:(NSRunLoop *)p0 forMode:(NSString *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_169 (self, _cmd, &managed_method, p0, p1, 0x6318);
+		native_to_managed_trampoline_169 (self, _cmd, &managed_method, p0, p1, 0x6418);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -17352,37 +17352,37 @@ exception_handling:;
 	-(void) URLSession:(NSURLSession *)p0 dataTask:(NSURLSessionDataTask *)p1 didReceiveResponse:(NSURLResponse *)p2 completionHandler:(id)p3
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_170 (self, _cmd, &managed_method, p0, p1, p2, p3, 0x2218);
+		native_to_managed_trampoline_170 (self, _cmd, &managed_method, p0, p1, p2, p3, 0x2318);
 	}
 
 	-(void) URLSession:(NSURLSession *)p0 dataTask:(NSURLSessionDataTask *)p1 didReceiveData:(NSData *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_171 (self, _cmd, &managed_method, p0, p1, p2, 0x2318);
+		native_to_managed_trampoline_171 (self, _cmd, &managed_method, p0, p1, p2, 0x2418);
 	}
 
 	-(void) URLSession:(NSURLSession *)p0 task:(NSURLSessionTask *)p1 didCompleteWithError:(NSError *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_172 (self, _cmd, &managed_method, p0, p1, p2, 0x2418);
+		native_to_managed_trampoline_172 (self, _cmd, &managed_method, p0, p1, p2, 0x2518);
 	}
 
 	-(void) URLSession:(NSURLSession *)p0 dataTask:(NSURLSessionDataTask *)p1 willCacheResponse:(NSCachedURLResponse *)p2 completionHandler:(id)p3
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_173 (self, _cmd, &managed_method, p0, p1, p2, p3, 0x2618);
+		native_to_managed_trampoline_173 (self, _cmd, &managed_method, p0, p1, p2, p3, 0x2718);
 	}
 
 	-(void) URLSession:(NSURLSession *)p0 task:(NSURLSessionTask *)p1 willPerformHTTPRedirection:(NSHTTPURLResponse *)p2 newRequest:(NSURLRequest *)p3 completionHandler:(id)p4
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_174 (self, _cmd, &managed_method, p0, p1, p2, p3, p4, 0x2718);
+		native_to_managed_trampoline_174 (self, _cmd, &managed_method, p0, p1, p2, p3, p4, 0x2818);
 	}
 
 	-(void) URLSession:(NSURLSession *)p0 task:(NSURLSessionTask *)p1 didReceiveChallenge:(NSURLAuthenticationChallenge *)p2 completionHandler:(id)p3
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_175 (self, _cmd, &managed_method, p0, p1, p2, p3, 0x2818);
+		native_to_managed_trampoline_175 (self, _cmd, &managed_method, p0, p1, p2, p3, 0x2918);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
