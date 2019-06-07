@@ -21,7 +21,7 @@ namespace WebApp.Views
         private async void LoadContents()
         {
            newFriends = await Communications.GetFriendsRequests(Constants.me.userid);
-            //load tasks 
+            FriendRequestsView.ItemsSource = newFriends;
         }
 
         protected override void OnAppearing()
@@ -43,7 +43,7 @@ namespace WebApp.Views
                 FriendEntity newFriend = await Communications.acceptFriend(requestID);
                 //use and parse this string afterwards
                 Constants.Friend.Friends.Add(newFriend);
-                Constants.mainPage.addNewFriendView(requestID);
+                Constants.mainPage.addNewFriendView(newFriend.FriendName);
             }
             else
             {

@@ -69,14 +69,13 @@ namespace WebApp.Views
             await DisplayAlert("info", anything, "ok");
         }
 
-        public void addNewFriendView(int newfriend)
+        public void addNewFriendView(string newfriendName)
         {
             FriendList.Children.Add(new Label
             {
-                Text = newfriend.ToString()
+                Text = newfriendName
             });
         }
-
 
         public void OnPageChange(Object sender, EventArgs e)
         {
@@ -104,7 +103,7 @@ namespace WebApp.Views
 
         public async void ToReceivedRequest(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(Constants.requestPage);
+            await Navigation.PushAsync(new FriendRequestsListPage());
         }
 
         public async void OnMoreDetailClicked(object sender, System.EventArgs e)

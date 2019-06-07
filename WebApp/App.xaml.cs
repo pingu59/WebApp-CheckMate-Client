@@ -63,10 +63,6 @@ namespace WebApp
             // On start runs when your application launches from a closed state, 
         }
 
-        private async void loadDefault()
-        {
-
-        }
 
         protected override void OnSleep()
         {
