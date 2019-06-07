@@ -453,3 +453,5 @@
 /Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/coremlc/_PartialAppManifest.items
 /Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/coremlc/_BundleResourceWithLogicalName.items
 /Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/optimized/
+/Users/mianbaodashi/Desktop/Xamarin/WebApp.iOS/bin/iPhoneSimulator/Debug/Plugin.Permissions.dll
+/Users/mianbaodashi/Desktop/Xamarin/WebApp.iOS/bin/iPhoneSimulator/Debug/Plugin.Media.dll
