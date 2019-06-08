@@ -68,7 +68,7 @@ namespace WebApp.Views
             loadingPage = new LoadingPage();
             await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PushAsync(
                loadingPage);
-            int updateNo = await Communications.sendMyNewIndividualUpdate(task.taskid, base64Image);
+            int updateNo = await Communications.sendMyNewUpdate(task.taskid, base64Image);
             await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PopAsync();
             await DisplayAlert("","Your progress has been sent to your friends. Update number: "
                  + updateNo,"ok");

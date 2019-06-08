@@ -12,19 +12,25 @@ namespace WebApp.Models
         internal FriendTask task;
         private Frame view;
         internal string imageAddress;
+        public int userid;
+        public string username;
         TapGestureRecognizer tapRecog;
         [JsonConstructor]
-        public FriendUpdate(int taskID,int updateNumber, string image)
+        public FriendUpdate(int taskID,int updateNumber, string image, int userid)
         {
             this.taskID = taskID;
             this.updateNo = updateNumber;
             this.task = Constants.FriendTasks.Find((obj) => obj.taskid == taskID);
+            this.userid = userid;
+            this.username = Constants.getUsername(userid);
             string acturalImage = image.Substring(1, image.Length - 2);
             Console.WriteLine(acturalImage);
             imageAddress = ImageConvertors.Base64ToImage(acturalImage, updateNumber);
             tapRecog = new TapGestureRecognizer();
             tapRecog.Tapped += (sender, e) => { Constants.mainPage.FriendTaskChecker(this); };
         }
+
+
         public Frame GetView()
         {
             if (view == null)
@@ -64,7 +70,7 @@ namespace WebApp.Models
             };
             grid.Children.Add(new Label
             {
-                Text = task.ownername,
+                Text = username,
                 FontSize = 15,
                 TextColor = Color.White
             }, 0, 0);

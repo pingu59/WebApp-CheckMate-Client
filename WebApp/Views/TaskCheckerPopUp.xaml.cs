@@ -16,6 +16,10 @@ namespace WebApp.Views
             TaskName.Text = friendUpdate.task.taskname;
             Xamarin.Forms.ImageSource image = ImageSource.FromFile(friendUpdate.imageAddress);
             PhotoImage.Source = image;
+            if(friendUpdate.userid == Constants.me.userid)
+            {
+                Check.IsVisible = false;
+            }
             this.friendUpdate = friendUpdate;
             BindingContext = this;
         }
@@ -28,7 +32,7 @@ namespace WebApp.Views
         private async void OnCheck(Object obj, EventArgs sender)
         {
             Console.WriteLine("Checked: updateNo" + friendUpdate.updateNo);
-            await Communications.sendNewFriendIndividualCheck(friendUpdate.updateNo, friendUpdate.taskID);
+            await Communications.sendNewCheck(friendUpdate.updateNo, friendUpdate.taskID);
             Constants.mainPage.RemoveUpdate();
             await DisplayAlert("","Your check has been sent  to your friend","ok");
            // await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PopAsync();

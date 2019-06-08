@@ -44,5 +44,17 @@ namespace WebApp
         public static List<FriendTask> FriendTasks;
         public static List<GroupTask> MyTask;
         public static Task backgroudProcess;
+
+        public static string getUsername(int id)
+        {
+            if (id == Constants.me.userid)
+            {
+                return Constants.me.username;
+            }
+            else
+            {
+                return Friend.getNameOf(id);
+            }
+        }
     }
 }

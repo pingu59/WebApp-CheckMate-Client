@@ -269,9 +269,9 @@ namespace WebApp
             return new List<GroupTask>();
         }
 
-        public static async Task<int>sendMyNewIndividualUpdate(int taskid, string image) { 
-            string baseurl = Constants.BaseAddress + "addIndvProgressUpdate?taskId={0}";
-            string actualurl = string.Format(baseurl, taskid, image);
+        public static async Task<int>sendMyNewUpdate(int taskid, string image) { 
+            string baseurl = Constants.BaseAddress + "addProgressUpdate?taskId={0}&myId={1}";
+            string actualurl = string.Format(baseurl, taskid, Constants.me.userid, image);
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);
             HttpContent httpContent = new StringContent(image);
@@ -285,9 +285,9 @@ namespace WebApp
             return Constants.SERVER_ERROR;
         }
 
-        public static async Task<List<FriendUpdate>> checkNewFriendIndividualUpdate()
+        public static async Task<List<FriendUpdate>> checkFriendTaskUpdate()
         {
-            string baseurl = Constants.BaseAddress + "supvUpdate?supervisorId={0}";
+            string baseurl = Constants.BaseAddress + "friendUpdate?myId={0}";
             string actualurl = string.Format(baseurl, Constants.me.userid);
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);
@@ -301,11 +301,11 @@ namespace WebApp
             return new List<FriendUpdate>();
         }
 
-        public static async Task<List<FriendCheck>> checkMyUpdatedIndividual()
+        public static async Task<List<FriendCheck>> checkMyUpdated()
         {
             Console.WriteLine("Checking my updated individual");
-            string baseurl = Constants.BaseAddress + "indvOwnerUpdate?ownerId={0}";
-            string actualurl = String.Format(baseurl, Constants.me.userid);
+            string baseurl = Constants.BaseAddress + "checkedNotification?myId={0}";
+            string actualurl = string.Format(baseurl, Constants.me.userid);
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);
             var response = await _client.GetAsync(uri);
@@ -319,10 +319,10 @@ namespace WebApp
             return new List<FriendCheck>();
         }
 
-        public static async Task<int> sendNewFriendIndividualCheck(int updateNo, int taskId)
+        public static async Task<int> sendNewCheck(int updateNo, int taskId)
         {
-            string baseurl = Constants.BaseAddress + "supvCheck?supervisorId={0}&taskId={1}&updateNumber={2}";
-            string actualurl = String.Format(baseurl, Constants.me.userid, taskId, updateNo);
+            string baseurl = Constants.BaseAddress + "sendNewCheck?myId={0}&taskId={1}&updateNumber={2}";
+            string actualurl = string.Format(baseurl, Constants.me.userid, taskId, updateNo);
             Console.WriteLine(actualurl);
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);
@@ -337,7 +337,7 @@ namespace WebApp
          public static async Task<List<History>> getMyHistory()
         {
             string baseurl = Constants.BaseAddress + "getHistory?userId={0}";
-            string actualurl = String.Format(baseurl, Constants.me.userid);
+            string actualurl = string.Format(baseurl, Constants.me.userid);
             Console.WriteLine(actualurl);
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);

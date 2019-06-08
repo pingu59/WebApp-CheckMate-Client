@@ -43,8 +43,8 @@ namespace WebApp.Views
             base.OnAppearing();
             CheckInbox();
             CheckNewInvitation();
-            //CheckFriendUpdate();
-            //CheckMyCheckedUpdate();
+            CheckFriendUpdate();
+            CheckMyCheckedUpdate();
         }
 
         internal void DisplayFriendTask(FriendTask friendTask)
@@ -162,8 +162,8 @@ namespace WebApp.Views
                 {
                     CheckInbox();
                     CheckNewInvitation();
-                    //CheckFriendUpdate();
-                    //CheckMyCheckedUpdate();
+                    CheckFriendUpdate();
+                    CheckMyCheckedUpdate();
                 }
                 return true; // True = Repeat again, False = Stop the timer
             });
@@ -172,7 +172,7 @@ namespace WebApp.Views
         private async void CheckFriendUpdate()
         {
             //BUG HERE
-            List<FriendUpdate> updates = await Communications.checkNewFriendIndividualUpdate();
+            List<FriendUpdate> updates = await Communications.checkFriendTaskUpdate();
             List<int> updatingTaskIds = new List<int>();
             FriendTasks.Children.Clear();
             foreach (FriendUpdate fu in updates)
@@ -191,7 +191,7 @@ namespace WebApp.Views
 
         private async void CheckMyCheckedUpdate()
         {
-            List<FriendCheck> checks = await Communications.checkMyUpdatedIndividual();
+            List<FriendCheck> checks = await Communications.checkMyUpdated();
             foreach(FriendCheck fc in checks)
             {
                 string str = "Your update {0} of task {1} has been checked by {2}";
