@@ -45,10 +45,4 @@
         <Folder Include="Views\" />
         <Folder Include="Data\" />
     </ItemGroup>
-    <ItemGroup>
-        <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\GroupTaskAdd.xaml.cs">
-            <DependentUpon>GroupTaskAdd.xaml</DependentUpon>
-            <SubType>Code</SubType>
-        </Compile>
-    </ItemGroup>
 </Project>

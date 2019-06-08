@@ -25,7 +25,7 @@ namespace WebApp.Views
 
             Console.WriteLine("About to load info from server...");
             await LoadMyTasksFromServer();
-            await LoadFriendTaskFromServer();
+            LoadFriendTask();
             await LoadMyFriendsFromServer();
             Console.WriteLine("Done!");
             MyTaskPage mainpage = new MyTaskPage();
@@ -34,7 +34,7 @@ namespace WebApp.Views
         }
         private async Task<bool> LoadMyTasksFromServer()
         {
-            List<BaseTask> bt = await Communications.GetAllMyTasks();
+            List<GroupTask> bt = await Communications.GetAllMyTasks();
             Constants.MyTask = bt;
             return true;
         }
@@ -46,11 +46,14 @@ namespace WebApp.Views
             return true;
         }
 
-        private async Task<bool> LoadFriendTaskFromServer()
+        private void LoadFriendTask()
         {
-            List<FriendTask> ft = await Communications.GetAllFriendTasks();
-            Constants.FriendTasks = ft;
-            return true;
+            List<GroupTask> bases = Constants.MyTask;
+            Constants.FriendTasks = new List<FriendTask>();
+            foreach (GroupTask b in bases)
+            {
+                Constants.FriendTasks.Add(new FriendTask(b));
+            }
         }
 
         private async void OnSigninButtonClicked(object sender, EventArgs e)

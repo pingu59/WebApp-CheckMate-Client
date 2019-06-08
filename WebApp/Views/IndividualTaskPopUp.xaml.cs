@@ -10,18 +10,18 @@ namespace WebApp.Views
 {
     public partial class IndividualTaskPopUp : Rg.Plugins.Popup.Pages.PopupPage
     {
-        BaseTask task;
+        GroupTask task;
         bool isMyTask;
         Rg.Plugins.Popup.Pages.PopupPage loadingPage;
-        public IndividualTaskPopUp(BaseTask task, bool isMyTask)
+        public IndividualTaskPopUp(GroupTask task, bool isMyTask)
         {
             InitializeComponent();
-            TaskName.Text = task.taskName;
-            Progress.Text = task.getStatusString();
+            TaskName.Text = task.taskname;
+            //Progress.Text = task.getStatusString();
             Deadline.Text = task.getDeadlineString();
-            TaskId.Text = task.taskID.ToString();
+            TaskId.Text = task.taskid.ToString();
             this.task = task;
-            foreach(int sup in task.related)
+            foreach(int sup in task.member)
             {
                 Console.Out.WriteLine("Related " + sup);
                 if(sup == Constants.me.userid)
@@ -68,7 +68,7 @@ namespace WebApp.Views
             loadingPage = new LoadingPage();
             await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PushAsync(
                loadingPage);
-            int updateNo = await Communications.sendMyNewIndividualUpdate(task.taskID, base64Image);
+            int updateNo = await Communications.sendMyNewIndividualUpdate(task.taskid, base64Image);
             await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PopAsync();
             await DisplayAlert("","Your progress has been sent to your friends. Update number: "
                  + updateNo,"ok");

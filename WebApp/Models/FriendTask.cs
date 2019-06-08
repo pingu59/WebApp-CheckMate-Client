@@ -11,14 +11,14 @@ namespace WebApp.Models
         internal string ownername;
         private Frame view;
         TapGestureRecognizer tapRecog;
-        private BaseTask task;
-        public FriendTask(BaseTask task)
+        private GroupTask task;
+        public FriendTask(GroupTask task)
         {
             this.task = task;
-            this.taskid = task.taskID;
+            this.taskid = task.taskid;
             //substring
-            this.taskname = task.taskName;
-            this.ownername = Constants.Friend.getNameOf(task.ownerid);
+            this.taskname = task.taskname;
+            this.ownername = Constants.Friend.getNameOf(task.creatorid);
             completed = false;
             tapRecog = new TapGestureRecognizer();
             tapRecog.Tapped += (sender, e) => { Constants.mainPage.FriendTaskDetail(task); };

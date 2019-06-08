@@ -15,7 +15,7 @@ namespace WebApp.Views
         public MyTaskPage()
         {
             InitializeComponent();
-            foreach (BaseTask b in Constants.MyTask)
+            foreach (GroupTask b in Constants.MyTask)
             {
                 taskStack.Children.Add(b.GetView());
             }
@@ -43,8 +43,8 @@ namespace WebApp.Views
             base.OnAppearing();
             CheckInbox();
             CheckNewInvitation();
-            CheckFriendUpdate();
-            CheckMyCheckedUpdate();
+            //CheckFriendUpdate();
+            //CheckMyCheckedUpdate();
         }
 
         internal void DisplayFriendTask(FriendTask friendTask)
@@ -59,7 +59,7 @@ namespace WebApp.Views
                 new TaskCheckerPopUp(friendUpdate));
         }
 
-        internal async void FriendTaskDetail(BaseTask friendTask)
+        internal async void FriendTaskDetail(GroupTask friendTask)
         {
             await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PushAsync(
                 new IndividualTaskPopUp(friendTask, false));
@@ -85,14 +85,11 @@ namespace WebApp.Views
         public async void OnAdd(Object sender, EventArgs e)
         {
             string action = await DisplayActionSheet("Add new", "Cancel", null,
-                "My Task", "Group Task", "New Friend");
+                "New Task", "New Friend");
             switch (action)
             {
-                case "My Task":
-                    await Navigation.PushAsync(new InvolveFriend(false));
-                    break;
-                case "Group Task":
-                    await Navigation.PushAsync(new InvolveFriend(true));
+                case "New Task":
+                    await Navigation.PushAsync(new InvolveFriend());
                     break;
                 case "New Friend":
                     await Navigation.PushAsync(new AddFriendPage());
@@ -135,7 +132,7 @@ namespace WebApp.Views
             Constants.me = null;
         }
 
-        public async void DisplayTaskInfo(BaseTask task)
+        public async void DisplayTaskInfo(GroupTask task)
         {
             await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PushAsync(
                 new IndividualTaskPopUp(task, true));
@@ -151,7 +148,7 @@ namespace WebApp.Views
             await DisplayAlert("New invitation!", str, "ok");
         }
 
-        public void SetNewTask(BaseTask task)
+        public void SetNewTask(GroupTask task)
         {
             Constants.MyTask.Add(task);
             taskStack.Children.Add(task.GetView());
@@ -165,8 +162,8 @@ namespace WebApp.Views
                 {
                     CheckInbox();
                     CheckNewInvitation();
-                    CheckFriendUpdate();
-                    CheckMyCheckedUpdate();
+                    //CheckFriendUpdate();
+                    //CheckMyCheckedUpdate();
                 }
                 return true; // True = Repeat again, False = Stop the timer
             });
@@ -233,18 +230,18 @@ namespace WebApp.Views
         private async static void CheckNewInvitation()
         {
             int myid = Constants.me.userid;
-            List<BaseTask> newinvitations = await Communications.GetNewIndividualInvite(myid);
-            await Communications.ClearInividualTask(myid);
-            foreach (BaseTask bt in newinvitations)
+            List<GroupTask> newinvitations = await Communications.GetNewTaskInvite(myid);
+            await Communications.ClearTaskInvite(myid);
+            foreach (GroupTask bt in newinvitations)
             {
-                string taskowner = Constants.Friend.getNameOf(bt.ownerid);
+                string taskowner = Constants.Friend.getNameOf(bt.creatorid);
                 FriendTask task = new FriendTask(bt);
-                string baseString = "Your friend {0} has invited you to supervise his/her task:\n" +
-    "{1}\n Please check your friends page to see it.";
+                string baseString = "Your friend {0} has invited you to join his/her task group:\n" +
+                                    "{1}\n Please check your task page to see it.";
                 string inviteString = string.Format(baseString, taskowner, task.taskname);
                 Constants.mainPage.DisplayInvitation(inviteString);
                 Console.WriteLine(bt.frequency);
-                if (!Constants.FriendTasks.Exists((obj) => obj.taskid == bt.taskID)){
+                if (!Constants.FriendTasks.Exists((obj) => obj.taskid == bt.taskid)){
                     Constants.FriendTasks.Add(task);
                     Constants.mainPage.DisplayFriendTask(task);
                 }

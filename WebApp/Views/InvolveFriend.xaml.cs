@@ -7,24 +7,17 @@ namespace WebApp.Views
 {
     public partial class InvolveFriend 
     {
-        Boolean isGroupTask;
         List<FriendEntity> addedEntities = new List<FriendEntity>();
-
-        public InvolveFriend(Boolean isGroupTask)
+        public InvolveFriend()
         {
             InitializeComponent();
-            this.isGroupTask = isGroupTask;
-
-            if (isGroupTask)
-            {
-                addedEntities.Add(Constants.meEntity);
-            }
+            addedEntities.Add(Constants.meEntity);
             BindingContext = this;
         }
 
         protected override void OnAppearing()
         {
-            AllFriends.ItemsSource = Constants.Friend.Friends;
+           Myfriends.ItemsSource = Constants.Friend.Friends;
         }
 
         public void OnViewCellTapped(object sender, EventArgs e)
@@ -56,14 +49,7 @@ namespace WebApp.Views
                 {
                     addedIDs.Add(fe.FriendID);
                 }
-                if (isGroupTask)
-                {
-                    await Navigation.PushAsync(new GroupTaskAdd(addedIDs, this));
-                }
-                else
-                {
-                    await Navigation.PushAsync(new AddTask(addedIDs, this));
-                }
+                await Navigation.PushAsync(new AddTask(addedIDs, this));
             }
         }
 

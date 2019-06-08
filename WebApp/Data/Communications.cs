@@ -193,12 +193,12 @@ namespace WebApp
             return new List<int>();
         }
 
-        public static async Task<int> addIndividualTask(BaseTask task)
+        public static async Task<int> addGroupTask(GroupTask task)
         {
-            string baseurl = Constants.BaseAddress + "createIndvTask?myid={0}&taskname={1}&" +
-                "repetition={2}&frequency={3}&supervisors={4}&deadline={5}";
-            string actualurl = String.Format(baseurl, Constants.me.userid, task.taskName,
-                task.repetition.ToString(), task.frequency, toSpringBootArray(task.related),
+            string baseurl = Constants.BaseAddress + "createTask?myid={0}&taskname={1}&" +
+                "repetition={2}&frequency={3}&members={4}&deadline={5}";
+            string actualurl = string.Format(baseurl, Constants.me.userid, task.taskname,
+                task.repetition.ToString(), task.frequency, toSpringBootArray(task.member),
                 task.getDeadlineString());
             Console.WriteLine(actualurl);
             HttpClient _client = new HttpClient();
@@ -221,10 +221,10 @@ namespace WebApp
             return b.Substring(1);
         }
 
-        public static async Task<List<BaseTask>> GetNewIndividualInvite(int i)
+        public static async Task<List<GroupTask>> GetNewTaskInvite(int i)
         {
-            string baseurl = Constants.BaseAddress + "getNewIndvInvite?userId={0}";
-            string actualurl = String.Format(baseurl, i);
+            string baseurl = Constants.BaseAddress + "getNewInvite?userId={0}";
+            string actualurl = string.Format(baseurl, i);
 
             Console.WriteLine(actualurl);
             HttpClient _client = new HttpClient();
@@ -232,18 +232,18 @@ namespace WebApp
             var response = await _client.GetAsync(uri);
             if (response.IsSuccessStatusCode)
             {
-                String jsonString = await response.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<List<BaseTask>>(jsonString);
+                string jsonString = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<GroupTask>>(jsonString);
             }
             //reformat this
             Console.WriteLine("Not successful1");
-            return new List<BaseTask>();
+            return new List<GroupTask>();
         }
 
-        public static async Task<bool> ClearInividualTask(int i)
+        public static async Task<bool> ClearTaskInvite(int i)
         {
-            string baseurl = Constants.BaseAddress + "clearIndvInvitation?userId={0}";
-            string actualurl = String.Format(baseurl, i);
+            string baseurl = Constants.BaseAddress + "clearInvitation?userId={0}";
+            string actualurl = string.Format(baseurl, i);
             Console.WriteLine("Clearing....");
             Console.WriteLine(actualurl);
             HttpClient _client = new HttpClient();
@@ -252,10 +252,10 @@ namespace WebApp
             return true;
         }
 
-        public static async Task<List<BaseTask>> GetAllMyTasks()
+        public static async Task<List<GroupTask>> GetAllMyTasks()
         {
-            string baseurl = Constants.BaseAddress + "getMyIndividual?userId={0}";
-            string actualurl = String.Format(baseurl, Constants.me.userid);
+            string baseurl = Constants.BaseAddress + "getMyTask?userId={0}";
+            string actualurl = string.Format(baseurl, Constants.me.userid);
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);
             var response = await _client.GetAsync(uri);
@@ -263,35 +263,15 @@ namespace WebApp
             {
                 string tasksJson = await response.Content.ReadAsStringAsync();
                 Console.WriteLine(tasksJson);
-                return JsonConvert.DeserializeObject<List<BaseTask>>(tasksJson);
+                return JsonConvert.DeserializeObject<List<GroupTask>>(tasksJson);
             }
             Console.WriteLine("not successful??withuserid" + Constants.me.userid);
-            return new List<BaseTask>();
-        }
-
-        public static async Task<List<FriendTask>> GetAllFriendTasks()
-        {
-            string baseurl = Constants.BaseAddress + "getFriendIndividual?userId={0}";
-            string actualurl = String.Format(baseurl, Constants.me.userid);
-            HttpClient _client = new HttpClient();
-            var uri = new Uri(actualurl);
-            var response = await _client.GetAsync(uri);
-            List<FriendTask> friendTasks = new List<FriendTask>();
-            if (response.IsSuccessStatusCode)
-            {
-                string tasksJson = await response.Content.ReadAsStringAsync();
-                List<BaseTask> bases = JsonConvert.DeserializeObject<List<BaseTask>>(tasksJson);
-                foreach (BaseTask b in bases)
-                {
-                    friendTasks.Add(new FriendTask(b));
-                }
-            }
-            return friendTasks;
+            return new List<GroupTask>();
         }
 
         public static async Task<int>sendMyNewIndividualUpdate(int taskid, string image) { 
             string baseurl = Constants.BaseAddress + "addIndvProgressUpdate?taskId={0}";
-            string actualurl = String.Format(baseurl, taskid, image);
+            string actualurl = string.Format(baseurl, taskid, image);
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);
             HttpContent httpContent = new StringContent(image);
@@ -308,7 +288,7 @@ namespace WebApp
         public static async Task<List<FriendUpdate>> checkNewFriendIndividualUpdate()
         {
             string baseurl = Constants.BaseAddress + "supvUpdate?supervisorId={0}";
-            string actualurl = String.Format(baseurl, Constants.me.userid);
+            string actualurl = string.Format(baseurl, Constants.me.userid);
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);
             var response = await _client.GetAsync(uri);

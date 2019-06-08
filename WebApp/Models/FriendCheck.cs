@@ -18,7 +18,7 @@ namespace WebApp.Models
             this.checkerID = checkerID;
             this.taskID = taskID;
             checkername = Constants.Friend.getNameOf(checkerID);
-            taskname = Constants.MyTask.Find((obj) => obj.taskID == taskID).taskName;
+            taskname = Constants.MyTask.Find((obj) => obj.taskid == taskID).taskname;
         }
     }
 }

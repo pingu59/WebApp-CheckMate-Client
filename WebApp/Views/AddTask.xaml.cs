@@ -7,15 +7,15 @@ namespace WebApp.Views
 {
     public partial class AddTask
     {
-        BaseTask task;
+        GroupTask task;
         InvolveFriend involvedFriends;
-        List<int> supervisors;
+        List<int> members;
 
-        public AddTask(List<int> supervisors, InvolveFriend involvedFriends)
+        public AddTask(List<int> members, InvolveFriend involvedFriends)
         {
             InitializeComponent();
             this.involvedFriends = involvedFriends;
-            this.supervisors = supervisors;
+            this.members = members;
             datepicker.MinimumDate = DateTime.Today;
             BindingContext = this;
         }
@@ -46,9 +46,9 @@ namespace WebApp.Views
                             Repetition repetition =
                                 RepetitionConverter.ToRepetition(selectedItem.ToString());
                             int frequency = int.Parse(Frequency.Text);
-                            task = new BaseTask(taskName.Text, repetition, frequency, datepicker.Date ,supervisors);
-                            int taskid = await Communications.addIndividualTask(task);
-                            task.taskID = taskid;
+                            task = new GroupTask(taskName.Text, repetition, frequency, datepicker.Date ,members);
+                            int taskid = await Communications.addGroupTask(task);
+                            task.taskid = taskid;
                             Constants.mainPage.SetNewTask(task);
                             await Navigation.PopAsync(true);
                             involvedFriends.pop();

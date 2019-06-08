@@ -20,7 +20,7 @@
                 <StackLayout Orientation="Horizontal" x:Name="AddedFriends" />
             </ScrollView>
             <ScrollView>
-                <ListView x:Name="AllFriends">
+                <ListView x:Name="Myfriends">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell Tapped="OnViewCellTapped">

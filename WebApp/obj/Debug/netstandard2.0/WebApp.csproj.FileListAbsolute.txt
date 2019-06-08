@@ -119,7 +119,6 @@
 /Users/mianbaodashi/Desktop/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/AddTask.xaml.g.cs
 /Users/mianbaodashi/Desktop/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/ChangePwdPage.xaml.g.cs
 /Users/mianbaodashi/Desktop/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/CreateAccountPage.xaml.g.cs
-/Users/mianbaodashi/Desktop/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/GroupTaskAdd.xaml.g.cs
 /Users/mianbaodashi/Desktop/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/SettingPage.xaml.g.cs
 /Users/apple/Xamarin/WebApp/bin/Debug/netstandard2.0/WebApp.deps.json
 /Users/apple/Xamarin/WebApp/bin/Debug/netstandard2.0/WebApp.dll
