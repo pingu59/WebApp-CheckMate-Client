@@ -82,6 +82,7 @@ namespace WebApp.Views
                 string userJson = responses[1];
                 User user = JsonConvert.DeserializeObject<User>(userJson);
                 Constants.me = user;
+                user.username = user.username.Substring(1, user.username.Length - 2);
                 Constants.Friend = new Friend();
                 //Constants.Friend.Friends = await Communications.GetAllFriend();
 

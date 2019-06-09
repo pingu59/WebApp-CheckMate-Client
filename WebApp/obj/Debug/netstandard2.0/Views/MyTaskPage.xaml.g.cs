@@ -26,6 +26,9 @@ namespace WebApp.Views {
         private global::Xamarin.Forms.StackLayout FriendList;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Refractored.XamForms.PullToRefresh.PullToRefreshLayout pullRefresh;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.StackLayout FriendTasks;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -52,6 +55,7 @@ namespace WebApp.Views {
             taskStack = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "taskStack");
             SearchFriend = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "SearchFriend");
             FriendList = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "FriendList");
+            pullRefresh = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Refractored.XamForms.PullToRefresh.PullToRefreshLayout>(this, "pullRefresh");
             FriendTasks = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "FriendTasks");
             my_profile_page = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ContentPage>(this, "my_profile_page");
             _username = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "_username");

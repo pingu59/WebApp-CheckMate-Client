@@ -32,6 +32,7 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.2/lib/mono/Xamarin.iOS/Facades/System.Runtime.Extensions.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.2/lib/mono/Xamarin.iOS/Facades/System.Reflection.Extensions.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/12.8.0.2/lib/mono/Xamarin.iOS/Facades/System.Linq.dll
+/Users/apple/.nuget/packages/refractored.xamforms.pulltorefresh/2.4.1/lib/xamarinios10/Refractored.XamForms.PullToRefresh.dll
 /Users/apple/Xamarin/WebApp/bin/Debug/netstandard2.0/WebApp.dll
 /Users/apple/.nuget/packages/xamarin.forms/4.0.0.425677/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll
 /Users/apple/.nuget/packages/sqlite-net-pcl/1.5.231/lib/netstandard1.1/SQLite-net.dll

@@ -49,6 +49,7 @@ namespace WebApp.Views
                             task = new GroupTask(taskName.Text, repetition, frequency, datepicker.Date ,members);
                             int taskid = await Communications.addGroupTask(task);
                             task.taskid = taskid;
+                            Constants.FriendTasks.Add(new FriendTask(task));
                             Constants.mainPage.SetNewTask(task);
                             await Navigation.PopAsync(true);
                             involvedFriends.pop();

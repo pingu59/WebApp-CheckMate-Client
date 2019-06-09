@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Refractored.XamForms.PullToRefresh.Droid;
 
 namespace WebApp.Droid
 {
@@ -20,7 +21,7 @@ namespace WebApp.Droid
             base.OnCreate(savedInstanceState);
 
             Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
-
+            PullToRefreshLayoutRenderer.Init();
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

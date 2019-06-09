@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Refractored.XamForms.PullToRefresh.iOS;
 using UIKit;
 
 namespace WebApp.iOS
@@ -24,6 +25,7 @@ namespace WebApp.iOS
         {
             Rg.Plugins.Popup.Popup.Init();
             global::Xamarin.Forms.Forms.Init();
+            PullToRefreshLayoutRenderer.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

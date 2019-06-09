@@ -44,6 +44,18 @@
           "lib/netstandard2.0/Plugin.Permissions.dll": {}
         }
       },
+      "Refractored.XamForms.PullToRefresh/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/netstandard2.0/Refractored.XamForms.PullToRefresh.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Refractored.XamForms.PullToRefresh.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/1.1.5.188": {
         "type": "package",
         "dependencies": {
@@ -342,6 +354,31 @@
         "plugin.permissions.3.0.0.12.nupkg.sha512",
         "plugin.permissions.nuspec",
         "readme.txt"
+      ]
+    },
+    "Refractored.XamForms.PullToRefresh/2.4.1": {
+      "sha512": "8l0PqHxt2MGCOnR4OzCJwDn7QEqnAlGUntHVpEhLD93H+Sk1XyXe8DM4KkTGUldN38c/QbOgUliEFxll2G0EGA==",
+      "type": "package",
+      "path": "refractored.xamforms.pulltorefresh/2.4.1",
+      "files": [
+        ".signature.p7s",
+        "lib/monoandroid81/Refractored.XamForms.PullToRefresh.dll",
+        "lib/monoandroid81/Refractored.XamForms.PullToRefresh.pdb",
+        "lib/monoandroid81/Refractored.XamForms.PullToRefresh.xml",
+        "lib/monoandroid90/Refractored.XamForms.PullToRefresh.dll",
+        "lib/monoandroid90/Refractored.XamForms.PullToRefresh.pdb",
+        "lib/monoandroid90/Refractored.XamForms.PullToRefresh.xml",
+        "lib/netstandard1.0/Refractored.XamForms.PullToRefresh.dll",
+        "lib/netstandard1.0/Refractored.XamForms.PullToRefresh.pdb",
+        "lib/netstandard1.0/Refractored.XamForms.PullToRefresh.xml",
+        "lib/netstandard2.0/Refractored.XamForms.PullToRefresh.dll",
+        "lib/netstandard2.0/Refractored.XamForms.PullToRefresh.pdb",
+        "lib/netstandard2.0/Refractored.XamForms.PullToRefresh.xml",
+        "lib/xamarinios10/Refractored.XamForms.PullToRefresh.dll",
+        "lib/xamarinios10/Refractored.XamForms.PullToRefresh.pdb",
+        "lib/xamarinios10/Refractored.XamForms.PullToRefresh.xml",
+        "refractored.xamforms.pulltorefresh.2.4.1.nupkg.sha512",
+        "refractored.xamforms.pulltorefresh.nuspec"
       ]
     },
     "Rg.Plugins.Popup/1.1.5.188": {
@@ -819,6 +856,7 @@
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 12.0.2",
+      "Refractored.XamForms.PullToRefresh >= 2.4.1",
       "Rg.Plugins.Popup >= 1.1.5.188",
       "Xam.Plugin.Media >= 4.0.1.5",
       "Xamarin.Essentials >= 1.0.1",
@@ -827,23 +865,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/mianbaodashi/.nuget/packages/": {},
+    "/Users/apple/.nuget/packages/": {},
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mianbaodashi/Desktop/Xamarin/WebApp/WebApp.csproj",
+      "projectUniqueName": "/Users/apple/Xamarin/WebApp/WebApp.csproj",
       "projectName": "WebApp",
-      "projectPath": "/Users/mianbaodashi/Desktop/Xamarin/WebApp/WebApp.csproj",
-      "packagesPath": "/Users/mianbaodashi/.nuget/packages/",
-      "outputPath": "/Users/mianbaodashi/Desktop/Xamarin/WebApp/obj/",
+      "projectPath": "/Users/apple/Xamarin/WebApp/WebApp.csproj",
+      "packagesPath": "/Users/apple/.nuget/packages/",
+      "outputPath": "/Users/apple/Xamarin/WebApp/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/mianbaodashi/.config/NuGet/NuGet.Config"
+        "/Users/apple/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -874,6 +912,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.2, )"
+          },
+          "Refractored.XamForms.PullToRefresh": {
+            "target": "Package",
+            "version": "[2.4.1, )"
           },
           "Rg.Plugins.Popup": {
             "target": "Package",

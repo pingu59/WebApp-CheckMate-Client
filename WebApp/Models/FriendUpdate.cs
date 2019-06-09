@@ -24,7 +24,6 @@ namespace WebApp.Models
             this.userid = userid;
             this.username = Constants.getUsername(userid);
             string acturalImage = image.Substring(1, image.Length - 2);
-            Console.WriteLine(acturalImage);
             imageAddress = ImageConvertors.Base64ToImage(acturalImage, updateNumber);
             tapRecog = new TapGestureRecognizer();
             tapRecog.Tapped += (sender, e) => { Constants.mainPage.FriendTaskChecker(this); };

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "f3bf95a856966f642df47cc44276edc27443ce4b"
+    "signature": "a4ba124824a3124ea1c87389304cadc6a0463894"
   },
   "compilationOptions": {},
   "targets": {
@@ -11,6 +11,7 @@
         "dependencies": {
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.2",
+          "Refractored.XamForms.PullToRefresh": "2.4.1",
           "Rg.Plugins.Popup": "1.1.5.188",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Essentials": "1.0.1",
@@ -38,6 +39,17 @@
       "Plugin.Permissions/3.0.0.12": {
         "runtime": {
           "lib/netstandard2.0/Plugin.Permissions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Refractored.XamForms.PullToRefresh/2.4.1": {
+        "dependencies": {
+          "Xamarin.Forms": "4.0.0.425677"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Refractored.XamForms.PullToRefresh.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -174,6 +186,13 @@
       "sha512": "sha512-R8Rlzfci1byoPBGOiJfCMzu0HhhN6Q4Vq4YizlF41W946NEmoL/Mb8U5caP5t5KfSbdPQpzdQ9JfM8fxPG8pfw==",
       "path": "plugin.permissions/3.0.0.12",
       "hashPath": "plugin.permissions.3.0.0.12.nupkg.sha512"
+    },
+    "Refractored.XamForms.PullToRefresh/2.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8l0PqHxt2MGCOnR4OzCJwDn7QEqnAlGUntHVpEhLD93H+Sk1XyXe8DM4KkTGUldN38c/QbOgUliEFxll2G0EGA==",
+      "path": "refractored.xamforms.pulltorefresh/2.4.1",
+      "hashPath": "refractored.xamforms.pulltorefresh.2.4.1.nupkg.sha512"
     },
     "Rg.Plugins.Popup/1.1.5.188": {
       "type": "package",

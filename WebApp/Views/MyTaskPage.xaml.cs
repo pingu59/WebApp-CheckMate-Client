@@ -36,6 +36,15 @@ namespace WebApp.Views
             _user_detail.Text += "details e.g. age"; //user.Age;
             Constants.backgroudProcess =Task.Run(() => { PeriodicCheck(); });
             Constants.backgroudProcess.ConfigureAwait(false);
+            pullRefresh.RefreshCommand = new Command(() => RefreshCommand());
+        }
+
+        public async void RefreshCommand()
+        {
+            pullRefresh.IsRefreshing = true;
+            Console.WriteLine("refreshing!!");
+            await CheckFriendUpdate();
+            pullRefresh.IsRefreshing = false;
         }
 
         protected override void OnAppearing()
@@ -162,14 +171,14 @@ namespace WebApp.Views
                 {
                     CheckInbox();
                     CheckNewInvitation();
-                    CheckFriendUpdate();
+                    //CheckFriendUpdate();
                     CheckMyCheckedUpdate();
                 }
                 return true; // True = Repeat again, False = Stop the timer
             });
         }
 
-        private async void CheckFriendUpdate()
+        private async Task<bool> CheckFriendUpdate()
         {
             //BUG HERE
             List<FriendUpdate> updates = await Communications.checkFriendTaskUpdate();
@@ -187,6 +196,7 @@ namespace WebApp.Views
                     FriendTasks.Children.Add(f.GetView());
                 }
             }
+            return true;
         }
 
         private async void CheckMyCheckedUpdate()

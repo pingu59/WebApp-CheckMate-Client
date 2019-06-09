@@ -1,28 +1,23 @@
 ﻿<Properties StartupConfiguration="{FC97C75F-7E78-408D-BD0A-42ADF0A53DCD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Models/FriendCheck.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Views/MyTaskPage.xaml.cs">
     <Files>
+      <File FileName="WebApp/Views/AddTask.xaml.cs" Line="52" Column="77" />
+      <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="183" Column="70" />
       <File FileName="WebApp/Views/MyTaskPage.xaml" />
-      <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="175" Column="76" />
-      <File FileName="WebApp.iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="WebApp/Views/LoginPage.xaml.cs" Line="52" Column="60" />
-      <File FileName="WebApp/Data/Communications.cs" Line="274" Column="91" />
-      <File FileName="WebApp/Views/AddTask.xaml.cs" Line="50" Column="1" />
-      <File FileName="WebApp/Views/InvolveFriend.xaml.cs" Line="40" Column="10" />
+      <File FileName="WebApp/Data/Communications.cs" Line="288" Column="54" />
       <File FileName="WebApp/Views/InvolveFriend.xaml" />
-      <File FileName="WebApp/Views/FriendRequestsListPage.xaml.cs" Line="24" Column="22" />
-      <File FileName="WebApp/Models/GroupTask.cs" Line="42" Column="72" />
-      <File FileName="WebApp/Views/IndividualTaskPopUp.xaml.cs" Line="133" Column="39" />
-      <File FileName="WebApp/Views/LoginPage.xaml" />
-      <File FileName="WebApp/Constants.cs" Line="44" Column="9" />
-      <File FileName="WebApp/Models/FriendUpdate.cs" Line="23" Column="34" />
-      <File FileName="WebApp/Views/SettingPage.xaml" />
-      <File FileName="WebApp/Views/TaskCheckerPopUp.xaml.cs" Line="21" Column="41" />
-      <File FileName="WebApp/Views/TaskCheckerPopUp.xaml" />
+      <File FileName="WebApp/Views/InvolveFriend.xaml.cs" Line="40" Column="10" />
       <File FileName="WebApp.iOS/Info.plist" />
-      <File FileName="WebApp/Models/FriendTask.cs" Line="21" Column="71" />
-      <File FileName="WebApp/Models/History.cs" Line="1" Column="1" />
-      <File FileName="WebApp/Models/Repetition.cs" Line="1" Column="1" />
-      <File FileName="WebApp/Models/FriendCheck.cs" Line="1" Column="1" />
+      <File FileName="WebApp/Views/IndividualTaskPopUp.xaml" />
+      <File FileName="WebApp/Views/IndividualTaskPopUp.xaml.cs" Line="16" Column="56" />
+      <File FileName="WebApp/Models/User.cs" Line="23" Column="37" />
+      <File FileName="WebApp/Constants.cs" Line="44" Column="9" />
+      <File FileName="WebApp/Views/LoginPage.xaml.cs" Line="92" Column="71" />
+      <File FileName="WebApp.iOS/Main.cs" Line="17" Column="40" />
+      <File FileName="WebApp/App.xaml.cs" Line="39" Column="35" />
+      <File FileName="WebApp.iOS/AppDelegate.cs" Line="22" Column="47" />
+      <File FileName="WebApp.Android/MainActivity.cs" Line="24" Column="36" />
+      <File FileName="WebApp/Models/FriendUpdate.cs" Line="27" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -30,19 +25,19 @@
           <Node name="WebApp" expanded="True">
             <Node name="WebApp" expanded="True">
               <Node name="Data" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="FriendCheck.cs" selected="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="AddTask.xaml" expanded="True" />
-                <Node name="FriendRequestsListPage.xaml" expanded="True" />
                 <Node name="IndividualTaskPopUp.xaml" expanded="True" />
                 <Node name="InvolveFriend.xaml" expanded="True" />
                 <Node name="LoginPage.xaml" expanded="True" />
-                <Node name="MyTaskPage.xaml" expanded="True" />
-                <Node name="TaskCheckerPopUp.xaml" expanded="True" />
+                <Node name="MyTaskPage.xaml" expanded="True">
+                  <Node name="MyTaskPage.xaml.cs" selected="True" />
+                </Node>
               </Node>
+              <Node name="App.xaml" expanded="True" />
             </Node>
+            <Node name="WebApp.Android" expanded="True" />
             <Node name="WebApp.iOS" expanded="True" />
           </Node>
         </State>
@@ -50,12 +45,12 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.WebApp.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
-  <MonoDevelop.Ide.ItemProperties.WebApp.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.5d86ebe5cb46fbcb1155f8ae1b787614575d2b20" />
+  <MonoDevelop.Ide.ItemProperties.WebApp.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7A67C324-C104-47DD-A8D4-ED496A3ED77A" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/mianbaodashi/Desktop/Xamarin/WebApp/Views/MyTaskPage.xaml.cs" relfile="WebApp/Views/MyTaskPage.xaml.cs" line="213" column="31" />
+      <Breakpoint file="/Users/apple/Xamarin/WebApp/Views/MyTaskPage.xaml.cs" relfile="WebApp/Views/MyTaskPage.xaml.cs" line="222" column="31" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
