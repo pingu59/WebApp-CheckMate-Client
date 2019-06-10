@@ -23,10 +23,6 @@ namespace WebApp.Views
             TaskId.Text = task.taskid.ToString();
             this.task = task;
             GetProgresses();
-            foreach (Progress p in progresses)
-            {
-                FriendsProgress.Children.Add(p.getView());
-            }
             this.isMyTask = isMyTask;
             if (!isMyTask)
             {
@@ -40,6 +36,10 @@ namespace WebApp.Views
         {
             List<Progress> p = await Communications.getTaskProgress(task.taskid);
             progresses =  Progress.setTotal(p, task.frequency);
+            foreach (Progress progress in progresses)
+            {
+                FriendsProgress.Children.Add(progress.getView());
+            }
         }
 
         private async void OnClicked(object sender, EventArgs args)
@@ -58,17 +58,17 @@ namespace WebApp.Views
                 CompressionQuality = 10
             });
 
-
-            var stream = file.GetStream();
-
-            string base64Image = ImageConvertors.ImageToBase64(stream);
-            loadingPage = new LoadingPage();
-            await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PushAsync(
-               loadingPage);
-            int updateNo = await Communications.sendMyNewUpdate(task.taskid, base64Image);
-            await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PopAsync();
-            await DisplayAlert("+｡:.ﾟヽ(*´∀`) ﾉﾟ.:｡+ﾟ", "Your progress has been sent to your friends. Update number: "
-                 + updateNo,"ok");
+            if(file != null){
+                var stream = file.GetStream();
+                string base64Image = ImageConvertors.ImageToBase64(stream);
+                loadingPage = new LoadingPage();
+                await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PushAsync(
+                   loadingPage);
+                int updateNo = await Communications.sendMyNewUpdate(task.taskid, base64Image);
+                await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PopAsync();
+                await DisplayAlert("+｡:.ﾟヽ(*´∀`) ﾉﾟ.:｡+ﾟ", "Your progress has been sent to your friends. Upda te number: "
+                     + updateNo,"ok");
+            }
         }
 
         protected override void OnAppearing()

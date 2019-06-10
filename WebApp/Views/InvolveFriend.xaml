@@ -5,17 +5,6 @@
              Title="Select your friend">
     <ContentPage.Content>
         <StackLayout Padding="20">
-            <Grid Margin="10">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="280" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="30" />
-                </Grid.RowDefinitions>
-                <Entry x:Name="SearchFriend" Grid.Row="0" Grid.Column="0" />
-                <Button Text="Search" Grid.Row="0" Grid.Column="1" />
-            </Grid>
             <ScrollView Orientation="Horizontal" HeightRequest="40" BackgroundColor="Silver">
                 <StackLayout Orientation="Horizontal" x:Name="AddedFriends" />
             </ScrollView>

@@ -3,6 +3,7 @@ Newtonsoft.Json
 Plugin.CurrentActivity
 Plugin.Media
 Plugin.Permissions
+Refractored.XamForms.PullToRefresh
 Rg.Plugins.Popup
 Rg.Plugins.Popup.Droid
 SQLite-net
@@ -40,4 +41,3 @@ Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
 netstandard
 System.Reflection.Extensions
-Refractored.XamForms.PullToRefresh

@@ -19,6 +19,7 @@ namespace WebApp.Views
             {
                 taskStack.Children.Add(b.GetView());
             }
+            FriendList.Children.Add(Constants.meEntity.GetView());
             foreach (FriendEntity f in Constants.Friend.Friends)
             {
                 FriendList.Children.Add(f.GetView());
@@ -37,6 +38,11 @@ namespace WebApp.Views
             Constants.backgroudProcess =Task.Run(() => { PeriodicCheck(); });
             Constants.backgroudProcess.ConfigureAwait(false);
             pullRefresh.RefreshCommand = new Command(() => RefreshCommand());
+        }
+
+        public async void DisplayPenalties(FriendEntity friendEntity)
+        {
+            await Navigation.PushAsync(new Penalties(friendEntity));
         }
 
         public async void RefreshCommand()

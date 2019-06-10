@@ -435,3 +435,11 @@
 /Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/android/assets/machine.config
 /Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/stamp/_CompileToDalvik.stamp
 /Users/mianbaodashi/Desktop/Xamarin/WebApp.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
+/Users/apple/Xamarin/WebApp.Android/bin/Debug/Refractored.XamForms.PullToRefresh.dll.mdb
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/linksrc/Refractored.XamForms.PullToRefresh.dll
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/linksrc/Refractored.XamForms.PullToRefresh.dll.mdb
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/Refractored.XamForms.PullToRefresh.dll
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/Refractored.XamForms.PullToRefresh.dll.mdb
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/machine.config
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/stamp/_CompileToDalvik.stamp
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp

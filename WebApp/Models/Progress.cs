@@ -57,7 +57,7 @@ namespace WebApp.Models
                 FontSize = 30,
                 TextColor = Color.White,
                 HorizontalOptions = LayoutOptions.Start
-            }, 0, 1);
+            }, 1, 0);
 
             return grid;
         }

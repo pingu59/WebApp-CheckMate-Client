@@ -116,6 +116,7 @@ class MonoPackageManager_Resources {
 		"Plugin.CurrentActivity.dll",
 		"Plugin.Media.dll",
 		"Plugin.Permissions.dll",
+		"Refractored.XamForms.PullToRefresh.dll",
 		"Rg.Plugins.Popup.dll",
 		"Rg.Plugins.Popup.Droid.dll",
 		"SQLite-net.dll",

@@ -21,7 +21,7 @@ namespace WebApp.Views
         public async void PushToMyTask()
         {
             //Don't change the sequence here pls
-            Constants.meEntity = new FriendEntity(Constants.me.userid, Constants.me.username);
+            Constants.meEntity = new FriendEntity(Constants.me.userid, '{' + Constants.me.username + '}');
 
             Console.WriteLine("About to load info from server...");
             await LoadMyTasksFromServer();
@@ -37,6 +37,11 @@ namespace WebApp.Views
             List<GroupTask> bt = await Communications.GetAllMyTasks();
             Constants.MyTask = bt;
             return true;
+        }
+
+        public async void DisplayPenalties(FriendEntity fe)
+        {
+            await Navigation.PushAsync(new Penalties(fe));
         }
 
         private async Task<bool> LoadMyFriendsFromServer()

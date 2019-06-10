@@ -17,17 +17,6 @@
     </ContentPage>
     <ContentPage Title="Friend">
         <StackLayout>
-            <Grid Margin="10">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="300" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="30" />
-                </Grid.RowDefinitions>
-                <Entry x:Name="SearchFriend" Grid.Row="0" Grid.Column="0" />
-                <Button Text="Search" Grid.Row="0" Grid.Column="1" />
-            </Grid>
             <Grid VerticalOptions="FillAndExpand">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="70" />

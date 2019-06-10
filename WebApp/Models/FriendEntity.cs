@@ -12,12 +12,15 @@ namespace WebApp.Models
         public int FriendID { get; set; }
         public string FriendName { get; set; }
         private View view;
+        TapGestureRecognizer tapRecog;
         public FriendEntity(){}
         [JsonConstructor]
         public FriendEntity(int FriendId, string FriendName)
         {
             this.FriendID = FriendId;
             this.FriendName = FriendName.Substring(1, FriendName.Length - 2);
+            tapRecog = new TapGestureRecognizer();
+            tapRecog.Tapped += (sender, e) => { Constants.mainPage.DisplayPenalties(this); };
         }
 
         //make singleton
@@ -29,6 +32,7 @@ namespace WebApp.Models
                 {
                     Text = FriendName
                 };
+                view.GestureRecognizers.Add(tapRecog);
             }
             return view;
         }

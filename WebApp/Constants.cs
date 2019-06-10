@@ -10,6 +10,12 @@ namespace WebApp
     public class Constants
     {
         public static string BaseAddress = "https://group27server.herokuapp.com/";
+
+        internal static string getBet(string bet)
+        {
+            throw new NotImplementedException();
+        }
+
         //public static string BaseAddress = "http://146.169.45.111:8080/";
         //public static string BaseAddress = "http://localhost:8080/";
 
@@ -56,5 +62,26 @@ namespace WebApp
                 return Friend.getNameOf(id);
             }
         }
+
+        public static string getTaskName(int taskid)
+        {
+            GroupTask task = MyTask.Find((obj) => obj.taskid == taskid);
+            if (task != null )
+            {
+                return task.taskname;
+            }
+            return "unknown";
+        }
+
+        public static string getBet(int taskid)
+        {
+            GroupTask task = MyTask.Find((obj) => obj.taskid == taskid);
+            if (task != null)
+            {
+                return task.bet;
+            }
+            return "unknown";
+        }
+
     }
 }

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using WebApp.Models;
+using System.Collections;
 
 namespace WebApp
 {
@@ -30,6 +31,22 @@ namespace WebApp
 
             Console.WriteLine("response unsuccessful.");
             return -1;
+        }
+
+        public static async Task<List<Penalty>> getPenalties(object friendID)
+        {
+            string baseurl = Constants.BaseAddress + "getPenalty?userId={0}";
+            string actualurl = string.Format(baseurl, friendID);
+            HttpClient _client = new HttpClient();
+            var uri = new Uri(actualurl);
+            var response = await _client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                string content = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<Penalty>>(content);
+            }
+
+            return new List<Penalty>();
         }
 
         public static async Task<List<Progress>> getTaskProgress(int taskid)
