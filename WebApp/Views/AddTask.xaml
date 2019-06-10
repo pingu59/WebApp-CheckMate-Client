@@ -10,7 +10,7 @@
                     <ColumnDefinition Width="80" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Label Text="I want to " Grid.Row="0" Grid.Column="0" />
+                <Label Text="We want to " Grid.Row="0" Grid.Column="0" />
                 <Entry x:Name="taskName" Grid.Row="0" Grid.Column="1" />
             </Grid>
             <Grid>
@@ -50,8 +50,16 @@
                 <DatePicker x:Name="datepicker" HorizontalOptions="FillAndExpand"
                             Grid.Column="1" />
             </Grid>
-            <Label Text="If I failed to do so, I will:" />
-            <Entry x:Name="Penalty" HorizontalOptions="FillAndExpand" />
+            <Label Text="If we failed to do so, we will:" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="80" />
+                </Grid.ColumnDefinitions>
+                <Entry x:Name="Penalty" HorizontalOptions="FillAndExpand" Grid.Column="0"/>
+                <Button Text="Random" Clicked="RandomPenalty" Grid.Column="1"/>
+            </Grid>
+            
             <Button Text="Send my bet" Clicked="OnConfirm" />
         </StackLayout>
     </ContentPage.Content>

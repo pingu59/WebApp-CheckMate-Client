@@ -20,6 +20,22 @@ namespace WebApp.Views
             BindingContext = this;
         }
 
+        public async void RandomPenalty(object sender, EventArgs e)
+        {
+            string[] possibles =
+            {
+                "clean the kitchen",
+                "buy everyone coffee",
+                "clean bathroom",
+                "bring everyone a homemade lunch",
+                "buy everyone a beer",
+                "buy everyone icecream"
+            };
+            Random random = new Random();
+            int num = random.Next(possibles.Length);
+            Penalty.Text = possibles[num];
+        }
+
         public async void OnConfirm(object sender, EventArgs e)
         {
             if (taskName.Text != null)
@@ -46,7 +62,7 @@ namespace WebApp.Views
                             Repetition repetition =
                                 RepetitionConverter.ToRepetition(selectedItem.ToString());
                             int frequency = int.Parse(Frequency.Text);
-                            task = new GroupTask(taskName.Text, repetition, frequency, datepicker.Date ,members);
+                            task = new GroupTask(taskName.Text, repetition, frequency, datepicker.Date ,members, Penalty.Text);
                             int taskid = await Communications.addGroupTask(task);
                             task.taskid = taskid;
                             Constants.FriendTasks.Add(new FriendTask(task));

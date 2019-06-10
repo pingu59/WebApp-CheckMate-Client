@@ -29,16 +29,16 @@
                 <ColumnDefinition Width="150"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Label Text="Progress: " Grid.Column="0" Grid.Row="0"/>
-            <Label x:Name="Progress" Grid.Column="1" Grid.Row="0"/>
             <Label Text="Deadline: " Grid.Column="0" Grid.Row="1"/>
             <Label x:Name="Deadline" Grid.Column="1" Grid.Row="1"/>
             <Label Text="Task id: " Grid.Column="0" Grid.Row="2"/>
             <Label x:Name="TaskId" Grid.Column="1" Grid.Row="2"/>
+            <Label Text="Penalty: " Grid.Column="0" Grid.Row="3"/>
+            <Label x:Name="Penalty" Grid.Column="1" Grid.Row="3"/>
         </Grid>
-        <Label Text="Who can see :" FontSize="40" TextColor="White" HorizontalOptions="Center"/>
-        <ScrollView Orientation="Horizontal" HeightRequest="40" Padding="30, 0">
-            <StackLayout Orientation="Horizontal" x:Name="AddedFriends" />
+        <Label Text="Members :" FontSize="40" TextColor="White" HorizontalOptions="Center"/>
+        <ScrollView Orientation="Vertical" HeightRequest="100" Padding="30, 0">
+            <StackLayout Orientation="Vertical" x:Name="FriendsProgress" />
         </ScrollView>
         <Button x:Name="sendingButton" Text="TAKE PICTURE" FontSize="40" 
                 HorizontalOptions="Center" Clicked="OnClicked"/>

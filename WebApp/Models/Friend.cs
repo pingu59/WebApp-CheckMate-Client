@@ -31,6 +31,10 @@ namespace WebApp.Models
 
         public string getNameOf(int i)
         {
+            if( i == Constants.me.userid)
+            {
+                return Constants.me.username;
+            }
             foreach (FriendEntity fe in Friends)
             {
                 if (fe.FriendID == i)
@@ -38,8 +42,7 @@ namespace WebApp.Models
                     return fe.FriendName;
                 } 
             }
-            //never here.
-            return null;
+            return "Unknown";
         }
 
         internal View GetViewof(int friendid)
@@ -56,6 +59,22 @@ namespace WebApp.Models
                 ret.Add(f.GetView());
             }
             return ret;
+        }
+
+        internal bool isFriend(int userid)
+        {
+            if (userid == Constants.me.userid)
+            {
+                return true;
+            }
+            foreach (FriendEntity fe in Friends)
+            {
+                if (fe.FriendID == userid)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

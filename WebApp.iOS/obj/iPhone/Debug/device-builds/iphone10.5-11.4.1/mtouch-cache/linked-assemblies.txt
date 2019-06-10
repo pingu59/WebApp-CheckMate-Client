@@ -19,6 +19,7 @@ RemoveDynamicRegistrar:true
 /Users/apple/Xamarin/WebApp.iOS/bin/iPhone/Debug/device-builds/iphone10.5-11.4.1/WebApp.iOS.app:/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/Xamarin.Forms.Platform.dll
 /Users/apple/Xamarin/WebApp.iOS/bin/iPhone/Debug/device-builds/iphone10.5-11.4.1/WebApp.iOS.app:/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/Rg.Plugins.Popup.IOS.dll
 /Users/apple/Xamarin/WebApp.iOS/bin/iPhone/Debug/device-builds/iphone10.5-11.4.1/WebApp.iOS.app:/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/Rg.Plugins.Popup.dll
+/Users/apple/Xamarin/WebApp.iOS/bin/iPhone/Debug/device-builds/iphone10.5-11.4.1/WebApp.iOS.app:/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/Refractored.XamForms.PullToRefresh.dll
 /Users/apple/Xamarin/WebApp.iOS/bin/iPhone/Debug/device-builds/iphone10.5-11.4.1/WebApp.iOS.app:/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/WebApp.dll
 /Users/apple/Xamarin/WebApp.iOS/bin/iPhone/Debug/device-builds/iphone10.5-11.4.1/WebApp.iOS.app:/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/Xamarin.Forms.Xaml.dll
 /Users/apple/Xamarin/WebApp.iOS/bin/iPhone/Debug/device-builds/iphone10.5-11.4.1/WebApp.iOS.app:/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/SQLite-net.dll

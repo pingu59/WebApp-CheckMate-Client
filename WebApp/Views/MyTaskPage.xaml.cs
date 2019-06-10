@@ -186,8 +186,11 @@ namespace WebApp.Views
             FriendTasks.Children.Clear();
             foreach (FriendUpdate fu in updates)
             {
-                FriendTasks.Children.Add(fu.GetView());
-                updatingTaskIds.Add(fu.taskID);
+                if (Constants.Friend.isFriend(fu.userid))
+                {
+                    FriendTasks.Children.Add(fu.GetView());
+                    updatingTaskIds.Add(fu.taskID);
+                }
             }
             foreach (FriendTask f in Constants.FriendTasks)
             {

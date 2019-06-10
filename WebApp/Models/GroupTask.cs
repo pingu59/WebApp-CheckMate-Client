@@ -17,14 +17,17 @@ namespace WebApp.Models
         public int frequency { get; set; }
         public List<int> member { get; set; }
         public DateTime deadline { get; set; }
+        public string bet;
         TapGestureRecognizer tapRecog;
 
         private Frame view;
         public GroupTask() { }
-        public GroupTask(String taskname, Repetition repetition, int frequency, DateTime deadline,List<int> member)
+        public GroupTask(string taskname, Repetition repetition, int frequency, DateTime deadline, List<int> member,
+            string bet)
         {
             creatorid = Constants.me.userid;
             this.taskname = taskname;
+            this.bet = bet;
             this.repetition = repetition;
             this.frequency = frequency;
             this.deadline = deadline;
@@ -35,7 +38,7 @@ namespace WebApp.Models
 
         //refactor??
         [JsonConstructor]
-        public GroupTask(int taskid, int creatorid, string taskname, string repetition, int frequency, DateTime deadline, String member)
+        public GroupTask(int taskid, int creatorid, string taskname, string repetition, int frequency, DateTime deadline, string member, string bet)
         {
             this.creatorid = creatorid;
             this.taskid = taskid;
@@ -43,6 +46,7 @@ namespace WebApp.Models
             this.repetition = RepetitionConverter.ToRepetition(repetition.Substring(1, member.Count() - 2));
             this.frequency = frequency;
             this.deadline = deadline;
+            this.bet = bet;
             this.member = parseToList(member.Substring(1, member.Count() - 2));
             tapRecog = new TapGestureRecognizer();
             tapRecog.Tapped += (sender, e) => { Constants.mainPage.DisplayTaskInfo(this); };

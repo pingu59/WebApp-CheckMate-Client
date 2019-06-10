@@ -16,7 +16,6 @@ namespace WebApp.Models
         {
             this.task = task;
             this.taskid = task.taskid;
-            //substring
             this.taskname = task.taskname;
             this.ownername = Constants.Friend.getNameOf(task.creatorid);
             completed = false;
@@ -61,13 +60,6 @@ namespace WebApp.Models
                     new RowDefinition {Height = 40}
                 }
             };
-            grid.Children.Add(new Label
-            {
-                Text = ownername,
-                FontSize = 15,
-                TextColor = Color.White
-            }, 0, 0);
-
             grid.Children.Add(new Label
             {
                 Text = taskname,

@@ -74,7 +74,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		G486nHZtCpiYM696qCgCY/XDRdE=
+		kWC1IGwDHwKBvUZsQXvmNlhXcqw=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -159,6 +159,18 @@
 		<key>Plugin.Permissions.dll</key>
 		<data>
 		iEM0ahuakis9BVrV8TN7JKMhIkg=
+		</data>
+		<key>Refractored.XamForms.PullToRefresh.aotdata.arm64</key>
+		<data>
+		KiYWl7E0atQzE8cb7aU/Svfu168=
+		</data>
+		<key>Refractored.XamForms.PullToRefresh.dll</key>
+		<data>
+		Z7X8b9QObp5CMBHIuwNhfSibcIE=
+		</data>
+		<key>Refractored.XamForms.PullToRefresh.pdb</key>
+		<data>
+		8HaoBPceExhbjkSTpb+KyLQ6/4M=
 		</data>
 		<key>Rg.Plugins.Popup.IOS.aotdata.arm64</key>
 		<data>
@@ -338,27 +350,27 @@
 		</data>
 		<key>WebApp.aotdata.arm64</key>
 		<data>
-		lsCDNj3TkKxXIGbi4sXEo4hBf4E=
+		zMwIEVIQ3rz+KlM0nTA5fOZLWa8=
 		</data>
 		<key>WebApp.dll</key>
 		<data>
-		2VcttLjiM96j9X2pN3Ey1l4sK1Y=
+		280sbQJI3esey6QK9Z32/QQHh7I=
 		</data>
 		<key>WebApp.iOS.aotdata.arm64</key>
 		<data>
-		eh2l/71jE54ODKfHaFvAzF9YT+s=
+		rWd0pLgLSLr6XkKPegjVzuALc7Y=
 		</data>
 		<key>WebApp.iOS.exe</key>
 		<data>
-		ONdFSm1PV4UGDAlCe9KRYA3m4E8=
+		7Wig5m9+KIF9lCzR92jiA6UE9sM=
 		</data>
 		<key>WebApp.iOS.pdb</key>
 		<data>
-		QSve0xIdQNBlyOs41gd7lwx+oIc=
+		TzkqjLTA7W1LlWHVU9FZwV/FgfQ=
 		</data>
 		<key>WebApp.pdb</key>
 		<data>
-		/TJBI1sW9x5/64pt/lUSPU08si8=
+		eDZ9KAJL4H5VeB6GvtnEO9ZYEYo=
 		</data>
 		<key>Xamarin.Forms.Core.aotdata.arm64</key>
 		<data>
@@ -766,11 +778,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G486nHZtCpiYM696qCgCY/XDRdE=
+			kWC1IGwDHwKBvUZsQXvmNlhXcqw=
 			</data>
 			<key>hash2</key>
 			<data>
-			8fDojHn4njVXduCZBN3/J7Xm7Tkn5cBXm+enAAqe5sQ=
+			Ajly+F8YL6v6XMAW3dN0Rtl172kBnaT8Fw14cq0RRJM=
 			</data>
 		</dict>
 		<key>LaunchImage-700-568h@2x.png</key>
@@ -980,6 +992,39 @@
 			<key>hash2</key>
 			<data>
 			K6ZTxDtwJXgMcFU1YQXeifRTISPIZ9VJHMxJDPsO3io=
+			</data>
+		</dict>
+		<key>Refractored.XamForms.PullToRefresh.aotdata.arm64</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KiYWl7E0atQzE8cb7aU/Svfu168=
+			</data>
+			<key>hash2</key>
+			<data>
+			eSNHHpo2/WnlUasvzmNrtDgcj/0zWLWkrwE56tpJuvA=
+			</data>
+		</dict>
+		<key>Refractored.XamForms.PullToRefresh.dll</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Z7X8b9QObp5CMBHIuwNhfSibcIE=
+			</data>
+			<key>hash2</key>
+			<data>
+			BlIxNM3znuUAaHW3zSbH0OOwispUtsDjZBAkfwsHgJ0=
+			</data>
+		</dict>
+		<key>Refractored.XamForms.PullToRefresh.pdb</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8HaoBPceExhbjkSTpb+KyLQ6/4M=
+			</data>
+			<key>hash2</key>
+			<data>
+			1uke8pFrrSVovrBAVts4Au7obfcmS0cEm6ChIc+JujU=
 			</data>
 		</dict>
 		<key>Rg.Plugins.Popup.IOS.aotdata.arm64</key>
@@ -1470,66 +1515,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lsCDNj3TkKxXIGbi4sXEo4hBf4E=
+			zMwIEVIQ3rz+KlM0nTA5fOZLWa8=
 			</data>
 			<key>hash2</key>
 			<data>
-			QYPcOFdckfX9jfBkOAeMvvPAEjqTiJj3e3A9VcoR1vM=
+			Vko7YPx39f0eo2s7nafoKo6+tw8YRAticd4kc2sSeHw=
 			</data>
 		</dict>
 		<key>WebApp.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2VcttLjiM96j9X2pN3Ey1l4sK1Y=
+			280sbQJI3esey6QK9Z32/QQHh7I=
 			</data>
 			<key>hash2</key>
 			<data>
-			41v3rxOhGL5yM+wllYoDwPStSF65HTZERkUfROGvtfs=
+			32VPCh1EES0F+ILqIl9wj+g00y2SiLk2L90dTXRfn24=
 			</data>
 		</dict>
 		<key>WebApp.iOS.aotdata.arm64</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eh2l/71jE54ODKfHaFvAzF9YT+s=
+			rWd0pLgLSLr6XkKPegjVzuALc7Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZsItrk/21H4i0bIu/UnGhOw9Lde6t+fjjfHesZ8uoN0=
+			9Fy7EerNglsDpstf3CiPyk9ShOcyLahQK4l6/12HPtA=
 			</data>
 		</dict>
 		<key>WebApp.iOS.exe</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ONdFSm1PV4UGDAlCe9KRYA3m4E8=
+			7Wig5m9+KIF9lCzR92jiA6UE9sM=
 			</data>
 			<key>hash2</key>
 			<data>
-			fiAVHMb59nCt29DNZXTURLjxJ/gFsp3kMajeX0wgv+E=
+			wiR6oU8wKHcSuzrusJwYpJPJqFefdI/8VHC9Lx4Qmv8=
 			</data>
 		</dict>
 		<key>WebApp.iOS.pdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QSve0xIdQNBlyOs41gd7lwx+oIc=
+			TzkqjLTA7W1LlWHVU9FZwV/FgfQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			kQHSG87fm9Dryz0n+2ysTP15v9D3M6Xakj6Cl+tVzRI=
+			fQV/CDaVAFwGsjXlyV2CFywrzvKopSUhvxo1yeEJ1kc=
 			</data>
 		</dict>
 		<key>WebApp.pdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/TJBI1sW9x5/64pt/lUSPU08si8=
+			eDZ9KAJL4H5VeB6GvtnEO9ZYEYo=
 			</data>
 			<key>hash2</key>
 			<data>
-			KApowM4EOIhwuxmOzf6ASoKjNWR2UMZI8h8Mfh4Hjmw=
+			wn24F6jPepftBCDdBAQ3J7B+x3+KwTc4TZaRqdnbg7w=
 			</data>
 		</dict>
 		<key>Xamarin.Forms.Core.aotdata.arm64</key>

@@ -32,6 +32,22 @@ namespace WebApp
             return -1;
         }
 
+        public static async Task<List<Progress>> getTaskProgress(int taskid)
+        {
+            string baseurl = Constants.BaseAddress + "getProgress?taskId={0}";
+            string actualurl = string.Format(baseurl, taskid);
+            HttpClient _client = new HttpClient();
+            var uri = new Uri(actualurl);
+            var response = await _client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                string content = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<Progress>>(content);
+            }
+
+            return new List<Progress>();
+        }
+
         public static async Task<string> Login(int userid, string password)
         {
             string baseurl = Constants.BaseAddress + "login?userid={0}&password={1}";
@@ -196,10 +212,10 @@ namespace WebApp
         public static async Task<int> addGroupTask(GroupTask task)
         {
             string baseurl = Constants.BaseAddress + "createTask?myid={0}&taskname={1}&" +
-                "repetition={2}&frequency={3}&members={4}&deadline={5}";
+                "repetition={2}&frequency={3}&members={4}&deadline={5}&bet={6}";
             string actualurl = string.Format(baseurl, Constants.me.userid, task.taskname,
                 task.repetition.ToString(), task.frequency, toSpringBootArray(task.member),
-                task.getDeadlineString());
+                task.getDeadlineString(), task.bet);
             Console.WriteLine(actualurl);
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);

@@ -13,28 +13,19 @@ namespace WebApp.Views
         GroupTask task;
         bool isMyTask;
         Rg.Plugins.Popup.Pages.PopupPage loadingPage;
+        List<Progress> progresses;
         public IndividualTaskPopUp(GroupTask task, bool isMyTask)
         {
             InitializeComponent();
             TaskName.Text = task.taskname;
-            //Progress.Text = task.getStatusString();
             Deadline.Text = task.getDeadlineString();
+            Penalty.Text = task.bet;
             TaskId.Text = task.taskid.ToString();
             this.task = task;
-            foreach(int sup in task.member)
+            GetProgresses();
+            foreach (Progress p in progresses)
             {
-                Console.Out.WriteLine("Related " + sup);
-                if(sup == Constants.me.userid)
-                {
-                    AddedFriends.Children.Add(Constants.me.GetView());
-                }
-                else
-                {
-                    if(Constants.Friend.Friends.Exists((obj) => obj.FriendID == sup))
-                    {
-                        AddedFriends.Children.Add(Constants.Friend.GetViewof(sup));
-                    }
-                }
+                FriendsProgress.Children.Add(p.getView());
             }
             this.isMyTask = isMyTask;
             if (!isMyTask)
@@ -43,6 +34,12 @@ namespace WebApp.Views
 
             }
             BindingContext = this;
+        }
+
+        private async void GetProgresses()
+        {
+            List<Progress> p = await Communications.getTaskProgress(task.taskid);
+            progresses =  Progress.setTotal(p, task.frequency);
         }
 
         private async void OnClicked(object sender, EventArgs args)
@@ -70,7 +67,7 @@ namespace WebApp.Views
                loadingPage);
             int updateNo = await Communications.sendMyNewUpdate(task.taskid, base64Image);
             await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PopAsync();
-            await DisplayAlert("","Your progress has been sent to your friends. Update number: "
+            await DisplayAlert("+｡:.ﾟヽ(*´∀`) ﾉﾟ.:｡+ﾟ", "Your progress has been sent to your friends. Update number: "
                  + updateNo,"ok");
         }
 

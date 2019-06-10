@@ -17589,6 +17589,22 @@ exception_handling:;
 	}
 @end
 
+@implementation Refractored_XamForms_PullToRefresh_iOS_PullToRefreshLayoutRenderer {
+}
+
+	-(id) init
+	{
+		static MonoMethod *managed_method = NULL;
+		bool call_super = false;
+		id rv = native_to_managed_trampoline_1 (self, _cmd, &managed_method, &call_super, 0x1F28);
+		if (call_super && rv) {
+			struct objc_super super = {  rv, [Xamarin_Forms_Platform_iOS_ViewRenderer_2 class] };
+			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
+		}
+		return rv;
+	}
+@end
+
 @implementation Plugin_Media_MediaPickerController {
 	XamarinObject __monoObjectGCHandle;
 }
@@ -17617,13 +17633,13 @@ exception_handling:;
 	-(NSObject *) delegate
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_176 (self, _cmd, &managed_method, 0x1D34);
+		return native_to_managed_trampoline_176 (self, _cmd, &managed_method, 0x1D36);
 	}
 
 	-(void) setDelegate:(NSObject *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_26 (self, _cmd, &managed_method, p0, 0x1E34);
+		native_to_managed_trampoline_26 (self, _cmd, &managed_method, p0, 0x1E36);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -17672,13 +17688,13 @@ exception_handling:;
 	-(BOOL) popoverControllerShouldDismissPopover:(UIPopoverController *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_40 (self, _cmd, &managed_method, p0, 0x3C34);
+		return native_to_managed_trampoline_40 (self, _cmd, &managed_method, p0, 0x3C36);
 	}
 
 	-(void) popoverControllerDidDismissPopover:(UIPopoverController *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_39 (self, _cmd, &managed_method, p0, 0x3D34);
+		native_to_managed_trampoline_39 (self, _cmd, &managed_method, p0, 0x3D36);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -17727,13 +17743,13 @@ exception_handling:;
 	-(void) imagePickerController:(UIImagePickerController *)p0 didFinishPickingMediaWithInfo:(NSDictionary *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_177 (self, _cmd, &managed_method, p0, p1, 0x2734);
+		native_to_managed_trampoline_177 (self, _cmd, &managed_method, p0, p1, 0x2736);
 	}
 
 	-(void) imagePickerControllerDidCancel:(UIImagePickerController *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_178 (self, _cmd, &managed_method, p0, 0x2834);
+		native_to_managed_trampoline_178 (self, _cmd, &managed_method, p0, 0x2836);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -18107,9 +18123,10 @@ exception_handling:;
 		{ NULL, 0x524 /* #360 'RgPopupPlatformRenderer' => 'Rg.Plugins.Popup.IOS.Platform.PopupPlatformRenderer, Rg.Plugins.Popup.IOS' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
 		{ NULL, 0x624 /* #361 'RgPopupWindow' => 'Rg.Plugins.Popup.IOS.Platform.PopupWindow, Rg.Plugins.Popup.IOS' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
 		{ NULL, 0x324 /* #362 'Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer' => 'Rg.Plugins.Popup.IOS.Renderers.PopupPageRenderer, Rg.Plugins.Popup.IOS' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x434 /* #363 'Plugin_Media_MediaPickerController' => 'Plugin.Media.MediaPickerController, Plugin.Media' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x634 /* #364 'Plugin_Media_MediaPickerPopoverDelegate' => 'Plugin.Media.MediaPickerPopoverDelegate, Plugin.Media' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x534 /* #365 'Plugin_Media_MediaPickerDelegate' => 'Plugin.Media.MediaPickerDelegate, Plugin.Media' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0x328 /* #363 'Refractored_XamForms_PullToRefresh_iOS_PullToRefreshLayoutRenderer' => 'Refractored.XamForms.PullToRefresh.iOS.PullToRefreshLayoutRenderer, Refractored.XamForms.PullToRefresh' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0x436 /* #364 'Plugin_Media_MediaPickerController' => 'Plugin.Media.MediaPickerController, Plugin.Media' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0x636 /* #365 'Plugin_Media_MediaPickerPopoverDelegate' => 'Plugin.Media.MediaPickerPopoverDelegate, Plugin.Media' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0x536 /* #366 'Plugin_Media_MediaPickerDelegate' => 'Plugin.Media.MediaPickerDelegate, Plugin.Media' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
 		{ NULL, 0 },
 	};
 
@@ -18134,6 +18151,7 @@ exception_handling:;
 		"Xamarin.Forms.Platform", 
 		"Rg.Plugins.Popup.IOS", 
 		"Rg.Plugins.Popup", 
+		"Refractored.XamForms.PullToRefresh", 
 		"WebApp", 
 		"Xamarin.Forms.Xaml", 
 		"SQLite-net", 
@@ -18197,8 +18215,8 @@ exception_handling:;
 		NULL,
 		__xamarin_protocol_wrapper_map,
 		{ NULL, NULL },
-		29,
-		366,
+		30,
+		367,
 		0,
 		0,
 		42,
@@ -18569,9 +18587,10 @@ void xamarin_create_classes () {
 	__xamarin_class_map [360].handle = [RgPopupPlatformRenderer class];
 	__xamarin_class_map [361].handle = [RgPopupWindow class];
 	__xamarin_class_map [362].handle = [Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer class];
-	__xamarin_class_map [363].handle = [Plugin_Media_MediaPickerController class];
-	__xamarin_class_map [364].handle = [Plugin_Media_MediaPickerPopoverDelegate class];
-	__xamarin_class_map [365].handle = [Plugin_Media_MediaPickerDelegate class];
+	__xamarin_class_map [363].handle = [Refractored_XamForms_PullToRefresh_iOS_PullToRefreshLayoutRenderer class];
+	__xamarin_class_map [364].handle = [Plugin_Media_MediaPickerController class];
+	__xamarin_class_map [365].handle = [Plugin_Media_MediaPickerPopoverDelegate class];
+	__xamarin_class_map [366].handle = [Plugin_Media_MediaPickerDelegate class];
 	xamarin_add_registration_map (&__xamarin_registration_map, false);
 }
 

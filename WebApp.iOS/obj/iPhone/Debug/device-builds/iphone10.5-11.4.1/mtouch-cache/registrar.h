@@ -201,6 +201,7 @@
 @class RgPopupPlatformRenderer;
 @class RgPopupWindow;
 @class Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer;
+@class Refractored_XamForms_PullToRefresh_iOS_PullToRefreshLayoutRenderer;
 @class Plugin_Media_MediaPickerController;
 @class Plugin_Media_MediaPickerPopoverDelegate;
 @class Plugin_Media_MediaPickerDelegate;
@@ -1027,6 +1028,11 @@
 	-(void) viewWillAppear:(BOOL)p0;
 	-(void) viewWillDisappear:(BOOL)p0;
 	-(void) viewDidLayoutSubviews;
+	-(id) init;
+@end
+
+@interface Refractored_XamForms_PullToRefresh_iOS_PullToRefreshLayoutRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
+}
 	-(id) init;
 @end
 
