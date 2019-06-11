@@ -15,11 +15,12 @@ namespace WebApp.Views
 
         private async void GetHistory()
         {
+            await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PushAsync(new LoadingPage());
             histories = await Communications.getMyHistory();
             BindingContext = this;
             history.ItemsSource = null;
             history.ItemsSource = histories;
-            Console.WriteLine(history);
+            await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PopAsync();
         }
 
         public async void DisplayImage(object sender, ItemTappedEventArgs e)

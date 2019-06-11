@@ -6,17 +6,18 @@ namespace WebApp.Models
 {
     public class History
     {
-        internal string taskName;
-        internal int updateNumber;
-        internal string checkerName;
-        internal string address;
+        public string taskName { get; set; }
+        public int updateNumber { get; set; }
+        public string checkerName { get; set; }
+        public string address { get; set; }
         [JsonConstructor]
         public History(string taskName, int updateNumber, string checkerName, string image)
         {
-            this.taskName = taskName;
+            this.taskName = taskName.Substring(1, taskName.Length - 2);
             this.updateNumber = updateNumber;
-            this.checkerName = checkerName;
-            address = ImageConvertors.Base64ToImage(image, updateNumber);
+            this.checkerName = checkerName.Substring(1, checkerName.Length - 2);
+            string acturalImage = image.Substring(1, image.Length - 2);
+            address = ImageConvertors.Base64ToImage(acturalImage, updateNumber);
         }
 
         public override string ToString()

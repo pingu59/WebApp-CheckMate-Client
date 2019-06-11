@@ -3,7 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="WebApp.Views.Penalties">
     <ContentPage.Content>
-        <ListView x:Name="list" ItemTapped="tapped">
+         <ListView x:Name="list" ItemTapped="tapped" RowHeight="140">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Height="120">
+                        <Frame MinimumHeightRequest="120">
+                            <Grid Grid.Column="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Taskname: " Grid.Row="0" Grid.Column="0"/>
+                                <Label Text="{Binding taskname}" Grid.Row="0" Grid.Column="1"/>
+                                <Label Text="Date: " Grid.Row="1" Grid.Column="0"/>
+                                <Label Text="{Binding date}" Grid.Row="1" Grid.Column="1"/>
+                                <Label Text="Members: " Grid.Row="2" Grid.Column="0"/>
+                                <Label Text="{Binding memberstring}" Grid.Row="2" Grid.Column="1"/> 
+                                <Label Text="Content: " Grid.Row="3" Grid.Column="0"/>
+                                <Label Text="{Binding bet}" Grid.Row="3" Grid.Column="1"/> 
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
     </ContentPage.Content>
 </ContentPage>

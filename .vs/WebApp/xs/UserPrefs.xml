@@ -1,24 +1,10 @@
 ﻿<Properties StartupConfiguration="{FC97C75F-7E78-408D-BD0A-42ADF0A53DCD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Models/Penalty.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Models/History.cs">
     <Files>
-      <File FileName="WebApp/Data/Communications.cs" Line="386" Column="10" />
-      <File FileName="WebApp/Views/Penalties.xaml.cs" Line="51" Column="89" />
-      <File FileName="WebApp.iOS/AppDelegate.cs" Line="31" Column="1" />
-      <File FileName="WebApp/App.xaml.cs" Line="61" Column="12" />
-      <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="75" Column="10" />
-      <File FileName="WebApp/Models/GroupTask.cs" Line="150" Column="44" />
-      <File FileName="WebApp/Models/History.cs" Line="28" Column="1" />
-      <File FileName="WebApp/Data/ImageConvertors.cs" Line="7" Column="9" />
-      <File FileName="WebApp/Views/MyHistory.xaml.cs" Line="34" Column="1" />
-      <File FileName="WebApp/Views/MyHistory.xaml" />
-      <File FileName="WebApp/Views/TaskCheckerPopUp.xaml" />
-      <File FileName="WebApp/Views/TaskCheckerPopUp.xaml.cs" Line="17" Column="1" />
-      <File FileName="WebApp/Views/ImageHistory.xaml" />
-      <File FileName="WebApp/Views/ImageHistory.xaml.cs" Line="18" Column="1" />
-      <File FileName="WebApp/Views/IndividualTaskPopUp.xaml" />
-      <File FileName="WebApp/Views/IndividualTaskPopUp.xaml.cs" Line="11" Column="80" />
-      <File FileName="WebApp.iOS/Main.cs" Line="18" Column="1" />
-      <File FileName="WebApp/Models/Penalty.cs" Line="25" Column="1" />
+      <File FileName="WebApp/Views/Penalties.xaml" />
+      <File FileName="WebApp/Views/Penalties.xaml.cs" Line="40" Column="27" />
+      <File FileName="WebApp/Models/Penalty.cs" Line="9" Column="20" />
+      <File FileName="WebApp/Models/History.cs" Line="12" Column="44" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -31,7 +17,7 @@
               </Node>
               <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True">
-                <Node name="Penalty.cs" selected="True" />
+                <Node name="History.cs" selected="True" />
               </Node>
               <Node name="Views" expanded="True">
                 <Node name="AddFriendPage.xaml" expanded="True" />
@@ -58,9 +44,9 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.WebApp.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
-  <MonoDevelop.Ide.ItemProperties.WebApp.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.ef076f2e114cf956b69724c41d3c11a94cdb7f93" />
+  <MonoDevelop.Ide.ItemProperties.WebApp.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7A67C324-C104-47DD-A8D4-ED496A3ED77A" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/apple/Xamarin/WebApp/Views/MyTaskPage.xaml.cs" relfile="WebApp/Views/MyTaskPage.xaml.cs" line="233" column="31" />

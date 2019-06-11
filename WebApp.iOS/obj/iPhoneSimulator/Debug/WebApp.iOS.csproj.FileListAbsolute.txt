@@ -466,3 +466,5 @@
 /Users/Liu/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/coremlc/_PartialAppManifest.items
 /Users/Liu/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/coremlc/_BundleResourceWithLogicalName.items
 /Users/Liu/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/optimized/
+/Users/apple/Xamarin/WebApp.iOS/bin/iPhoneSimulator/Debug/Plugin.LocalNotifications.Abstractions.dll
+/Users/apple/Xamarin/WebApp.iOS/bin/iPhoneSimulator/Debug/Plugin.LocalNotifications.dll

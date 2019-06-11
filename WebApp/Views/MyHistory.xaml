@@ -2,6 +2,38 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WebApp.Views.MyHistory"
              Title="My History">
     <ContentPage.Content>
-        <ListView x:Name="history" ItemsSource="{Binding histories}" ItemTapped="DisplayImage"/>
+        <ListView x:Name="history" ItemsSource="{Binding histories}" ItemTapped="DisplayImage"
+                  RowHeight="120">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Height="100">
+                        <Frame MinimumHeightRequest="100">
+                            <Grid>
+                                 <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="100"/>
+                                    </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="100"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="20"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Text="Taskname: " Grid.Row="0" Grid.Column="0"/>
+                                    <Label Text="{Binding taskName}" Grid.Row="0" Grid.Column="1"/>
+                                    <Label Text="Update No.: " Grid.Row="1" Grid.Column="0"/>
+                                    <Label Text="{Binding updateNumber}" Grid.Row="1" Grid.Column="1"/>
+                                    <Label Text="Checker Name: " Grid.Row="2" Grid.Column="0"/>
+                                    <Label Text="{Binding checkerName}" Grid.Row="2" Grid.Column="1"/> 
+                                </Grid>
+                                <Image Source="{Binding address}" Grid.Column="1"/>
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage.Content>
 </ContentPage>
