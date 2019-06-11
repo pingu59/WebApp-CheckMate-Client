@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
+using Plugin.LocalNotifications;
 using SQLite;
 using WebApp.Data;
 using WebApp.Models;
@@ -57,6 +58,9 @@ namespace WebApp
 
                 login.PushToMyTask();
             }
+            CrossLocalNotifications.Current.Show("Good morning(✿◖◡◗)ﾉ!",
+           "Would you mind to check your todo lists for today?", 1, DateTime.Today.AddDays(1).AddHours(8));
+            //Add notification at 8 o'clock for next 7 days on every openening.
         }
         protected override void OnStart()
         {

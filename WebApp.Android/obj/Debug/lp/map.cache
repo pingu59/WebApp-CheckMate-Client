@@ -1,6 +1,8 @@
 FormsViewGroup
 Newtonsoft.Json
 Plugin.CurrentActivity
+Plugin.LocalNotifications.Abstractions
+Plugin.LocalNotifications
 Plugin.Media
 Plugin.Permissions
 Refractored.XamForms.PullToRefresh

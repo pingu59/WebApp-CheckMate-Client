@@ -114,6 +114,8 @@ class MonoPackageManager_Resources {
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
 		"Plugin.CurrentActivity.dll",
+		"Plugin.LocalNotifications.Abstractions.dll",
+		"Plugin.LocalNotifications.dll",
 		"Plugin.Media.dll",
 		"Plugin.Permissions.dll",
 		"Refractored.XamForms.PullToRefresh.dll",

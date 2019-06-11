@@ -440,6 +440,10 @@
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/linksrc/Refractored.XamForms.PullToRefresh.dll.mdb
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/Refractored.XamForms.PullToRefresh.dll
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/Refractored.XamForms.PullToRefresh.dll.mdb
-/Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/machine.config
-/Users/apple/Xamarin/WebApp.Android/obj/Debug/stamp/_CompileToDalvik.stamp
-/Users/apple/Xamarin/WebApp.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
+/Users/apple/Xamarin/WebApp.Android/bin/Debug/Plugin.LocalNotifications.dll.mdb
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/linksrc/Plugin.LocalNotifications.Abstractions.dll
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/linksrc/Plugin.LocalNotifications.dll
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/linksrc/Plugin.LocalNotifications.dll.mdb
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/Plugin.LocalNotifications.Abstractions.dll
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/Plugin.LocalNotifications.dll
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/Plugin.LocalNotifications.dll.mdb

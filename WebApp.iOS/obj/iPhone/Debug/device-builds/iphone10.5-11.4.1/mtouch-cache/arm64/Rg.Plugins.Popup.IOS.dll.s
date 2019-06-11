@@ -2104,7 +2104,7 @@ bl _p_32
 .word 0xf94193a1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413830
+.word 0xf9413c30
 .word 0xd63f0200
 .word 0xf9018fa0
 .word 0xf94023b1
@@ -6546,7 +6546,7 @@ bl _p_32
 .word 0xf94103a1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413830
+.word 0xf9413c30
 .word 0xd63f0200
 .word 0xf900ffa0
 .word 0xf9402bb1
@@ -6597,7 +6597,7 @@ bl _p_32
 .word 0xf94117a1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413830
+.word 0xf9413c30
 .word 0xd63f0200
 .word 0xf900f3a0
 .word 0xf9402bb1
@@ -8104,7 +8104,7 @@ bl _p_32
 .word 0xf94083a1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413830
+.word 0xf9413c30
 .word 0xd63f0200
 .word 0xf9007fa0
 .word 0xf9402fb1
@@ -8159,7 +8159,7 @@ bl _p_32
 .word 0xf9407ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413830
+.word 0xf9413c30
 .word 0xd63f0200
 .word 0xf90073a0
 .word 0xf9402fb1
@@ -25345,7 +25345,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0
-	.byte 115,77,56,190,104,210,37,11,86,1,251,4,58,246,251,248
+	.byte 124,177,207,79,165,160,241,192,245,144,216,97,248,146,108,216
 	.globl _mono_aot_module_Rg_Plugins_Popup_IOS_info
 	.align 3
 _mono_aot_module_Rg_Plugins_Popup_IOS_info:

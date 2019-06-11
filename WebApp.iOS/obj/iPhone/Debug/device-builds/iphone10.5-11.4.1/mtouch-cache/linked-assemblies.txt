@@ -29,3 +29,5 @@ RemoveDynamicRegistrar:true
 /Users/apple/Xamarin/WebApp.iOS/bin/iPhone/Debug/device-builds/iphone10.5-11.4.1/WebApp.iOS.app:/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/Plugin.Media.dll
 /Users/apple/Xamarin/WebApp.iOS/bin/iPhone/Debug/device-builds/iphone10.5-11.4.1/WebApp.iOS.app:/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/Plugin.Permissions.dll
 /Users/apple/Xamarin/WebApp.iOS/bin/iPhone/Debug/device-builds/iphone10.5-11.4.1/WebApp.iOS.app:/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/Newtonsoft.Json.dll
+/Users/apple/Xamarin/WebApp.iOS/bin/iPhone/Debug/device-builds/iphone10.5-11.4.1/WebApp.iOS.app:/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/Plugin.LocalNotifications.dll
+/Users/apple/Xamarin/WebApp.iOS/bin/iPhone/Debug/device-builds/iphone10.5-11.4.1/WebApp.iOS.app:/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache/1-Link/Plugin.LocalNotifications.Abstractions.dll

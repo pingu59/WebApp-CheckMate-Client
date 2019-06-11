@@ -226,6 +226,21 @@ namespace WebApp
             return new List<int>();
         }
 
+        public static async Task<int> removePenalty(string date, int taskid, int ownerid)
+        {
+            string baseurl = Constants.BaseAddress + "removePenalty?date={0}&taskid={1}&member={2}&owner={3}";
+            string actualurl = string.Format(baseurl, date, taskid, Constants.me.userid, ownerid);
+            Console.WriteLine(actualurl);
+            HttpClient _client = new HttpClient();
+            var uri = new Uri(actualurl);
+            var response = await _client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                return int.Parse(await response.Content.ReadAsStringAsync());
+            }
+            return Constants.SERVER_ERROR;
+        }
+
         public static async Task<int> addGroupTask(GroupTask task)
         {
             string baseurl = Constants.BaseAddress + "createTask?myid={0}&taskname={1}&" +

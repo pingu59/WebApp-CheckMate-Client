@@ -21,5 +21,13 @@ namespace WebApp.Views
             history.ItemsSource = histories;
             Console.WriteLine(history);
         }
+
+        public async void DisplayImage(object sender, ItemTappedEventArgs e)
+        {
+            History h = (History) e.Item;
+            await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PushAsync(
+               new ImageHistory(h));
+
+        }
     }
 }

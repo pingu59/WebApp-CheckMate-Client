@@ -457,3 +457,5 @@
 /Users/mianbaodashi/Desktop/Xamarin/WebApp.iOS/bin/iPhoneSimulator/Debug/Plugin.Media.dll
 /Users/apple/Xamarin/WebApp.iOS/bin/iPhoneSimulator/Debug/Refractored.XamForms.PullToRefresh.dll
 /Users/apple/Xamarin/WebApp.iOS/bin/iPhoneSimulator/Debug/Refractored.XamForms.PullToRefresh.pdb
+/Users/apple/Xamarin/WebApp.iOS/bin/iPhoneSimulator/Debug/Plugin.LocalNotifications.Abstractions.dll
+/Users/apple/Xamarin/WebApp.iOS/bin/iPhoneSimulator/Debug/Plugin.LocalNotifications.dll

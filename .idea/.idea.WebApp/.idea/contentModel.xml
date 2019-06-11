@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/.nuget/packages/xamarin.android.arch.lifecycle.runtime/1.1.1.1/proguard/monoandroid81" t="Include">
+    <e p="$PROJECT_DIR$/../.nuget/packages/xamarin.android.arch.lifecycle.runtime/1.1.1.1/proguard/monoandroid81" t="Include">
       <e p="proguard.txt" t="Include" />
     </e>
-    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.animated.vector.drawable/28.0.0.1/proguard/monoandroid81" t="Include">
+    <e p="$PROJECT_DIR$/../.nuget/packages/xamarin.android.support.animated.vector.drawable/28.0.0.1/proguard/monoandroid81" t="Include">
       <e p="proguard.txt" t="Include" />
     </e>
-    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.core.ui/28.0.0.1/proguard/monoandroid81" t="Include">
+    <e p="$PROJECT_DIR$/../.nuget/packages/xamarin.android.support.core.ui/28.0.0.1/proguard/monoandroid81" t="Include">
       <e p="proguard.txt" t="Include" />
     </e>
-    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.design/28.0.0.1/proguard/monoandroid81" t="Include">
+    <e p="$PROJECT_DIR$/../.nuget/packages/xamarin.android.support.design/28.0.0.1/proguard/monoandroid81" t="Include">
       <e p="proguard.txt" t="Include" />
     </e>
-    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.media.compat/28.0.0.1/proguard/monoandroid81" t="Include">
+    <e p="$PROJECT_DIR$/../.nuget/packages/xamarin.android.support.media.compat/28.0.0.1/proguard/monoandroid81" t="Include">
       <e p="proguard.txt" t="Include" />
     </e>
-    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.transition/28.0.0.1/proguard/monoandroid81" t="Include">
+    <e p="$PROJECT_DIR$/../.nuget/packages/xamarin.android.support.transition/28.0.0.1/proguard/monoandroid81" t="Include">
       <e p="proguard.txt" t="Include" />
     </e>
-    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.v7.recyclerview/28.0.0.1/proguard/monoandroid81" t="Include">
+    <e p="$PROJECT_DIR$/../.nuget/packages/xamarin.android.support.v7.recyclerview/28.0.0.1/proguard/monoandroid81" t="Include">
       <e p="proguard.txt" t="Include" />
     </e>
+    <e p="$PROJECT_DIR$/../Library/Caches/Rider2019.1/extResources" t="IncludeRecursive" />
+    <e p="$PROJECT_DIR$/../Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_WebApp.795360769.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="WebApp" t="IncludeRecursive">
@@ -43,6 +45,8 @@
           <e p="FriendUpdate.cs" t="Include" />
           <e p="GroupTask.cs" t="Include" />
           <e p="History.cs" t="Include" />
+          <e p="Penalty.cs" t="Include" />
+          <e p="Progress.cs" t="Include" />
           <e p="Repetition.cs" t="Include" />
           <e p="User.cs" t="Include" />
         </e>
@@ -79,6 +83,8 @@
           <e p="MyHistory.xaml.cs" t="Include" />
           <e p="MyTaskPage.xaml" t="Include" />
           <e p="MyTaskPage.xaml.cs" t="Include" />
+          <e p="Penalties.xaml" t="Include" />
+          <e p="Penalties.xaml.cs" t="Include" />
           <e p="SettingPage.xaml" t="Include" />
           <e p="SettingPage.xaml.cs" t="Include" />
           <e p="TaskCheckerPopUp.xaml" t="Include" />
@@ -181,8 +187,5 @@
       </e>
       <e p="WebApp.sln" t="IncludeFlat" />
     </e>
-    <e p="$USER_HOME$/Library/Caches/Rider2019.1/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_WebApp.2121638648.00" t="ExcludeRecursive" />
-    <e p="$USER_HOME$/Library/Developer/Xamarin/android-sdk-macosx/platforms/android-27/Data/res" t="IncludeRecursive" />
   </component>
 </project>

@@ -5,6 +5,8 @@
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/mscorlib.dll
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/Newtonsoft.Json.dll
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/Plugin.CurrentActivity.dll
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/Plugin.LocalNotifications.Abstractions.dll
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/Plugin.LocalNotifications.dll
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/Plugin.Media.dll
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/Plugin.Permissions.dll
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/Refractored.XamForms.PullToRefresh.dll

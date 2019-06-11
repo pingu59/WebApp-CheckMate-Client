@@ -153,3 +153,4 @@
 /Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/LoadingPage.xaml.g.cs
 /Users/mianbaodashi/Desktop/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/LoadingPage.xaml.g.cs
 /Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/Penalties.xaml.g.cs
+/Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/ImageHistory.xaml.g.cs

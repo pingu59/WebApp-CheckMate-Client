@@ -10,6 +10,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <Speech/Speech.h>
+#import <UserNotifications/UserNotifications.h>
 #import <Photos/Photos.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <GLKit/GLKit.h>

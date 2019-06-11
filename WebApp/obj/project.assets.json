@@ -129,6 +129,17 @@
           "lib/netstandard2.0/Plugin.Media.dll": {}
         }
       },
+      "Xam.Plugins.Notifier/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/Plugin.LocalNotifications.Abstractions.dll": {},
+          "lib/netstandard1.0/Plugin.LocalNotifications.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Plugin.LocalNotifications.Abstractions.dll": {},
+          "lib/netstandard1.0/Plugin.LocalNotifications.dll": {}
+        }
+      },
       "Xamarin.Essentials/1.0.1": {
         "type": "package",
         "dependencies": {
@@ -571,6 +582,40 @@
         "xam.plugin.media.nuspec"
       ]
     },
+    "Xam.Plugins.Notifier/3.0.1": {
+      "sha512": "2xV8ZSXm0Fo+zAxt2tXw3/mlBSqZ0nR46fJW1a8Yr6mGqcDNbhEGlKJoEUTkLd7gYEMIIx5bVUaMUi34yHGF4w==",
+      "type": "package",
+      "path": "xam.plugins.notifier/3.0.1",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid10/Plugin.LocalNotifications.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.LocalNotifications.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.LocalNotifications.XML",
+        "lib/MonoAndroid10/Plugin.LocalNotifications.dll",
+        "lib/MonoAndroid10/Plugin.LocalNotifications.pdb",
+        "lib/UAP10/Plugin.LocalNotifications.Abstractions.dll",
+        "lib/UAP10/Plugin.LocalNotifications.Abstractions.xml",
+        "lib/UAP10/Plugin.LocalNotifications.XML",
+        "lib/UAP10/Plugin.LocalNotifications.dll",
+        "lib/UAP10/Plugin.LocalNotifications.pdb",
+        "lib/UAP10/Plugin.LocalNotifications.pri",
+        "lib/Xamarin.Mac20/Plugin.LocalNotifications.Abstractions.dll",
+        "lib/Xamarin.Mac20/Plugin.LocalNotifications.Abstractions.xml",
+        "lib/Xamarin.Mac20/Plugin.LocalNotifications.dll",
+        "lib/Xamarin.Mac20/Plugin.LocalNotifications.xml",
+        "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.LocalNotifications.XML",
+        "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll",
+        "lib/netstandard1.0/Plugin.LocalNotifications.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.LocalNotifications.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.LocalNotifications.deps.json",
+        "lib/netstandard1.0/Plugin.LocalNotifications.dll",
+        "lib/netstandard1.0/Plugin.LocalNotifications.xml",
+        "xam.plugins.notifier.3.0.1.nupkg.sha512",
+        "xam.plugins.notifier.nuspec"
+      ]
+    },
     "Xamarin.Essentials/1.0.1": {
       "sha512": "TUsMSXqdLEZlx0O3EcWMwOF5e8X3Gh0GX28FlH3q8iyKAQBYd8tV+Ja7tHMplf7D8V4NVCG9ELqx2nk/jPWPew==",
       "type": "package",
@@ -859,6 +904,7 @@
       "Refractored.XamForms.PullToRefresh >= 2.4.1",
       "Rg.Plugins.Popup >= 1.1.5.188",
       "Xam.Plugin.Media >= 4.0.1.5",
+      "Xam.Plugins.Notifier >= 3.0.1",
       "Xamarin.Essentials >= 1.0.1",
       "Xamarin.Forms >= 4.0.0.425677",
       "sqlite-net-pcl >= 1.5.231"
@@ -924,6 +970,10 @@
           "Xam.Plugin.Media": {
             "target": "Package",
             "version": "[4.0.1.5, )"
+          },
+          "Xam.Plugins.Notifier": {
+            "target": "Package",
+            "version": "[3.0.1, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",
