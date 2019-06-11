@@ -9678,7 +9678,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0
-	.byte 131,122,147,122,91,138,164,70,170,203,113,31,135,87,231,164
+	.byte 100,224,211,45,179,166,150,53,6,100,230,232,146,117,206,182
 	.globl _mono_aot_module_Refractored_XamForms_PullToRefresh_info
 	.align 3
 _mono_aot_module_Refractored_XamForms_PullToRefresh_info:

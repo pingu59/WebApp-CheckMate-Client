@@ -373,6 +373,7 @@
 	-(UIColor *) barTintColor;
 	-(NSDictionary *) largeTitleTextAttributes;
 	-(NSDictionary *) titleTextAttributes;
+	-(void) setTitleTextAttributes:(NSDictionary *)p0;
 @end
 
 @interface UIKit_UISwitch_UISwitchAppearance : UIKit_UIControl_UIControlAppearance {

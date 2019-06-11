@@ -1,5 +1,5 @@
---cache=/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache
---dev=/Users/apple/Xamarin/WebApp.iOS/bin/iPhone/Debug/device-builds/iphone10.5-11.4.1/WebApp.iOS.app
+--cache=/Users/apple/audrey/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-cache
+--dev=/Users/apple/audrey/Xamarin/WebApp.iOS/bin/iPhone/Debug/device-builds/iphone10.5-11.4.1/WebApp.iOS.app
 --executable=WebApp.iOS
 --debug
 --sgen-conc
@@ -10,7 +10,7 @@
 --aot-options=-O=-float32
 --http-message-handler=NSUrlSessionHandler
 --abi=arm64
---symbollist=/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-symbols.list
+--symbollist=/Users/apple/audrey/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/mtouch-symbols.list
 --dsym=no
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll
@@ -18,7 +18,7 @@
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Numerics.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Numerics.Vectors.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll
--r=/Users/apple/Xamarin/WebApp/bin/Debug/netstandard2.0/WebApp.dll
+-r=/Users/apple/audrey/Xamarin/WebApp/bin/Debug/netstandard2.0/WebApp.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/Microsoft.Win32.Primitives.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/Microsoft.Win32.Registry.AccessControl.dll
@@ -215,7 +215,7 @@
 -r=/Users/apple/.nuget/packages/xamarin.forms/4.0.0.425677/lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/apple/.nuget/packages/xamarin.forms/4.0.0.425677/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/apple/.nuget/packages/xamarin.forms/4.0.0.425677/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
--r=/Users/apple/Xamarin/WebApp/bin/Debug/netstandard2.0/WebApp.dll
+-r=/Users/apple/audrey/Xamarin/WebApp/bin/Debug/netstandard2.0/WebApp.dll
 --target-framework=Xamarin.iOS,v1.0
---root-assembly=/Users/apple/Xamarin/WebApp.iOS/bin/iPhone/Debug/WebApp.iOS.exe
+--root-assembly=/Users/apple/audrey/Xamarin/WebApp.iOS/bin/iPhone/Debug/WebApp.iOS.exe
 

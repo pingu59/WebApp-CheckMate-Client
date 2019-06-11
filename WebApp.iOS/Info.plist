@@ -26,6 +26,12 @@
 	<string>WebApp</string>
 	<key>CFBundleIdentifier</key>
 	<string>group27.WebApp</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>FrederickatheGreat-Regular.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>XSAppIconAssets</key>

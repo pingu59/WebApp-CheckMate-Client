@@ -27,11 +27,11 @@ namespace WebApp.Views
             list.ItemsSource = ps;
         }
 
-        public async void tapped(object sender, ItemTappedEventArgs e)
+        public async void tapped(object sender, EventArgs e)
         {
             if (fe.FriendID != Constants.me.userid)
             {
-                Penalty p = (Penalty)e.Item;
+                Penalty p = (Penalty)sender;
                 bool confirm = await DisplayAlert("(★ゝω・)b⌒☆", "Have your friend fullfilled his/her penalty?", "Yes", "Not yet");
                 if (confirm)
                 {

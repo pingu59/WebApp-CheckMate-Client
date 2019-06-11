@@ -27,7 +27,11 @@ namespace WebApp.iOS
             Rg.Plugins.Popup.Popup.Init();
             global::Xamarin.Forms.Forms.Init();
             PullToRefreshLayoutRenderer.Init();
-            LoadApplication(new App());
+            UINavigationBar.Appearance.SetTitleTextAttributes(new UITextAttributes
+            {
+                TextColor = UIColor.Black,
+                Font = UIFont.FromName("FrederickatheGreat-Regular", 24)
+            });
             if (UIDevice.CurrentDevice.CheckSystemVersion(10, 0))
             {
                 // Ask the user for permission to get notifications on iOS 10.0+
@@ -44,6 +48,7 @@ namespace WebApp.iOS
 
                 UIApplication.SharedApplication.RegisterUserNotificationSettings(settings);
             }
+            LoadApplication(new App());
             return base.FinishedLaunching(app, options);
         }
     }

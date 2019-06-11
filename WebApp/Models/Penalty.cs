@@ -11,7 +11,7 @@ namespace WebApp.Models
         public string date;
         public int taskid;
         public List<int> members;
-        public List<string> names = new List<string>(); 
+        public List<string> names; 
         [JsonConstructor]
         public Penalty(string date, int taskid, List<int> members)
         {

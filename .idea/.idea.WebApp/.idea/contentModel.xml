@@ -71,6 +71,8 @@
           <e p="CreateAccountPage.xaml.cs" t="Include" />
           <e p="FriendRequestsListPage.xaml" t="Include" />
           <e p="FriendRequestsListPage.xaml.cs" t="Include" />
+          <e p="ImageHistory.xaml" t="Include" />
+          <e p="ImageHistory.xaml.cs" t="Include" />
           <e p="IndividualTaskPopUp.xaml" t="Include" />
           <e p="IndividualTaskPopUp.xaml.cs" t="Include" />
           <e p="InvolveFriend.xaml" t="Include" />

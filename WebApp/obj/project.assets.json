@@ -350,6 +350,7 @@
       "type": "package",
       "path": "plugin.permissions/3.0.0.12",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/monoandroid71/Plugin.Permissions.dll",
         "lib/monoandroid71/Plugin.Permissions.xml",
@@ -374,6 +375,7 @@
       "files": [
         ".signature.p7s",
         "lib/monoandroid81/Refractored.XamForms.PullToRefresh.dll",
+        "lib/monoandroid81/Refractored.XamForms.PullToRefresh.dll.mdb",
         "lib/monoandroid81/Refractored.XamForms.PullToRefresh.pdb",
         "lib/monoandroid81/Refractored.XamForms.PullToRefresh.xml",
         "lib/monoandroid90/Refractored.XamForms.PullToRefresh.dll",
@@ -563,6 +565,7 @@
       "type": "package",
       "path": "xam.plugin.media/4.0.1.5",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/monoandroid71/Plugin.Media.dll",
         "lib/monoandroid71/Plugin.Media.xml",
@@ -592,6 +595,7 @@
         "lib/MonoAndroid10/Plugin.LocalNotifications.Abstractions.xml",
         "lib/MonoAndroid10/Plugin.LocalNotifications.XML",
         "lib/MonoAndroid10/Plugin.LocalNotifications.dll",
+        "lib/MonoAndroid10/Plugin.LocalNotifications.dll.mdb",
         "lib/MonoAndroid10/Plugin.LocalNotifications.pdb",
         "lib/UAP10/Plugin.LocalNotifications.Abstractions.dll",
         "lib/UAP10/Plugin.LocalNotifications.Abstractions.xml",
@@ -917,11 +921,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/apple/Xamarin/WebApp/WebApp.csproj",
+      "projectUniqueName": "/Users/apple/audrey/Xamarin/WebApp/WebApp.csproj",
       "projectName": "WebApp",
-      "projectPath": "/Users/apple/Xamarin/WebApp/WebApp.csproj",
+      "projectPath": "/Users/apple/audrey/Xamarin/WebApp/WebApp.csproj",
       "packagesPath": "/Users/apple/.nuget/packages/",
-      "outputPath": "/Users/apple/Xamarin/WebApp/obj/",
+      "outputPath": "/Users/apple/audrey/Xamarin/WebApp/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

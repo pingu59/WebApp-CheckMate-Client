@@ -136,4 +136,7 @@
   <ItemGroup>
     <Folder Include="Assets.xcassets\Search.imageset\" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FrederickatheGreat-Regular.ttf" />
+  </ItemGroup>
 </Project>

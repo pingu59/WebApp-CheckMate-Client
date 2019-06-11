@@ -598,6 +598,7 @@
       "type": "package",
       "path": "plugin.currentactivity/2.1.0.2",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/monoandroid44/Plugin.CurrentActivity.dll",
         "lib/monoandroid44/Plugin.CurrentActivity.xml",
@@ -611,6 +612,7 @@
       "type": "package",
       "path": "plugin.permissions/3.0.0.12",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/monoandroid71/Plugin.Permissions.dll",
         "lib/monoandroid71/Plugin.Permissions.xml",
@@ -635,6 +637,7 @@
       "files": [
         ".signature.p7s",
         "lib/monoandroid81/Refractored.XamForms.PullToRefresh.dll",
+        "lib/monoandroid81/Refractored.XamForms.PullToRefresh.dll.mdb",
         "lib/monoandroid81/Refractored.XamForms.PullToRefresh.pdb",
         "lib/monoandroid81/Refractored.XamForms.PullToRefresh.xml",
         "lib/monoandroid90/Refractored.XamForms.PullToRefresh.dll",
@@ -848,6 +851,7 @@
       "type": "package",
       "path": "xam.plugin.media/4.0.1.5",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/monoandroid71/Plugin.Media.dll",
         "lib/monoandroid71/Plugin.Media.xml",
@@ -877,6 +881,7 @@
         "lib/MonoAndroid10/Plugin.LocalNotifications.Abstractions.xml",
         "lib/MonoAndroid10/Plugin.LocalNotifications.XML",
         "lib/MonoAndroid10/Plugin.LocalNotifications.dll",
+        "lib/MonoAndroid10/Plugin.LocalNotifications.dll.mdb",
         "lib/MonoAndroid10/Plugin.LocalNotifications.pdb",
         "lib/UAP10/Plugin.LocalNotifications.Abstractions.dll",
         "lib/UAP10/Plugin.LocalNotifications.Abstractions.xml",
@@ -1649,11 +1654,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/apple/Xamarin/WebApp.Android/WebApp.Android.csproj",
+      "projectUniqueName": "/Users/apple/audrey/Xamarin/WebApp.Android/WebApp.Android.csproj",
       "projectName": "WebApp.Android",
-      "projectPath": "/Users/apple/Xamarin/WebApp.Android/WebApp.Android.csproj",
+      "projectPath": "/Users/apple/audrey/Xamarin/WebApp.Android/WebApp.Android.csproj",
       "packagesPath": "/Users/apple/.nuget/packages/",
-      "outputPath": "/Users/apple/Xamarin/WebApp.Android/obj/",
+      "outputPath": "/Users/apple/audrey/Xamarin/WebApp.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1668,8 +1673,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "/Users/apple/Xamarin/WebApp/WebApp.csproj": {
-              "projectPath": "/Users/apple/Xamarin/WebApp/WebApp.csproj"
+            "/Users/apple/audrey/Xamarin/WebApp/WebApp.csproj": {
+              "projectPath": "/Users/apple/audrey/Xamarin/WebApp/WebApp.csproj"
             }
           }
         }

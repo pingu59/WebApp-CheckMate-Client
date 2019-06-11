@@ -3,5 +3,23 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WebApp.App">
     <Application.Resources>
+        <ResourceDictionary>
+            
+            <OnPlatform x:TypeArguments="x:String" x:Key="custom font">
+                <On Platform="iOS" Value="FrederickatheGreat-Regular"/>
+                <!--<On Platform="Android" Value="FrederickGreat-Regular.ttf#Regular"/>-->
+            </OnPlatform>
+            
+            
+            <Style x:Key="buttonStyle" TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <!--<Setter Property="VerticalOptions" Value="CenterAndExpand" />-->
+                <Setter Property="BorderColor" Value="Teal" />
+                <Setter Property="BorderRadius" Value="5" />
+                <Setter Property="BorderWidth" Value="5" />
+                <Setter Property="WidthRequest" Value="200" />
+                <Setter Property="TextColor" Value="Teal" />
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

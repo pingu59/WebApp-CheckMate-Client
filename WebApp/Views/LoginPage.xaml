@@ -16,6 +16,7 @@
             <Button x:Name="Button_Register"
                     Text="Not a user? Register here"
                     Clicked="OnRegisterButtonClicked" />
+            <Label Text="Test" FontFamily="{StaticResource custom font}" FontSize="30"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
