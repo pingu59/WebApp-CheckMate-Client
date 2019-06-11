@@ -16,7 +16,7 @@ namespace WebApp.Models
         public string username;
         TapGestureRecognizer tapRecog;
         [JsonConstructor]
-        public FriendUpdate(int taskID,int updateNumber, string image, int userid)
+        public FriendUpdate(int taskID, int updateNumber, string image, int userid)
         {
             this.taskID = taskID;
             this.updateNo = updateNumber;
@@ -37,8 +37,8 @@ namespace WebApp.Models
                 Frame taskCard = new Frame
                 {
                     CornerRadius = 10,
-                    Padding = 10,
-                    BackgroundColor = Color.Yellow,
+                    Padding = 15,
+                    BackgroundColor = Color.FromRgb(248, 151, 96),
                     HeightRequest = 60,
                     Margin = 20,
                     HorizontalOptions = LayoutOptions.Center,
@@ -70,14 +70,16 @@ namespace WebApp.Models
             grid.Children.Add(new Label
             {
                 Text = username,
-                FontSize = 15,
+                FontFamily = Device.RuntimePlatform == Device.iOS ? "Handlee" : null,
+                FontSize = 13,
                 TextColor = Color.White
             }, 0, 0);
 
             grid.Children.Add(new Label
             {
                 Text = task.taskname,
-                FontSize = 30,
+                FontFamily = Device.RuntimePlatform == Device.iOS ? "Handlee" : null,
+                FontSize = 20,
                 TextColor = Color.White,
                 HorizontalOptions = LayoutOptions.Start
             }, 0, 1);

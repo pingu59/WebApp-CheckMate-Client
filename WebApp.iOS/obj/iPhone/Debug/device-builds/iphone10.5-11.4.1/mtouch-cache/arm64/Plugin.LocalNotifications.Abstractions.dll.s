@@ -154,7 +154,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0
-	.byte 92,69,0,155,157,96,110,224,37,71,169,77,239,152,5,225
+	.byte 172,4,121,179,84,156,41,176,182,86,65,27,23,193,93,59
 	.globl _mono_aot_module_Plugin_LocalNotifications_Abstractions_info
 	.align 3
 _mono_aot_module_Plugin_LocalNotifications_Abstractions_info:

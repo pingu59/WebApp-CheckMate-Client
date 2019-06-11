@@ -92,34 +92,36 @@ namespace WebApp.Models
             {
                 VerticalOptions = LayoutOptions.CenterAndExpand,
                 ColumnDefinitions =
-                {
-                    new ColumnDefinition {Width = 220},
-                    new ColumnDefinition {Width = 130}
-                },
+        {
+            new ColumnDefinition {Width = 210},
+            new ColumnDefinition {Width = 140}
+        },
                 RowDefinitions =
-                {
-                    new RowDefinition {Height = 40},
-                    new RowDefinition {Height = 20}
-                }
+        {
+            new RowDefinition {Height = 40},
+            new RowDefinition {Height = 20}
+        }
             };
             grid.Children.Add(new Label
             {
                 Text = taskname,
-                FontSize = 20, // need to change here to some auto fit
+                FontFamily = Device.RuntimePlatform == Device.iOS ? "Handlee" : null,
+                FontSize = 20, // need to change here to some auto fit                                     
                 TextColor = Color.White
             }, 0, 0);
             StackLayout layout2 = new StackLayout { };
-            //layout2.Children.Add(new Label
-            //{
-            //    Text = getStatusString(),
-            //    FontSize = 10,
-            //    TextColor = Color.FromHex("675533"),
-            //    HorizontalOptions = LayoutOptions.Start
-            //});
+            //layout2.Children.Add(new Label                                                               
+            //{                                                                                            
+            //    Text = getStatusString(),                                                                
+            //    FontSize = 10,                                                                           
+            //    TextColor = Color.FromHex("675533"),                                                     
+            //    HorizontalOptions = LayoutOptions.Start                                                  
+            //});                                                                                          
             layout2.Children.Add(new Label
             {
                 Text = deadline.ToShortDateString(),
-                FontSize = 10,
+                FontFamily = Device.RuntimePlatform == Device.iOS ? "Handlee" : null,
+                FontSize = 13,
                 TextColor = Color.White,
                 HorizontalOptions = LayoutOptions.Start
             });
@@ -127,20 +129,20 @@ namespace WebApp.Models
             grid.Children.Add(new Label
             {
                 Text = RepetitionConverter.RepToString(repetition),
-                FontSize = 10,
+                FontSize = 13,
             }, 1, 1);
             return grid;
         }
 
         internal virtual Frame GetView()
         {
-            if(view == null)
+            if (view == null)
             {
                 Frame taskCard = new Frame
                 {
                     CornerRadius = 10,
-                    BackgroundColor = Color.FromHex("97B245"),
-                    Padding = 20,
+                    BackgroundColor = Color.FromRgb(66, 194, 169),
+                    Padding = 15,
                     HeightRequest = 60,
                     Margin = 20,
                     HorizontalOptions = LayoutOptions.Center,

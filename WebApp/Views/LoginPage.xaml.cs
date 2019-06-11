@@ -109,6 +109,8 @@ namespace WebApp.Views
                     Friend.LoadFromLocal();
                 }
                 PushToMyTask();
+                Constants.firstLoginToday = UserLog.isFirstLoginToday();
+                UserLog.WriteLoginTime();
             }
         }
 

@@ -34,6 +34,23 @@ namespace WebApp
 
             }
         }
+        public static SQLiteAsyncConnection UserLogDB
+        {
+            get
+            {
+                string logPath = Path.Combine(Constants.PathPrefix, Constants.LogFile);
+                if (File.Exists(logPath))
+                {
+                    return new SQLiteAsyncConnection(logPath);
+                }
+                else
+                {
+                    SQLiteAsyncConnection connection = new SQLiteAsyncConnection(logPath);
+                    connection.CreateTableAsync<UserLog>().Wait();
+                    return connection;
+                }
+            }
+        }
 
         public App()
         {
@@ -57,6 +74,8 @@ namespace WebApp
                 MainPage = new NavigationPage(login);
 
                 login.PushToMyTask();
+                Constants.firstLoginToday = UserLog.isFirstLoginToday();
+                UserLog.WriteLoginTime();
             }
             CrossLocalNotifications.Current.Show("Good morning(✿◖◡◗)ﾉ!",
           "Would you mind to check your todo lists for today?", 1, DateTime.Today.AddDays(1).AddHours(8));
@@ -76,6 +95,8 @@ namespace WebApp
         protected override void OnResume()
         {
             // Handle when your app resumes
+            Constants.firstLoginToday = UserLog.isFirstLoginToday();
+            UserLog.WriteLoginTime();
         }
 
         //return default user database index

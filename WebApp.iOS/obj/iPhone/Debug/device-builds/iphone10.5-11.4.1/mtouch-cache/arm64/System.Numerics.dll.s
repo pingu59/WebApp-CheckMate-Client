@@ -29572,7 +29572,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0
-	.byte 129,54,199,135,192,62,68,162,177,146,4,106,233,122,62,175
+	.byte 172,142,253,47,181,118,34,203,134,172,11,95,185,218,214,159
 	.globl _mono_aot_module_System_Numerics_info
 	.align 3
 _mono_aot_module_System_Numerics_info:

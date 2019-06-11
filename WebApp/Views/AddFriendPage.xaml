@@ -4,6 +4,7 @@
              x:Class="WebApp.Views.AddFriendPage">
     <ContentPage.Content>
         <StackLayout>
+            <Label Margin="30"/>
             <Label x:Name="Label_Username" Text="User ID" />
             <Entry x:Name="Entry_Username" Placeholder="User ID" />
             <Button x:Name="Button_Confirm"

@@ -138,5 +138,6 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\FrederickatheGreat-Regular.ttf" />
+    <BundleResource Include="Resources\Handlee.ttf" />
   </ItemGroup>
 </Project>

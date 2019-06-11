@@ -20,10 +20,11 @@
             <Grid VerticalOptions="FillAndExpand">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="70" />
-                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <StackLayout Grid.Row="0" Grid.Column="0" VerticalOptions="FillAndExpand">
-                    <Button Text="Inbox" Clicked="ToReceivedRequest"/>
+                    <Button Text="Friends" Clicked="ToReceivedRequest" FontSize="20"
+                            FontFamily="{StaticResource Handlee}" TextColor="#FF9790"/>
                     <ScrollView>
                         <StackLayout x:Name="FriendList" Margin="5"/>
                     </ScrollView>
@@ -33,7 +34,7 @@
                     Grid.Row="0" Grid.Column="1" 
                     VerticalOptions="Fill">
                 <ScrollView VerticalOptions="FillAndExpand">
-                    <StackLayout x:Name="FriendTasks"/>
+                    <StackLayout x:Name="FriendTasks" Margin="20"/>
                 </ScrollView>
                 </controls:PullToRefreshLayout>
 
@@ -67,13 +68,16 @@
 
             <Button x:Name="Button_Setting"
                     Text="Setting"
-                    Clicked="OnSettingButtonClicked" />
+                    Clicked="OnSettingButtonClicked"
+                    FontFamily="{StaticResource Handlee}" Style="{StaticResource buttons}"/>
             <Button x:Name="Button_About"
                     Text="About"
-                    Clicked="OnAboutButtonClicked" />
+                    Clicked="OnAboutButtonClicked" 
+                    FontFamily="{StaticResource Handlee}" Style="{StaticResource buttons}" />
             <Button x:Name="Button_LogOut"
                     Text="Log Out"
-                    Clicked="OnLogOutButtonClicked" />
+                    Clicked="OnLogOutButtonClicked"
+                    FontFamily="{StaticResource Handlee}" Style="{StaticResource buttons}"/>
         </StackLayout>
     </ContentPage>
 

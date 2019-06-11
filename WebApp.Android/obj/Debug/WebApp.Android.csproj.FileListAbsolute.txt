@@ -227,3 +227,6 @@
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/stamp/_CopyMdbFiles.stamp
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/stamp/_CopyPdbFiles.stamp
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/machine.config
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/stamp/_CompileToDalvik.stamp
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp

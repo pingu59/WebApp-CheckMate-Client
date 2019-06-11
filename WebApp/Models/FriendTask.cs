@@ -25,13 +25,13 @@ namespace WebApp.Models
 
         public Frame GetView()
         {
-            if(view == null)
+            if (view == null)
             {
                 Frame taskCard = new Frame
                 {
                     CornerRadius = 10,
-                    Padding = 10,
-                    BackgroundColor = Color.Gray,
+                    Padding = 15,
+                    BackgroundColor = Color.FromRgb(66, 194, 169),
                     HeightRequest = 60,
                     Margin = 20,
                     HorizontalOptions = LayoutOptions.Center,
@@ -60,10 +60,13 @@ namespace WebApp.Models
                     new RowDefinition {Height = 40}
                 }
             };
+
+
             grid.Children.Add(new Label
             {
                 Text = taskname,
-                FontSize = 30,
+                FontFamily = Device.RuntimePlatform == Device.iOS ? "Handlee" : null,
+                FontSize = 20,
                 TextColor = Color.White,
                 HorizontalOptions = LayoutOptions.Start
             }, 0, 1);

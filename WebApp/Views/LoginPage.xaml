@@ -6,17 +6,20 @@
              NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
         <StackLayout>
-            <Label Margin="10" Text="User ID" />
-            <Entry x:Name="Entry_UserID" Placeholder="User ID" />
-            <Label Margin="10" Text="Password" />
-            <Entry x:Name="Entry_Password" Placeholder="Password" />
+            <Label Margin="30" />
+            <Label Margin="15" Text="User ID" FontFamily="{StaticResource Handlee}" FontSize="25"/>
+            <Entry x:Name="Entry_UserID" Placeholder="please enter your ID" 
+                   FontFamily="{StaticResource Handlee}" FontSize="20"/>
+            <Label Margin="15" Text="Password" FontFamily="{StaticResource Handlee}" FontSize="25"/>
+            <Entry x:Name="Entry_Password" Placeholder="please enter your password"
+                   FontFamily="{StaticResource Handlee}" FontSize="20" IsPassword="true"/>
+            <Label Margin="30" />
             <Button x:Name="Button_Signin"
-                    Text="Sign in"
-                    Clicked="OnSigninButtonClicked" />
+                    Text="Sign in" FontFamily="{StaticResource Handlee}"
+                    Clicked="OnSigninButtonClicked" Style="{StaticResource buttons}"/>
             <Button x:Name="Button_Register"
-                    Text="Not a user? Register here"
-                    Clicked="OnRegisterButtonClicked" />
-            <Label Text="Test" FontFamily="{StaticResource custom font}" FontSize="30"/>
+                    Text="Not a user? Register here" FontFamily="{StaticResource Handlee}"
+                    Clicked="OnRegisterButtonClicked" Style="{StaticResource buttons}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -13,7 +13,7 @@ namespace WebApp.Models
         public string FriendName { get; set; }
         private View view;
         TapGestureRecognizer tapRecog;
-        public FriendEntity(){}
+        public FriendEntity() { }
         [JsonConstructor]
         public FriendEntity(int FriendId, string FriendName)
         {
@@ -28,13 +28,14 @@ namespace WebApp.Models
         {
             if (view == null)
             {
-                view = new Label
+                View view = new Label
                 {
-                    Text = FriendName
+                    Text = FriendName,
                 };
                 view.GestureRecognizers.Add(tapRecog);
+                this.view = view;
             }
-            return view;
+            return this.view;
         }
 
         public override string ToString()

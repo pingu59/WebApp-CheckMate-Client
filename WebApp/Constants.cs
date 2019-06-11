@@ -22,6 +22,7 @@ namespace WebApp
         public static string PathPrefix = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
         //public static string PathPrefix = "/Users/mianbaodashi/Desktop/localDB/";
         public static string userDBFile = "UsersList.db3";
+        public static string LogFile = "UserLog.db3";
 
         public static int SERVER_ERROR = -1;
         public static int ERROR = 0;
@@ -50,6 +51,7 @@ namespace WebApp
         public static List<FriendTask> FriendTasks;
         public static List<GroupTask> MyTask;
         public static Task backgroudProcess;
+        public static bool firstLoginToday;
 
         public static string getUsername(int id)
         {

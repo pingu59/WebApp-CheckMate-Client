@@ -58,6 +58,7 @@
           </e>
         </e>
         <e p="UserDBModel.cs" t="Include" />
+        <e p="UserLog.cs" t="Include" />
         <e p="Views" t="Include">
           <e p="AboutPage.xaml" t="Include" />
           <e p="AboutPage.xaml.cs" t="Include" />
@@ -183,6 +184,8 @@
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
         <e p="Resources" t="Include">
+          <e p="FrederickatheGreat-Regular.ttf" t="Include" />
+          <e p="Handlee.ttf" t="Include" />
           <e p="LaunchScreen.storyboard" t="Include" />
         </e>
         <e p="WebApp.iOS.csproj" t="IncludeRecursive" />
