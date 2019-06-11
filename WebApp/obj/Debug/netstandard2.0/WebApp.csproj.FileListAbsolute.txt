@@ -185,3 +185,4 @@
 /Users/apple/audrey/Xamarin/WebApp/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/apple/audrey/Xamarin/WebApp/obj/Debug/netstandard2.0/WebApp.dll
 /Users/apple/audrey/Xamarin/WebApp/obj/Debug/netstandard2.0/WebApp.pdb
+/Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/ImageHistory.xaml.g.cs

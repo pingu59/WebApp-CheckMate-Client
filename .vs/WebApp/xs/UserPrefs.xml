@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{FC97C75F-7E78-408D-BD0A-42ADF0A53DCD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp.iOS/AppDelegate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Models/Penalty.cs">
     <Files>
       <File FileName="WebApp/Data/Communications.cs" Line="386" Column="10" />
       <File FileName="WebApp/Views/Penalties.xaml.cs" Line="51" Column="89" />
       <File FileName="WebApp.iOS/AppDelegate.cs" Line="31" Column="1" />
       <File FileName="WebApp/App.xaml.cs" Line="61" Column="12" />
-      <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="75" Column="36" />
+      <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="75" Column="10" />
       <File FileName="WebApp/Models/GroupTask.cs" Line="150" Column="44" />
       <File FileName="WebApp/Models/History.cs" Line="28" Column="1" />
       <File FileName="WebApp/Data/ImageConvertors.cs" Line="7" Column="9" />
@@ -17,6 +17,8 @@
       <File FileName="WebApp/Views/ImageHistory.xaml.cs" Line="18" Column="1" />
       <File FileName="WebApp/Views/IndividualTaskPopUp.xaml" />
       <File FileName="WebApp/Views/IndividualTaskPopUp.xaml.cs" Line="11" Column="80" />
+      <File FileName="WebApp.iOS/Main.cs" Line="18" Column="1" />
+      <File FileName="WebApp/Models/Penalty.cs" Line="25" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -28,7 +30,9 @@
                 <Node name="SdkDependencies" expanded="True" />
               </Node>
               <Node name="Data" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Penalty.cs" selected="True" />
+              </Node>
               <Node name="Views" expanded="True">
                 <Node name="AddFriendPage.xaml" expanded="True" />
                 <Node name="AddTask.xaml" expanded="True" />
@@ -47,7 +51,6 @@
             <Node name="WebApp.iOS" expanded="True">
               <Node name="Properties" expanded="True" />
               <Node name="Resources" expanded="True" />
-              <Node name="AppDelegate.cs" selected="True" />
             </Node>
           </Node>
         </State>

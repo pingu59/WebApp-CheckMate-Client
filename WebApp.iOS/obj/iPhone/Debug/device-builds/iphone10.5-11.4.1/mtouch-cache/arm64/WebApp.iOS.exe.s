@@ -121,7 +121,7 @@ jit_code_start:
 	.align 4
 	.no_dead_strip WebApp_iOS_Application_Main_string__
 WebApp_iOS_Application_Main_string__:
-.file 1 "/Users/apple/audrey/Xamarin/WebApp.iOS/Main.cs"
+.file 1 "/Users/apple/Xamarin/WebApp.iOS/Main.cs"
 .loc 1 15 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -212,7 +212,7 @@ Lme_1:
 	.align 4
 	.no_dead_strip WebApp_iOS_AppDelegate_FinishedLaunching_UIKit_UIApplication_Foundation_NSDictionary
 WebApp_iOS_AppDelegate_FinishedLaunching_UIKit_UIApplication_Foundation_NSDictionary:
-.file 2 "/Users/apple/audrey/Xamarin/WebApp.iOS/AppDelegate.cs"
+.file 2 "/Users/apple/Xamarin/WebApp.iOS/AppDelegate.cs"
 .loc 2 26 0 prologue_end
 .word 0xa9b07bfd
 .word 0x910003fd
@@ -1248,7 +1248,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "A37F45B5-80F6-4D70-8C89-6A258E674B14"
+	.asciz "D0815B99-FF9E-4A9C-BD90-08DACBA5A4E2"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -1338,7 +1338,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0
-	.byte 125,68,83,226,51,29,140,87,255,239,63,213,127,74,70,4
+	.byte 228,156,179,69,168,60,253,0,140,232,215,64,60,94,49,2
 	.globl _mono_aot_module_WebApp_iOS_info
 	.align 3
 _mono_aot_module_WebApp_iOS_info:

@@ -1654,11 +1654,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/apple/audrey/Xamarin/WebApp.Android/WebApp.Android.csproj",
+      "projectUniqueName": "/Users/apple/Xamarin/WebApp.Android/WebApp.Android.csproj",
       "projectName": "WebApp.Android",
-      "projectPath": "/Users/apple/audrey/Xamarin/WebApp.Android/WebApp.Android.csproj",
+      "projectPath": "/Users/apple/Xamarin/WebApp.Android/WebApp.Android.csproj",
       "packagesPath": "/Users/apple/.nuget/packages/",
-      "outputPath": "/Users/apple/audrey/Xamarin/WebApp.Android/obj/",
+      "outputPath": "/Users/apple/Xamarin/WebApp.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1673,8 +1673,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "/Users/apple/audrey/Xamarin/WebApp/WebApp.csproj": {
-              "projectPath": "/Users/apple/audrey/Xamarin/WebApp/WebApp.csproj"
+            "/Users/apple/Xamarin/WebApp/WebApp.csproj": {
+              "projectPath": "/Users/apple/Xamarin/WebApp/WebApp.csproj"
             }
           }
         }

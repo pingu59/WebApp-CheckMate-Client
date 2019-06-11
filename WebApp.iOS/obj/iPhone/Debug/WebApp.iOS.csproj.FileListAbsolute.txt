@@ -217,3 +217,5 @@
 /Users/apple/audrey/Xamarin/WebApp.iOS/obj/iPhone/Debug/WebApp.iOS.csproj.CopyComplete
 /Users/apple/audrey/Xamarin/WebApp.iOS/obj/iPhone/Debug/WebApp.iOS.exe
 /Users/apple/audrey/Xamarin/WebApp.iOS/obj/iPhone/Debug/WebApp.iOS.pdb
+/Users/apple/Xamarin/WebApp.iOS/bin/iPhone/Debug/Plugin.LocalNotifications.Abstractions.dll
+/Users/apple/Xamarin/WebApp.iOS/bin/iPhone/Debug/Plugin.LocalNotifications.dll

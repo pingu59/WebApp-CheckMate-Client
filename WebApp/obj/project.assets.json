@@ -921,11 +921,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/apple/audrey/Xamarin/WebApp/WebApp.csproj",
+      "projectUniqueName": "/Users/apple/Xamarin/WebApp/WebApp.csproj",
       "projectName": "WebApp",
-      "projectPath": "/Users/apple/audrey/Xamarin/WebApp/WebApp.csproj",
+      "projectPath": "/Users/apple/Xamarin/WebApp/WebApp.csproj",
       "packagesPath": "/Users/apple/.nuget/packages/",
-      "outputPath": "/Users/apple/audrey/Xamarin/WebApp/obj/",
+      "outputPath": "/Users/apple/Xamarin/WebApp/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
