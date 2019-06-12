@@ -122,6 +122,12 @@
     <ImageAsset Include="Assets.xcassets\FlashImage.imageset\屏幕快照 2019-06-12 下午5.05.55.png" />
     <ImageAsset Include="Assets.xcassets\FlashImage.imageset\屏幕快照 2019-06-12 下午5.05.55-1.png" />
     <InterfaceDefinition Include="Resources\Flash.storyboard" />
+    <ImageAsset Include="Assets.xcassets\avatar0.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\avatar0.imageset\8101560351452_.pic.jpg" />
+    <ImageAsset Include="Assets.xcassets\avatar1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\avatar1.imageset\屏幕快照 2018-02-18 下午11.32.15.png" />
+    <ImageAsset Include="Assets.xcassets\avatar2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\avatar2.imageset\601560361267_.pic.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -145,9 +151,13 @@
   <ItemGroup>
     <Folder Include="Assets.xcassets\Search.imageset\" />
     <Folder Include="Assets.xcassets\FlashImage.imageset\" />
+    <Folder Include="Assets.xcassets\avatar0.imageset\" />
+    <Folder Include="Assets.xcassets\avatar1.imageset\" />
+    <Folder Include="Assets.xcassets\avatar2.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\FrederickatheGreat-Regular.ttf" />
     <BundleResource Include="Resources\Handlee.ttf" />
+    <BundleResource Include="Resources\default_avatar0.jpeg" />
   </ItemGroup>
 </Project>

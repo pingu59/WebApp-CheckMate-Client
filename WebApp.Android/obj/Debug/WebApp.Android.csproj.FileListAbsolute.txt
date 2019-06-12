@@ -230,3 +230,9 @@
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/machine.config
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/stamp/_CompileToDalvik.stamp
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
+/Users/apple/Xamarin/WebApp.Android/bin/Debug/Xamarin.iOS.pdb
+/Users/apple/Xamarin/WebApp.Android/bin/Debug/Xamarin.iOS.dll
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/linksrc/Xamarin.iOS.dll
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/linksrc/Xamarin.iOS.pdb
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/Xamarin.iOS.dll
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/Xamarin.iOS.pdb

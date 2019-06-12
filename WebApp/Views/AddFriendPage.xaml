@@ -5,10 +5,12 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Margin="30"/>
-            <Label x:Name="Label_Username" Text="User ID" />
-            <Entry x:Name="Entry_Username" Placeholder="User ID" />
+            <Label x:Name="Label_Username" Text="User ID"  
+                   Style="{StaticResource largeLabel}" FontFamily="{StaticResource Handlee}"/>
+            <Entry x:Name="Entry_Username" Placeholder="User ID" 
+                   Style="{StaticResource entryStyle}" FontFamily="{StaticResource Handlee}"/>
             <Button x:Name="Button_Confirm"
-                    Text="Confirm"
+                    Text="Confirm" Style="{StaticResource buttons}" FontFamily="{StaticResource Handlee}"
                     Clicked="OnConfirmButtonClicked" />
         </StackLayout>
     </ContentPage.Content>

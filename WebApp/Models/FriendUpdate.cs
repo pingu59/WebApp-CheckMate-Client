@@ -38,7 +38,7 @@ namespace WebApp.Models
                 {
                     CornerRadius = 10,
                     Padding = 15,
-                    BackgroundColor = Color.FromRgb(248, 151, 96),
+                    BackgroundColor = Color.FromRgb(248, 213, 36),
                     HeightRequest = 60,
                     Margin = 20,
                     HorizontalOptions = LayoutOptions.Center,
@@ -71,7 +71,7 @@ namespace WebApp.Models
             {
                 Text = username,
                 FontFamily = Device.RuntimePlatform == Device.iOS ? "Handlee" : null,
-                FontSize = 13,
+                FontSize = 20,
                 TextColor = Color.White
             }, 0, 0);
 

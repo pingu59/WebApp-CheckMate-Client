@@ -12,12 +12,14 @@ namespace WebApp.Models
         public int FriendID { get; set; }
         public string FriendName { get; set; }
         private View view;
+        private int avatarNum;
         TapGestureRecognizer tapRecog;
         public FriendEntity() { }
         [JsonConstructor]
-        public FriendEntity(int FriendId, string FriendName)
+        public FriendEntity(int FriendId, string FriendName, int avatarNum)
         {
             this.FriendID = FriendId;
+            this.avatarNum = avatarNum;
             this.FriendName = FriendName.Substring(1, FriendName.Length - 2);
             tapRecog = new TapGestureRecognizer();
             tapRecog.Tapped += (sender, e) => { Constants.mainPage.DisplayPenalties(this); };
@@ -28,15 +30,15 @@ namespace WebApp.Models
         {
             if (view == null)
             {
-                View view = new Label
+                View v;
+                v = new Image
                 {
-                    Text = FriendName,
-                    FontFamily = Device.RuntimePlatform == Device.iOS ? "Handlee" : null,
-                    Margin = 3,
-                    FontSize = 20
+                    Source = ImageSource.FromFile("avatar" + avatarNum),
+                    Margin = 5,
+                    HeightRequest = 50
                 };
-                view.GestureRecognizers.Add(tapRecog);
-                this.view = view;
+                v.GestureRecognizers.Add(tapRecog);
+                this.view = v;
             }
             return this.view;
         }

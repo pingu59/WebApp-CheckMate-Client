@@ -3,18 +3,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WebApp.Views.SettingPage" Title="Setting">
-    <StackLayout>
-        <Button Margin="5" Text="Profile Photo" BackgroundColor="#e3e5e8"
-                HeightRequest="30" WidthRequest="200"
+    <StackLayout Margin="20">
+        <Button Text="Profile Photo" Style="{StaticResource buttons}" FontFamily="{StaticResource Handlee}"
                 Clicked="OnChangeProfilePhotoClicked" />
-        <Button Margin="5" Text="Gender" BackgroundColor="#e3e5e8"
-                HeightRequest="30" WidthRequest="200"
-                Clicked="OnChangeGenderClicked" />
-        <Button Margin="5" Text="Birthday" BackgroundColor="#e3e5e8"
-                HeightRequest="30" WidthRequest="200"
-                Clicked="OnChangeBirthdayClicked" />
-        <Button Margin="5" Text="Password" BackgroundColor="#e3e5e8"
-                HeightRequest="30" WidthRequest="200"
+        <Button Text="Password" Style="{StaticResource buttons}" FontFamily="{StaticResource Handlee}"
                 Clicked="OnChangePasswordClicked" />
     </StackLayout>
 </ContentPage>

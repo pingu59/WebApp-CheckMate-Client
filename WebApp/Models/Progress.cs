@@ -47,14 +47,16 @@ namespace WebApp.Models
             grid.Children.Add(new Label
             {
                 Text = username,
-                FontSize = 15,
+                FontFamily = Device.RuntimePlatform == Device.iOS ? "Handlee" : null,
+                FontSize = 20,
                 TextColor = Color.White
             }, 0, 0);
 
             grid.Children.Add(new Label
             {
                 Text = getProgressString(),
-                FontSize = 30,
+                FontFamily = Device.RuntimePlatform == Device.iOS ? "Handlee" : null,
+                FontSize = 20,
                 TextColor = Color.White,
                 HorizontalOptions = LayoutOptions.Start
             }, 1, 0);
@@ -62,6 +64,6 @@ namespace WebApp.Models
             return grid;
         }
 
-        
+
     }
 }

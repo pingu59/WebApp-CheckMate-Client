@@ -3,14 +3,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WebApp.Views.AboutPage">
-    <StackLayout Margin="20,35,20,20">
-        <Image
-            Source="http://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Papio_anubis_%28Serengeti%2C_2009%29.jpg/200px-Papio_anubis_%28Serengeti%2C_2009%29.jpg"
-            HeightRequest="300" />
-        <Label Text="Developed By :" Style="{StaticResource aboutLabel}"/>
-        <Label Text="Tianyi Zuo" Style="{StaticResource aboutLabel}"/>
-        <Label Text="Peizhen Wu" Style="{StaticResource aboutLabel}"/>
-        <Label Text="Nanfeng Liu" Style="{StaticResource aboutLabel}"/>
-        <Label Text="Version : 0.0.1" Style="{StaticResource aboutLabel}" />
+    <StackLayout VerticalOptions="End">
+        <Label Text="Developed By :" Style="{StaticResource aboutLabel}" FontFamily="{StaticResource Handlee}"/>
+        <Label Text="Tianyi Zuo" Style="{StaticResource aboutLabel}" FontFamily="{StaticResource Handlee}"/>
+        <Label Text="Peizhen Wu" Style="{StaticResource aboutLabel}" FontFamily="{StaticResource Handlee}"/>
+        <Label Text="Nanfeng Liu" Style="{StaticResource aboutLabel}" FontFamily="{StaticResource Handlee}"/>
+        <Label Text="Version : 0.0.1" Style="{StaticResource aboutLabel}" FontFamily="{StaticResource Handlee}"/>
     </StackLayout>
 </ContentPage>

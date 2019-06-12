@@ -23,8 +23,8 @@
         VerticalOptions="Center" 
         HorizontalOptions="Center" 
         Padding="20, 20, 20, 20">
-        <Label x:Name="TaskName" Style="{StaticResource largeLabel}" 
-               FontFamily="{StaticResource Handlee}" HorizontalOptions="Center"/>
+        <Label x:Name="TaskName" Style="{StaticResource popUpLargeLabel}" 
+               FontFamily="{StaticResource Handlee}"/>
         <Image x:Name="PhotoImage"/>
         <Button Text="☑️" FontSize="40" HorizontalOptions="Center" Clicked="OnCheck" x:Name="Check"/>
     </StackLayout>

@@ -21,7 +21,8 @@ namespace WebApp.Views
         public async void PushToMyTask()
         {
             //Don't change the sequence here pls
-            Constants.meEntity = new FriendEntity(Constants.me.userid, '{' + Constants.me.username + '}');
+            Constants.meEntity = new FriendEntity(Constants.me.userid, '{' + Constants.me.username + '}',
+                Constants.me.avatarNum);
 
             Console.WriteLine("About to load info from server...");
             await LoadMyTasksFromServer();

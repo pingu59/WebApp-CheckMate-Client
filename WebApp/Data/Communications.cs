@@ -11,10 +11,10 @@ namespace WebApp
 {
     public static class Communications
     {
-        public static async Task<int> Register(string username, string password)
+        public static async Task<int> Register(string username, string password, int avatarNum)
         {
-            string baseurl = Constants.BaseAddress + "register?username={0}&password={1}";
-            string actualurl = String.Format(baseurl, username, password);
+            string baseurl = Constants.BaseAddress + "register?username={0}&password={1}&avatarNum={2}";
+            string actualurl = String.Format(baseurl, username, password, avatarNum);
 
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);

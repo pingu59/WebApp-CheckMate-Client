@@ -36,10 +36,10 @@ namespace WebApp.Views
 
             _username.Text = Constants.me.username;
             _user_detail.Text = "ID : " + Constants.me.userid + '\n'; //user.Id.toString();
-            _user_detail.Text += "details e.g. age"; //user.Age;
+            _user_detail.Text += ""; //other info;
             Constants.tokenSource = new CancellationTokenSource();
             CancellationToken token = Constants.tokenSource.Token;
-            Constants.backgroudProcess =Task.Run(() => { PeriodicCheck(); }, token);
+            Constants.backgroudProcess = Task.Run(() => { PeriodicCheck(); }, token);
             Constants.backgroudProcess.ConfigureAwait(false);
             Console.WriteLine("Before showing notifications...");
             CrossLocalNotifications.Current.Show("Hi(✿◖◡◗)ﾉ!", "Nice to see back!!");
@@ -76,7 +76,7 @@ namespace WebApp.Views
         private async void getCompleted()
         {
             List<Statistic> stats = await Communications.GetStatistics();
-            foreach( Statistic s in stats)
+            foreach (Statistic s in stats)
             {
                 await DisplayAlert("⚡️⚡️Congratulations⚡️⚡️", "You have completed your task "
                     + s.taskname + "\nSuccess: " + s.completed + "\nNo. of penalties: " + s.failed
@@ -198,7 +198,7 @@ namespace WebApp.Views
         {
             Device.StartTimer(TimeSpan.FromSeconds(15), () =>
             {
-                if(Constants.me != null)
+                if (Constants.me != null)
                 {
                     CheckInbox();
                     CheckNewInvitation();
@@ -236,11 +236,11 @@ namespace WebApp.Views
         private async void CheckMyCheckedUpdate()
         {
             List<FriendCheck> checks = await Communications.checkMyUpdated();
-            foreach(FriendCheck fc in checks)
+            foreach (FriendCheck fc in checks)
             {
                 string str = "Your update {0} of task {1} has been checked by {2}";
                 string message = String.Format(str, fc.updateNo, fc.taskname, fc.checkername);
-                await DisplayAlert("Attention",message , "ok");
+                await DisplayAlert("Attention", message, "ok");
             }
         }
 
@@ -285,7 +285,8 @@ namespace WebApp.Views
                 string inviteString = string.Format(baseString, taskowner, task.taskname);
                 Constants.mainPage.DisplayInvitation(inviteString);
                 Console.WriteLine(bt.frequency);
-                if (!Constants.FriendTasks.Exists((obj) => obj.taskid == bt.taskid)){
+                if (!Constants.FriendTasks.Exists((obj) => obj.taskid == bt.taskid))
+                {
                     Constants.FriendTasks.Add(task);
                     Constants.mainPage.DisplayFriendTask(task);
                 }

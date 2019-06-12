@@ -14,6 +14,7 @@ namespace WebApp.Models
         public int userid { get; set; }
         public string username { get; set; }
         public string password { get; set; }
+        public int avatarNum;
         internal Image ProfilePicture;
 
         public User() {}
@@ -24,11 +25,12 @@ namespace WebApp.Models
         }
 
         [JsonConstructor]
-        public User(int userid, string username, string password)
+        public User(int userid, string username, string password, int avatarNum)
         {
             this.userid = userid;
             this.username = username;
             this.password = password;
+            this.avatarNum = avatarNum;
         }
 
         public Image GetProfilePicture()
@@ -88,7 +90,7 @@ namespace WebApp.Models
 
         public static User getFailure()
         {
-            return new User(-1, null, null);
+            return new User(-1, null, null, 0);
         }
 
         public override int GetHashCode()

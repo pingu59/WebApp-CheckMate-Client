@@ -32,7 +32,7 @@ namespace WebApp.Views {
         private global::Xamarin.Forms.ContentPage my_profile_page;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Label _username;
+        private global::Xamarin.Forms.Button _username;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Label _user_detail;
@@ -54,7 +54,7 @@ namespace WebApp.Views {
             pullRefresh = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Refractored.XamForms.PullToRefresh.PullToRefreshLayout>(this, "pullRefresh");
             FriendTasks = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "FriendTasks");
             my_profile_page = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ContentPage>(this, "my_profile_page");
-            _username = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "_username");
+            _username = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "_username");
             _user_detail = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "_user_detail");
             Button_Setting = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "Button_Setting");
             Button_About = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "Button_About");

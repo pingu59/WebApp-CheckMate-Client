@@ -53,8 +53,10 @@ namespace WebApp
         public static List<GroupTask> MyTask;
         public static Task backgroudProcess;
         public static bool firstLoginToday;
+        public static int num_of_avatars = 3;
 
         public static CancellationTokenSource tokenSource;
+        //public static FakeViewImageStore imageStore = new FakeViewImageStore();
 
         public static string getUsername(int id)
         {

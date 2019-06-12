@@ -37,4 +37,5 @@
     <resources>
         <image name="FlashImage" width="406" height="759"/>
     </resources>
+    <color key="tintColor" colorSpace="custom" customColorSpace="sRGB" red="0.952988068342039" green="1" blue="0.589595658147731" alpha="1"/>
 </document>

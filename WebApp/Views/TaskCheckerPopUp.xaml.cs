@@ -35,7 +35,6 @@ namespace WebApp.Views
             await Communications.sendNewCheck(friendUpdate.updateNo, friendUpdate.taskID);
             Constants.mainPage.RemoveUpdate();
             await DisplayAlert("","Your check has been sent  to your friend","ok");
-           // await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PopAsync();
         }
         protected override void OnDisappearing()
         {

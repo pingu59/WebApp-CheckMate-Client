@@ -72,3 +72,4 @@
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/System.Linq.Expressions.dll
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/System.Globalization.dll
 /Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/Mono.Security.dll
+/Users/apple/Xamarin/WebApp.Android/obj/Debug/android/assets/Xamarin.iOS.dll

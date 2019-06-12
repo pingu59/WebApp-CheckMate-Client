@@ -3,27 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="WebApp.Views.Penalties">
     <ContentPage.Content>
-         <ListView x:Name="list" ItemTapped="tapped" RowHeight="140">
+         <ListView x:Name="list" ItemTapped="tapped" RowHeight="150">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell Height="120">
-                        <Frame MinimumHeightRequest="120">
-                            <Grid Grid.Column="0">
+                    <ViewCell Height="150">
+                        <Frame MinimumHeightRequest="150" CornerRadius="30" BorderColor="#FF9790">
+                            <Grid>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="100"/>
                                     <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="2*"/>
                                 </Grid.ColumnDefinitions>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="20"/>
-                                </Grid.RowDefinitions>
-                                <Label Text="Taskname: " Grid.Row="0" Grid.Column="0"/>
-                                <Label Text="{Binding taskname}" Grid.Row="0" Grid.Column="1"/>
-                                <Label Text="Date: " Grid.Row="1" Grid.Column="0"/>
-                                <Label Text="{Binding date}" Grid.Row="1" Grid.Column="1"/>
-                                <Label Text="Members: " Grid.Row="2" Grid.Column="0"/>
-                                <Label Text="{Binding memberstring}" Grid.Row="2" Grid.Column="1"/> 
-                                <Label Text="Content: " Grid.Row="3" Grid.Column="0"/>
-                                <Label Text="{Binding bet}" Grid.Row="3" Grid.Column="1"/> 
+                                
+                                <StackLayout Grid.Column="0">
+                                    <Label Text="Taskname: "
+                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+                                    <Label Text="Date: " 
+                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+                                    <Label Text="Members: "
+                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+                                    <Label Text="Content: "
+                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>  
+                                </StackLayout>
+                                
+                                <StackLayout Grid.Column="1">
+                                    <Label Text="{Binding taskname}"
+                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+                                    <Label Text="{Binding date}"
+                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+                                    <Label Text="{Binding memberstring}" 
+                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+                                    <Label Text="{Binding bet}" 
+                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+                                </StackLayout>
                             </Grid>
                         </Frame>
                     </ViewCell>

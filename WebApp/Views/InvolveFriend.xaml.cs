@@ -17,7 +17,9 @@ namespace WebApp.Views
 
         protected override void OnAppearing()
         {
-           Myfriends.ItemsSource = Constants.Friend.Friends;
+            FriendEntity[] entities = new FriendEntity[Constants.Friend.Friends.Count];
+            Constants.Friend.Friends.CopyTo(entities);
+            Myfriends.ItemsSource = entities;
         }
 
         public void OnViewCellTapped(object sender, EventArgs e)

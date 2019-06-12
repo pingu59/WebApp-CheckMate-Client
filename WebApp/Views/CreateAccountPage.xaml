@@ -18,12 +18,21 @@
             <Entry x:Name="Entry_Password" Placeholder="Password" 
                    Style="{StaticResource entryStyle}"
                    FontFamily="{StaticResource Handlee}"/>
+            <Label Text="Select your avatar:"
+                   Style="{StaticResource entryStyle}"
+                   FontFamily="{StaticResource Handlee}"
+                   Margin="10"/>
+            <ScrollView Orientation="Horizontal" Margin="10">
+                <StackLayout Orientation="Horizontal" x:Name="avatars"/>
+            </ScrollView>
+           
             <Label Margin="30"/>
             <Button x:Name="Button_Confirm"
                     Text="Confirm"
                     Clicked="OnConfirmButtonClicked"
                     Style="{StaticResource buttons}"
                     FontFamily="{StaticResource Handlee}"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

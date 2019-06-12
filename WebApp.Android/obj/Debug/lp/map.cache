@@ -43,3 +43,4 @@ Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
 netstandard
 System.Reflection.Extensions
+Xamarin.iOS

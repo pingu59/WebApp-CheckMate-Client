@@ -23,32 +23,33 @@
         VerticalOptions="Center" 
         HorizontalOptions="Center" 
         Padding="20, 20, 20, 20">
-        <Label x:Name="TaskName" Style="{StaticResource largeLabel}" 
-               FontFamily="{StaticResource Handlee}" HorizontalOptions="Center"/>
+        <Label x:Name="TaskName" Style="{StaticResource popUpLargeLabel}"
+               FontFamily="{StaticResource Handlee}"/>
         <Grid HorizontalOptions="Center" Padding="20,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="150"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Label Text="Deadline: " Grid.Column="0" Grid.Row="1" 
-                   Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+                   Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
             <Label x:Name="Deadline" Grid.Column="1" Grid.Row="1"
-                   Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+                   Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
             <Label Text="Task id: " Grid.Column="0" Grid.Row="2"
-                   Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+                   Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
             <Label x:Name="TaskId" Grid.Column="1" Grid.Row="2"
-                   Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+                   Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
             <Label Text="Penalty: " Grid.Column="0" Grid.Row="3"
-                   Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+                   Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
             <Label x:Name="Penalty" Grid.Column="1" Grid.Row="3"
-                   Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+                   Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
         </Grid>
-        <Label Text="Members' Progress" HorizontalOptions="Center"
-               Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+        <Label Text="Members' Progress" 
+               Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
         <ScrollView Orientation="Vertical" HeightRequest="100" Padding="30, 0">
-            <StackLayout Orientation="Vertical" x:Name="FriendsProgress" />
+            <StackLayout Orientation="Vertical" x:Name="FriendsProgress"/>
         </ScrollView>
         <Button x:Name="sendingButton" Text="TAKE PICTURE"
-                HorizontalOptions="Center" Clicked="OnClicked" Style="{StaticResource buttons}"/>
+                HorizontalOptions="Center" Clicked="OnClicked" 
+                Style="{StaticResource buttons}" FontFamily="{StaticResource Handlee}"/>
     </StackLayout>
 </pages:PopupPage>
