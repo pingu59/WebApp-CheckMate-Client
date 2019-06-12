@@ -34,7 +34,8 @@ namespace WebApp.Views
             Console.WriteLine("Checked: updateNo" + friendUpdate.updateNo);
             await Communications.sendNewCheck(friendUpdate.updateNo, friendUpdate.taskID);
             Constants.mainPage.RemoveUpdate();
-            await DisplayAlert("","Your check has been sent  to your friend","ok");
+            await DisplayAlert("", "Your check has been sent  to your friend", "ok");
+            Check.IsVisible = false;
         }
         protected override void OnDisappearing()
         {

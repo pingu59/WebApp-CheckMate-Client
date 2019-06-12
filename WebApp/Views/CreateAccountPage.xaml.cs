@@ -61,6 +61,7 @@ namespace WebApp.Views
         public avatar(int number, CreateAccountPage page)
         {
             this.number = number;
+
             tapRecog = new TapGestureRecognizer((obj) => page.SelectAvatar(number));
         }
 
