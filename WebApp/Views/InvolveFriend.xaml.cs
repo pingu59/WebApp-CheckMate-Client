@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Xamarin.Forms;
 using WebApp.Models;
+using System.Linq;
 
 namespace WebApp.Views
 {
@@ -17,8 +18,7 @@ namespace WebApp.Views
 
         protected override void OnAppearing()
         {
-            FriendEntity[] entities = new FriendEntity[Constants.Friend.Friends.Count];
-            Constants.Friend.Friends.CopyTo(entities);
+            List<FriendEntity> entities = new List<FriendEntity>(Constants.Friend.Friends.Select(x => x.Clone()));
             Myfriends.ItemsSource = entities;
         }
 

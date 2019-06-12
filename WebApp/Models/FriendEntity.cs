@@ -13,16 +13,23 @@ namespace WebApp.Models
         public string FriendName { get; set; }
         private View view;
         private int avatarNum;
+        public ImageSource image { get; set; }
         TapGestureRecognizer tapRecog;
         public FriendEntity() { }
         [JsonConstructor]
         public FriendEntity(int FriendId, string FriendName, int avatarNum)
         {
             this.FriendID = FriendId;
+            image = ImageSource.FromFile("avatar" + avatarNum);
             this.avatarNum = avatarNum;
             this.FriendName = FriendName.Substring(1, FriendName.Length - 2);
             tapRecog = new TapGestureRecognizer();
             tapRecog.Tapped += (sender, e) => { Constants.mainPage.DisplayPenalties(this); };
+        }
+
+        internal FriendEntity Clone()
+        {
+            return new FriendEntity(FriendID, "{" + FriendName + "}", avatarNum);
         }
 
         //make singleton
@@ -30,15 +37,22 @@ namespace WebApp.Models
         {
             if (view == null)
             {
-                View v;
-                v = new Image
+                StackLayout stack = new StackLayout{};
+                Image i = new Image
                 {
-                    Source = ImageSource.FromFile("avatar" + avatarNum),
+                    Source = image,
                     Margin = 5,
                     HeightRequest = 50
                 };
-                v.GestureRecognizers.Add(tapRecog);
-                this.view = v;
+                Label l = new Label
+                {
+                    Text = FriendName,
+                    HorizontalOptions = LayoutOptions.Center
+                };
+                stack.Children.Add(i);
+                stack.Children.Add(l);
+                stack.GestureRecognizers.Add(tapRecog);
+                this.view = stack;
             }
             return this.view;
         }

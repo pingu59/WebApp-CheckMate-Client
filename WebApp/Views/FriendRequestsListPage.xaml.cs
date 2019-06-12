@@ -43,7 +43,7 @@ namespace WebApp.Views
                 FriendEntity newFriend = await Communications.acceptFriend(requestID);
                 //use and parse this string afterwards
                 Constants.Friend.Friends.Add(newFriend);
-                Constants.mainPage.addNewFriendView(newFriend.FriendName);
+                Constants.mainPage.addNewFriendView(newFriend);
             }
             else
             {

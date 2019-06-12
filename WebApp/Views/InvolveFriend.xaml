@@ -5,7 +5,7 @@
              Title="Select your friend">
     <ContentPage.Content>
         <StackLayout Padding="20">
-            <ScrollView Orientation="Horizontal" HeightRequest="40" Style="{StaticResource scrollTopBar}">
+            <ScrollView Orientation="Horizontal" HeightRequest="90" Style="{StaticResource scrollTopBar}" Margin="10">
                 <StackLayout Orientation="Horizontal" x:Name="AddedFriends" />
             </ScrollView>
             <ScrollView>
@@ -14,8 +14,14 @@
                         <DataTemplate>
                             <ViewCell Tapped="OnViewCellTapped">
                                 <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Source="{Binding image}" Grid.Column="0"/>
                                     <Label Text="{Binding FriendName}" Margin="10" 
-                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"
+                                           Grid.Column="1"/>
                                 </Grid>
                             </ViewCell>
                         </DataTemplate>

@@ -39,10 +39,11 @@ namespace WebApp.Views
             _user_detail.Text += ""; //other info;
             Constants.tokenSource = new CancellationTokenSource();
             CancellationToken token = Constants.tokenSource.Token;
+            profilepicture.Source = ImageSource.FromFile("avatar" + Constants.me.avatarNum);
             Constants.backgroudProcess = Task.Run(() => { PeriodicCheck(); }, token);
             Constants.backgroudProcess.ConfigureAwait(false);
             Console.WriteLine("Before showing notifications...");
-            CrossLocalNotifications.Current.Show("Hi(✿◖◡◗)ﾉ!", "Nice to see back!!");
+            CrossLocalNotifications.Current.Show("Hi(✿◖◡◗)ﾉ!", "Nice to see you back!!");
             CrossLocalNotifications.Current.Show("Good morning(✿◖◡◗)ﾉ!",
           "Would you mind to check your todo lists for today?", 101, DateTime.Today.AddDays(1).AddHours(8));
             //Add notification at 8 o'clock for tomorrow on every openening.
@@ -108,12 +109,9 @@ namespace WebApp.Views
             await DisplayAlert("info", anything, "ok");
         }
 
-        public void addNewFriendView(string newfriendName)
+        public void addNewFriendView(FriendEntity newfriend)
         {
-            FriendList.Children.Add(new Label
-            {
-                Text = newfriendName
-            });
+            FriendList.Children.Add(newfriend.GetView());
         }
 
         public void OnPageChange(Object sender, EventArgs e)

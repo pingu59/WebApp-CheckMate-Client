@@ -51,7 +51,7 @@
                         <ColumnDefinition Width="3*" />
                     </Grid.ColumnDefinitions>
                     
-                    <Label Grid.Column="0" Text="Profile picture" />
+                    <Image Grid.Column="0" x:Name="profilepicture" />
                     
                     <StackLayout Grid.Column="1">
                         <Button  x:Name="_username" Clicked="OnMoreDetailClicked" HorizontalOptions="Fill"
