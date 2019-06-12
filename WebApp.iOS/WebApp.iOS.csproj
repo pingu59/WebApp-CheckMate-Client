@@ -113,6 +113,15 @@
     <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\WechatIMG1674.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\xsmax.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\xr.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\x:xs.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\5.5retina.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\4.7retina.png" />
+    <ImageAsset Include="Assets.xcassets\FlashImage.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\FlashImage.imageset\屏幕快照 2019-06-12 下午5.05.55.png" />
+    <ImageAsset Include="Assets.xcassets\FlashImage.imageset\屏幕快照 2019-06-12 下午5.05.55-1.png" />
+    <InterfaceDefinition Include="Resources\Flash.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -135,6 +144,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets.xcassets\Search.imageset\" />
+    <Folder Include="Assets.xcassets\FlashImage.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\FrederickatheGreat-Regular.ttf" />

@@ -66,8 +66,12 @@ namespace WebApp.Views
                    loadingPage);
                 int updateNo = await Communications.sendMyNewUpdate(task.taskid, base64Image);
                 await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PopAsync();
-                await DisplayAlert("+｡:.ﾟヽ(*´∀`) ﾉﾟ.:｡+ﾟ", "Your progress has been sent to your friends. Upda te number: "
-                     + updateNo,"ok");
+                if(updateNo == -1){
+                    await DisplayAlert("Update failed due to server error", "Please try again", "ok");
+                }else{
+                    await DisplayAlert("+｡:.ﾟヽ(*´∀`) ﾉﾟ.:｡+ﾟ", "Your progress has b een sent to your friends. Update number: "
+                         + updateNo,"ok");
+                }
             }
         }
 

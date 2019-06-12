@@ -5,62 +5,71 @@
              Title="New Task">
     <ContentPage.Content>
         <StackLayout Padding="20">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="80" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Label Text="We want to " Grid.Row="0" Grid.Column="0" />
-                <Entry x:Name="taskName" Grid.Row="0" Grid.Column="1" />
-            </Grid>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="80" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Label Text="every" Grid.Column="0" />
-                <ListView VerticalOptions="Start" HeightRequest="120"
-                          x:Name="RepetitionList" RowHeight="30"
-                          Grid.Column="1">
-                    <ListView.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Day</x:String>
-                            <x:String>Week</x:String>
-                            <x:String>Month</x:String>
-                            <x:String>None</x:String>
-                        </x:Array>
-                    </ListView.ItemsSource>
-                </ListView>
-            </Grid>
-
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="80" />
-                </Grid.ColumnDefinitions>
-                <Label Text="times," Grid.Column="1" />
-                <Entry x:Name="Frequency" Keyboard="Numeric" Grid.Column="0" />
-            </Grid>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="80" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Label Text="until" Grid.Column="0" />
-                <DatePicker x:Name="datepicker" HorizontalOptions="FillAndExpand"
-                            Grid.Column="1" />
-            </Grid>
-            <Label Text="If we failed to do so, we will:" />
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="80" />
-                </Grid.ColumnDefinitions>
-                <Entry x:Name="Penalty" HorizontalOptions="FillAndExpand" Grid.Column="0"/>
-                <Button Text="Random" Clicked="RandomPenalty" Grid.Column="1"/>
-            </Grid>
             
-            <Button Text="Send my bet" Clicked="OnConfirm" />
+            <Label Text="We want to..." Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+            <Entry x:Name="taskName" Placeholder="Your resolution" Style="{StaticResource entryStyle}" FontFamily="{StaticResource Handlee}" />
+            <Label Margin="10"/>
+            
+            <!-- <ListView VerticalOptions="Start" HeightRequest="120" -->
+            <!--           x:Name="Repetition" RowHeight="30"> -->
+            <!--     <ListView.ItemsSource> -->
+            <!--         <x:Array Type="{x:Type x:String}"> -->
+            <!--             <x:String>Day</x:String> -->
+            <!--             <x:String>Week</x:String> -->
+            <!--             <x:String>Month</x:String> -->
+            <!--             <x:String>None</x:String> -->
+            <!--         </x:Array> -->
+            <!--     </ListView.ItemsSource> -->
+            <!-- </ListView> -->
+            <Label Text="Repetition" Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+            <Picker  x:Name="RepetitionList" Style="{StaticResource picker}" FontFamily="{StaticResource Handlee}"
+                     Title="Repeat or not?">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Day</x:String>
+                        <x:String>Week</x:String>
+                        <x:String>Month</x:String>
+                        <x:String>None</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Label Margin="10"/>
+            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="80" />
+                </Grid.ColumnDefinitions>
+                <Entry x:Name="Frequency" Keyboard="Numeric" Grid.Column="0" Placeholder="How many times?"
+                       Style="{StaticResource entryStyle}" FontFamily="{StaticResource Handlee}"/>
+                <Label Text="Times," Grid.Column="1" 
+                       Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+            </Grid>
+            <Label Margin="10"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="Until" Grid.Column="0"  Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+                <DatePicker x:Name="datepicker" HorizontalOptions="FillAndExpand"
+                            Grid.Column="1"  Style="{StaticResource datePicker}" FontFamily="{StaticResource Handlee}"/>
+            </Grid>
+            <Label Margin="10"/>
+            <Label Text="If we failed to do so, we will..."
+                   Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="80" />
+                </Grid.ColumnDefinitions>
+                <Entry x:Name="Penalty" HorizontalOptions="FillAndExpand" Grid.Column="0"
+                       Style="{StaticResource entryStyle}" FontFamily="{StaticResource Handlee}"/>
+                <Button Text="Random" Clicked="RandomPenalty" Grid.Column="1" 
+                        Style="{StaticResource buttons}" FontFamily="{StaticResource Handlee}"/>
+            </Grid>
+            <Label Margin="10"/>
+            <Button Text="Set Resolution!" Clicked="OnConfirm" Style="{StaticResource buttons}" FontFamily="{StaticResource Handlee}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

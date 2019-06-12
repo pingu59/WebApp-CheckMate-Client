@@ -69,10 +69,6 @@
       <LogicalName>AppIcon83.5x83.5@2x~ipad.png</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/actool/bundle/LaunchImage-700-568h@2x.png">
-      <LogicalName>LaunchImage-700-568h@2x.png</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/actool/bundle/Assets.car">
       <LogicalName>Assets.car</LogicalName>
       <Optimize>false</Optimize>

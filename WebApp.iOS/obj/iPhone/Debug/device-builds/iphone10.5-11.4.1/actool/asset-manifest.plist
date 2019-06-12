@@ -23,10 +23,27 @@
 			<string>/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/actool/bundle/AppIcon76x76~ipad.png</string>
 			<string>/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/actool/bundle/AppIcon76x76@2x~ipad.png</string>
 			<string>/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/actool/bundle/AppIcon83.5x83.5@2x~ipad.png</string>
-			<string>/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/actool/bundle/LaunchImage-700-568h@2x.png</string>
 			<string>/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/actool/bundle/Assets.car</string>
 			<string>/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/actool/partial-info.plist</string>
 		</array>
 	</dict>
+	<key>com.apple.actool.document.warnings</key>
+	<array>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./LaunchImage.launchimage/[ipad][][2x][portrait][full-screen][7.0][1d][(null)]</string>
+				<string>./LaunchImage.launchimage/[iphone][][3x][landscape][full-screen][12.0][2d][(null)]</string>
+				<string>./LaunchImage.launchimage/[iphone][][3x][portrait][full-screen][12.0][2d][xr.png]</string>
+				<string>./LaunchImage.launchimage/[iphone][][3x][portrait][full-screen][12.0][2d][xsmax.png]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The launch image set "LaunchImage" has 5 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+	</array>
 </dict>
 </plist>

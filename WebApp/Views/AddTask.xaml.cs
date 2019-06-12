@@ -16,7 +16,7 @@ namespace WebApp.Views
             InitializeComponent();
             this.involvedFriends = involvedFriends;
             this.members = members;
-            datepicker.MinimumDate = DateTime.Today;
+            datepicker.MinimumDate = DateTime.Today.AddDays(1);
             BindingContext = this;
         }
 
@@ -65,6 +65,7 @@ namespace WebApp.Views
                             task = new GroupTask(taskName.Text, repetition, frequency, datepicker.Date ,members, Penalty.Text);
                             int taskid = await Communications.addGroupTask(task);
                             task.taskid = taskid;
+                            Console.WriteLine("########new Taskid is" + taskid);
                             Constants.FriendTasks.Add(new FriendTask(task));
                             Constants.mainPage.SetNewTask(task);
                             await Navigation.PopAsync(true);

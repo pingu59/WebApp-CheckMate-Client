@@ -367,10 +367,10 @@ namespace WebApp
             }
             return Constants.SERVER_ERROR;
         }
-         public static async Task<List<History>> getMyHistory()
+         public static async Task<List<HistoryUpdate>> getMyHistory(int taskid)
         {
-            string baseurl = Constants.BaseAddress + "getHistory?userId={0}";
-            string actualurl = string.Format(baseurl, Constants.me.userid);
+            string baseurl = Constants.BaseAddress + "getHistory?userId={0}&taskId={1}";
+            string actualurl = string.Format(baseurl, Constants.me.userid, taskid);
             Console.WriteLine(actualurl);
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);
@@ -379,10 +379,10 @@ namespace WebApp
             {
                 string tasksJson = await response.Content.ReadAsStringAsync();
                 Console.WriteLine(tasksJson);
-                return JsonConvert.DeserializeObject<List<History>>(tasksJson);
+                return JsonConvert.DeserializeObject<List<HistoryUpdate>>(tasksJson);
             }
             Console.WriteLine("Get history failed!!");
-            return new List<History>();
+            return new List<HistoryUpdate>();
         }
          
          public static async Task<int> removePenalty(string date, int taskid, int owner)
@@ -399,6 +399,38 @@ namespace WebApp
              }
              return Constants.SERVER_ERROR;
          }
+
+        public static async Task<List<Statistic>> GetStatistics()
+        {
+            string baseurl = Constants.BaseAddress + "getCompletedStat?userId={0}";
+            string actualurl = string.Format(baseurl, Constants.me.userid);
+            Console.WriteLine(actualurl);
+            HttpClient _client = new HttpClient();
+            var uri = new Uri(actualurl);
+            var response = await _client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                string jsonString = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<Statistic>>(jsonString);
+            }
+            return new List<Statistic>();
+        }
+
+        public static async Task<List<Summary>> GetSummaries()
+        {
+            string baseurl = Constants.BaseAddress + "getSummaries?userId={0}";
+            string actualurl = string.Format(baseurl, Constants.me.userid);
+            Console.WriteLine(actualurl);
+            HttpClient _client = new HttpClient();
+            var uri = new Uri(actualurl);
+            var response = await _client.GetAsync(uri);
+            if (response.IsSuccessStatusCode)
+            {
+                string jsonString = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<Summary>>(jsonString);
+            }
+            return new List<Summary>();
+        }
 
     }
 }

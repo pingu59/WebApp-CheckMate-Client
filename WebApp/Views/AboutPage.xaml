@@ -7,10 +7,10 @@
         <Image
             Source="http://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Papio_anubis_%28Serengeti%2C_2009%29.jpg/200px-Papio_anubis_%28Serengeti%2C_2009%29.jpg"
             HeightRequest="300" />
-        <Label Text="Developed By :" Style="{StaticResource label-reg}"/>
-        <Label Text="Tianyi Zuo" Style="{StaticResource label-reg}"/>
-        <Label Text="Peizhen Wu" Style="{StaticResource label-reg}"/>
-        <Label Text="Nanfeng Liu" Style="{StaticResource label-reg}"/>
-        <Label Text="Version : 0.0.1" Style="{StaticResource label-reg}" />
+        <Label Text="Developed By :" Style="{StaticResource aboutLabel}"/>
+        <Label Text="Tianyi Zuo" Style="{StaticResource aboutLabel}"/>
+        <Label Text="Peizhen Wu" Style="{StaticResource aboutLabel}"/>
+        <Label Text="Nanfeng Liu" Style="{StaticResource aboutLabel}"/>
+        <Label Text="Version : 0.0.1" Style="{StaticResource aboutLabel}" />
     </StackLayout>
 </ContentPage>

@@ -947,7 +947,7 @@ bl _p_25
 .word 0xf94057a2
 .word 0xaa0203e0
 .word 0xf9400042
-.word 0xf940f050
+.word 0xf940f450
 .word 0xd63f0200
 .word 0xf9402fb1
 .word 0xf941f231
@@ -998,7 +998,7 @@ bl _p_25
 .word 0xf94047a2
 .word 0xaa0203e0
 .word 0xf9400042
-.word 0xf940f450
+.word 0xf940f850
 .word 0xd63f0200
 .word 0xf9402fb1
 .word 0xf942ba31
@@ -1463,7 +1463,7 @@ ldr x1, [x16, #456]
 .word 0xaa1603e1
 .word 0xaa1a03e2
 .word 0xf9400263
-.word 0xf940f870
+.word 0xf940fc70
 .word 0xd63f0200
 .word 0xf94037b1
 .word 0xf9436631
@@ -3056,7 +3056,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0
-	.byte 105,7,170,176,234,84,39,71,88,204,8,82,181,240,219,216
+	.byte 119,47,32,61,172,155,24,73,189,182,174,151,26,46,113,148
 	.globl _mono_aot_module_Plugin_LocalNotifications_info
 	.align 3
 _mono_aot_module_Plugin_LocalNotifications_info:

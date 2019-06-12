@@ -2,33 +2,28 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WebApp.Views.MyHistory"
              Title="My History">
     <ContentPage.Content>
-        <ListView x:Name="history" ItemsSource="{Binding histories}" ItemTapped="DisplayImage"
+        <ListView x:Name="Summary" ItemsSource="{Binding singles}" ItemTapped="toNextLevel"
                   RowHeight="120">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell Height="100">
                         <Frame MinimumHeightRequest="100">
-                            <Grid>
-                                 <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="100"/>
-                                    </Grid.ColumnDefinitions>
-                                <Grid Grid.Column="0">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="100"/>
-                                        <ColumnDefinition Width="*"/>
-                                    </Grid.ColumnDefinitions>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="20"/>
-                                    </Grid.RowDefinitions>
-                                    <Label Text="Taskname: " Grid.Row="0" Grid.Column="0"/>
-                                    <Label Text="{Binding taskName}" Grid.Row="0" Grid.Column="1"/>
-                                    <Label Text="Update No.: " Grid.Row="1" Grid.Column="0"/>
-                                    <Label Text="{Binding updateNumber}" Grid.Row="1" Grid.Column="1"/>
-                                    <Label Text="Checker Name: " Grid.Row="2" Grid.Column="0"/>
-                                    <Label Text="{Binding checkerName}" Grid.Row="2" Grid.Column="1"/> 
-                                </Grid>
-                                <Image Source="{Binding address}" Grid.Column="1"/>
+                            <Grid Grid.Column="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Taskname: " Grid.Row="0" Grid.Column="0"/>
+                                <Label Text="{Binding taskname}" Grid.Row="0" Grid.Column="1"/>
+                                <Label Text="Taskid : " Grid.Row="1" Grid.Column="0"/>  
+                                <Label Text="{Binding taskid}" Grid.Row="1" Grid.Column="1"/>
+                                <Label Text="Completed: " Grid.Row="2" Grid.Column="0"/>
+                                <Label Text="{Binding completed}" Grid.Row="2" Grid.Column="1"/>
+                                <Label Text="Hit percentage : " Grid.Row="3" Grid.Column="0"/>  
+                                <Label Text="{Binding percentage}" Grid.Row="3" Grid.Column="1"/>
                             </Grid>
                         </Frame>
                     </ViewCell>

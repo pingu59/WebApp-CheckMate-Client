@@ -15,6 +15,7 @@
                 <!--<On Platform="Android" Value="FrederickGreat-Regular.ttf#Regular"/>-->
             </OnPlatform>
             
+            
             <Style x:Key="buttonStyle" TargetType="Button">
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <!--<Setter Property="VerticalOptions" Value="CenterAndExpand" />-->
@@ -29,16 +30,44 @@
                 <Setter Property="FontSize" Value="20" />
                 <Setter Property="TextColor" Value="#42C2A9" />
             </Style>
-            <Style x:Key="label-reg" TargetType="Label">
+            
+            <Style x:Key="aboutLabel" TargetType="Label">
                 <Setter Property="HorizontalOptions" Value="Center" />
-                <Setter Property="FontSize" Value="15" />
+                <Setter Property="FontSize" Value="20" />
                 <Setter Property="TextColor" Value="Silver" />
-                <Setter Property="Margin" Value="5" />
+                <Setter Property="Margin" Value="3" />
+            </Style>
+            
+            <Style x:Key="regLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="TextColor" Value="Black"/>
+            </Style>
+            
+            <Style x:Key="largeLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="25" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="Margin" Value="15"/>
+            </Style>
+            
+            <Style x:Key="picker" TargetType="Picker">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="TextColor" Value="Black" />
+            </Style>
+            
+            <Style x:Key="datePicker" TargetType="DatePicker">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="TextColor" Value="Black" />
             </Style>
             
             <Style x:Key="entryStyle" TargetType="Label">
                 <Setter Property="FontSize" Value="20" />
             </Style>
+            
+            <Style x:Key="scrollTopBar" TargetType="ScrollView">
+                <Setter Property="BackgroundColor" Value="#FF9790" />
+                <Setter Property="Opacity" Value="0.5" />
+            </Style>
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using LocalNotificationsSample.iOS;
 using Refractored.XamForms.PullToRefresh.iOS;
 using UIKit;
 using UserNotifications;
@@ -38,6 +39,7 @@ namespace WebApp.iOS
                 UNUserNotificationCenter.Current.RequestAuthorization(
                         UNAuthorizationOptions.Alert | UNAuthorizationOptions.Badge | UNAuthorizationOptions.Sound,
                         (approved, error) => { });
+                UNUserNotificationCenter.Current.Delegate = new UserNotificationCenterDelegate();
             }
             else if (UIDevice.CurrentDevice.CheckSystemVersion(8, 0))
             {

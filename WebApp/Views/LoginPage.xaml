@@ -5,14 +5,14 @@
              x:Class="WebApp.Views.LoginPage"
              NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Margin="20">
             <Label Margin="30" />
-            <Label Margin="15" Text="User ID" FontFamily="{StaticResource Handlee}" FontSize="25"/>
+            <Label Text="User ID" FontFamily="{StaticResource Handlee}" Style="{StaticResource largeLabel}"/>
             <Entry x:Name="Entry_UserID" Placeholder="please enter your ID" 
-                   FontFamily="{StaticResource Handlee}" FontSize="20"/>
-            <Label Margin="15" Text="Password" FontFamily="{StaticResource Handlee}" FontSize="25"/>
+                   FontFamily="{StaticResource Handlee}" Style="{StaticResource entryStyle}"/>
+            <Label Text="Password" FontFamily="{StaticResource Handlee}" Style="{StaticResource largeLabel}"/>
             <Entry x:Name="Entry_Password" Placeholder="please enter your password"
-                   FontFamily="{StaticResource Handlee}" FontSize="20" IsPassword="true"/>
+                   FontFamily="{StaticResource Handlee}" Style="{StaticResource entryStyle}" IsPassword="true"/>
             <Label Margin="30" />
             <Button x:Name="Button_Signin"
                     Text="Sign in" FontFamily="{StaticResource Handlee}"

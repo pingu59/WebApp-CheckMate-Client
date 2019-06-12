@@ -42,10 +42,16 @@
         <Compile Remove="Views\TaskCheckerPopIp.xaml.cs" />
         <Compile Remove="Views\EmptyClass.cs" />
         <Compile Remove="Models\TaskProgress.xaml.cs" />
+        <Compile Remove="Views\MyView.cs" />
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Models\" />
         <Folder Include="Views\" />
         <Folder Include="Data\" />
+    </ItemGroup>
+    <ItemGroup>
+      <Reference Include="Xamarin.iOS">
+        <HintPath>..\..\..\..\Library\Frameworks\Xamarin.iOS.framework\Versions\12.8.0.2\lib\mono\Xamarin.iOS\Xamarin.iOS.dll</HintPath>
+      </Reference>
     </ItemGroup>
 </Project>

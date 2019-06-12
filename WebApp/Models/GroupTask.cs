@@ -46,7 +46,7 @@ namespace WebApp.Models
             this.repetition = RepetitionConverter.ToRepetition(repetition.Substring(1, member.Count() - 2));
             this.frequency = frequency;
             this.deadline = deadline;
-            this.bet = bet.Substring(1, bet.Length - 2);
+            this.bet = bet;//.Substring(1, bet.Length - 2);
             this.member = parseToList(member.Substring(1, member.Count() - 2));
             tapRecog = new TapGestureRecognizer();
             tapRecog.Tapped += (sender, e) => { Constants.mainPage.DisplayTaskInfo(this); };

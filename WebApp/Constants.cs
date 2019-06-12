@@ -4,6 +4,7 @@ using WebApp.Models;
 using WebApp.Views;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace WebApp
 {
@@ -52,6 +53,8 @@ namespace WebApp
         public static List<GroupTask> MyTask;
         public static Task backgroudProcess;
         public static bool firstLoginToday;
+
+        public static CancellationTokenSource tokenSource;
 
         public static string getUsername(int id)
         {

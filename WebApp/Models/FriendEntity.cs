@@ -31,6 +31,9 @@ namespace WebApp.Models
                 View view = new Label
                 {
                     Text = FriendName,
+                    FontFamily = Device.RuntimePlatform == Device.iOS ? "Handlee" : null,
+                    Margin = 3,
+                    FontSize = 20
                 };
                 view.GestureRecognizers.Add(tapRecog);
                 this.view = view;

@@ -44,10 +44,12 @@
           <e p="FriendTask.cs" t="Include" />
           <e p="FriendUpdate.cs" t="Include" />
           <e p="GroupTask.cs" t="Include" />
-          <e p="History.cs" t="Include" />
+          <e p="HistoryUpdate.cs" t="Include" />
           <e p="Penalty.cs" t="Include" />
           <e p="Progress.cs" t="Include" />
           <e p="Repetition.cs" t="Include" />
+          <e p="Statistic.cs" t="Include" />
+          <e p="Summary.cs" t="Include" />
           <e p="User.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -59,6 +61,7 @@
         </e>
         <e p="UserDBModel.cs" t="Include" />
         <e p="UserLog.cs" t="Include" />
+        <e p="UserNotificationCenterDelegate.cs" t="Include" />
         <e p="Views" t="Include">
           <e p="AboutPage.xaml" t="Include" />
           <e p="AboutPage.xaml.cs" t="Include" />
@@ -90,6 +93,8 @@
           <e p="Penalties.xaml.cs" t="Include" />
           <e p="SettingPage.xaml" t="Include" />
           <e p="SettingPage.xaml.cs" t="Include" />
+          <e p="SingleTaskHistory.xaml" t="Include" />
+          <e p="SingleTaskHistory.xaml.cs" t="Include" />
           <e p="TaskCheckerPopUp.xaml" t="Include" />
           <e p="TaskCheckerPopUp.xaml.cs" t="Include" />
         </e>
@@ -170,8 +175,18 @@
             <e p="Icon80.png" t="Include" />
             <e p="WechatIMG1674.png" t="Include" />
           </e>
-          <e p="LaunchImage.launchimage" t="Include">
+          <e p="FlashImage.imageset" t="Include">
             <e p="Contents.json" t="Include" />
+            <e p="屏幕快照 2019-06-12 下午5.05.55-1.png" t="Include" />
+            <e p="屏幕快照 2019-06-12 下午5.05.55.png" t="Include" />
+          </e>
+          <e p="LaunchImage.launchimage" t="Include">
+            <e p="4.7retina.png" t="Include" />
+            <e p="5.5retina.png" t="Include" />
+            <e p="Contents.json" t="Include" />
+            <e p="x:xs.png" t="Include" />
+            <e p="xr.png" t="Include" />
+            <e p="xsmax.png" t="Include" />
           </e>
           <e p="Search.imageset" t="Include" />
         </e>
@@ -184,6 +199,7 @@
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
         <e p="Resources" t="Include">
+          <e p="Flash.storyboard" t="Include" />
           <e p="FrederickatheGreat-Regular.ttf" t="Include" />
           <e p="Handlee.ttf" t="Include" />
           <e p="LaunchScreen.storyboard" t="Include" />

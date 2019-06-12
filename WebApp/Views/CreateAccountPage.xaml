@@ -4,13 +4,26 @@
              x:Class="WebApp.Views.CreateAccountPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="Label_Username" Text="Username" />
-            <Entry x:Name="Entry_Username" Placeholder="Username" />
-            <Label x:Name="Label_Password" Text="Password" />
-            <Entry x:Name="Entry_Password" Placeholder="Password" />
+            <Label Margin="30"/>
+            <Label x:Name="Label_Username" Text="Username" 
+                   Style="{StaticResource largeLabel}"
+                   FontFamily="{StaticResource Handlee}"/>
+            <Entry x:Name="Entry_Username" Placeholder="Username" 
+                   Style="{StaticResource entryStyle}"
+                   FontFamily="{StaticResource Handlee}"/>
+            
+            <Label x:Name="Label_Password" Text="Password" 
+                   Style="{StaticResource largeLabel}"
+                   FontFamily="{StaticResource Handlee}"/>
+            <Entry x:Name="Entry_Password" Placeholder="Password" 
+                   Style="{StaticResource entryStyle}"
+                   FontFamily="{StaticResource Handlee}"/>
+            <Label Margin="30"/>
             <Button x:Name="Button_Confirm"
                     Text="Confirm"
-                    Clicked="OnConfirmButtonClicked" />
+                    Clicked="OnConfirmButtonClicked"
+                    Style="{StaticResource buttons}"
+                    FontFamily="{StaticResource Handlee}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

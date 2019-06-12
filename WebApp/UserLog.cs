@@ -45,16 +45,16 @@ namespace WebApp
 
         public static void WriteLoginTime()
         {
-            string queryString = "SELECT * FROM UserLog WHERE userid = ?";
-            var queryResult = App.UserLogDB.QueryAsync<UserLog>(queryString, Constants.me.userid).Result;
-            if (queryResult.Count == 0)
-            {
-                App.UserLogDB.InsertAsync(new UserLog(Constants.me.userid, DateTime.Now.ToString("MM/dd/yyyy HH:mm")));
-            }
-            else
-            {
-                App.UserLogDB.UpdateAsync(new UserLog(Constants.me.userid, DateTime.Now.ToString("MM/dd/yyyy HH:mm")));
-            }
+            //string queryString = "SELECT * FROM UserLog WHERE userid = ?";
+            //var queryResult = App.UserLogDB.QueryAsync<UserLog>(queryString, Constants.me.userid).Result;
+            //if (queryResult.Count == 0)
+            //{
+            //    App.UserLogDB.InsertAsync(new UserLog(Constants.me.userid, DateTime.Now.ToString("MM/dd/yyyy HH:mm")));
+            //}
+            //else
+            //{
+            //    App.UserLogDB.UpdateAsync(new UserLog(Constants.me.userid, DateTime.Now.ToString("MM/dd/yyyy HH:mm")));
+            //}
         }
     }
 }

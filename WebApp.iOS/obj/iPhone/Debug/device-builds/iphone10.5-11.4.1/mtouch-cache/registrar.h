@@ -28,6 +28,7 @@
 @class UIApplicationDelegate;
 @class Xamarin_Forms_Platform_iOS_FormsApplicationDelegate;
 @class AppDelegate;
+@class UNUserNotificationCenterDelegate;
 @class GLKViewDelegate;
 @class CoreImage_CILanczosScaleTransform;
 @class WKNavigationDelegate;
@@ -203,6 +204,7 @@
 @class RgPopupWindow;
 @class Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer;
 @class Refractored_XamForms_PullToRefresh_iOS_PullToRefreshLayoutRenderer;
+@class LocalNotificationsSample_iOS_UserNotificationCenterDelegate;
 @class Plugin_Media_MediaPickerController;
 @class Plugin_Media_MediaPickerPopoverDelegate;
 @class Plugin_Media_MediaPickerDelegate;
@@ -236,6 +238,11 @@
 @interface AppDelegate : Xamarin_Forms_Platform_iOS_FormsApplicationDelegate<UIApplicationDelegate> {
 }
 	-(BOOL) application:(UIApplication *)p0 didFinishLaunchingWithOptions:(NSDictionary *)p1;
+	-(id) init;
+@end
+
+@interface UNUserNotificationCenterDelegate : NSObject<UNUserNotificationCenterDelegate> {
+}
 	-(id) init;
 @end
 
@@ -1035,6 +1042,17 @@
 
 @interface Refractored_XamForms_PullToRefresh_iOS_PullToRefreshLayoutRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
 }
+	-(id) init;
+@end
+
+@interface LocalNotificationsSample_iOS_UserNotificationCenterDelegate : NSObject<UNUserNotificationCenterDelegate> {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) userNotificationCenter:(UNUserNotificationCenter *)p0 willPresentNotification:(UNNotification *)p1 withCompletionHandler:(id)p2;
+	-(BOOL) conformsToProtocol:(void *)p0;
 	-(id) init;
 @end
 

@@ -7,10 +7,10 @@ namespace WebApp.Views
 {
     public partial class ImageHistory : Rg.Plugins.Popup.Pages.PopupPage
     {
-        public ImageHistory(History history)
+        public ImageHistory(HistoryUpdate historyUpdate)
         {
             InitializeComponent();
-            Xamarin.Forms.ImageSource image = ImageSource.FromFile(history.address);
+            Xamarin.Forms.ImageSource image = ImageSource.FromFile(historyUpdate.address);
             PhotoImage.Source = image;
         }
     }

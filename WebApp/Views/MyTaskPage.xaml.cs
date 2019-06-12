@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using Plugin.LocalNotifications;
 using WebApp.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -35,8 +37,16 @@ namespace WebApp.Views
             _username.Text = Constants.me.username;
             _user_detail.Text = "ID : " + Constants.me.userid + '\n'; //user.Id.toString();
             _user_detail.Text += "details e.g. age"; //user.Age;
-            Constants.backgroudProcess =Task.Run(() => { PeriodicCheck(); });
+            Constants.tokenSource = new CancellationTokenSource();
+            CancellationToken token = Constants.tokenSource.Token;
+            Constants.backgroudProcess =Task.Run(() => { PeriodicCheck(); }, token);
             Constants.backgroudProcess.ConfigureAwait(false);
+            Console.WriteLine("Before showing notifications...");
+            CrossLocalNotifications.Current.Show("Hi(✿◖◡◗)ﾉ!", "Nice to see back!!");
+            CrossLocalNotifications.Current.Show("Good morning(✿◖◡◗)ﾉ!",
+          "Would you mind to check your todo lists for today?", 101, DateTime.Today.AddDays(1).AddHours(8));
+            //Add notification at 8 o'clock for tomorrow on every openening.
+            Console.WriteLine("After");
             pullRefresh.RefreshCommand = new Command(() => RefreshCommand());
         }
 
@@ -60,6 +70,20 @@ namespace WebApp.Views
             CheckNewInvitation();
             CheckFriendUpdate();
             CheckMyCheckedUpdate();
+            getCompleted();
+        }
+
+        private async void getCompleted()
+        {
+            List<Statistic> stats = await Communications.GetStatistics();
+            foreach( Statistic s in stats)
+            {
+                await DisplayAlert("⚡️⚡️Congratulations⚡️⚡️", "You have completed your task "
+                    + s.taskname + "\nSuccess: " + s.completed + "\nNo. of penalties: " + s.failed
+                     + "\nTotal checks required: " + s.total +
+                    "\nSuccess Percentage: " + s.percentage, "Ok");
+            }
+
         }
 
         internal void DisplayFriendTask(FriendTask friendTask)
@@ -136,6 +160,7 @@ namespace WebApp.Views
 
         public async void OnLogOutButtonClicked(object sender, System.EventArgs e)
         {
+            Constants.tokenSource.Cancel();
             await Constants.backgroudProcess.ConfigureAwait(true);
             await App.UserDB.UpdateAsync(new UserDBModel(1, -1));
             ClearConstants();

@@ -17,7 +17,8 @@
           "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.0.1",
           "Xamarin.Forms": "4.0.0.425677",
-          "sqlite-net-pcl": "1.5.231"
+          "sqlite-net-pcl": "1.5.231",
+          "Xamarin.iOS": "0.0.0.0"
         },
         "runtime": {
           "WebApp.dll": {}
@@ -163,6 +164,14 @@
             "fileVersion": "2.0.0.0"
           }
         }
+      },
+      "Xamarin.iOS/0.0.0.0": {
+        "runtime": {
+          "Xamarin.iOS.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
       }
     }
   },
@@ -269,6 +278,11 @@
       "sha512": "sha512-4gyY6veCilKptd1xfK/6/yRYYmhOHoiz4x8poRoD0yoRgeRGLCxZeNqK9TgLyLYQ+h4a6Y3/6U0I5pJAp4GJ5g==",
       "path": "xamarin.forms/4.0.0.425677",
       "hashPath": "xamarin.forms.4.0.0.425677.nupkg.sha512"
+    },
+    "Xamarin.iOS/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
