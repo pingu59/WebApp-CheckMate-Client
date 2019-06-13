@@ -49,6 +49,6 @@
 	<key>UILaunchStoryboardName</key>
 	<string>Flash</string>
 	<key>CFBundleIdentifier</key>
-	<string>group27.WebApp</string>
+	<string>com.xamarin.Audrey</string>
 </dict>
 </plist>

@@ -256,7 +256,8 @@ namespace WebApp.Views
                 {
                     FriendEntity fe = await Communications.GetFriendEntity(i);
                     Constants.Friend.Friends.Add(fe);
-                    FriendList.Children.Add(fe.GetView());
+                    View v = fe.GetView();
+                    FriendList.Children.Add(v);
                 }
                 else
                 {

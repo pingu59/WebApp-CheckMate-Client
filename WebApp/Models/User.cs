@@ -14,7 +14,7 @@ namespace WebApp.Models
         public int userid { get; set; }
         public string username { get; set; }
         public string password { get; set; }
-        public int avatarNum;
+        public int avatarNum { get; set; }
         internal Image ProfilePicture;
 
         public User() {}

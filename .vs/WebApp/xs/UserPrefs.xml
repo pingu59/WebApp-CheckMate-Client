@@ -1,20 +1,17 @@
 ﻿<Properties StartupConfiguration="{FC97C75F-7E78-408D-BD0A-42ADF0A53DCD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Views/MyHistory.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Models/FriendEntity.cs">
     <Files>
       <File FileName="WebApp.iOS/Resources/LaunchScreen.storyboard" />
-      <File FileName="WebApp.iOS/Info.plist" />
       <File FileName="WebApp/Views/AddTask.xaml" />
       <File FileName="WebApp/Views/MyHistory.xaml" />
       <File FileName="WebApp/Views/MyTaskPage.xaml" />
       <File FileName="WebApp.iOS/Resources/Flash.storyboard" />
-      <File FileName="WebApp/Views/CreateAccountPage.xaml" />
-      <File FileName="WebApp/Views/AddTask.xaml.cs" Line="34" Column="37" />
-      <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="17" Column="1" />
-      <File FileName="WebApp.iOS/Properties/AssemblyInfo.cs" Line="56" Column="77" />
-      <File FileName="WebApp/Models/Summary.cs" Line="21" Column="51" />
+      <File FileName="WebApp.iOS/Info.plist" />
+      <File FileName="WebApp/Models/User.cs" Line="17" Column="42" />
       <File FileName="WebApp.iOS/Main.cs" Line="18" Column="1" />
-      <File FileName="WebApp/Views/MyHistory.xaml.cs" Line="20" Column="23" />
-      <File FileName="WebApp/Constants.cs" Line="98" Column="38" />
+      <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="257" Column="66" />
+      <File FileName="WebApp/Data/Communications.cs" Line="152" Column="48" />
+      <File FileName="WebApp/Models/FriendEntity.cs" Line="23" Column="38" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,17 +22,16 @@
                 <Node name="PackageDependencies" expanded="True" />
                 <Node name="SdkDependencies" expanded="True" />
               </Node>
-              <Node name="Models" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="FriendEntity.cs" selected="True" />
+              </Node>
               <Node name="Views" expanded="True">
-                <Node name="AddTask.xaml" expanded="True" />
-                <Node name="MyHistory.xaml" expanded="True">
-                  <Node name="MyHistory.xaml.cs" selected="True" />
-                </Node>
+                <Node name="MyHistory.xaml" expanded="True" />
                 <Node name="MyTaskPage.xaml" expanded="True" />
               </Node>
             </Node>
             <Node name="WebApp.iOS" expanded="True">
-              <Node name="Properties" expanded="True" />
               <Node name="Resources" expanded="True" />
             </Node>
           </Node>
@@ -44,7 +40,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.WebApp.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
-  <MonoDevelop.Ide.ItemProperties.WebApp.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.ef076f2e114cf956b69724c41d3c11a94cdb7f93" />
+  <MonoDevelop.Ide.ItemProperties.WebApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.00379e37241174e0851495633e58d82218a56ab5" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
