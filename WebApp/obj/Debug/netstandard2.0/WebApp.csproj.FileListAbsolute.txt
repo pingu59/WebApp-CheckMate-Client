@@ -190,3 +190,8 @@
 /Users/apple/Xamarin/WebApp/bin/Debug/netstandard2.0/Xamarin.iOS.dll
 /Users/apple/Xamarin/WebApp/bin/Debug/netstandard2.0/Xamarin.iOS.pdb
 /Users/apple/Xamarin/WebApp/obj/Debug/netstandard2.0/WebApp.csproj.CopyComplete
+/Users/Liu/Xamarin/WebApp/bin/Debug/netstandard2.0/Xamarin.iOS.dll
+/Users/Liu/Xamarin/WebApp/bin/Debug/netstandard2.0/Xamarin.iOS.pdb
+/Users/Liu/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/ImageHistory.xaml.g.cs
+/Users/Liu/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/SingleTaskHistory.xaml.g.cs
+/Users/Liu/Xamarin/WebApp/obj/Debug/netstandard2.0/WebApp.csproj.CopyComplete

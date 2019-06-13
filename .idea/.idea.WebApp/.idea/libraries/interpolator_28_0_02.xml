@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../Library/Application Support/JetBrains/Rider/AndroidLibs/tmp/interpolator-28.0.0.aar/classes.jar!/" />
     </CLASSES>
+    <JAVADOC />
     <SOURCES />
   </library>
 </component>

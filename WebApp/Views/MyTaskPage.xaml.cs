@@ -31,6 +31,11 @@ namespace WebApp.Views
             Title = CurrentPage.Title;
 
             BindingContext = this;
+            HomePage.IconImageSource = ImageSource.FromFile("HomeIcon");
+            Friend.IconImageSource = ImageSource.FromFile("FriendsIcon");
+            MyProfilePage.IconImageSource = ImageSource.FromFile("MyProfileIcon");
+            Add.IconImageSource = ImageSource.FromFile("AddIcon");
+            
 
             _username.Text = Constants.me.username;
             _user_detail.Text = "ID : " + Constants.me.userid + '\n'; //user.Id.toString();

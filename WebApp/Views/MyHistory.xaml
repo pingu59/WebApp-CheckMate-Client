@@ -8,7 +8,7 @@
                 <DataTemplate>
                     <ViewCell Height="180">
                         <Frame MinimumHeightRequest="180" CornerRadius="30" BorderColor="#42C2A9" Margin="5"
-                               BackgroundColor="{Binding randomColour()}" HasShadow="true">
+                                HasShadow="true">
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>

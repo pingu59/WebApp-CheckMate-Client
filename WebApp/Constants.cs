@@ -89,6 +89,18 @@ namespace WebApp
             }
             return "unknown";
         }
+        
+        public static Random random = new Random();
+        public static Color randomColour()
+        {
+            Color[] colors = { Color.FromHex("65d6d2"),
+                Color.FromHex("4fb899"),
+                Color.FromHex("f6ce27"),
+                Color.FromHex("E9807D"),
+                Color.FromHex("E2374C")};
+
+            return colors[random.Next(5)];
+        }
 
     }
 }

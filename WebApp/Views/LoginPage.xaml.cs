@@ -16,6 +16,7 @@ namespace WebApp.Views
         public LoginPage()
         {
             InitializeComponent();
+            LoginIcon.Source = ImageSource.FromFile("LoginIcon");
         }
 
         public async void PushToMyTask()

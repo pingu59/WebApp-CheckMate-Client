@@ -40,8 +40,9 @@ namespace WebApp.Models
             {
                 ColumnDefinitions =
                 {
-                    new ColumnDefinition{Width = 100}
-                }
+                    new ColumnDefinition{Width = 150},
+                    new ColumnDefinition{Width = 150}
+                },
             };
 
             grid.Children.Add(new Label
@@ -63,7 +64,5 @@ namespace WebApp.Models
 
             return grid;
         }
-
-
     }
 }

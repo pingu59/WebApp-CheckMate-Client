@@ -3,9 +3,40 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WebApp.Views.FriendRequestsListPage">
     <ContentPage.Content>
-        <StackLayout>
-            <ListView x:Name="FriendRequestsView"
-                      ItemTapped="Handle_ItemTapped"/>
-        </StackLayout>
+        <ListView x:Name="FriendRequestsView" ItemTapped="Handle_ItemTapped" RowHeight="100">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Height="100">
+                        <Frame MinimumHeightRequest="100" CornerRadius="30" BorderColor="#FF9790">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.5*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                
+                                <Image Grid.Column="0" Source="{Binding image}"/>
+                                
+                                
+                                <StackLayout Grid.Column="1">
+                                    <Label Text="User ID: "
+                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+                                    <Label Text="Username: "
+                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>                                          
+                                </StackLayout>
+                                
+                                <StackLayout Grid.Column="2">
+                                    <Label Text="{Binding FriendID}"
+                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+                                    <Label Text="{Binding FriendName}"
+                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage.Content>
 </ContentPage>

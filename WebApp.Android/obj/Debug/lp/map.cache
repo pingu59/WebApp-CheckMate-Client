@@ -1,5 +1,3 @@
-System.Runtime
-WebApp
 FormsViewGroup
 Newtonsoft.Json
 Plugin.CurrentActivity
@@ -16,6 +14,8 @@ SQLitePCLRaw.batteries_v2
 SQLitePCLRaw.core
 SQLitePCLRaw.lib.e_sqlite3
 SQLitePCLRaw.provider.e_sqlite3
+System.Runtime
+WebApp
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common
 Xamarin.Android.Arch.Lifecycle.Runtime
@@ -41,6 +41,3 @@ Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
-netstandard
-System.Reflection.Extensions
-Xamarin.iOS

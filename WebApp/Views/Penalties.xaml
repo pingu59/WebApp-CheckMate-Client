@@ -3,11 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="WebApp.Views.Penalties">
     <ContentPage.Content>
-         <ListView x:Name="list" ItemTapped="tapped" RowHeight="150">
+         <ListView x:Name="list" ItemTapped="tapped" RowHeight="180">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell Height="150">
-                        <Frame MinimumHeightRequest="150" CornerRadius="30" BorderColor="#FF9790">
+                    <ViewCell Height="180">
+                        <Frame MinimumHeightRequest="180" CornerRadius="30" BorderColor="{Binding color}" Margin="5">
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>

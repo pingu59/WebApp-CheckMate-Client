@@ -9,13 +9,11 @@ namespace WebApp.Views
 {
     public partial class FriendRequestsListPage : ContentPage
     {
-        private List<int> newFriends;
+        private List<FriendEntity> newFriends;
         public FriendRequestsListPage()
         {
             InitializeComponent();
             LoadContents();
-            Console.WriteLine("New friends are:");
-            Console.WriteLine(newFriends);
         }
 
         private async void LoadContents()
@@ -32,7 +30,7 @@ namespace WebApp.Views
         //changed here
         async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            int requestID = (int)e.Item;
+            FriendEntity request = (FriendEntity)e.Item;
             bool approveRequest = await DisplayAlert("Friend Request", "Add this person?", "Yes", "No");
             await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PushAsync(
                new LoadingPage());
@@ -40,7 +38,7 @@ namespace WebApp.Views
             {
                 await DisplayAlert(null, "You added this person successfully!", "OK");
                 
-                FriendEntity newFriend = await Communications.acceptFriend(requestID);
+                FriendEntity newFriend = await Communications.acceptFriend(request.FriendID);
                 //use and parse this string afterwards
                 Constants.Friend.Friends.Add(newFriend);
                 Constants.mainPage.addNewFriendView(newFriend);
@@ -48,15 +46,13 @@ namespace WebApp.Views
             else
             {
                 await DisplayAlert(null, "You denied the friend request.", "OK");
-                //TODO: update local&server friends& database
             }
-            newFriends.Remove(requestID);
+            newFriends.Remove(request);
 
-            // REFRESH LISTVIEW DATA
             FriendRequestsView.ItemsSource = null;
             FriendRequestsView.ItemsSource = newFriends;
 
-            await Communications.DeleteFriendRequest(Constants.me.userid, requestID);
+            await Communications.DeleteFriendRequest(Constants.me.userid, request.FriendID);
             await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PopAsync();
             //No need request for this one 
         }

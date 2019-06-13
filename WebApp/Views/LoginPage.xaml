@@ -6,7 +6,9 @@
              NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
         <StackLayout Margin="20">
-            <Label Margin="30" />
+            
+            <Image x:Name="LoginIcon" HeightRequest="200" Margin="20"/>
+            
             <Label Text="User ID" FontFamily="{StaticResource Handlee}" Style="{StaticResource largeLabel}"/>
             <Entry x:Name="Entry_UserID" Placeholder="please enter your ID" 
                    FontFamily="{StaticResource Handlee}" Style="{StaticResource entryStyle}"/>

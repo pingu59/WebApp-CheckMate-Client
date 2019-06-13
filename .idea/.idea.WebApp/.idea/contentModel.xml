@@ -23,7 +23,8 @@
       <e p="proguard.txt" t="Include" />
     </e>
     <e p="$PROJECT_DIR$/../Library/Caches/Rider2019.1/extResources" t="IncludeRecursive" />
-    <e p="$PROJECT_DIR$/../Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_WebApp.795360769.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$/../Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_WebApp.-492357949.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$/../Library/Developer/Xamarin/android-sdk-macosx/platforms/android-27/Data/res" t="IncludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="WebApp" t="IncludeRecursive">
@@ -159,26 +160,79 @@
       <e p="WebApp.iOS" t="IncludeRecursive">
         <e p="AppDelegate.cs" t="Include" />
         <e p="Assets.xcassets" t="Include">
+          <e p="AddIcon.imageset" t="Include">
+            <e p="AddFriendsIcon.png" t="Include" />
+            <e p="AddIcon.png" t="Include" />
+            <e p="Contents.json" t="Include" />
+          </e>
           <e p="AppIcon.appiconset" t="Include">
             <e p="Contents.json" t="Include" />
             <e p="icon.png" t="Include" />
             <e p="Icon1024.png" t="Include" />
-            <e p="Icon120.png" t="Include" />
             <e p="Icon152.png" t="Include" />
             <e p="Icon167.png" t="Include" />
             <e p="Icon20.png" t="Include" />
             <e p="Icon29.png" t="Include" />
             <e p="Icon40.png" t="Include" />
             <e p="Icon58.png" t="Include" />
-            <e p="Icon60.png" t="Include" />
             <e p="Icon76.png" t="Include" />
             <e p="Icon80.png" t="Include" />
+            <e p="notificationIcon.png" t="Include" />
+            <e p="spotlightIcon.png" t="Include" />
             <e p="WechatIMG1674.png" t="Include" />
+          </e>
+          <e p="avatar0.imageset" t="Include">
+            <e p="8101560351452_.pic.jpg" t="Include" />
+            <e p="Contents.json" t="Include" />
+          </e>
+          <e p="avatar1.imageset" t="Include">
+            <e p="animal-art-beautiful-325045.jpg" t="Include" />
+            <e p="Contents.json" t="Include" />
+          </e>
+          <e p="avatar2.imageset" t="Include">
+            <e p="601560361267_.pic.jpg" t="Include" />
+            <e p="Contents.json" t="Include" />
+          </e>
+          <e p="avatar3.imageset" t="Include">
+            <e p="611560430774_.pic.jpg" t="Include" />
+            <e p="Contents.json" t="Include" />
+          </e>
+          <e p="avatar4.imageset" t="Include">
+            <e p="621560430791_.pic.jpg" t="Include" />
+            <e p="Contents.json" t="Include" />
+          </e>
+          <e p="avatar5.imageset" t="Include">
+            <e p="art-close-up-ecology-886521.jpg" t="Include" />
+            <e p="Contents.json" t="Include" />
+          </e>
+          <e p="avatar6.imageset" t="Include">
+            <e p="backlit-beautiful-crescent-moon-556666.jpg" t="Include" />
+            <e p="Contents.json" t="Include" />
+          </e>
+          <e p="avatar7.imageset" t="Include">
+            <e p="animal-celebes-crested-macaque-funny-50582.jpg" t="Include" />
+            <e p="Contents.json" t="Include" />
+          </e>
+          <e p="avatar8.imageset" t="Include">
+            <e p="animal-close-up-leopard-87403.jpg" t="Include" />
+            <e p="Contents.json" t="Include" />
+          </e>
+          <e p="avatar9.imageset" t="Include">
+            <e p="animal-cute-duckling-162140.jpg" t="Include" />
+            <e p="Contents.json" t="Include" />
           </e>
           <e p="FlashImage.imageset" t="Include">
             <e p="Contents.json" t="Include" />
             <e p="屏幕快照 2019-06-12 下午5.05.55-1.png" t="Include" />
             <e p="屏幕快照 2019-06-12 下午5.05.55.png" t="Include" />
+          </e>
+          <e p="FriendsIcon.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="FriendsIcon-1.png" t="Include" />
+          </e>
+          <e p="HomeIcon.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="HomeIcon-1.png" t="Include" />
           </e>
           <e p="LaunchImage.launchimage" t="Include">
             <e p="4.7retina.png" t="Include" />
@@ -187,6 +241,16 @@
             <e p="x:xs.png" t="Include" />
             <e p="xr.png" t="Include" />
             <e p="xsmax.png" t="Include" />
+          </e>
+          <e p="LoginIcon.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="LoginIcon-1.jpeg" t="Include" />
+            <e p="LoginIcon-2.jpeg" t="Include" />
+            <e p="LoginIcon.jpeg" t="Include" />
+          </e>
+          <e p="MyProfileIcon.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="MyProfileIcon.png" t="Include" />
           </e>
           <e p="Search.imageset" t="Include" />
         </e>
@@ -199,6 +263,7 @@
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
         <e p="Resources" t="Include">
+          <e p="default_avatar0.jpeg" t="Include" />
           <e p="Flash.storyboard" t="Include" />
           <e p="FrederickatheGreat-Regular.ttf" t="Include" />
           <e p="Handlee.ttf" t="Include" />

@@ -50,6 +50,7 @@ namespace WebApp.iOS
 
                 UIApplication.SharedApplication.RegisterUserNotificationSettings(settings);
             }
+            UINavigationBar.Appearance.TintColor = UIColor.FromRGB(248, 213, 36);
             LoadApplication(new App());
             return base.FinishedLaunching(app, options);
         }

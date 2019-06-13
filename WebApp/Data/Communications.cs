@@ -97,23 +97,21 @@ namespace WebApp
             return Constants.SERVER_ERROR;
         }
 
-        public static async Task<List<int>> GetFriendsRequests(int userid)
+        public static async Task<List<FriendEntity>> GetFriendsRequests(int userid)
         {
             string baseurl = Constants.BaseAddress + "friendreqlist?id={0}";
-            string actualurl = String.Format(baseurl, userid);
+            string actualurl = string.Format(baseurl, userid);
             Console.WriteLine(actualurl);
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);
             var response = await _client.GetAsync(uri);
+
             if (response.IsSuccessStatusCode)
             {
-                string friendRequestsStr = await response.Content.ReadAsStringAsync();
-                Console.WriteLine(friendRequestsStr);
-                int[] friendsRequests = StringToIntArray(friendRequestsStr);
-                return friendsRequests.ToList();
+                string jsonString = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<FriendEntity>>(jsonString);
             }
-
-            return new List<int>();
+            return new List<FriendEntity>();
         }
 
         //TODO

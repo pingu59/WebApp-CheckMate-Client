@@ -23,9 +23,7 @@
 	<key>MinimumOSVersion</key>
 	<string>8.0</string>
 	<key>CFBundleDisplayName</key>
-	<string>WebApp</string>
-	<key>CFBundleIdentifier</key>
-	<string>group27.WebApp</string>
+	<string>CheckMate</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>UIAppFonts</key>
@@ -50,5 +48,7 @@
 	<string>CheckMate</string>
 	<key>UILaunchStoryboardName</key>
 	<string>Flash</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.xamarin.Audrey</string>
 </dict>
 </plist>

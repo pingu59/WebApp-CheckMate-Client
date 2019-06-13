@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using Newtonsoft.Json;
 
 namespace WebApp.Models
@@ -12,6 +13,7 @@ namespace WebApp.Models
         public int taskid;
         public List<int> members;
         public string memberstring { get; set; }
+        public Color color { get; set; }
         public List<string> names = new List<string>(); 
         [JsonConstructor]
         public Penalty(string date, int taskid, List<int> members, string taskname, string bet)
@@ -21,6 +23,7 @@ namespace WebApp.Models
             this.date = date;
             this.taskid = taskid;
             this.members = members;
+            this.color = Constants.randomColour();
             foreach(int id in members)
             {
                 names.Add(Constants.Friend.getNameOf(id));
