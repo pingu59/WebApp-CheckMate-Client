@@ -19,7 +19,7 @@ namespace WebApp.Models
             this.failed = failed;
             this.total = total;
             this.taskname = taskname.Substring(1, taskname.Length - 2);
-            this.percentage = completed / total;
+            this.percentage = ((float) completed) / ((float) total);
         }
 
     }

@@ -14,10 +14,10 @@ namespace WebApp.Models
         public string memberstring { get; set; }
         public List<string> names = new List<string>(); 
         [JsonConstructor]
-        public Penalty(string date, int taskid, List<int> members)
+        public Penalty(string date, int taskid, List<int> members, string taskname, string bet)
         {
-            this.bet = Constants.getBet(taskid);
-            this.taskname = Constants.getTaskName(taskid);
+            this.bet = bet;
+            this.taskname = taskname;
             this.date = date;
             this.taskid = taskid;
             this.members = members;

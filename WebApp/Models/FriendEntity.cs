@@ -12,7 +12,8 @@ namespace WebApp.Models
         public int FriendID { get; set; }
         public string FriendName { get; set; }
         private View view;
-        private int avatarNum;
+        private int avatarNum { get; set; }
+        [Ignore]
         public ImageSource image { get; set; }
         TapGestureRecognizer tapRecog;
         public FriendEntity() { }
@@ -37,22 +38,25 @@ namespace WebApp.Models
         {
             if (view == null)
             {
-                StackLayout stack = new StackLayout{};
+                StackLayout stack = new StackLayout { };
                 Image i = new Image
                 {
                     Source = image,
-                    Margin = 5,
                     HeightRequest = 50
                 };
                 Label l = new Label
                 {
                     Text = FriendName,
-                    HorizontalOptions = LayoutOptions.Center
+                    HorizontalOptions = LayoutOptions.Center,
+                    FontFamily = Device.RuntimePlatform == Device.iOS ? "Handlee" : null,
+                    FontSize = 20
                 };
                 stack.Children.Add(i);
                 stack.Children.Add(l);
                 stack.GestureRecognizers.Add(tapRecog);
+                stack.Margin = 5;
                 this.view = stack;
+
             }
             return this.view;
         }

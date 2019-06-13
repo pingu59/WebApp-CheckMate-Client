@@ -21,11 +21,10 @@
     <!--You can use any elements here which are extended from Xamarin.Forms.View-->
     <StackLayout 
         VerticalOptions="Center" 
-        HorizontalOptions="Center" 
-        Padding="20, 20, 20, 20">
+        HorizontalOptions="Center">
         <Label x:Name="TaskName" Style="{StaticResource popUpLargeLabel}"
                FontFamily="{StaticResource Handlee}"/>
-        <Grid HorizontalOptions="Center" Padding="20,0">
+        <Grid HorizontalOptions="Center">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="150"/>
                 <ColumnDefinition Width="*"/>
@@ -44,8 +43,8 @@
                    Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
         </Grid>
         <Label Text="Members' Progress" 
-               Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
-        <ScrollView Orientation="Vertical" HeightRequest="100" Padding="30, 0">
+               Style="{StaticResource popUpLargeLabel}" FontFamily="{StaticResource Handlee}"/>
+        <ScrollView Orientation="Vertical" HeightRequest="100">
             <StackLayout Orientation="Vertical" x:Name="FriendsProgress"/>
         </ScrollView>
         <Button x:Name="sendingButton" Text="TAKE PICTURE"

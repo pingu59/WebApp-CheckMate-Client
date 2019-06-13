@@ -6,26 +6,26 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell Height="100">
-                        <Frame MinimumHeightRequest="100">
+                        <Frame MinimumHeightRequest="100" CornerRadius="30" BorderColor="#42C2A9">
                             <Grid>
                                  <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="100"/>
-                                    </Grid.ColumnDefinitions>
-                                <Grid Grid.Column="0">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="200"/>
+                                        <ColumnDefinition Width="*"/>
                                         <ColumnDefinition Width="*"/>
                                     </Grid.ColumnDefinitions>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="20"/>
-                                    </Grid.RowDefinitions>
-                                    <Label Text="Update No.: " Grid.Row="0" Grid.Column="0"/>
-                                    <Label Text="{Binding updateNumber}" Grid.Row="0" Grid.Column="1"/>
-                                    <Label Text="Checker Name: " Grid.Row="1" Grid.Column="0"/>
-                                    <Label Text="{Binding checkerName}" Grid.Row="1" Grid.Column="1"/> 
-                                </Grid>
-                                <Image Source="{Binding address}" Grid.Column="1"/>
+                                <StackLayout Grid.Column="0">
+                                    <Label Text="Update No.: "
+                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+                                    <Label Text="Checker Name: "
+                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Label Text="{Binding updateNumber}" 
+                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
+                                    <Label Text="{Binding checkerName}"
+                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/> 
+                                </StackLayout>
+                                <Image Source="{Binding address}" Grid.Column="2"/>
                             </Grid>
                         </Frame>
                     </ViewCell>

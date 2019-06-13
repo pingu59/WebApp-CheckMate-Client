@@ -125,9 +125,23 @@
     <ImageAsset Include="Assets.xcassets\avatar0.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\avatar0.imageset\8101560351452_.pic.jpg" />
     <ImageAsset Include="Assets.xcassets\avatar1.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\avatar1.imageset\屏幕快照 2018-02-18 下午11.32.15.png" />
     <ImageAsset Include="Assets.xcassets\avatar2.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\avatar2.imageset\601560361267_.pic.jpg" />
+    <ImageAsset Include="Assets.xcassets\avatar3.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\avatar3.imageset\611560430774_.pic.jpg" />
+    <ImageAsset Include="Assets.xcassets\avatar4.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\avatar4.imageset\621560430791_.pic.jpg" />
+    <ImageAsset Include="Assets.xcassets\avatar5.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\avatar6.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\avatar6.imageset\backlit-beautiful-crescent-moon-556666.jpg" />
+    <ImageAsset Include="Assets.xcassets\avatar5.imageset\art-close-up-ecology-886521.jpg" />
+    <ImageAsset Include="Assets.xcassets\avatar7.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\avatar7.imageset\animal-celebes-crested-macaque-funny-50582.jpg" />
+    <ImageAsset Include="Assets.xcassets\avatar8.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\avatar8.imageset\animal-close-up-leopard-87403.jpg" />
+    <ImageAsset Include="Assets.xcassets\avatar1.imageset\animal-art-beautiful-325045.jpg" />
+    <ImageAsset Include="Assets.xcassets\avatar9.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\avatar9.imageset\animal-cute-duckling-162140.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -154,6 +168,13 @@
     <Folder Include="Assets.xcassets\avatar0.imageset\" />
     <Folder Include="Assets.xcassets\avatar1.imageset\" />
     <Folder Include="Assets.xcassets\avatar2.imageset\" />
+    <Folder Include="Assets.xcassets\avatar3.imageset\" />
+    <Folder Include="Assets.xcassets\avatar4.imageset\" />
+    <Folder Include="Assets.xcassets\avatar5.imageset\" />
+    <Folder Include="Assets.xcassets\avatar6.imageset\" />
+    <Folder Include="Assets.xcassets\avatar7.imageset\" />
+    <Folder Include="Assets.xcassets\avatar8.imageset\" />
+    <Folder Include="Assets.xcassets\avatar9.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\FrederickatheGreat-Regular.ttf" />

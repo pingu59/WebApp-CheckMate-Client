@@ -3,11 +3,12 @@
              Title="My History">
     <ContentPage.Content>
         <ListView x:Name="Summary" ItemsSource="{Binding singles}" ItemTapped="toNextLevel"
-                  RowHeight="150">
+                  RowHeight="180">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell Height="150">
-                        <Frame MinimumHeightRequest="150" CornerRadius="30" BorderColor="#FF9790" >
+                    <ViewCell Height="180">
+                        <Frame MinimumHeightRequest="180" CornerRadius="30" BorderColor="#42C2A9" Margin="5"
+                               BackgroundColor="{Binding randomColour()}" HasShadow="true">
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
@@ -19,9 +20,9 @@
                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
                                    <Label Text="Taskid : "
                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/> 
-                                   <Label Text="Completed: "
+                                   <Label Text="Status: "
                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
-                                   <Label Text="Hit percentage : "
+                                   <Label Text="Total progress : "
                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>  
                                </StackLayout>
                                 
@@ -32,7 +33,7 @@
                                            Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
                                     <Label Text="{Binding completed}" 
                                            Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
-                                    <Label Text="{Binding percentage}" 
+                                    <Label Text="{Binding percentageString}" 
                                            Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
                                 </StackLayout>
                                 

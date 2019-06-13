@@ -9,6 +9,7 @@
 #include <objc/message.h>
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <CoreGraphics/CoreGraphics.h>
 #import <Speech/Speech.h>
 #import <UserNotifications/UserNotifications.h>
 #import <Photos/Photos.h>
@@ -20,14 +21,17 @@
 #import <CoreImage/CoreImage.h>
 #import <QuartzCore/QuartzCore.h>
 #import <WebKit/WebKit.h>
-#import <CoreGraphics/CoreGraphics.h>
 #import <EventKit/EventKit.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <AVFoundation/AVFoundation.h>
 
+@class Xamarin_Forms_Platform_iOS_TabbedRenderer;
+@class SwipeTabbedRenderer;
 @class UIApplicationDelegate;
 @class Xamarin_Forms_Platform_iOS_FormsApplicationDelegate;
 @class AppDelegate;
+@class OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource;
+@class OpenTK_Platform_iPhoneOS_iPhoneOSGameView;
 @class UNUserNotificationCenterDelegate;
 @class GLKViewDelegate;
 @class CoreImage_CILanczosScaleTransform;
@@ -82,6 +86,8 @@
 @class UIKit_UIWebView__UIWebViewDelegate;
 @class __NSObject_Disposer;
 @class __XamarinObjectObserver;
+@class System_Net_Http_NSUrlSessionHandler_WrappedNSInputStream;
+@class System_Net_Http_NSUrlSessionHandler_NSUrlSessionHandlerDelegate;
 @class Xamarin_Forms_Platform_iOS_iOS7ButtonContainer;
 @class Xamarin_Forms_Platform_iOS_GlobalCloseContextGestureRecognizer;
 @class Xamarin_Forms_Platform_iOS_ModalWrapper;
@@ -171,7 +177,6 @@
 @class Xamarin_Forms_Platform_iOS_PhoneMasterDetailRenderer_ChildViewController;
 @class Xamarin_Forms_Platform_iOS_PhoneMasterDetailRenderer;
 @class Xamarin_Forms_Platform_iOS_PickerRendererBase_1_PickerSource;
-@class Xamarin_Forms_Platform_iOS_TabbedRenderer;
 @class Xamarin_Forms_Platform_iOS_TabletMasterDetailRenderer_InnerDelegate;
 @class Xamarin_Forms_Platform_iOS_TabletMasterDetailRenderer;
 @class Xamarin_Forms_Platform_iOS_WebViewRenderer_CustomWebViewDelegate;
@@ -196,10 +201,6 @@
 @class Xamarin_Forms_Platform_iOS_NavigationRenderer_SecondaryToolbar;
 @class Xamarin_Forms_Platform_iOS_NavigationRenderer_ParentingViewController;
 @class Xamarin_Forms_Platform_iOS_WkWebViewRenderer_CustomWebViewUIDelegate;
-@class OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource;
-@class OpenTK_Platform_iPhoneOS_iPhoneOSGameView;
-@class System_Net_Http_NSUrlSessionHandler_WrappedNSInputStream;
-@class System_Net_Http_NSUrlSessionHandler_NSUrlSessionHandlerDelegate;
 @class RgPopupPlatformRenderer;
 @class RgPopupWindow;
 @class Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer;
@@ -208,6 +209,24 @@
 @class Plugin_Media_MediaPickerController;
 @class Plugin_Media_MediaPickerPopoverDelegate;
 @class Plugin_Media_MediaPickerDelegate;
+
+@interface Xamarin_Forms_Platform_iOS_TabbedRenderer : UITabBarController {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(UIViewController *) selectedViewController;
+	-(void) setSelectedViewController:(UIViewController *)p0;
+	-(void) didRotateFromInterfaceOrientation:(NSInteger)p0;
+	-(void) viewDidAppear:(BOOL)p0;
+	-(void) viewDidDisappear:(BOOL)p0;
+	-(void) viewDidLayoutSubviews;
+	-(UIViewController *) childViewControllerForStatusBarHidden;
+	-(UIViewController *) childViewControllerForHomeIndicatorAutoHidden;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
 
 @interface UIApplicationDelegate : NSObject<UIApplicationDelegate> {
 }
@@ -239,6 +258,20 @@
 }
 	-(BOOL) application:(UIApplication *)p0 didFinishLaunchingWithOptions:(NSDictionary *)p1;
 	-(id) init;
+@end
+
+@interface OpenTK_Platform_iPhoneOS_iPhoneOSGameView : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	+(Class) layerClass;
+	-(void) layoutSubviews;
+	-(void) willMoveToWindow:(UIWindow *)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) initWithCoder:(NSCoder *)p0;
+	-(id) initWithFrame:(CGRect)p0;
 @end
 
 @interface UNUserNotificationCenterDelegate : NSObject<UNUserNotificationCenterDelegate> {
@@ -844,24 +877,6 @@
 	-(id) init;
 @end
 
-@interface Xamarin_Forms_Platform_iOS_TabbedRenderer : UITabBarController {
-}
-	-(void) release;
-	-(id) retain;
-	-(int) xamarinGetGCHandle;
-	-(void) xamarinSetGCHandle: (int) gchandle;
-	-(UIViewController *) selectedViewController;
-	-(void) setSelectedViewController:(UIViewController *)p0;
-	-(void) didRotateFromInterfaceOrientation:(NSInteger)p0;
-	-(void) viewDidAppear:(BOOL)p0;
-	-(void) viewDidDisappear:(BOOL)p0;
-	-(void) viewDidLayoutSubviews;
-	-(UIViewController *) childViewControllerForStatusBarHidden;
-	-(UIViewController *) childViewControllerForHomeIndicatorAutoHidden;
-	-(BOOL) conformsToProtocol:(void *)p0;
-	-(id) init;
-@end
-
 @interface Xamarin_Forms_Platform_iOS_TabletMasterDetailRenderer : UISplitViewController {
 }
 	-(void) release;
@@ -1014,20 +1029,6 @@
 }
 	-(CGSize) sizeThatFits:(CGSize)p0;
 	-(id) init;
-@end
-
-@interface OpenTK_Platform_iPhoneOS_iPhoneOSGameView : UIView {
-}
-	-(void) release;
-	-(id) retain;
-	-(int) xamarinGetGCHandle;
-	-(void) xamarinSetGCHandle: (int) gchandle;
-	+(Class) layerClass;
-	-(void) layoutSubviews;
-	-(void) willMoveToWindow:(UIWindow *)p0;
-	-(BOOL) conformsToProtocol:(void *)p0;
-	-(id) initWithCoder:(NSCoder *)p0;
-	-(id) initWithFrame:(CGRect)p0;
 @end
 
 @interface Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer : Xamarin_Forms_Platform_iOS_PageRenderer {

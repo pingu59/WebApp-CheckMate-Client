@@ -1,6 +1,10 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using UIKit;
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.iOS;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
@@ -34,3 +38,28 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+
+[assembly: ExportRenderer(typeof(TabbedPage), typeof(SwipeTabbedRenderer))]
+
+class SwipeTabbedRenderer : TabbedRenderer
+{
+    public override void ViewWillAppear(bool animated)
+    {
+        base.ViewWillAppear(animated);
+
+        NativeView.AddGestureRecognizer(new UISwipeGestureRecognizer(() => SelectNextTab(1)) { Direction = UISwipeGestureRecognizerDirection.Left, ShouldRecognizeSimultaneously = ShouldRecognizeSimultaneously });
+        NativeView.AddGestureRecognizer(new UISwipeGestureRecognizer(() => SelectNextTab(-1)) { Direction = UISwipeGestureRecognizerDirection.Right, ShouldRecognizeSimultaneously = ShouldRecognizeSimultaneously });
+    }
+
+    void SelectNextTab(int direction)
+    {
+        int nextIndex = TabbedPage.GetIndex(Tabbed.CurrentPage) + direction;
+        if (nextIndex < 0 || nextIndex >= Tabbed.Children.Count) return;
+        var nextPage = Tabbed.Children[nextIndex];
+        UIView.Transition(Platform.GetRenderer(Tabbed.CurrentPage).NativeView, Platform.GetRenderer(nextPage).NativeView, 0.15, UIViewAnimationOptions.CurveEaseInOut | UIViewAnimationOptions.LayoutSubviews | UIViewAnimationOptions.CurveLinear, null);
+
+        Tabbed.CurrentPage = nextPage;
+    }
+
+    static bool ShouldRecognizeSimultaneously(UIGestureRecognizer gestureRecognizer, UIGestureRecognizer otherGestureRecognizer) => gestureRecognizer != otherGestureRecognizer;
+}

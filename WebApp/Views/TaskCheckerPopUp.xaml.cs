@@ -14,9 +14,10 @@ namespace WebApp.Views
         {
             InitializeComponent();
             TaskName.Text = friendUpdate.task.taskname;
+            TaskOwner.Text = "What " + friendUpdate.username + " just did:";
             Xamarin.Forms.ImageSource image = ImageSource.FromFile(friendUpdate.imageAddress);
             PhotoImage.Source = image;
-            if(friendUpdate.userid == Constants.me.userid)
+            if (friendUpdate.userid == Constants.me.userid)
             {
                 Check.IsVisible = false;
             }
