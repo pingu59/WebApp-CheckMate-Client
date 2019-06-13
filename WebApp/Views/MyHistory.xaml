@@ -7,7 +7,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell Height="180">
-                        <Frame MinimumHeightRequest="180" CornerRadius="30" BorderColor="#42C2A9" Margin="5"
+                        <Frame MinimumHeightRequest="180" CornerRadius="30" BorderColor="{Binding color}" Margin="5"
                                 HasShadow="true">
                             <Grid>
                                 <Grid.ColumnDefinitions>

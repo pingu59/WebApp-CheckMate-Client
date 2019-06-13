@@ -1,3 +1,4 @@
+using System.Drawing;
 using Newtonsoft.Json;
 
 namespace WebApp.Models
@@ -9,6 +10,7 @@ namespace WebApp.Models
         public float percentage { get; set; }
         public string percentageString { get; set; }
         public string completed { get; set; }
+        public Color color { get; set; }
 
         [JsonConstructor]
         public Summary(int taskid, string taskname, float percentage, string completed)
@@ -18,6 +20,7 @@ namespace WebApp.Models
             this.percentage = percentage;
             this.percentageString = percentage + "%";
             this.completed = completed;
+            this.color = Constants.randomColour();
         }
     }
 }
