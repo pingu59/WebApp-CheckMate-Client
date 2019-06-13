@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{FC97C75F-7E78-408D-BD0A-42ADF0A53DCD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Models/FriendEntity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Models/Repetition.cs">
     <Files>
       <File FileName="WebApp.iOS/Resources/LaunchScreen.storyboard" />
       <File FileName="WebApp/Views/AddTask.xaml" />
@@ -9,9 +9,13 @@
       <File FileName="WebApp.iOS/Info.plist" />
       <File FileName="WebApp/Models/User.cs" Line="17" Column="42" />
       <File FileName="WebApp.iOS/Main.cs" Line="18" Column="1" />
-      <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="257" Column="66" />
-      <File FileName="WebApp/Data/Communications.cs" Line="152" Column="48" />
+      <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="280" Column="85" />
+      <File FileName="WebApp/Data/Communications.cs" Line="232" Column="33" />
       <File FileName="WebApp/Models/FriendEntity.cs" Line="23" Column="38" />
+      <File FileName="WebApp/Models/GroupTask.cs" Line="49" Column="60" />
+      <File FileName="WebApp/Views/AddTask.xaml.cs" Line="64" Column="52" />
+      <File FileName="WebApp/Models/HistoryUpdate.cs" Line="29" Column="1" />
+      <File FileName="WebApp/Models/Repetition.cs" Line="33" Column="30" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,10 +28,10 @@
               </Node>
               <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True">
-                <Node name="FriendEntity.cs" selected="True" />
+                <Node name="Repetition.cs" selected="True" />
               </Node>
               <Node name="Views" expanded="True">
-                <Node name="MyHistory.xaml" expanded="True" />
+                <Node name="AddTask.xaml" expanded="True" />
                 <Node name="MyTaskPage.xaml" expanded="True" />
               </Node>
             </Node>
@@ -40,7 +44,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.WebApp.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
-  <MonoDevelop.Ide.ItemProperties.WebApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.00379e37241174e0851495633e58d82218a56ab5" />
+  <MonoDevelop.Ide.ItemProperties.WebApp.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.ef076f2e114cf956b69724c41d3c11a94cdb7f93" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

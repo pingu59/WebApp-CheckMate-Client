@@ -62,7 +62,7 @@ namespace WebApp.Views
                         else
                         {
                             Repetition repetition =
-                                RepetitionConverter.ToRepetition(selectedItem.ToString());
+                                RepetitionConverter.toCreateRepetition(selectedItem.ToString());
                             int frequency = int.Parse(Frequency.Text);
                             task = new GroupTask(taskName.Text, repetition, frequency, datepicker.Date ,members, Penalty.Text);
                             int taskid = await Communications.addGroupTask(task);

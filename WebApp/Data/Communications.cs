@@ -229,7 +229,7 @@ namespace WebApp
             string baseurl = Constants.BaseAddress + "createTask?myid={0}&taskname={1}&" +
                 "repetition={2}&frequency={3}&members={4}&deadline={5}&bet={6}";
             string actualurl = string.Format(baseurl, Constants.me.userid, task.taskname,
-                task.repetition.ToString(), task.frequency, toSpringBootArray(task.member),
+                RepetitionConverter.RepToString(task.repetition), task.frequency, toSpringBootArray(task.member),
                 task.getDeadlineString(), task.bet);
             Console.WriteLine(actualurl);
             HttpClient _client = new HttpClient();

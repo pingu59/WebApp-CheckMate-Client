@@ -288,6 +288,8 @@ namespace WebApp.Views
                 string inviteString = string.Format(baseString, taskowner, task.taskname);
                 Constants.mainPage.DisplayInvitation(inviteString);
                 Console.WriteLine(bt.frequency);
+                Constants.MyTask.Add(bt);
+                Constants.mainPage.taskStack.Children.Add(bt.GetView());
                 if (!Constants.FriendTasks.Exists((obj) => obj.taskid == bt.taskid))
                 {
                     Constants.FriendTasks.Add(task);

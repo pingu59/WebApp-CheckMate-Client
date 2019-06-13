@@ -43,7 +43,7 @@ namespace WebApp.Models
             this.creatorid = creatorid;
             this.taskid = taskid;
             this.taskname = taskname.Substring(1, taskname.Count() -2);
-            this.repetition = RepetitionConverter.ToRepetition(repetition.Substring(1, member.Count() - 2));
+            this.repetition = RepetitionConverter.ToRepetition(repetition.Substring(1, repetition.Length - 2));
             this.frequency = frequency;
             this.deadline = deadline;
             this.bet = bet;//.Substring(1, bet.Length - 2);
@@ -129,7 +129,9 @@ namespace WebApp.Models
             grid.Children.Add(new Label
             {
                 Text = RepetitionConverter.RepToString(repetition),
+                FontFamily = Device.RuntimePlatform == Device.iOS ? "Handlee" : null,
                 FontSize = 13,
+                TextColor = Color.White
             }, 1, 1);
             return grid;
         }

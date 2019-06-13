@@ -4,7 +4,7 @@ namespace WebApp.Models
 {
     public static class RepetitionConverter
     {
-        public static Repetition ToRepetition(String str)
+        public static Repetition ToRepetition(string str)
         {
             switch (str)
             {
@@ -19,7 +19,22 @@ namespace WebApp.Models
             }
         }
 
-        public static String RepToString(Repetition r)
+        public static Repetition toCreateRepetition(string str)
+        {
+            switch (str)
+            {
+                case "Day":
+                    return Repetition.Daily;
+                case "Month":
+                    return Repetition.Monthly;
+                case "Week":
+                    return Repetition.Weekly;
+                default:
+                    return Repetition.None;
+            }
+        }
+
+        public static string RepToString(Repetition r)
         {
             switch (r)
             {
@@ -30,7 +45,7 @@ namespace WebApp.Models
                 case Repetition.Weekly:
                     return "Weekly";
                 default:
-                    return "";
+                    return "None";
             }
         }
     }
