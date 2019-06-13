@@ -22,7 +22,7 @@
                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/> 
                                    <Label Text="Status: "
                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
-                                   <Label Text="Total progress : "
+                                   <Label Text="Completeness : "
                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>  
                                </StackLayout>
                                 

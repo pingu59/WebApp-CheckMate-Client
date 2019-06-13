@@ -29,7 +29,9 @@ namespace WebApp.Views
                 "clean bathroom",
                 "bring everyone a homemade lunch",
                 "buy everyone a beer",
-                "buy everyone icecream"
+                "buy everyone icecream",
+                "buy everyone milktea",
+                "write group report"
             };
             Random random = new Random();
             int num = random.Next(possibles.Length);

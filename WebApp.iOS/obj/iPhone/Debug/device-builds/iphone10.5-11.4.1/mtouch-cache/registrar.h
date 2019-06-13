@@ -379,6 +379,7 @@
 	-(int) xamarinGetGCHandle;
 	-(void) xamarinSetGCHandle: (int) gchandle;
 	-(UIColor *) tintColor;
+	-(void) setTintColor:(UIColor *)p0;
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 

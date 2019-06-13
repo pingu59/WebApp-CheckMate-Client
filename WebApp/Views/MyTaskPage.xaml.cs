@@ -47,6 +47,7 @@ namespace WebApp.Views
             Constants.backgroudProcess.ConfigureAwait(false);
             Console.WriteLine("Before showing notifications...");
             CrossLocalNotifications.Current.Show("Hi(✿◖◡◗)ﾉ!", "Nice to see you back!!");
+            CrossLocalNotifications.Current.Cancel(101);
             CrossLocalNotifications.Current.Show("Good morning(✿◖◡◗)ﾉ!",
           "Would you mind to check your todo lists for today?", 101, DateTime.Today.AddDays(1).AddHours(8));
             //Add notification at 8 o'clock for tomorrow on every openening.

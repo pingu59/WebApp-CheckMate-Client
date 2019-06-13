@@ -18,7 +18,7 @@ namespace WebApp.Models
             this.taskid = taskid;
             this.taskname = taskname.Substring(1, taskname.Length - 2);
             this.percentage = percentage;
-            this.percentageString = percentage + "%";
+            this.percentageString = percentage*100 + "%";
             this.completed = completed;
             this.color = Constants.randomColour();
         }

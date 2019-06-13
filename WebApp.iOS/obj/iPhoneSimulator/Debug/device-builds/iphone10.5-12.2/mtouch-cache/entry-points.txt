@@ -8,13 +8,23 @@ Function=xamarin_log
 	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/mscorlib.dll
 Function=xamarin_get_locale_country_code
 	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_start_wwan
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/System.dll
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=CreateZStream
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/System.dll
+Function=CloseZStream
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/System.dll
+Function=Flush
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/System.dll
+Function=ReadZStream
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/System.dll
+Function=WriteZStream
+	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/System.dll
 Function=xamarin_find_protocol_wrapper_type
 	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_release_block_on_main_thread
 	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=xamarin_start_wwan
-	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/Xamarin.iOS.dll
-	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/System.dll
 Function=xamarin_get_block_descriptor
 	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_simd__NMatrix4_objc_msgSend
@@ -977,16 +987,6 @@ Function=xamarin_localized_string_format_9
 	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/Xamarin.iOS.dll
 Function=xamarin_init_nsthread
 	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/Xamarin.iOS.dll
-Function=CreateZStream
-	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/System.dll
-Function=CloseZStream
-	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/System.dll
-Function=Flush
-	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/System.dll
-Function=ReadZStream
-	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/System.dll
-Function=WriteZStream
-	/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/mtouch-cache/1-Link/System.dll
 Function=mono_pmip
 Function=xamarin_dyn_objc_msgSend
 Function=xamarin_dyn_objc_msgSendSuper

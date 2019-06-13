@@ -1187,7 +1187,7 @@ ldr x4, [x16, #16]
 .word 0x3900007e
 .word 0xaa0203e0
 .word 0xf9400042
-.word 0xf9410050
+.word 0xf9410450
 .word 0xd63f0200
 .word 0xf94037b1
 .word 0xf9426e31
@@ -1264,7 +1264,7 @@ ldr x0, [x16, #424]
 .word 0xf90053a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54001e60
+.word 0x54002260
 
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
@@ -1275,7 +1275,7 @@ bl _p_3
 .word 0xf94053a1
 .word 0xeb1f003f
 .word 0x10000011
-.word 0x54001cc0
+.word 0x540020c0
 .word 0xf9001001
 .word 0x91008002
 .word 0xd349fc42
@@ -1466,6 +1466,39 @@ bl _p_32
 .word 0xf9465e31
 .word 0xb4000051
 .word 0xd63f0220
+bl _p_21
+.word 0xf90063a0
+.word 0xf94037b1
+.word 0xf9467631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xd2801f00
+.word 0xd2801aa0
+.word 0xd2800480
+.word 0xd2801f00
+.word 0xd2801aa1
+.word 0xd2800482
+bl _p_33
+.word 0xf9005fa0
+.word 0xf94037b1
+.word 0xf946a631
+.word 0xb4000051
+.word 0xd63f0220
+.word 0xf9405fa1
+.word 0xf94063a2
+.word 0xaa0203e0
+.word 0xf9400042
+.word 0xf940ec50
+.word 0xd63f0200
+.word 0xf94037b1
+.word 0xf946ce31
+.word 0xb4000051
+.word 0xd63f0220
+.loc 3 54 0
+.word 0xf94037b1
+.word 0xf946de31
+.word 0xb4000051
+.word 0xd63f0220
 .word 0xf9402ba0
 .word 0xf90057a0
 
@@ -1476,44 +1509,44 @@ ldr x0, [x16, #480]
 .word 0xd2802d01
 bl _p_3
 .word 0xf9005ba0
-bl _p_33
+bl _p_34
 .word 0xf94037b1
-.word 0xf9469631
+.word 0xf9471631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94057a0
 .word 0xf9405ba1
-bl _p_34
+bl _p_35
 .word 0xf94037b1
-.word 0xf946b231
+.word 0xf9473231
 .word 0xb4000051
 .word 0xd63f0220
-.loc 3 54 0
+.loc 3 55 0
 .word 0xf94037b1
-.word 0xf946c231
+.word 0xf9474231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9402ba0
 .word 0xf9402fa1
 .word 0xf94033a2
-bl _p_35
+bl _p_36
 .word 0x53001c00
 .word 0xf90053a0
 .word 0xf94037b1
-.word 0xf946ea31
+.word 0xf9476a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94053a0
 .word 0x53001c01
 .word 0x390223a0
-.loc 3 55 0
+.loc 3 56 0
 .word 0xf94037b1
-.word 0xf9470631
+.word 0xf9478631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0x394223a0
 .word 0xf94037b1
-.word 0xf9471a31
+.word 0xf9479a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xa94153b3
@@ -1550,7 +1583,7 @@ ldr x16, [x16, #488]
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400ba0
-bl _p_36
+bl _p_37
 .word 0xf9400fb1
 .word 0xf9404a31
 .word 0xb4000051
@@ -1589,7 +1622,7 @@ ldr x0, [x16, #504]
 .word 0xd2800201
 bl _p_3
 .word 0xf9001ba0
-bl _p_37
+bl _p_38
 .word 0xf9400bb1
 .word 0xf9405e31
 .word 0xb4000051
@@ -1728,12 +1761,12 @@ ldr x16, [x16, #528]
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9402ba0
-bl _p_38
+bl _p_39
 .word 0x3980b410
 .word 0xb5000050
-bl _p_39
-.word 0xf9402ba0
 bl _p_40
+.word 0xf9402ba0
+bl _p_41
 .word 0xf9400000
 .word 0x14000033
 .loc 4 88 0
@@ -1749,11 +1782,11 @@ bl _p_40
 .word 0x910103a0
 .word 0xf90033a0
 .word 0xf9402ba0
-bl _p_41
+bl _p_42
 .word 0xaa0003ef
 .word 0xf94033a0
 .word 0xaa1a03e1
-bl _p_42
+bl _p_43
 .word 0x910103a0
 .word 0x9100c3a0
 .word 0xf94023a0
@@ -1765,7 +1798,7 @@ bl _p_42
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9402ba0
-bl _p_41
+bl _p_42
 .word 0xd2800401
 .word 0xd2800401
 bl _p_3
@@ -1909,14 +1942,14 @@ ldr x16, [x16, #552]
 .word 0xd63f0220
 .word 0xd28cc240
 .word 0xd28cc240
-bl _p_43
+bl _p_44
 .word 0xaa0003e1
 .word 0xd28025c0
 .word 0xf2a04000
 .word 0xd28025c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_44
+bl _p_45
 .word 0xf9400fb1
 .word 0xf9408a31
 .word 0xb4000051
@@ -1957,14 +1990,14 @@ ldr x16, [x16, #560]
 .word 0xd63f0220
 .word 0xd28cc840
 .word 0xd28cc840
-bl _p_43
+bl _p_44
 .word 0xaa0003e1
 .word 0xd28025c0
 .word 0xf2a04000
 .word 0xd28025c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_44
+bl _p_45
 .word 0xf94013b1
 .word 0xf9409231
 .word 0xb4000051
@@ -2005,14 +2038,14 @@ ldr x16, [x16, #568]
 .word 0xd63f0220
 .word 0xd28cc840
 .word 0xd28cc840
-bl _p_43
+bl _p_44
 .word 0xaa0003e1
 .word 0xd28025c0
 .word 0xf2a04000
 .word 0xd28025c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_44
+bl _p_45
 .word 0xf94013b1
 .word 0xf9409231
 .word 0xb4000051
@@ -2076,8 +2109,8 @@ ldr x16, [x16, #576]
 .word 0xd63f0220
 .word 0xd28ccfc0
 .word 0xd28ccfc0
-bl _p_43
-bl _p_45
+bl _p_44
+bl _p_46
 .word 0xf90033a0
 .word 0xf9401bb1
 .word 0xf940d631
@@ -2089,7 +2122,7 @@ bl _p_45
 .word 0xd28018e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_44
+bl _p_45
 .loc 4 111 0
 .word 0xf9401bb1
 .word 0xf9410231
@@ -2120,7 +2153,7 @@ bl _p_44
 .word 0xaa1803e0
 .word 0x910143a0
 .word 0xf94027a0
-bl _p_46
+bl _p_47
 .word 0x93407f00
 .word 0xd37df000
 .word 0x8b000340
@@ -2280,7 +2313,7 @@ ldr x16, [x16, #584]
 .word 0xf9403ba4
 .word 0xf9402ba0
 .word 0xaa1503e1
-bl _p_47
+bl _p_48
 .loc 4 134 0
 .word 0xf9401fb1
 .word 0xf940ee31
@@ -2332,14 +2365,14 @@ add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x0, [x16, #600]
 .word 0xb9400000
 .word 0x34000140
-bl _p_48
+bl _p_49
 .word 0xf90037a0
 .word 0xf94037a1
 .word 0xf94037a0
 .word 0xf9003ba1
 .word 0xb4000060
 .word 0xf9403ba0
-bl _p_44
+bl _p_45
 .word 0xf9403ba0
 .word 0xaa1903e0
 .word 0xaa1903e0
@@ -2471,14 +2504,14 @@ add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x0, [x16, #600]
 .word 0xb9400000
 .word 0x34000140
-bl _p_48
+bl _p_49
 .word 0xaa0003f3
 .word 0xaa1303e0
 .word 0xaa1303e1
 .word 0xf90037a0
 .word 0xb4000073
 .word 0xf94037a0
-bl _p_44
+bl _p_45
 .word 0xf94037a0
 .word 0xaa1903e0
 .word 0xaa1903e0
@@ -2603,14 +2636,14 @@ add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x0, [x16, #600]
 .word 0xb9400000
 .word 0x34000140
-bl _p_48
+bl _p_49
 .word 0xf9003ba0
 .word 0xf9403ba1
 .word 0xf9403ba0
 .word 0xf9003fa1
 .word 0xb4000060
 .word 0xf9403fa0
-bl _p_44
+bl _p_45
 .word 0xf9403fa0
 .word 0xaa1803e0
 .word 0xaa1803e0
@@ -2745,14 +2778,14 @@ ldr x16, [x16, #624]
 .word 0xd63f0220
 .word 0xd28cc840
 .word 0xd28cc840
-bl _p_43
+bl _p_44
 .word 0xaa0003e1
 .word 0xd28025c0
 .word 0xf2a04000
 .word 0xd28025c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_44
+bl _p_45
 .word 0xf94017b1
 .word 0xf9409631
 .word 0xb4000051
@@ -2792,14 +2825,14 @@ ldr x16, [x16, #632]
 .word 0xd63f0220
 .word 0xd28cc840
 .word 0xd28cc840
-bl _p_43
+bl _p_44
 .word 0xaa0003e1
 .word 0xd28025c0
 .word 0xf2a04000
 .word 0xd28025c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_44
+bl _p_45
 .word 0xf94013b1
 .word 0xf9408e31
 .word 0xb4000051
@@ -2864,8 +2897,8 @@ ldr x16, [x16, #640]
 .word 0xd63f0220
 .word 0xd28ccfc0
 .word 0xd28ccfc0
-bl _p_43
-bl _p_45
+bl _p_44
+bl _p_46
 .word 0xf90053a0
 .word 0xf94023b1
 .word 0xf940da31
@@ -2877,7 +2910,7 @@ bl _p_45
 .word 0xd28018e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_44
+bl _p_45
 .loc 4 166 0
 .word 0xf94023b1
 .word 0xf9410631
@@ -2908,7 +2941,7 @@ bl _p_44
 .word 0xaa1703e0
 .word 0x910183a0
 .word 0xf9402fa0
-bl _p_49
+bl _p_50
 .word 0x93407ee0
 .word 0xd37df000
 .word 0x8b000320
@@ -3107,14 +3140,14 @@ ldr x16, [x16, #648]
 .word 0xd63f0220
 .word 0xd2836540
 .word 0xd2836540
-bl _p_43
+bl _p_44
 .word 0xaa0003e1
 .word 0xd2800e60
 .word 0xf2a04000
 .word 0xd2800e60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_44
+bl _p_45
 .loc 4 194 0
 .word 0xf94013b1
 .word 0xf940d631
@@ -3124,7 +3157,7 @@ bl _p_44
 .word 0xaa1a03e0
 .word 0x910103a0
 .word 0xf9401fa0
-bl _p_50
+bl _p_51
 .word 0x93407f40
 .word 0xd37df000
 .word 0x8b000320
@@ -3200,14 +3233,14 @@ ldr x16, [x16, #656]
 .word 0xd63f0220
 .word 0xd2836540
 .word 0xd2836540
-bl _p_43
+bl _p_44
 .word 0xaa0003e1
 .word 0xd2800e60
 .word 0xf2a04000
 .word 0xd2800e60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_44
+bl _p_45
 .loc 4 203 0
 .word 0xf9402bb1
 .word 0xf940e631
@@ -3277,7 +3310,7 @@ ldr x0, [x16, #672]
 .word 0xaa1a03e0
 .word 0x910123a0
 .word 0xf94037a0
-bl _p_51
+bl _p_52
 .word 0x93407f40
 .word 0xd37df000
 .word 0x8b000320
@@ -3589,14 +3622,14 @@ ldr x16, [x16, #704]
 .word 0xd63f0220
 .word 0xd28d8a00
 .word 0xd28d8a00
-bl _p_43
+bl _p_44
 .word 0xaa0003e1
 .word 0xd2801540
 .word 0xf2a04000
 .word 0xd2801540
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_44
+bl _p_45
 .loc 4 252 0
 .word 0xf94017b1
 .word 0xf940c231
@@ -3617,14 +3650,14 @@ bl _p_44
 .word 0xd63f0220
 .word 0xd28d94c0
 .word 0xd28d94c0
-bl _p_43
+bl _p_44
 .word 0xaa0003e1
 .word 0xd2801540
 .word 0xf2a04000
 .word 0xd2801540
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_44
+bl _p_45
 .loc 4 255 0
 .word 0xf94017b1
 .word 0xf9412a31
@@ -3648,7 +3681,7 @@ bl _p_44
 .word 0x4b010000
 .word 0xf90037a0
 .word 0xf9402ba0
-bl _p_52
+bl _p_53
 .word 0xaa0003e1
 .word 0xf9403fa0
 .word 0xf9003ba1
@@ -3656,7 +3689,7 @@ bl _p_52
 .word 0x3940001e
 .word 0xf90033a0
 .word 0xf9402ba0
-bl _p_53
+bl _p_54
 .word 0xaa0003e2
 .word 0xf94033a0
 .word 0xf94037a1
@@ -3776,14 +3809,14 @@ ldr x16, [x16, #720]
 .word 0xf9400ba0
 .word 0xf90033a0
 .word 0xf94023a0
-bl _p_54
+bl _p_55
 .word 0xaa0003e1
 .word 0xf94033a0
 .word 0xf9002fa1
 .word 0x3940001e
 .word 0xf9002ba0
 .word 0xf94023a0
-bl _p_55
+bl _p_56
 .word 0xaa0003e1
 .word 0xf9402ba0
 .word 0xf9402faf
@@ -3798,7 +3831,7 @@ bl _p_55
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94023a0
-bl _p_56
+bl _p_57
 .word 0xd2800401
 .word 0xd2800401
 bl _p_3
@@ -3885,12 +3918,12 @@ ldr x16, [x16, #728]
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9402ba0
-bl _p_57
+bl _p_58
 .word 0x3980b410
 .word 0xb5000050
-bl _p_39
+bl _p_40
 .word 0xf9402ba0
-bl _p_58
+bl _p_59
 .word 0xf9400000
 .word 0x14000037
 .loc 4 88 0
@@ -3906,10 +3939,10 @@ bl _p_58
 .word 0x910103a0
 .word 0xf90033a0
 .word 0xf9402ba0
-bl _p_59
+bl _p_60
 .word 0xf90037a0
 .word 0xf9402ba0
-bl _p_60
+bl _p_61
 .word 0xaa0003e2
 .word 0xf94033a0
 .word 0xf94037af
@@ -3926,7 +3959,7 @@ bl _p_60
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9402ba0
-bl _p_59
+bl _p_60
 .word 0xd2800401
 .word 0xd2800401
 bl _p_3
@@ -4132,7 +4165,7 @@ ldr x16, [x16, #760]
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x15, [x16, #768]
-bl _p_61
+bl _p_62
 .word 0xf9002ba0
 .word 0xf94013b1
 .word 0xf9408a31
@@ -4217,7 +4250,7 @@ ldr x16, [x16, #784]
 .word 0xaa1903f7
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_62
+bl _p_63
 .word 0xf9002fa0
 .word 0xaa1903f5
 .word 0xeb1f033f
@@ -4258,7 +4291,7 @@ bl _p_62
 .word 0xf9003fa0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_63
+bl _p_64
 .word 0xd2800301
 .word 0xd2800301
 bl _p_3
@@ -4270,7 +4303,7 @@ bl _p_3
 .word 0xf90037a0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_63
+bl _p_64
 .word 0xd2800301
 .word 0xd2800301
 bl _p_3
@@ -4302,7 +4335,7 @@ ldr x15, [x16, #792]
 .word 0xf9003fa0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_64
+bl _p_65
 .word 0xd2800301
 .word 0xd2800301
 bl _p_3
@@ -4314,7 +4347,7 @@ bl _p_3
 .word 0xf90037a0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_64
+bl _p_65
 .word 0xd2800301
 .word 0xd2800301
 bl _p_3
@@ -4390,7 +4423,7 @@ ldr x16, [x16, #800]
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x15, [x16, #808]
-bl _p_65
+bl _p_66
 .word 0xf9002ba0
 .word 0xf94013b1
 .word 0xf9408a31
@@ -4477,7 +4510,7 @@ ldr x16, [x16, #824]
 .word 0xaa1903f6
 .word 0xf94023a0
 .word 0xf9400000
-bl _p_66
+bl _p_67
 .word 0xf90033a0
 .word 0xaa1903f4
 .word 0xeb1f033f
@@ -4506,7 +4539,7 @@ bl _p_66
 .word 0xd63f0220
 .word 0xd288f040
 .word 0xd288f040
-bl _p_43
+bl _p_44
 .word 0xf9003fa0
 .word 0xf94023a0
 .word 0xf9400000
@@ -4528,7 +4561,7 @@ bl _p_43
 .word 0xd63f0220
 .word 0xf9403fa0
 .word 0xf94043a1
-bl _p_67
+bl _p_68
 .word 0xf9003ba0
 .word 0xf94027b1
 .word 0xf9418e31
@@ -4536,7 +4569,7 @@ bl _p_67
 .word 0xd63f0220
 .word 0xd288f7c0
 .word 0xd288f7c0
-bl _p_43
+bl _p_44
 .word 0xaa0003e2
 .word 0xf9403ba1
 .word 0xd2800e20
@@ -4544,7 +4577,7 @@ bl _p_43
 .word 0xd2800e20
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
-bl _p_44
+bl _p_45
 .loc 5 260 0
 .word 0xf94027b1
 .word 0xf941ca31
@@ -4562,7 +4595,7 @@ bl _p_44
 .word 0xf9004ba0
 .word 0xf94023a0
 .word 0xf9400000
-bl _p_68
+bl _p_69
 .word 0xd2800301
 .word 0xd2800301
 bl _p_3
@@ -4574,7 +4607,7 @@ bl _p_3
 .word 0xf90043a0
 .word 0xf94023a0
 .word 0xf9400000
-bl _p_68
+bl _p_69
 .word 0xd2800301
 .word 0xd2800301
 bl _p_3
@@ -4627,7 +4660,7 @@ ldr x15, [x16, #832]
 .word 0xf90047a0
 .word 0xf94023a0
 .word 0xf9400000
-bl _p_69
+bl _p_70
 .word 0xd2800301
 .word 0xd2800301
 bl _p_3
@@ -4639,7 +4672,7 @@ bl _p_3
 .word 0xf9003fa0
 .word 0xf94023a0
 .word 0xf9400000
-bl _p_69
+bl _p_70
 .word 0xd2800301
 .word 0xd2800301
 bl _p_3
@@ -4710,7 +4743,7 @@ ldr x16, [x16, #840]
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x15, [x16, #768]
-bl _p_61
+bl _p_62
 .word 0xf9001fa0
 .word 0xf9400fb1
 .word 0xf9407e31
@@ -4779,7 +4812,7 @@ ldr x16, [x16, #856]
 .word 0xf90033a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_70
+bl _p_71
 .word 0xd2800301
 .word 0xd2800301
 bl _p_3
@@ -4808,7 +4841,7 @@ ldr x15, [x16, #864]
 .word 0xf9002fa0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_71
+bl _p_72
 .word 0xd2800301
 .word 0xd2800301
 bl _p_3
@@ -4833,7 +4866,7 @@ ldr x15, [x16, #864]
 .word 0xd63f0220
 .word 0xf94027a0
 .word 0xf9402ba1
-bl _p_72
+bl _p_73
 .word 0x93407c00
 .word 0xf90023a0
 .word 0xf94013b1
@@ -4888,7 +4921,7 @@ ldr x0, [x16, #880]
 .word 0xd2800601
 bl _p_3
 .word 0xf90027a0
-bl _p_73
+bl _p_74
 .word 0xf94013b1
 .word 0xf9408a31
 .word 0xb4000051
@@ -4905,7 +4938,7 @@ bl _p_73
 .word 0xaa1a03e0
 .word 0xd2800501
 .word 0x3940035e
-bl _p_74
+bl _p_75
 .word 0xf94013b1
 .word 0xf940ca31
 .word 0xb4000051
@@ -4978,7 +5011,7 @@ ldr x16, [x16, #896]
 .word 0xf9002ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_75
+bl _p_76
 .word 0xd2800301
 .word 0xd2800301
 bl _p_3
@@ -4987,7 +5020,7 @@ bl _p_3
 .word 0xb9001020
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_76
+bl _p_77
 .word 0xf94013b1
 .word 0xf940aa31
 .word 0xb4000051
@@ -5004,7 +5037,7 @@ add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x1, [x16, #904]
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_77
+bl _p_78
 .word 0xf94013b1
 .word 0xf940e631
 .word 0xb4000051
@@ -5020,7 +5053,7 @@ bl _p_77
 .word 0xf90027a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_78
+bl _p_79
 .word 0xd2800301
 .word 0xd2800301
 bl _p_3
@@ -5029,7 +5062,7 @@ bl _p_3
 .word 0xb9001020
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_76
+bl _p_77
 .word 0xf94013b1
 .word 0xf9414631
 .word 0xb4000051
@@ -5044,7 +5077,7 @@ bl _p_76
 .word 0xaa1a03e0
 .word 0xd2800521
 .word 0x3940035e
-bl _p_74
+bl _p_75
 .word 0xf94013b1
 .word 0xf9417e31
 .word 0xb4000051
@@ -5148,14 +5181,14 @@ add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x0, [x16, #600]
 .word 0xb9400000
 .word 0x34000140
-bl _p_48
+bl _p_49
 .word 0xf90037a0
 .word 0xf94037a1
 .word 0xf94037a0
 .word 0xf9003ba1
 .word 0xb4000060
 .word 0xf9403ba0
-bl _p_44
+bl _p_45
 .word 0xf9403ba0
 .word 0xaa1903e0
 .word 0xaa1903e0
@@ -5287,14 +5320,14 @@ add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x0, [x16, #600]
 .word 0xb9400000
 .word 0x34000140
-bl _p_48
+bl _p_49
 .word 0xaa0003f3
 .word 0xaa1303e0
 .word 0xaa1303e1
 .word 0xf90037a0
 .word 0xb4000073
 .word 0xf94037a0
-bl _p_44
+bl _p_45
 .word 0xf94037a0
 .word 0xaa1903e0
 .word 0xaa1903e0
@@ -5419,14 +5452,14 @@ add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x0, [x16, #600]
 .word 0xb9400000
 .word 0x34000140
-bl _p_48
+bl _p_49
 .word 0xf9003ba0
 .word 0xf9403ba1
 .word 0xf9403ba0
 .word 0xf9003fa1
 .word 0xb4000060
 .word 0xf9403fa0
-bl _p_44
+bl _p_45
 .word 0xf9403fa0
 .word 0xaa1803e0
 .word 0xaa1803e0
@@ -5564,14 +5597,14 @@ add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x0, [x16, #600]
 .word 0xb9400000
 .word 0x34000140
-bl _p_48
+bl _p_49
 .word 0xf90037a0
 .word 0xf94037a1
 .word 0xf94037a0
 .word 0xf9003ba1
 .word 0xb4000060
 .word 0xf9403ba0
-bl _p_44
+bl _p_45
 .word 0xf9403ba0
 .word 0xaa1903e0
 .word 0xaa1903e0
@@ -5703,14 +5736,14 @@ add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x0, [x16, #600]
 .word 0xb9400000
 .word 0x34000140
-bl _p_48
+bl _p_49
 .word 0xaa0003f3
 .word 0xaa1303e0
 .word 0xaa1303e1
 .word 0xf90037a0
 .word 0xb4000073
 .word 0xf94037a0
-bl _p_44
+bl _p_45
 .word 0xf94037a0
 .word 0xaa1903e0
 .word 0xaa1903e0
@@ -5835,14 +5868,14 @@ add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x0, [x16, #600]
 .word 0xb9400000
 .word 0x34000140
-bl _p_48
+bl _p_49
 .word 0xf9003ba0
 .word 0xf9403ba1
 .word 0xf9403ba0
 .word 0xf9003fa1
 .word 0xb4000060
 .word 0xf9403fa0
-bl _p_44
+bl _p_45
 .word 0xf9403fa0
 .word 0xaa1803e0
 .word 0xaa1803e0
@@ -5977,14 +6010,14 @@ ldr x16, [x16, #968]
 .word 0xd63f0220
 .word 0xd28cc840
 .word 0xd28cc840
-bl _p_43
+bl _p_44
 .word 0xaa0003e1
 .word 0xd28025c0
 .word 0xf2a04000
 .word 0xd28025c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_44
+bl _p_45
 .word 0xf94017b1
 .word 0xf9409631
 .word 0xb4000051
@@ -6026,14 +6059,14 @@ ldr x16, [x16, #976]
 .word 0xd63f0220
 .word 0xd28cc840
 .word 0xd28cc840
-bl _p_43
+bl _p_44
 .word 0xaa0003e1
 .word 0xd28025c0
 .word 0xf2a04000
 .word 0xd28025c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_44
+bl _p_45
 .word 0xf94017b1
 .word 0xf9409631
 .word 0xb4000051
@@ -6103,8 +6136,8 @@ ldr x16, [x16, #984]
 .word 0xd63f0220
 .word 0xd28ccfc0
 .word 0xd28ccfc0
-bl _p_43
-bl _p_45
+bl _p_44
+bl _p_46
 .word 0xf90073a0
 .word 0xf9402fb1
 .word 0xf940ee31
@@ -6116,7 +6149,7 @@ bl _p_45
 .word 0xd28018e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_44
+bl _p_45
 .loc 4 111 0
 .word 0xf9402fb1
 .word 0xf9411a31
@@ -6148,7 +6181,7 @@ bl _p_44
 .word 0x910323a0
 .word 0xf90073a0
 .word 0xf94063a0
-bl _p_79
+bl _p_80
 .word 0xf94073a2
 .word 0x93407f00
 .word 0xd37cec00
@@ -6233,7 +6266,7 @@ ldr x2, [x16, #16]
 .word 0xf9406ba0
 .word 0xf90047a0
 .word 0xf94063a0
-bl _p_80
+bl _p_81
 .word 0xd2800401
 .word 0xd2800401
 bl _p_3
@@ -6269,10 +6302,10 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .word 0xf94063a0
-bl _p_81
+bl _p_82
 .word 0xaa0003f5
 .word 0xf94063a0
-bl _p_82
+bl _p_83
 .word 0xd280005e
 .word 0xeb1e001f
 .word 0x540000c0
@@ -6288,7 +6321,7 @@ bl _p_82
 .word 0xf94006e0
 .word 0xf9003fa0
 .word 0xf94063a0
-bl _p_80
+bl _p_81
 .word 0xd2800401
 .word 0xd2800401
 bl _p_3
@@ -6446,7 +6479,7 @@ ldr x16, [x16, #992]
 .word 0xf9403ba4
 .word 0xf9402ba0
 .word 0xaa1503e1
-bl _p_47
+bl _p_48
 .loc 4 134 0
 .word 0xf9401fb1
 .word 0xf940ee31
@@ -6498,14 +6531,14 @@ add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x0, [x16, #600]
 .word 0xb9400000
 .word 0x34000140
-bl _p_48
+bl _p_49
 .word 0xf90037a0
 .word 0xf94037a1
 .word 0xf94037a0
 .word 0xf9003ba1
 .word 0xb4000060
 .word 0xf9403ba0
-bl _p_44
+bl _p_45
 .word 0xf9403ba0
 .word 0xaa1903e0
 .word 0xaa1903e0
@@ -6637,14 +6670,14 @@ add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x0, [x16, #600]
 .word 0xb9400000
 .word 0x34000140
-bl _p_48
+bl _p_49
 .word 0xaa0003f3
 .word 0xaa1303e0
 .word 0xaa1303e1
 .word 0xf90037a0
 .word 0xb4000073
 .word 0xf94037a0
-bl _p_44
+bl _p_45
 .word 0xf94037a0
 .word 0xaa1903e0
 .word 0xaa1903e0
@@ -6769,14 +6802,14 @@ add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x0, [x16, #600]
 .word 0xb9400000
 .word 0x34000140
-bl _p_48
+bl _p_49
 .word 0xf9003ba0
 .word 0xf9403ba1
 .word 0xf9403ba0
 .word 0xf9003fa1
 .word 0xb4000060
 .word 0xf9403fa0
-bl _p_44
+bl _p_45
 .word 0xf9403fa0
 .word 0xaa1803e0
 .word 0xaa1803e0
@@ -6914,14 +6947,14 @@ add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x0, [x16, #600]
 .word 0xb9400000
 .word 0x34000140
-bl _p_48
+bl _p_49
 .word 0xf90037a0
 .word 0xf94037a1
 .word 0xf94037a0
 .word 0xf9003ba1
 .word 0xb4000060
 .word 0xf9403ba0
-bl _p_44
+bl _p_45
 .word 0xf9403ba0
 .word 0xaa1803e0
 .word 0xaa1803e0
@@ -7143,14 +7176,14 @@ ldr x16, [x16, #1040]
 .word 0xd63f0220
 .word 0xd2836540
 .word 0xd2836540
-bl _p_43
+bl _p_44
 .word 0xaa0003e1
 .word 0xd2800e60
 .word 0xf2a04000
 .word 0xd2800e60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_44
+bl _p_45
 .loc 4 194 0
 .word 0xf9401bb1
 .word 0xf940e231
@@ -7161,7 +7194,7 @@ bl _p_44
 .word 0x9101c3a0
 .word 0xf90043a0
 .word 0xf94037a0
-bl _p_83
+bl _p_84
 .word 0xf94043a2
 .word 0x93407f40
 .word 0xd37cec00
@@ -7621,418 +7654,426 @@ add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
 .word 2412
-	.no_dead_strip plt_WebApp_App__ctor
-plt_WebApp_App__ctor:
+	.no_dead_strip plt_UIKit_UIColor_FromRGB_int_int_int
+plt_UIKit_UIColor_FromRGB_int_int_int:
 _p_33:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
 .word 2417
-	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate_LoadApplication_Xamarin_Forms_Application
-plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate_LoadApplication_Xamarin_Forms_Application:
+	.no_dead_strip plt_WebApp_App__ctor
+plt_WebApp_App__ctor:
 _p_34:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
 .word 2422
-	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate_FinishedLaunching_UIKit_UIApplication_Foundation_NSDictionary
-plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate_FinishedLaunching_UIKit_UIApplication_Foundation_NSDictionary:
+	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate_LoadApplication_Xamarin_Forms_Application
+plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate_LoadApplication_Xamarin_Forms_Application:
 _p_35:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
 .word 2427
-	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate__ctor
-plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate__ctor:
+	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate_FinishedLaunching_UIKit_UIApplication_Foundation_NSDictionary
+plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate_FinishedLaunching_UIKit_UIApplication_Foundation_NSDictionary:
 _p_36:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
 .word 2432
-	.no_dead_strip plt_WebApp_iOS_AppDelegate__c__ctor
-plt_WebApp_iOS_AppDelegate__c__ctor:
+	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate__ctor
+plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate__ctor:
 _p_37:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
 .word 2437
-	.no_dead_strip plt__rgctx_fetch_0
-plt__rgctx_fetch_0:
+	.no_dead_strip plt_WebApp_iOS_AppDelegate__c__ctor
+plt_WebApp_iOS_AppDelegate__c__ctor:
 _p_38:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 2467
-	.no_dead_strip plt__jit_icall_mono_generic_class_init
-plt__jit_icall_mono_generic_class_init:
+.word 2442
+	.no_dead_strip plt__rgctx_fetch_0
+plt__rgctx_fetch_0:
 _p_39:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 2475
-	.no_dead_strip plt__rgctx_fetch_1
-plt__rgctx_fetch_1:
+.word 2472
+	.no_dead_strip plt__jit_icall_mono_generic_class_init
+plt__jit_icall_mono_generic_class_init:
 _p_40:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 2501
-	.no_dead_strip plt__rgctx_fetch_2
-plt__rgctx_fetch_2:
+.word 2480
+	.no_dead_strip plt__rgctx_fetch_1
+plt__rgctx_fetch_1:
 _p_41:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 2518
-	.no_dead_strip plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
-plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
+.word 2506
+	.no_dead_strip plt__rgctx_fetch_2
+plt__rgctx_fetch_2:
 _p_42:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 2526
-	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
-plt__jit_icall_mono_helper_ldstr_mscorlib:
+.word 2523
+	.no_dead_strip plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
+plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
 _p_43:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 2545
-	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
-plt__jit_icall_mono_arch_throw_exception:
+.word 2531
+	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
+plt__jit_icall_mono_helper_ldstr_mscorlib:
 _p_44:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 2574
-	.no_dead_strip plt_Locale_GetText_string
-plt_Locale_GetText_string:
+.word 2550
+	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
+plt__jit_icall_mono_arch_throw_exception:
 _p_45:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 2602
-	.no_dead_strip plt__rgctx_fetch_3
-plt__rgctx_fetch_3:
+.word 2579
+	.no_dead_strip plt_Locale_GetText_string
+plt_Locale_GetText_string:
 _p_46:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 2626
-	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
-plt_System_Array_Copy_System_Array_int_System_Array_int_int:
+.word 2607
+	.no_dead_strip plt__rgctx_fetch_3
+plt__rgctx_fetch_3:
 _p_47:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 2650
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
+.word 2631
+	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
+plt_System_Array_Copy_System_Array_int_System_Array_int_int:
 _p_48:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
 .word 2655
-	.no_dead_strip plt__rgctx_fetch_4
-plt__rgctx_fetch_4:
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
 _p_49:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 2712
-	.no_dead_strip plt__rgctx_fetch_5
-plt__rgctx_fetch_5:
+.word 2660
+	.no_dead_strip plt__rgctx_fetch_4
+plt__rgctx_fetch_4:
 _p_50:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 2755
-	.no_dead_strip plt__rgctx_fetch_6
-plt__rgctx_fetch_6:
+.word 2717
+	.no_dead_strip plt__rgctx_fetch_5
+plt__rgctx_fetch_5:
 _p_51:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 2798
-	.no_dead_strip plt__rgctx_fetch_7
-plt__rgctx_fetch_7:
+.word 2760
+	.no_dead_strip plt__rgctx_fetch_6
+plt__rgctx_fetch_6:
 _p_52:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 2840
-	.no_dead_strip plt__rgctx_fetch_8
-plt__rgctx_fetch_8:
+.word 2803
+	.no_dead_strip plt__rgctx_fetch_7
+plt__rgctx_fetch_7:
 _p_53:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 2864
-	.no_dead_strip plt__rgctx_fetch_9
-plt__rgctx_fetch_9:
+.word 2845
+	.no_dead_strip plt__rgctx_fetch_8
+plt__rgctx_fetch_8:
 _p_54:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 2906
-	.no_dead_strip plt__rgctx_fetch_10
-plt__rgctx_fetch_10:
+.word 2869
+	.no_dead_strip plt__rgctx_fetch_9
+plt__rgctx_fetch_9:
 _p_55:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 2914
-	.no_dead_strip plt__rgctx_fetch_11
-plt__rgctx_fetch_11:
+.word 2911
+	.no_dead_strip plt__rgctx_fetch_10
+plt__rgctx_fetch_10:
 _p_56:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 2937
-	.no_dead_strip plt__rgctx_fetch_12
-plt__rgctx_fetch_12:
+.word 2919
+	.no_dead_strip plt__rgctx_fetch_11
+plt__rgctx_fetch_11:
 _p_57:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 2973
-	.no_dead_strip plt__rgctx_fetch_13
-plt__rgctx_fetch_13:
+.word 2942
+	.no_dead_strip plt__rgctx_fetch_12
+plt__rgctx_fetch_12:
 _p_58:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 2981
-	.no_dead_strip plt__rgctx_fetch_14
-plt__rgctx_fetch_14:
+.word 2978
+	.no_dead_strip plt__rgctx_fetch_13
+plt__rgctx_fetch_13:
 _p_59:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 2998
-	.no_dead_strip plt__rgctx_fetch_15
-plt__rgctx_fetch_15:
+.word 2986
+	.no_dead_strip plt__rgctx_fetch_14
+plt__rgctx_fetch_14:
 _p_60:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 3006
-	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_object_get_Default
-plt_System_Collections_Generic_EqualityComparer_1_object_get_Default:
+.word 3003
+	.no_dead_strip plt__rgctx_fetch_15
+plt__rgctx_fetch_15:
 _p_61:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 3029
-	.no_dead_strip plt__rgctx_fetch_16
-plt__rgctx_fetch_16:
+.word 3011
+	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_object_get_Default
+plt_System_Collections_Generic_EqualityComparer_1_object_get_Default:
 _p_62:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 3070
-	.no_dead_strip plt__rgctx_fetch_17
-plt__rgctx_fetch_17:
+.word 3034
+	.no_dead_strip plt__rgctx_fetch_16
+plt__rgctx_fetch_16:
 _p_63:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 3078
-	.no_dead_strip plt__rgctx_fetch_18
-plt__rgctx_fetch_18:
+.word 3075
+	.no_dead_strip plt__rgctx_fetch_17
+plt__rgctx_fetch_17:
 _p_64:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 3086
-	.no_dead_strip plt_System_Collections_Generic_Comparer_1_object_get_Default
-plt_System_Collections_Generic_Comparer_1_object_get_Default:
+.word 3083
+	.no_dead_strip plt__rgctx_fetch_18
+plt__rgctx_fetch_18:
 _p_65:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 3094
-	.no_dead_strip plt__rgctx_fetch_19
-plt__rgctx_fetch_19:
+.word 3091
+	.no_dead_strip plt_System_Collections_Generic_Comparer_1_object_get_Default
+plt_System_Collections_Generic_Comparer_1_object_get_Default:
 _p_66:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 3135
-	.no_dead_strip plt_SR_Format_string_object
-plt_SR_Format_string_object:
+.word 3099
+	.no_dead_strip plt__rgctx_fetch_19
+plt__rgctx_fetch_19:
 _p_67:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 3143
-	.no_dead_strip plt__rgctx_fetch_20
-plt__rgctx_fetch_20:
+.word 3140
+	.no_dead_strip plt_SR_Format_string_object
+plt_SR_Format_string_object:
 _p_68:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
 .word 3148
-	.no_dead_strip plt__rgctx_fetch_21
-plt__rgctx_fetch_21:
+	.no_dead_strip plt__rgctx_fetch_20
+plt__rgctx_fetch_20:
 _p_69:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 3156
-	.no_dead_strip plt__rgctx_fetch_22
-plt__rgctx_fetch_22:
+.word 3153
+	.no_dead_strip plt__rgctx_fetch_21
+plt__rgctx_fetch_21:
 _p_70:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 3185
-	.no_dead_strip plt__rgctx_fetch_23
-plt__rgctx_fetch_23:
+.word 3161
+	.no_dead_strip plt__rgctx_fetch_22
+plt__rgctx_fetch_22:
 _p_71:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 3193
-	.no_dead_strip plt_System_Tuple_CombineHashCodes_int_int
-plt_System_Tuple_CombineHashCodes_int_int:
+.word 3190
+	.no_dead_strip plt__rgctx_fetch_23
+plt__rgctx_fetch_23:
 _p_72:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 3201
-	.no_dead_strip plt_System_Text_StringBuilder__ctor
-plt_System_Text_StringBuilder__ctor:
+.word 3198
+	.no_dead_strip plt_System_Tuple_CombineHashCodes_int_int
+plt_System_Tuple_CombineHashCodes_int_int:
 _p_73:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
 .word 3206
-	.no_dead_strip plt_System_Text_StringBuilder_Append_char
-plt_System_Text_StringBuilder_Append_char:
+	.no_dead_strip plt_System_Text_StringBuilder__ctor
+plt_System_Text_StringBuilder__ctor:
 _p_74:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
 .word 3211
-	.no_dead_strip plt__rgctx_fetch_24
-plt__rgctx_fetch_24:
+	.no_dead_strip plt_System_Text_StringBuilder_Append_char
+plt_System_Text_StringBuilder_Append_char:
 _p_75:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 3237
-	.no_dead_strip plt_System_Text_StringBuilder_Append_object
-plt_System_Text_StringBuilder_Append_object:
+.word 3216
+	.no_dead_strip plt__rgctx_fetch_24
+plt__rgctx_fetch_24:
 _p_76:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 3245
-	.no_dead_strip plt_System_Text_StringBuilder_Append_string
-plt_System_Text_StringBuilder_Append_string:
+.word 3242
+	.no_dead_strip plt_System_Text_StringBuilder_Append_object
+plt_System_Text_StringBuilder_Append_object:
 _p_77:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
 .word 3250
-	.no_dead_strip plt__rgctx_fetch_25
-plt__rgctx_fetch_25:
+	.no_dead_strip plt_System_Text_StringBuilder_Append_string
+plt_System_Text_StringBuilder_Append_string:
 _p_78:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
 .word 3255
-	.no_dead_strip plt__rgctx_fetch_26
-plt__rgctx_fetch_26:
+	.no_dead_strip plt__rgctx_fetch_25
+plt__rgctx_fetch_25:
 _p_79:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 3282
-	.no_dead_strip plt__rgctx_fetch_27
-plt__rgctx_fetch_27:
+.word 3260
+	.no_dead_strip plt__rgctx_fetch_26
+plt__rgctx_fetch_26:
 _p_80:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 3306
-	.no_dead_strip plt__rgctx_fetch_28
-plt__rgctx_fetch_28:
+.word 3287
+	.no_dead_strip plt__rgctx_fetch_27
+plt__rgctx_fetch_27:
 _p_81:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 3314
-	.no_dead_strip plt__rgctx_fetch_29
-plt__rgctx_fetch_29:
+.word 3311
+	.no_dead_strip plt__rgctx_fetch_28
+plt__rgctx_fetch_28:
 _p_82:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 3328
-	.no_dead_strip plt__rgctx_fetch_30
-plt__rgctx_fetch_30:
+.word 3319
+	.no_dead_strip plt__rgctx_fetch_29
+plt__rgctx_fetch_29:
 _p_83:
 adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
 add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 3361
+.word 3333
+	.no_dead_strip plt__rgctx_fetch_30
+plt__rgctx_fetch_30:
+_p_84:
+adrp x16, mono_aot_WebApp_iOS_got@PAGE+0
+add x16, x16, mono_aot_WebApp_iOS_got@PAGEOFF
+ldr x16, [x16, #1720]
+br x16
+.word 3366
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_WebApp_iOS_got, 1720
+.lcomm mono_aot_WebApp_iOS_got, 1728
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -8063,7 +8104,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "83FFB412-6072-42CD-AF61-4B6DB914AA1E"
+	.asciz "95F35F35-4C82-47E7-9785-FAB4D15345B4"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -8146,14 +8187,14 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 131,1720,84,77,13,70,387000831,0
-	.long 14384,128,8,8,8,9,8388607,0
-	.long 24,17656,3264,2584,2152,0,2392,2552
+	.long 131,1728,85,77,13,70,387000831,0
+	.long 14441,128,8,8,8,9,8388607,0
+	.long 24,17712,3264,2584,2152,0,2392,2552
 	.long 2200,0,1640,128,3256,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0
-	.byte 152,250,176,202,241,174,67,225,106,132,208,225,223,148,63,54
+	.byte 180,67,124,148,77,183,215,85,164,9,152,118,40,36,219,181
 	.globl _mono_aot_module_WebApp_iOS_info
 	.align 3
 _mono_aot_module_WebApp_iOS_info:
