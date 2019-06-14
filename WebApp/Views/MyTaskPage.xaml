@@ -11,7 +11,7 @@
         <ToolbarItem Name="Add" Order="Primary" Priority="0" x:Name="Add"
                      Clicked="OnAdd" />
     </TabbedPage.ToolbarItems>
-    <ContentPage  x:Name="HomePage" Title="My Tasks" TabIndex="0">
+    <ContentPage  x:Name="HomePage" Title="My Resolutions" TabIndex="0">
         <ScrollView>
             <StackLayout x:Name="taskStack" Margin="20" />
         </ScrollView>

@@ -126,10 +126,10 @@ namespace WebApp.Views
         public async void OnAdd(Object sender, EventArgs e)
         {
             string action = await DisplayActionSheet("Add new", "Cancel", null,
-                "New Task", "New Friend");
+                "New Resolution", "New Friend");
             switch (action)
             {
-                case "New Task":
+                case "New Resolution":
                     await Navigation.PushAsync(new InvolveFriend());
                     break;
                 case "New Friend":
@@ -204,7 +204,7 @@ namespace WebApp.Views
                 {
                     CheckInbox();
                     CheckNewInvitation();
-                    CheckFriendUpdate();
+                   // CheckFriendUpdate();
                     CheckMyCheckedUpdate();
                 }
                 return true; // True = Repeat again, False = Stop the timer
@@ -274,6 +274,11 @@ namespace WebApp.Views
             }
         }
 
+        public void DisplayMyTask(GroupTask task)
+        {
+           taskStack.Children.Add(task.GetView());
+        }
+
         private async static void CheckNewInvitation()
         {
             int myid = Constants.me.userid;
@@ -289,7 +294,7 @@ namespace WebApp.Views
                 Constants.mainPage.DisplayInvitation(inviteString);
                 Console.WriteLine(bt.frequency);
                 Constants.MyTask.Add(bt);
-                Constants.mainPage.taskStack.Children.Add(bt.GetView());
+                Constants.mainPage.DisplayMyTask(bt);
                 if (!Constants.FriendTasks.Exists((obj) => obj.taskid == bt.taskid))
                 {
                     Constants.FriendTasks.Add(task);
