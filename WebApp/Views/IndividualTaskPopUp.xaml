@@ -29,24 +29,25 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Label Text="Deadline: " Grid.Column="0" Grid.Row="1" 
-                   Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
-            <Label x:Name="Deadline" Grid.Column="1" Grid.Row="1"
-                   Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
-            <Label Text="Task id: " Grid.Column="0" Grid.Row="2"
-                   Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
-            <Label x:Name="TaskId" Grid.Column="1" Grid.Row="2"
-                   Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
-            <Label Text="Penalty: " Grid.Column="0" Grid.Row="3"
-                   Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
-            <Label x:Name="Penalty" Grid.Column="1" Grid.Row="3"
-                   Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
-            <Label Text="Repetition: " Grid.Column="0" Grid.Row="3"
-                   Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
-            <Label x:Name="Repetition" Grid.Column="1" Grid.Row="3"
-                   Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
-           
-        </Grid>
+            <StackLayout Grid.Column="0">
+                <Label Text="Deadline: "
+                       Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
+                <Label Text="Repetition: "
+                       Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
+            </StackLayout>
+            <StackLayout Grid.Column="1">
+                <Label x:Name="Deadline"
+                       Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
+                <Label x:Name="Repetition" Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
+            </StackLayout>
+            
+        </Grid> 
+            
+         <Label Text="Penalty: "
+               Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
+         <Label x:Name="Penalty" 
+               Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
+        
         <Label Text="Members' Progress" 
                Style="{StaticResource popUpLargeLabel}" FontFamily="{StaticResource Handlee}"/>
         <ScrollView Orientation="Vertical" HeightRequest="100" HorizontalOptions="Center">
@@ -57,4 +58,3 @@
                 Style="{StaticResource buttons}" FontFamily="{StaticResource Handlee}"/>
     </StackLayout>
 </pages:PopupPage>
-

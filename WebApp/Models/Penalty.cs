@@ -13,7 +13,7 @@ namespace WebApp.Models
         public int taskid;
         public List<int> members;
         public string memberstring { get; set; }
-        public Color color { get; set; }
+        public Xamarin.Forms.Color color { get; set; }
         public List<string> names = new List<string>(); 
         [JsonConstructor]
         public Penalty(string date, int taskid, List<int> members, string taskname, string bet)

@@ -23,8 +23,7 @@
       <e p="proguard.txt" t="Include" />
     </e>
     <e p="$PROJECT_DIR$/../Library/Caches/Rider2019.1/extResources" t="IncludeRecursive" />
-    <e p="$PROJECT_DIR$/../Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_WebApp.-492357949.00" t="ExcludeRecursive" />
-    <e p="$PROJECT_DIR$/../Library/Developer/Xamarin/android-sdk-macosx/platforms/android-27/Data/res" t="IncludeRecursive" />
+    <e p="$PROJECT_DIR$/../Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_WebApp.795360769.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="WebApp" t="IncludeRecursive">
@@ -233,6 +232,246 @@
           <e p="HomeIcon.imageset" t="Include">
             <e p="Contents.json" t="Include" />
             <e p="HomeIcon-1.png" t="Include" />
+          </e>
+          <e p="Icon0.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-01.png" t="Include" />
+          </e>
+          <e p="Icon1.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-02.png" t="Include" />
+          </e>
+          <e p="Icon10.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-11.png" t="Include" />
+          </e>
+          <e p="Icon11.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-12.png" t="Include" />
+          </e>
+          <e p="Icon12.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-13.png" t="Include" />
+          </e>
+          <e p="Icon13.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-14.png" t="Include" />
+          </e>
+          <e p="Icon14.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-15.png" t="Include" />
+          </e>
+          <e p="Icon15.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-16.png" t="Include" />
+          </e>
+          <e p="Icon16.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-17.png" t="Include" />
+          </e>
+          <e p="Icon17.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-18.png" t="Include" />
+          </e>
+          <e p="Icon18.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-19.png" t="Include" />
+          </e>
+          <e p="Icon19.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-20.png" t="Include" />
+          </e>
+          <e p="Icon2.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-03.png" t="Include" />
+          </e>
+          <e p="Icon20.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-21.png" t="Include" />
+          </e>
+          <e p="Icon21.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-22.png" t="Include" />
+          </e>
+          <e p="Icon22.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-23.png" t="Include" />
+          </e>
+          <e p="Icon23.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-24.png" t="Include" />
+          </e>
+          <e p="Icon24.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-25.png" t="Include" />
+          </e>
+          <e p="Icon25.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-26.png" t="Include" />
+          </e>
+          <e p="Icon26.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-27.png" t="Include" />
+          </e>
+          <e p="Icon27.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-28.png" t="Include" />
+          </e>
+          <e p="Icon28.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-29.png" t="Include" />
+          </e>
+          <e p="Icon29.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-30.png" t="Include" />
+          </e>
+          <e p="Icon3.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-04.png" t="Include" />
+          </e>
+          <e p="Icon30.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-31.png" t="Include" />
+          </e>
+          <e p="Icon31.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-32.png" t="Include" />
+          </e>
+          <e p="Icon32.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-33.png" t="Include" />
+          </e>
+          <e p="Icon33.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-34.png" t="Include" />
+          </e>
+          <e p="Icon34.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-35.png" t="Include" />
+          </e>
+          <e p="Icon35.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-36.png" t="Include" />
+          </e>
+          <e p="Icon36.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-37.png" t="Include" />
+          </e>
+          <e p="Icon37.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-38.png" t="Include" />
+          </e>
+          <e p="Icon38.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-39.png" t="Include" />
+          </e>
+          <e p="Icon39.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-40.png" t="Include" />
+          </e>
+          <e p="Icon4.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-05.png" t="Include" />
+          </e>
+          <e p="Icon40.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-41.png" t="Include" />
+          </e>
+          <e p="Icon41.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-42.png" t="Include" />
+          </e>
+          <e p="Icon42.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-43.png" t="Include" />
+          </e>
+          <e p="Icon43.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-44.png" t="Include" />
+          </e>
+          <e p="Icon44.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-45.png" t="Include" />
+          </e>
+          <e p="Icon45.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-46.png" t="Include" />
+          </e>
+          <e p="Icon46.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-47.png" t="Include" />
+          </e>
+          <e p="Icon47.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-48.png" t="Include" />
+          </e>
+          <e p="Icon48.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-49.png" t="Include" />
+          </e>
+          <e p="Icon49.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-50.png" t="Include" />
+          </e>
+          <e p="Icon5.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-06.png" t="Include" />
+          </e>
+          <e p="Icon50.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-51.png" t="Include" />
+          </e>
+          <e p="Icon51.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-52.png" t="Include" />
+          </e>
+          <e p="Icon52.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-53.png" t="Include" />
+          </e>
+          <e p="Icon53.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-55.png" t="Include" />
+          </e>
+          <e p="Icon54.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-54.png" t="Include" />
+          </e>
+          <e p="Icon55.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-56.png" t="Include" />
+          </e>
+          <e p="Icon56.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-57.png" t="Include" />
+          </e>
+          <e p="Icon57.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-58.png" t="Include" />
+          </e>
+          <e p="Icon58.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-59.png" t="Include" />
+          </e>
+          <e p="Icon59.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-60.png" t="Include" />
+          </e>
+          <e p="Icon6.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-07.png" t="Include" />
+          </e>
+          <e p="Icon7.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-08.png" t="Include" />
+          </e>
+          <e p="Icon8.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-09.png" t="Include" />
+          </e>
+          <e p="Icon9.imageset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Roundicons-10.png" t="Include" />
           </e>
           <e p="LaunchImage.launchimage" t="Include">
             <e p="4.7retina.png" t="Include" />

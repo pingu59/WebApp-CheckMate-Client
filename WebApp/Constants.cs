@@ -5,6 +5,10 @@ using WebApp.Views;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Threading;
+using Foundation;
+using UIKit;
+using CoreGraphics;
+using System.IO;
 
 namespace WebApp
 {
@@ -54,7 +58,7 @@ namespace WebApp
         public static Task backgroudProcess;
         public static bool firstLoginToday;
         public static int num_of_avatars = 10;
-        public static int num_of_icons = 6;
+        public static int num_of_icons = 60;
         public static CancellationTokenSource tokenSource;
         //public static FakeViewImageStore imageStore = new FakeViewImageStore();
 

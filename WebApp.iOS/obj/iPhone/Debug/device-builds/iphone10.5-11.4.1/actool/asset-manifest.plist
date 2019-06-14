@@ -67,18 +67,6 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./AddIcon.imageset/(null)[2d][AddFriendsIcon.png]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The image set "AddIcon" has an unassigned child.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
 				<string>./LaunchImage.launchimage/[ipad][][2x][portrait][full-screen][7.0][1d][(null)]</string>
 				<string>./LaunchImage.launchimage/[iphone][][3x][landscape][full-screen][12.0][2d][(null)]</string>
 				<string>./LaunchImage.launchimage/[iphone][][3x][portrait][full-screen][12.0][2d][xr.png]</string>
@@ -102,6 +90,18 @@
 			<string>The file "Icon120.png" for the image set "AppIcon" does not exist.</string>
 			<key>type</key>
 			<string>Missing Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AddIcon.imageset/(null)[2d][AddFriendsIcon.png]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/apple/Xamarin/WebApp.iOS/obj/iPhone/Debug/device-builds/iphone10.5-11.4.1/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "AddIcon" has an unassigned child.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
 		</dict>
 	</array>
 </dict>

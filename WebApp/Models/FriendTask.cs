@@ -53,8 +53,8 @@ namespace WebApp.Models
                 VerticalOptions = LayoutOptions.CenterAndExpand,
                 ColumnDefinitions =
         {
-            new ColumnDefinition {Width = 80},
-            new ColumnDefinition {Width = 250}
+            new ColumnDefinition {Width = 60},
+            new ColumnDefinition {Width = 280}
         },
                 RowDefinitions =
         {

@@ -35,7 +35,8 @@ namespace WebApp.Models
             this.member = member;
             this.taskicon = taskicon;
             tapRecog = new TapGestureRecognizer();
-            tapRecog.Tapped += (sender, e) => { Constants.mainPage.DisplayTaskInfo(this); };
+            tapRecog.Tapped += (sender, e) => { Constants.mainPage.DisplayTaskInfo(this); 
+            };
         }
 
         //refactor??

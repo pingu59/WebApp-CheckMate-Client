@@ -3,11 +3,11 @@
              Title="My History">
     <ContentPage.Content>
         <ListView x:Name="Summary" ItemsSource="{Binding singles}" ItemTapped="toNextLevel"
-                  RowHeight="180">
+                  RowHeight="140">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell Height="180">
-                        <Frame MinimumHeightRequest="180" CornerRadius="30" BorderColor="{Binding color}" Margin="5"
+                    <ViewCell Height="120">
+                        <Frame MinimumHeightRequest="120" CornerRadius="30" BorderColor="{Binding color}" Margin="5"
                                 HasShadow="true">
                             <Grid>
                                 <Grid.ColumnDefinitions>
@@ -15,23 +15,12 @@
                                     <ColumnDefinition Width="2*"/>
                                 </Grid.ColumnDefinitions>
                                 
-                               <StackLayout Grid.Column="0" x:Name="icon">
-                                    <Image Source="{Binding image}" HeightRequest="{Binding imageSize}"
-                                           HorizontalOptions="Center" VerticalOptions="Center"/>
-<!--                                   <Label Text="Taskname: "
-                                          Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
-                                   <Label Text="Taskid : "
-                                          Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/> 
-                                   <Label Text="Status: "
-                                          Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
-                                   <Label Text="Completeness : "
-                                          Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>  -->
-                               </StackLayout>
+                                <Image Grid.Column="0" x:Name="icon" Source="{Binding image}" HeightRequest="{Binding imageSize}"
+                                       HorizontalOptions="Center" VerticalOptions="Center" />
+                                
                                 
                                 <StackLayout Grid.Column="1">
                                     <Label Text="{Binding taskname}"
-                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
-                                    <Label Text="{Binding taskid}"
                                            Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
                                     <Label Text="{Binding completed}" 
                                            Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>

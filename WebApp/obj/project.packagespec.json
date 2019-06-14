@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/Liu/Xamarin/WebApp/WebApp.csproj",
+    "projectUniqueName": "/Users/apple/Xamarin/WebApp/WebApp.csproj",
     "projectName": "WebApp",
-    "projectPath": "/Users/Liu/Xamarin/WebApp/WebApp.csproj",
-    "outputPath": "/Users/Liu/Xamarin/WebApp/obj/",
+    "projectPath": "/Users/apple/Xamarin/WebApp/WebApp.csproj",
+    "outputPath": "/Users/apple/Xamarin/WebApp/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

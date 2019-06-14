@@ -3056,7 +3056,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0
-	.byte 68,45,132,144,174,26,208,178,249,142,32,247,237,11,180,25
+	.byte 79,120,198,44,137,174,183,117,18,99,176,238,174,178,11,36
 	.globl _mono_aot_module_Plugin_LocalNotifications_info
 	.align 3
 _mono_aot_module_Plugin_LocalNotifications_info:

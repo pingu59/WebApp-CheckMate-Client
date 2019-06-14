@@ -11,7 +11,7 @@ namespace WebApp.Models
         public float percentage { get; set; }
         public string percentageString { get; set; }
         public string completed { get; set; }
-        public System.Drawing.Color color { get; set; }
+        public Xamarin.Forms.Color color { get; set; }
         public ImageSource image { get; set; }
         public int imageSize { get; set; }
         int taskicon;
@@ -25,7 +25,7 @@ namespace WebApp.Models
             this.percentageString = percentage*100 + "%";
             this.completed = completed;
             this.color = Constants.randomColour();
-            imageSize = (int)percentage * 100 + 20;
+            imageSize = (int)(percentage * 90) + 30;
             imageSize = imageSize > 120 ? 120 : imageSize;
             image = ImageSource.FromFile("Icon" + taskicon);
         }

@@ -195,3 +195,5 @@
 /Users/Liu/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/ImageHistory.xaml.g.cs
 /Users/Liu/Xamarin/WebApp/obj/Debug/netstandard2.0/Views/SingleTaskHistory.xaml.g.cs
 /Users/Liu/Xamarin/WebApp/obj/Debug/netstandard2.0/WebApp.csproj.CopyComplete
+/Users/apple/Xamarin/WebApp/bin/Debug/netstandard2.0/Mono.Android.dll
+/Users/apple/Xamarin/WebApp/bin/Debug/netstandard2.0/Mono.Android.pdb

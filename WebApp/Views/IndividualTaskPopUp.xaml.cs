@@ -20,7 +20,7 @@ namespace WebApp.Views
             TaskName.Text = task.taskname;
             Deadline.Text = task.getDeadlineString();
             Penalty.Text = task.bet;
-            TaskId.Text = task.taskid.ToString();
+            //TaskId.Text = task.taskid.ToString();
             Repetition.Text = task.repetition.ToString();
             this.task = task;
             GetProgresses();
