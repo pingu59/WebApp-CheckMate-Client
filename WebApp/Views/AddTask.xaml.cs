@@ -10,6 +10,7 @@ namespace WebApp.Views
         GroupTask task;
         InvolveFriend involvedFriends;
         List<int> members;
+        int iconNum;
 
         public AddTask(List<int> members, InvolveFriend involvedFriends)
         {
@@ -17,6 +18,10 @@ namespace WebApp.Views
             this.involvedFriends = involvedFriends;
             this.members = members;
             datepicker.MinimumDate = DateTime.Today.AddDays(1);
+            for (int i = 0; i < Constants.num_of_icons; i++)
+            {
+                icons.Children.Add(new icon(i, this).GetView());
+            }
             BindingContext = this;
         }
 
@@ -36,6 +41,12 @@ namespace WebApp.Views
             Random random = new Random();
             int num = random.Next(possibles.Length);
             Penalty.Text = possibles[num];
+        }
+
+        public async void SelectIcon(int number)
+        {
+            iconNum = number;
+            await DisplayAlert("Alert", "You have selected icon No." + number, "ok");
         }
 
         public async void OnConfirm(object sender, EventArgs e)
@@ -64,7 +75,7 @@ namespace WebApp.Views
                             Repetition repetition =
                                 RepetitionConverter.toCreateRepetition(selectedItem.ToString());
                             int frequency = int.Parse(Frequency.Text);
-                            task = new GroupTask(taskName.Text, repetition, frequency, datepicker.Date ,members, Penalty.Text);
+                            task = new GroupTask(taskName.Text, repetition, frequency, datepicker.Date ,members, Penalty.Text, iconNum);
                             int taskid = await Communications.addGroupTask(task);
                             task.taskid = taskid;
                             Console.WriteLine("########new Taskid is" + taskid);
@@ -80,6 +91,28 @@ namespace WebApp.Views
             {
                 await DisplayAlert("Alert", "Task name must not be empty", "OK");
             }
+        }
+    }
+    class icon
+    {
+        int number;
+        TapGestureRecognizer tapRecog;
+        public icon(int number, AddTask page)
+        {
+            this.number = number;
+
+            tapRecog = new TapGestureRecognizer((obj) => page.SelectIcon(number));
+        }
+
+        public View GetView()
+        {
+            Image im = new Image
+            {
+                Source = ImageSource.FromFile("Icon" + number),
+                HeightRequest = 50
+            };
+            im.GestureRecognizers.Add(tapRecog);
+            return im;
         }
     }
 }

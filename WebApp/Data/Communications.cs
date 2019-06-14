@@ -227,10 +227,10 @@ namespace WebApp
         public static async Task<int> addGroupTask(GroupTask task)
         {
             string baseurl = Constants.BaseAddress + "createTask?myid={0}&taskname={1}&" +
-                "repetition={2}&frequency={3}&members={4}&deadline={5}&bet={6}";
+                "repetition={2}&frequency={3}&members={4}&deadline={5}&bet={6}&taskicon={7}";
             string actualurl = string.Format(baseurl, Constants.me.userid, task.taskname,
                 RepetitionConverter.RepToString(task.repetition), task.frequency, toSpringBootArray(task.member),
-                task.getDeadlineString(), task.bet);
+                task.getDeadlineString(), task.bet, task.taskicon);
             Console.WriteLine(actualurl);
             HttpClient _client = new HttpClient();
             var uri = new Uri(actualurl);

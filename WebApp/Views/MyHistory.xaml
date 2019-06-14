@@ -12,18 +12,20 @@
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="2*"/>
                                 </Grid.ColumnDefinitions>
                                 
-                               <StackLayout Grid.Column="0">
-                                   <Label Text="Taskname: "
+                               <StackLayout Grid.Column="0" x:Name="icon">
+                                    <Image Source="{Binding image}" HeightRequest="{Binding imageSize}"
+                                           HorizontalOptions="Center" VerticalOptions="Center"/>
+<!--                                   <Label Text="Taskname: "
                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
                                    <Label Text="Taskid : "
                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/> 
                                    <Label Text="Status: "
                                           Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
                                    <Label Text="Completeness : "
-                                          Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>  
+                                          Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>  -->
                                </StackLayout>
                                 
                                 <StackLayout Grid.Column="1">

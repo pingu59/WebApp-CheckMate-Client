@@ -9,18 +9,6 @@
             <Label Text="We want to..." Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
             <Entry x:Name="taskName" Placeholder="Your resolution" Style="{StaticResource entryStyle}" FontFamily="{StaticResource Handlee}" />
             <Label Margin="10"/>
-            
-            <!-- <ListView VerticalOptions="Start" HeightRequest="120" -->
-            <!--           x:Name="Repetition" RowHeight="30"> -->
-            <!--     <ListView.ItemsSource> -->
-            <!--         <x:Array Type="{x:Type x:String}"> -->
-            <!--             <x:String>Day</x:String> -->
-            <!--             <x:String>Week</x:String> -->
-            <!--             <x:String>Month</x:String> -->
-            <!--             <x:String>None</x:String> -->
-            <!--         </x:Array> -->
-            <!--     </ListView.ItemsSource> -->
-            <!-- </ListView> -->
             <Label Text="Repetition" Style="{StaticResource regLabel}" FontFamily="{StaticResource Handlee}"/>
             <Picker  x:Name="RepetitionList" Style="{StaticResource picker}" FontFamily="{StaticResource Handlee}"
                      Title="Repeat or not?">
@@ -69,6 +57,10 @@
                         Style="{StaticResource buttons}" FontFamily="{StaticResource Handlee}"/>
             </Grid>
             <Label Margin="10"/>
+            <ScrollView Orientation="Horizontal" HeightRequest="50">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"
+                             VerticalOptions="FillAndExpand" x:Name="icons"/>
+            </ScrollView>
             <Button Text="Set Resolution!" Clicked="OnConfirm" Style="{StaticResource buttons}" FontFamily="{StaticResource Handlee}"/>
         </StackLayout>
     </ContentPage.Content>

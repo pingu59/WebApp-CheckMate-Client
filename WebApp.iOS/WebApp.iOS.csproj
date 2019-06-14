@@ -152,6 +152,18 @@
     <ImageAsset Include="Assets.xcassets\LoginIcon.imageset\LoginIcon.jpeg" />
     <ImageAsset Include="Assets.xcassets\LoginIcon.imageset\LoginIcon-1.jpeg" />
     <ImageAsset Include="Assets.xcassets\LoginIcon.imageset\LoginIcon-2.jpeg" />
+    <ImageAsset Include="Assets.xcassets\Icon0.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Icon1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Icon2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Icon3.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Icon4.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Icon5.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Icon0.imageset\Roundicons-01.png" />
+    <ImageAsset Include="Assets.xcassets\Icon1.imageset\Roundicons-02.png" />
+    <ImageAsset Include="Assets.xcassets\Icon2.imageset\Roundicons-03.png" />
+    <ImageAsset Include="Assets.xcassets\Icon3.imageset\Roundicons-04.png" />
+    <ImageAsset Include="Assets.xcassets\Icon4.imageset\Roundicons-05.png" />
+    <ImageAsset Include="Assets.xcassets\Icon5.imageset\Roundicons-06.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -190,6 +202,12 @@
     <Folder Include="Assets.xcassets\MyProfileIcon.imageset\" />
     <Folder Include="Assets.xcassets\AddIcon.imageset\" />
     <Folder Include="Assets.xcassets\LoginIcon.imageset\" />
+    <Folder Include="Assets.xcassets\Icon0.imageset\" />
+    <Folder Include="Assets.xcassets\Icon1.imageset\" />
+    <Folder Include="Assets.xcassets\Icon2.imageset\" />
+    <Folder Include="Assets.xcassets\Icon3.imageset\" />
+    <Folder Include="Assets.xcassets\Icon4.imageset\" />
+    <Folder Include="Assets.xcassets\Icon5.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\FrederickatheGreat-Regular.ttf" />

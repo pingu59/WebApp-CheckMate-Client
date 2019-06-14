@@ -1,21 +1,31 @@
 ﻿<Properties StartupConfiguration="{FC97C75F-7E78-408D-BD0A-42ADF0A53DCD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Models/Repetition.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApp/Views/LoginPage.xaml.cs">
     <Files>
       <File FileName="WebApp.iOS/Resources/LaunchScreen.storyboard" />
       <File FileName="WebApp/Views/AddTask.xaml" />
       <File FileName="WebApp/Views/MyHistory.xaml" />
       <File FileName="WebApp/Views/MyTaskPage.xaml" />
-      <File FileName="WebApp.iOS/Resources/Flash.storyboard" />
       <File FileName="WebApp.iOS/Info.plist" />
       <File FileName="WebApp/Models/User.cs" Line="17" Column="42" />
       <File FileName="WebApp.iOS/Main.cs" Line="18" Column="1" />
-      <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="280" Column="85" />
-      <File FileName="WebApp/Data/Communications.cs" Line="232" Column="33" />
+      <File FileName="WebApp/Views/MyTaskPage.xaml.cs" Line="206" Column="39" />
+      <File FileName="WebApp/Data/Communications.cs" Line="240" Column="60" />
       <File FileName="WebApp/Models/FriendEntity.cs" Line="23" Column="38" />
-      <File FileName="WebApp/Models/GroupTask.cs" Line="49" Column="60" />
-      <File FileName="WebApp/Views/AddTask.xaml.cs" Line="64" Column="52" />
+      <File FileName="WebApp/Models/GroupTask.cs" Line="109" Column="1" />
+      <File FileName="WebApp/Views/AddTask.xaml.cs" Line="89" Column="14" />
       <File FileName="WebApp/Models/HistoryUpdate.cs" Line="29" Column="1" />
-      <File FileName="WebApp/Models/Repetition.cs" Line="33" Column="30" />
+      <File FileName="WebApp/Models/Repetition.cs" Line="22" Column="52" />
+      <File FileName="WebApp/Views/LoginPage.xaml.cs" Line="110" Column="29" />
+      <File FileName="WebApp/Views/IndividualTaskPopUp.xaml" />
+      <File FileName="WebApp/App.xaml.cs" Line="75" Column="54" />
+      <File FileName="WebApp/Models/FriendUpdate.cs" Line="1" Column="1" />
+      <File FileName="WebApp/Views/CreateAccountPage.xaml.cs" Line="20" Column="1" />
+      <File FileName="WebApp/Constants.cs" Line="58" Column="50" />
+      <File FileName="WebApp/Views/IndividualTaskPopUp.xaml.cs" Line="24" Column="58" />
+      <File FileName="WebApp/Models/FriendTask.cs" Line="21" Column="38" />
+      <File FileName="WebApp/Models/Statistic.cs" Line="1" Column="1" />
+      <File FileName="WebApp/Models/Summary.cs" Line="30" Column="61" />
+      <File FileName="WebApp/Views/MyHistory.xaml.cs" Line="20" Column="45" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -27,13 +37,22 @@
                 <Node name="SdkDependencies" expanded="True" />
               </Node>
               <Node name="Data" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="Repetition.cs" selected="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="AddTask.xaml" expanded="True" />
+                <Node name="CreateAccountPage.xaml" expanded="True" />
+                <Node name="IndividualTaskPopUp.xaml" expanded="True" />
+                <Node name="LoginPage.xaml" expanded="True">
+                  <Node name="LoginPage.xaml.cs" selected="True" />
+                </Node>
+                <Node name="MyHistory.xaml" expanded="True" />
                 <Node name="MyTaskPage.xaml" expanded="True" />
+                <Node name="Penalties.xaml" expanded="True" />
+                <Node name="SettingPage.xaml" expanded="True" />
+                <Node name="SingleTaskHistory.xaml" expanded="True" />
+                <Node name="TaskCheckerPopUp.xaml" expanded="True" />
               </Node>
+              <Node name="App.xaml" expanded="True" />
             </Node>
             <Node name="WebApp.iOS" expanded="True">
               <Node name="Resources" expanded="True" />

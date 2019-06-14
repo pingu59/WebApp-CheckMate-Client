@@ -67,6 +67,21 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
+				<string>./LaunchImage.launchimage/[ipad][][2x][portrait][full-screen][7.0][1d][(null)]</string>
+				<string>./LaunchImage.launchimage/[iphone][][3x][landscape][full-screen][12.0][2d][(null)]</string>
+				<string>./LaunchImage.launchimage/[iphone][][3x][portrait][full-screen][12.0][2d][xr.png]</string>
+				<string>./LaunchImage.launchimage/[iphone][][3x][portrait][full-screen][12.0][2d][xsmax.png]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The launch image set "LaunchImage" has 5 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
 				<string>./AppIcon.appiconset/[][iphone][60x60][][][2x][][]</string>
 			</array>
 			<key>catalog</key>
@@ -85,21 +100,6 @@
 			<string>/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
 			<string>The image set "AddIcon" has an unassigned child.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./LaunchImage.launchimage/[ipad][][2x][portrait][full-screen][7.0][1d][(null)]</string>
-				<string>./LaunchImage.launchimage/[iphone][][3x][landscape][full-screen][12.0][2d][(null)]</string>
-				<string>./LaunchImage.launchimage/[iphone][][3x][portrait][full-screen][12.0][2d][xr.png]</string>
-				<string>./LaunchImage.launchimage/[iphone][][3x][portrait][full-screen][12.0][2d][xsmax.png]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/apple/Xamarin/WebApp.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-12.2/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>The launch image set "LaunchImage" has 5 unassigned children.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>

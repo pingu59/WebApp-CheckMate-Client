@@ -9,6 +9,7 @@ namespace WebApp.Models
         internal string taskname;
         internal bool completed;
         internal string ownername;
+        int taskicon;
         private Frame view;
         TapGestureRecognizer tapRecog;
         private GroupTask task;
@@ -17,6 +18,7 @@ namespace WebApp.Models
             this.task = task;
             this.taskid = task.taskid;
             this.taskname = task.taskname;
+            taskicon = task.taskicon;
             this.ownername = Constants.Friend.getNameOf(task.creatorid);
             completed = false;
             tapRecog = new TapGestureRecognizer();
@@ -50,28 +52,35 @@ namespace WebApp.Models
             {
                 VerticalOptions = LayoutOptions.CenterAndExpand,
                 ColumnDefinitions =
-                {
-                    new ColumnDefinition {Width = 200},
-                    new ColumnDefinition {Width = 130}
-                },
+        {
+            new ColumnDefinition {Width = 80},
+            new ColumnDefinition {Width = 250}
+        },
                 RowDefinitions =
-                {
-                    new RowDefinition {Height = 20},
-                    new RowDefinition {Height = 40}
-                }
+        {
+            new RowDefinition {Height = 20},
+            new RowDefinition {Height = 40}
+        }
             };
 
+            Image image = new Image
+            {
+                Source = ImageSource.FromFile("Icon" + taskicon),
+                WidthRequest = 60
+            };
+
+            grid.Children.Add(image, 0, 1, 0, 2);
 
             grid.Children.Add(new Label
             {
                 Text = taskname,
                 FontFamily = Device.RuntimePlatform == Device.iOS ? "Handlee" : null,
-                FontSize = 20,
-                TextColor = Color.White,
-                HorizontalOptions = LayoutOptions.Start
-            }, 0, 1);
+                FontSize = 20, // need to change here to some auto fit                                     
+                TextColor = Color.White
+            }, 1, 0);
             return grid;
         }
+
 
     }
 }

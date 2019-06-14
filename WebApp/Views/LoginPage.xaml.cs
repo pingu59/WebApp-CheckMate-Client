@@ -18,7 +18,6 @@ namespace WebApp.Views
             InitializeComponent();
             LoginIcon.Source = ImageSource.FromFile("LoginIcon");
         }
-
         public async void PushToMyTask()
         {
             //Don't change the sequence here pls
@@ -65,6 +64,7 @@ namespace WebApp.Views
 
         private async void OnSigninButtonClicked(object sender, EventArgs e)
         {
+            //await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PushAsync(new LoadingPage());
             int userID = await CheckLoginInput();
             if (userID == -1) { return; }
             string password = Entry_Password.Text;
@@ -82,6 +82,7 @@ namespace WebApp.Views
 
             if (responseCode != Constants.SUCCESS)
             {    //login unsuccessful
+                //await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PopAsync();
                 await DisplayErrorMsg(responseCode);
             }
             else
@@ -110,6 +111,7 @@ namespace WebApp.Views
                     await App.UserDB.UpdateAsync(new UserDBModel(1, Constants.me.userid));
                     Friend.LoadFromLocal();
                 }
+                //await Rg.Plugins.Popup.Services.PopupNavigation.Instance.PopAsync();
                 PushToMyTask();
                 Constants.firstLoginToday = UserLog.isFirstLoginToday();
                 UserLog.WriteLoginTime();

@@ -41,6 +41,11 @@
                    Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
             <Label x:Name="Penalty" Grid.Column="1" Grid.Row="3"
                    Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
+            <Label Text="Repetition: " Grid.Column="0" Grid.Row="3"
+                   Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
+            <Label x:Name="Repetition" Grid.Column="1" Grid.Row="3"
+                   Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
+           
         </Grid>
         <Label Text="Members' Progress" 
                Style="{StaticResource popUpLargeLabel}" FontFamily="{StaticResource Handlee}"/>

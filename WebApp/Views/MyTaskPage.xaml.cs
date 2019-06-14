@@ -204,7 +204,7 @@ namespace WebApp.Views
                 {
                     CheckInbox();
                     CheckNewInvitation();
-                    //CheckFriendUpdate();
+                    CheckFriendUpdate();
                     CheckMyCheckedUpdate();
                 }
                 return true; // True = Repeat again, False = Stop the timer

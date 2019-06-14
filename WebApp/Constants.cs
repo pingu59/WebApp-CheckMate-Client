@@ -54,7 +54,7 @@ namespace WebApp
         public static Task backgroudProcess;
         public static bool firstLoginToday;
         public static int num_of_avatars = 10;
-
+        public static int num_of_icons = 6;
         public static CancellationTokenSource tokenSource;
         //public static FakeViewImageStore imageStore = new FakeViewImageStore();
 
