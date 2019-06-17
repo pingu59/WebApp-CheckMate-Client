@@ -287,17 +287,21 @@ namespace WebApp.Views
             await Communications.ClearTaskInvite(myid);
             foreach (GroupTask bt in newinvitations)
             {
-                string taskowner = Constants.Friend.getNameOf(bt.creatorid);
                 FriendTask task = new FriendTask(bt);
-                string baseString = "Your friend {0} has invited you to join his/her task group:\n" +
-                                    "{1}\n Please check your task page to see it.";
-                string inviteString = string.Format(baseString, taskowner, task.taskname);
-                Constants.mainPage.DisplayInvitation(inviteString);
-                Console.WriteLine(bt.frequency);
-                Constants.MyTask.Add(bt);
-                Constants.mainPage.DisplayMyTask(bt);
+                if (!Constants.displayedAlertNum.Contains(bt.taskid))
+                {
+                    string taskowner = Constants.Friend.getNameOf(bt.creatorid);
+                    string baseString = "Your friend {0} has invited you to join his/her task group:\n" +
+                                        "{1}\n Please check your task page to see it.";
+                    string inviteString = string.Format(baseString, taskowner, task.taskname);
+                    Constants.mainPage.DisplayInvitation(inviteString);
+                    Console.WriteLine(bt.frequency);
+                    Constants.displayedAlertNum.Add(bt.taskid);
+                }
                 if (!Constants.FriendTasks.Exists((obj) => obj.taskid == bt.taskid))
                 {
+                    Constants.MyTask.Add(bt);
+                    Constants.mainPage.DisplayMyTask(bt);
                     Constants.FriendTasks.Add(task);
                     Constants.mainPage.DisplayFriendTask(task);
                 }

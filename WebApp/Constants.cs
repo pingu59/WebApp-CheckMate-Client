@@ -62,6 +62,7 @@ namespace WebApp
         public static CancellationTokenSource tokenSource;
         public static LoginPage login;
         //public static FakeViewImageStore imageStore = new FakeViewImageStore();
+        public static List<int> displayedAlertNum = new List<int>();
 
         public static string getUsername(int id)
         {

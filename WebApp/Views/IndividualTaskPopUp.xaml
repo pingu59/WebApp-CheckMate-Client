@@ -30,12 +30,16 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <StackLayout Grid.Column="0">
+                <Label Text="ID: "
+                       Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
                 <Label Text="Deadline: "
                        Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
                 <Label Text="Repetition: "
                        Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
             </StackLayout>
             <StackLayout Grid.Column="1">
+                <Label x:Name="ID"
+                       Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
                 <Label x:Name="Deadline"
                        Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
                 <Label x:Name="Repetition" Style="{StaticResource popUpRegLabel}" FontFamily="{StaticResource Handlee}"/>
