@@ -60,6 +60,7 @@ namespace WebApp
         public static int num_of_avatars = 10;
         public static int num_of_icons = 60;
         public static CancellationTokenSource tokenSource;
+        public static LoginPage login;
         //public static FakeViewImageStore imageStore = new FakeViewImageStore();
 
         public static string getUsername(int id)

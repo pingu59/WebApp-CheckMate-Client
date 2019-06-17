@@ -6,7 +6,7 @@
              NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
         <StackLayout Margin="20">
-            
+            <StackLayout x:Name="stack">
             <Image x:Name="LoginIcon" HeightRequest="200" Margin="20"/>
             
             <Label Text="User ID" FontFamily="{StaticResource Handlee}" Style="{StaticResource largeLabel}"/>
@@ -22,6 +22,9 @@
             <Button x:Name="Button_Register"
                     Text="Not a user? Register here" FontFamily="{StaticResource Handlee}"
                     Clicked="OnRegisterButtonClicked" Style="{StaticResource buttons}" />
+            </StackLayout>
+            <Label x:Name= "LOADING" Text="LOADING...." FontFamily="{StaticResource Handlee}" Style="{StaticResource largeLabel}"
+                   FontSize="60" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

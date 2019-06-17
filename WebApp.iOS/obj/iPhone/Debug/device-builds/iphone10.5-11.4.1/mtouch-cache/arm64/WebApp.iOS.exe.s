@@ -8194,7 +8194,7 @@ _mono_aot_file_info:
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0
-	.byte 225,183,47,28,146,41,178,151,200,148,125,237,83,61,83,45
+	.byte 245,17,75,242,198,63,69,197,31,215,13,154,57,230,203,164
 	.globl _mono_aot_module_WebApp_iOS_info
 	.align 3
 _mono_aot_module_WebApp_iOS_info:

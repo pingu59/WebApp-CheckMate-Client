@@ -71,7 +71,9 @@ namespace WebApp
                 User.LoadFromLocal();
                 Friend.LoadFromLocal();
                 LoginPage login = new LoginPage();
+                login.load();
                 login.PushToMyTask();
+                Constants.login = login;
                 MainPage = new NavigationPage(login);
                 Constants.firstLoginToday = UserLog.isFirstLoginToday();
                 UserLog.WriteLoginTime();

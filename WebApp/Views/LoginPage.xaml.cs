@@ -17,6 +17,7 @@ namespace WebApp.Views
         {
             InitializeComponent();
             LoginIcon.Source = ImageSource.FromFile("LoginIcon");
+            LOADING.IsVisible = false;
         }
         public async void PushToMyTask()
         {
@@ -32,6 +33,16 @@ namespace WebApp.Views
             MyTaskPage mainpage = new MyTaskPage();
             Constants.mainPage = mainpage;
             await Navigation.PushAsync(mainpage);
+        }
+        public void load()
+        {
+            stack.IsVisible = false;
+            LOADING.IsVisible = true;
+        }
+        public void unload()
+        {
+            stack.IsVisible = true;
+            LOADING.IsVisible = false;
         }
         private async Task<bool> LoadMyTasksFromServer()
         {

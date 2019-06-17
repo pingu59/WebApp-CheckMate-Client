@@ -166,6 +166,7 @@ namespace WebApp.Views
             await Constants.backgroudProcess.ConfigureAwait(true);
             await App.UserDB.UpdateAsync(new UserDBModel(1, -1));
             ClearConstants();
+            Constants.login.unload();
             await Navigation.PopToRootAsync();
         }
 
