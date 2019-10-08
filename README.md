@@ -1,2 +1,1 @@
-# checklist
-# Xamarin
+# Xamarin client side
